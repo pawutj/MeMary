@@ -4,9 +4,20 @@
 # name of the character.
 
 define e = Character("Eileen")
+label label1:
+    "some text"
+    jump start
+    return
+
+screen map_screen:
+    add "map/map_image.jpg"  # Replace with the path to your map image.
+    imagebutton auto "map/map1_%s.png":
+        focus_mask True
+        action [Hide("map_screen"),Jump("label1")]
+        
 
 
-# The game starts here.
+
 
 label start:
 
@@ -20,14 +31,25 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
+
     show eileen happy
 
-    # These display lines of dialogue.
+    
 
+
+    "Start"
+
+    # These display lines of dialogue.
+    window hide
+    show screen map_screen
+    $ renpy.pause(hard=True)
+
+    ""
     e "You've created a new Ren'Py game."
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
+ 
     # This ends the game.
 
     return

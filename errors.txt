@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 18: 'hide' is not a keyword argument or valid child of the screen statement.
+    hide map_screen
+        ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Mon Sep 18 21:04:49 2023
