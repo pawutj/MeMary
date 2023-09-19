@@ -18,5 +18,6 @@ label answer_roome1:
                 "it's not answer"
                 jump answer_roome1
         "return":
+            hide puzzle1
             jump main_map
     
