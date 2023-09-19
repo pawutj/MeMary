@@ -4,27 +4,7 @@
 # name of the character.
 
 define e = Character("Eileen")
-label label1:
-    "some text"
-    jump start
-    return
 
-label label2:
-    "some text"
-    jump start
-    return
-
-screen map_screen:
-    add "map/map.png"  # Replace with the path to your map image.
-    
-    imagebutton auto "map/room1_%s.png":
-        focus_mask True
-        action [Hide("map_screen"),Jump("label1")]
-
-    imagebutton auto "map/room2_%s.png":
-        focus_mask True
-        action [Hide("map_screen"),Jump("label2")]
-        
 
 
 
@@ -50,8 +30,10 @@ label start:
     "Start"
 
     # These display lines of dialogue.
+    
     window hide
     show screen map_screen
+    
     $ renpy.pause(hard=True)
 
     ""
