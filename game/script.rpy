@@ -9,11 +9,21 @@ label label1:
     jump start
     return
 
+label label2:
+    "some text"
+    jump start
+    return
+
 screen map_screen:
-    add "map/map_image.jpg"  # Replace with the path to your map image.
-    imagebutton auto "map/map1_%s.png":
+    add "map/map.png"  # Replace with the path to your map image.
+    
+    imagebutton auto "map/room1_%s.png":
         focus_mask True
         action [Hide("map_screen"),Jump("label1")]
+
+    imagebutton auto "map/room2_%s.png":
+        focus_mask True
+        action [Hide("map_screen"),Jump("label2")]
         
 
 
