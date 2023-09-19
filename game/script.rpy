@@ -29,12 +29,10 @@ label start:
 
     "Start"
 
+    jump main_map
+
     # These display lines of dialogue.
-    
-    window hide
-    show screen map_screen
-    
-    $ renpy.pause(hard=True)
+
 
     ""
     e "You've created a new Ren'Py game."
@@ -45,3 +43,11 @@ label start:
     # This ends the game.
 
     return
+
+label main_map:
+    
+    window hide
+    show screen map_screen
+    
+    $ renpy.pause(hard=True)
+    
