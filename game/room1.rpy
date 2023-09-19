@@ -1,9 +1,19 @@
 
 label room1:
-    "some text in room1"
+    "problem room1"
+    jump answer_roome1
+    return
+
+label answer_roome1:
     menu:
-        "ตอบคำถาม":
-            jump main_map
+        "answer":
+            "try"
+            $ input_value = renpy.input("Answer?")
+            if input_value == "pathaway":
+                "pass"
+            else :
+                "it's not answer"
+                jump answer_roome1
         "return":
             jump main_map
-    return
+    
