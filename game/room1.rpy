@@ -11,6 +11,7 @@ label answer_roome1:
             $ input_value = renpy.input("Answer?")
             if input_value == "pathaway":
                 "pass"
+                jump main_map
             else :
                 "it's not answer"
                 jump answer_roome1

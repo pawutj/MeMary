@@ -21,13 +21,9 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-
-    show eileen happy
-
-    
-
-
     "Start"
+
+    jump room0
 
     jump main_map
 
