@@ -2,9 +2,23 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 18: 'hide' is not a keyword argument or valid child of the screen statement.
-    hide map_screen
-        ^
+The label answer_roome05 is defined twice, at File "game/room5.rpy", line 12:
+label answer_roome05:
+and File "game/room6.rpy", line 12:
+label answer_roome05:
+
+
+The label answer_roome05 is defined twice, at File "game/room6.rpy", line 12:
+label answer_roome05:
+and File "game/room7.rpy", line 12:
+label answer_roome05:
+
+
+The label answer_roome05 is defined twice, at File "game/room7.rpy", line 12:
+label answer_roome05:
+and File "game/room8.rpy", line 12:
+label answer_roome05:
+
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Mon Sep 18 21:04:49 2023
+Sat Sep 23 00:13:52 2023

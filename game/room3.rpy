@@ -1,5 +1,5 @@
 label room03:
-    if room02_is_pass == False: 
+    if room03_is_pass == False: 
         "problem room3"
         show puzzle2_1
         jump answer_roome03

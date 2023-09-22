@@ -1,28 +1,64 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 49, in script
-    $ renpy.pause(hard=True)
-ScriptError: could not find label 'label2'.
+After initialization, but before game start.
+  File "game/map.rpy", line 5, in analyze_screen
+    screen map_screen:
+  File "game/map.rpy", line 5, in analyze
+    screen map_screen:
+  File "game/map.rpy", line 5, in analyze
+    screen map_screen:
+  File "game/map.rpy", line 22, in analyze
+    if room01_is_pass || room02_is_pass || room03_is_pass :
+SyntaxError: invalid syntax (game/map.rpy, line 22)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\bootstrap.py", line 275, in bootstrap
     renpy.main.main()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\main.py", line 670, in main
-    run(restart)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\main.py", line 144, in run
-    renpy.execution.run_context(True)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\execution.py", line 953, in run_context
-    context.run()
-  File "game/script.rpy", line 49, in script
-    $ renpy.pause(hard=True)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\script.py", line 1013, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'label2'.
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\main.py", line 587, in main
+    renpy.game.script.report_duplicate_labels()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\script.py", line 1065, in report_duplicate_labels
+    if renpy.parser.report_parse_errors():
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\parser.py", line 1761, in report_parse_errors
+    renpy.display.error.report_parse_errors(full_text, error_fn)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\error.py", line 195, in report_parse_errors
+    renpy.game.invoke_in_new_context(
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\game.py", line 291, in invoke_in_new_context
+    return callable(*args, **kwargs)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\error.py", line 48, in call_exception_screen
+    return renpy.ui.interact(mouse="screen", type="screen", suppress_overlay=True, suppress_underlay=True)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3780, in interact_core
+    renpy.display.screen.prepare_screens()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 996, in prepare_screens
+    analyze_screens()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 973, in analyze_screens
+    s.ast.analyze_screen()
+  File "game/map.rpy", line 5, in analyze_screen
+    screen map_screen:
+  File "game/map.rpy", line 5, in analyze
+    screen map_screen:
+  File "game/map.rpy", line 5, in analyze
+    screen map_screen:
+  File "game/map.rpy", line 22, in analyze
+    if room01_is_pass || room02_is_pass || room03_is_pass :
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\py3analysis.py", line 558, in is_constant_expr
+    node, literal = ccache.ast_eval_literal(expr)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\py3analysis.py", line 790, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1088, in py_compile
+    raise e
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1034, in py_compile
+    raise orig_e
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1027, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/map.rpy, line 22)
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 MeMary 1.0
-Tue Sep 19 09:02:10 2023
+Sat Sep 23 00:13:16 2023
