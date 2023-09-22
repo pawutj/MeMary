@@ -6,10 +6,24 @@
 define e = Character("Eileen")
 
 
+# label config_value:
+#     $ room01_is_pass = False
 
 
 
 label start:
+    $ room01_is_pass = False
+    $ room02_is_pass = False
+    $ room03_is_pass = False
+    $ room04_is_pass = False
+    $ room05_is_pass = False
+    $ room06_is_pass = False
+    $ room07_is_pass = False
+    $ room08_is_pass = False
+    $ room09_is_pass = False
+    $ room10_is_pass = False
+    $ room11_is_pass = False
+
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -24,8 +38,6 @@ label start:
     "Start"
 
     jump room0
-
-    jump main_map
 
     # These display lines of dialogue.
 

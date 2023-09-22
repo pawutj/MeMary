@@ -1,3 +1,8 @@
+label intro:
+    scene 
+    "Just Intro"
+    jump room0
+
 label room0:
     "some text"
     "problem 0"
