@@ -37,7 +37,7 @@ label start:
 
     "Start"
 
-    jump room0
+    jump intro
 
     # These display lines of dialogue.
 

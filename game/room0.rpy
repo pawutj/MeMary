@@ -1,6 +1,7 @@
 label intro:
     scene 
     "Just Intro"
+    "เริ่มเกมส์"
     jump room0
 
 label room0:
