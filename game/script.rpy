@@ -11,6 +11,10 @@ define cat = Character("แมว", image ="cat" ,color="#F0F8FF", who_outlines=
 #     $ room01_is_pass = False
 
 
+image moonlight3 = im.Scale("bg/moonlight3.png",1920,1080)
+
+style default:
+    line_spacing 10
 
 label start:
     $ room01_is_pass = False
