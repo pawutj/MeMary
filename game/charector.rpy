@@ -108,12 +108,12 @@ image side cat sad:
     xoffset -200
     im.Composite((1433,3100), (0,2000),"cat/cat_sad.png") 
 
-image cat smail :
+image cat smile :
     zoom 0.75
     xoffset 25
-    im.Composite((1433,3100), (0,2000),"cat/cat_smail.png") 
-image side cat smail:
+    im.Composite((1433,3100), (0,2000),"cat/cat_smile.png") 
+image side cat smile:
     zoom 0.5
     yoffset 400
     xoffset -200
-    im.Composite((1433,3100), (0,2000),"cat/cat_smail.png") 
+    im.Composite((1433,3100), (0,2000),"cat/cat_smile.png") 
