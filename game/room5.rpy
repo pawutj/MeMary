@@ -1,7 +1,17 @@
 
 label room05:
-    if room05_is_pass == False: 
-        "problem room5"
+    scene library_s_1080 with dissolve
+    stop music
+    play music 不可解な事件簿的な
+    if room05_is_pass == False:
+        show cat normal with dissolve
+        
+        "ปริศนาข้อต่อไปนี่มันอะไรกันนะ?"
+        cat normal "เธอชอบฟังเพลงหรือเปล่าล่ะ?"
+        yume "หา?"
+        cat normal "ลองตอบคำถามดู"
+        "เจ้าแมวส้มว่าแล้วก็ส่งยิ้มบางๆให้เรา"
+        hide cat
         show puzzle5
         jump answer_roome05
         
@@ -12,17 +22,63 @@ label room05:
 label answer_roome05:
     menu:
         "answer":
-            "try"
             $ input_value = renpy.input("Answer?")
             if input_value == "spring_is_in_the_air":
                 $ room05_is_pass = True
                 "pass"
+                "ปริศนาได้รับการตอบ ความจริงในอดีตจึงฉายขึ้นอีกครั้ง"
                 hide puzzle5
-                jump main_map
+                jump after_room_5
             else :
                 "it's not answer"
                 jump answer_roome05
         "return":
             hide puzzle5
             jump main_map
-    
+
+label after_room_5:
+    scene flashback with dissolve
+    stop music
+    play music up_to_you
+
+    yume "ฟังเพลงคลาสสิคอีกแล้วเหรอ?"
+    mary0 "ใช่จ้ะ"
+    yume "เพลงอะไร?"
+    mary0 "Air on G string จ้ะ"
+    yume "ทำไมชื่อมันดูหื่นจัง"
+    mary0 "ฉันว่าเราเข้าใจกันคนละจีสตริงแล้วนะจ้ะ"
+    yume "เพลงชื่อหื่นๆนี่มันอะไรกันนะ?"
+    mary0 "ถ้าบาคยังยังมีชีวิตอยู่ เขาฟังเธอแล้วคงยกออร์แกนมาทุ่มหัวเธอจ้ะ"
+    yume "บาคคือใคร?"
+    mary0 "ชื่อคนแต่งเพลงจ้ะ"
+    yume "คนอะไรชื่อว่า ‘เห่า’ ...แปลกชะมัด..."
+    mary0 "เขาไม่ใช่คนอังกฤษจ้ะ เขาเป็นเยอรมัน ชื่อเขาแปลแบบนั้นไม่ได้"
+    yume "ฟังเพลงแบบนั้นไม่ง่วงแย่เหรอ"
+    mary0 "เพลงมันก็ละมุนดีนะจ้ะ"
+    yume "มาฟังร็อคแอนด์โรลกับฉันดีกว่านะ ฟังแล้วมันส์กว่าเยอะ"
+    mary0 "เธอนี่ไม่มีความละเอียดอ่อนเลยนะจ้ะ"
+    yume "ไหงงั้น!?"
+    mary0 "ไม่ฟังเธอแล้ว ฟังเพลงดีกว่าจ้ะ"
+    yume "ฉันขอโทษน่า!"
+
+    scene library_s_1080 with dissolve
+    stop music
+    play music 不可解な事件簿的な
+
+    "เรากลับมาที่ห้องมืดอีกครั้ง"
+    "เธอคนนั้นชอบฟังเพลงคลาสสิคสินะ เราจำได้แล้ว"
+    "แล้วเราก็ชวนเธอมาฟังเพลงที่เราชอบฟังบ้าง พอเธอฟังจบก็ไม่ฟังเพลงเราอีกเลย"
+    "จริงอยู่ที่คุยกันถูกคอ แต่รสนิยมหลายๆอย่างของเราสวนทางกัน เป็นเรื่องน่าแปลกจริงๆที่เราอยู่ด้วยกันมานานหลายปี"
+    "...หลายปี...?"
+    yume "...อึก"
+    show cat normal with dissolve
+    cat normal "เป็นไงบ้าง?"
+    yume "เหมือนจะคิดอะไรออก แต่จู่ๆก็ปวดทรมานไปหมดน่ะ"
+    cat normal "นั่นเพราะเธอยังไขปริศนาไม่ได้ทั้งหมด"
+    yume "....."
+    cat normal "ไม่ต้องรีบร้อน ปลายทางยังอีกยาวไกล"
+    "เรากับเจ้าแมวส้มเดินไปข้างหน้า"
+    "...สู่ประตูต่อไป..."
+
+    hide cat
+    jump main_map
