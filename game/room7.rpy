@@ -41,7 +41,7 @@ label answer_roome07:
         "answer":
             "try"
             $ input_value = renpy.input("Answer?")
-            if input_value == "orion":
+            if prepare(input_value) == "orion":
                 $ room07_is_pass = True
                 "ท้องฟ้าสีดำที่เต็มไปด้วยดวงดาวเปลี่ยนผันกลายเป็นฉากขาว"
                 "ความทรงจำในอดีตกำลังหลั่งไหลเข้ามาอีกครั้งราวกับสายน้ำ"

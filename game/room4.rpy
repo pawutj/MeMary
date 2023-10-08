@@ -36,7 +36,7 @@ label answer_roome04:
         "answer":
             "try"
             $ input_value = renpy.input("Answer?")
-            if input_value == "easier than you think":
+            if prepare(input_value) == "easierthanyouthink":
                 $ room04_is_pass = True
                 "หลังจากตอบคำถามได้ สีขาวก็ปกคลุมการมองเห็นของเรา"
                 hide puzzle4

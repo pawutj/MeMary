@@ -30,7 +30,7 @@ label answer_roome06:
         "answer":
             "try"
             $ input_value = renpy.input("Answer?")
-            if input_value == "spider_lily":
+            if prepare(input_value) == "spiderlily":
                 $ room06_is_pass = True
                 "ภาพดอกไม้เลือนหายไป ภาพอดีตปรากฏขึ้นอีกครั้ง"
                 hide puzzle6

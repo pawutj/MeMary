@@ -14,7 +14,7 @@ label answer_roome08:
         "answer":
             "try"
             $ input_value = renpy.input("Answer?")
-            if input_value == "ruSsElL":
+            if prepare(input_value) == "russell":
                 $ room08_is_pass = True
                 "pass"
                 hide puzzle8

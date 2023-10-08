@@ -23,7 +23,7 @@ label answer_roome05:
     menu:
         "answer":
             $ input_value = renpy.input("Answer?")
-            if input_value == "spring_is_in_the_air":
+            if prepare(input_value) == "springisintheair":
                 $ room05_is_pass = True
                 "pass"
                 "ปริศนาได้รับการตอบ ความจริงในอดีตจึงฉายขึ้นอีกครั้ง"

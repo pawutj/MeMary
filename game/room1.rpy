@@ -29,7 +29,7 @@ label answer_roome01:
         "answer":
             "try"
             $ input_value = renpy.input("Answer?")
-            if input_value == "golderequiem":
+            if prepare(input_value) == "golderequiem":
                 $ room01_is_pass = True
                 "สีขาวกลืนทิวทัศน์ตรงหน้าเราอีกครั้ง"
                 "ภาพความทรงจำต่อไปจะเป็นอะไรกันนะ?"

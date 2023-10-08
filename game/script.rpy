@@ -15,7 +15,9 @@ image moonlight3 = im.Scale("bg/moonlight3.png",1920,1080)
 
 style default:
     line_spacing 10
-
+init python:
+    def prepare(s):
+        return s.lower().replace(" ", "").replace("_","")
 label start:
     $ room01_is_pass = False
     $ room02_is_pass = False

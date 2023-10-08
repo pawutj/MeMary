@@ -29,7 +29,7 @@ label answer_roome02:
         "answer":
             "try"
             $ input_value = renpy.input("Answer?")
-            if input_value == "oblivion":
+            if prepare(input_value) == "oblivion":
                 $ room02_is_pass = True
                 "สีขาวกลืนกินทุกอย่างอีกครั้ง ภาพความทรงจำอันลางเรือนปรากฏขึ้น"
                 hide puzzle3

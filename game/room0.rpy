@@ -138,7 +138,7 @@ label answer_roome0:
         "answer":
             "try"
             $ input_value = renpy.input("Answer?")
-            if input_value == "memary":
+            if prepare(input_value) == "memary":
                 "ทันใดที่เราเขียนคำตอบที่ถูกต้อง โลกรอบข้างก็ถูกสีขาวกลืนเข้าไป"
                 "แสงสว่าง?"
                 "มันเกิดอะไรขึ้นกันแน่?"
