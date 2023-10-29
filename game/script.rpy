@@ -11,6 +11,8 @@ define cat = Character("แมว", image ="cat" ,color="#F0F8FF", who_outlines=
 #     $ room01_is_pass = False
 
 define mary0 = Character("???",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define mary = Character("แมรี่",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define father = Character("พ่อของแมรี่",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 image moonlight3 = im.Scale("bg/moonlight3.png",1920,1080)
 
 style default:
