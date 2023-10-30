@@ -1,6 +1,6 @@
 
 label room02:
-    scene library_s_1080 with dissolve
+    scene hall_s_1080 with dissolve
     stop music
     play music 不穏
 
@@ -70,7 +70,7 @@ label after_room_2:
     mary0 "ขอลอกหน่อยสิจ้ะ"
     yume "เอาความรู้สึกดีๆฉันคืนมาเลยนะ"
     
-    scene library_s_1080 with dissolve
+    scene hall_s_1080 with dissolve
     show cat normal
 
     "เรากลับมาที่ห้องเดิมแล้ว"

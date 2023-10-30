@@ -61,31 +61,18 @@ screen map_screen:
         imagebutton : 
             idle "map/room08_disable.png"
 
+    
+    if room07_is_pass and room08_is_pass: 
+        imagebutton auto "map/room09_%s.png":
+            focus_mask True
+            action [Hide("map_screen"),Jump("room09")]
+    else:
+        imagebutton : 
+            idle "map/room09_disable.png"
+
         
-    # if room06_is_pass: 
-    #     imagebutton auto "map/room09_%s.png":
-    #         focus_mask True
-    #         action [Hide("map_screen"),Jump("room02")]
-    # else:
-    #     imagebutton :
-    #         idle "map/room09_disable.png"
 
-                
-    # if room01_is_pass: 
-    #     imagebutton auto "map/room10_%s.png":
-    #         focus_mask True
-    #         action [Hide("map_screen"),Jump("room02")]
-    # else:
-    #     imagebutton :
-    #         idle "map/room10_disable.png"
-
-    # if room01_is_pass: 
-    #     imagebutton auto "map/room11_%s.png":
-    #         focus_mask True
-    #         action [Hide("map_screen"),Jump("room02")]
-    # else:
-    #     imagebutton :
-    #         idle "map/room11_disable.png"
+        
 
         
         

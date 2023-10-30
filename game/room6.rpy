@@ -1,24 +1,23 @@
 
 label room06:
 
-    scene library_s_1080 with dissolve
+    scene garden_n_1080 with dissolve
     stop music
     play music midnight
 
-
-    yume "นี่มันดอกพลับพลึง?"
-    
-    show cat normal with dissolve
-    cat normal "จำชื่อมันได้ด้วยเหรอ?"
-    "คำพูดของแมวทำให้เรานึกได้ว่าเราพูดชื่อดอกไม้ในภาพขึ้นมาโดยไม่รู้ตัว"
-    "บางสิ่งบางอย่างในตัวเราทำให้เรานึกถึงชื่อของมันได้"
-    "เป็นไปได้ไหมที่ดอกไม้นี้จะเกี่ยวพันกับตัวเราในอดีต"
-    yume "คงไม่มีทางเลือกอื่นนอกจากต้องตอบคำถามสินะ"
-    hide cat
-
     if room06_is_pass == False: 
-        show puzzle6
+
         "เราจับจ้องโจทย์บนกระดานอย่างไม่วางตา"
+        yume "นี่มันดอกพลับพลึง?"
+        show cat normal with dissolve
+        cat normal "จำชื่อมันได้ด้วยเหรอ?"
+        "คำพูดของแมวทำให้เรานึกได้ว่าเราพูดชื่อดอกไม้ในภาพขึ้นมาโดยไม่รู้ตัว"
+        "บางสิ่งบางอย่างในตัวเราทำให้เรานึกถึงชื่อของมันได้"
+        "เป็นไปได้ไหมที่ดอกไม้นี้จะเกี่ยวพันกับตัวเราในอดีต"
+        yume "คงไม่มีทางเลือกอื่นนอกจากต้องตอบคำถามสินะ"
+        hide cat
+        
+        show puzzle6
         jump answer_roome06
         
     else :
@@ -76,7 +75,7 @@ label after_room_6:
     "เธอคนนั้นไม่ได้ตอบคำถามของเรา"
     "เธอเพียงแค่หัวเราะเสียงใสดังกังวานให้เราเท่านั้น"
 
-    scene library_s_1080 with dissolve
+    scene garden_n_1080 with dissolve
     stop music
     play music midnight
 

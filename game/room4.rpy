@@ -1,7 +1,7 @@
 
 label room04:
 
-    scene library_s_1080 with dissolve
+    scene gyokuza_s_1080 with dissolve
     stop music
     play music 不穏
 
@@ -79,7 +79,7 @@ label after_room_4:
     "เราพูดไม่ออก สุดท้ายเราก็ได้แต่นั่งจิ้มกระดาษทายปริศนาของคนตรงหน้า"
     "น่าเจ็บใจจริงๆ"
 
-    scene library_s_1080 with dissolve
+    scene gyokuza_s_1080 with dissolve
     yume "เฮ้อ..."
     "ปริศนาเลขบ้าอะไรกัน? ตรีโกณมิติบ้าอะไรกัน?"
     "นี่มันโจทย์กวนประสาทชัดๆ!"

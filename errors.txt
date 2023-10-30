@@ -2,23 +2,7 @@
 errors listed below, and try again.
 
 
-The label answer_roome05 is defined twice, at File "game/room5.rpy", line 12:
-label answer_roome05:
-and File "game/room6.rpy", line 12:
-label answer_roome05:
-
-
-The label answer_roome05 is defined twice, at File "game/room6.rpy", line 12:
-label answer_roome05:
-and File "game/room7.rpy", line 12:
-label answer_roome05:
-
-
-The label answer_roome05 is defined twice, at File "game/room7.rpy", line 12:
-label answer_roome05:
-and File "game/room8.rpy", line 12:
-label answer_roome05:
-
+File "game/final.rpy", line 191: Tab characters are not allowed in Ren'Py scripts.
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sat Sep 23 00:13:52 2023
+Mon Oct 30 18:35:44 2023

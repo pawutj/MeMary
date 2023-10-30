@@ -1,6 +1,6 @@
 label room03:
 
-    scene library_s_1080 with dissolve
+    scene room_s_1080 with dissolve
     stop music
     play music 哀愁漂うホラー的な
 
@@ -90,7 +90,7 @@ label after_room_3:
     yume  "อย่าออมมือกับฉันสิ!"
     "เสียงโวยวายของเราสิ้นสุดลง ภาพก็กลับมามืดดำ"
 
-    scene library_s_1080 with dissolve
+    scene room_s_1080 with dissolve
     play music 哀愁漂うホラー的な
     "เราเริ่มจำได้แล้ว"
     "เรามีใครสักคนหนึ่งที่สำคัญกับเรามากๆ เธอคนนั้นเล่นหมากรุกกับเราประจำ"

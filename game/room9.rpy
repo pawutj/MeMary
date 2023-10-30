@@ -37,7 +37,7 @@ label answer_roome09:
             "try"
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "cafeaulait":
-                $ room08_is_pass = True
+                $ room09_is_pass = True
                 "ภาพอดีตถูกฉายขึ้นอีกครั้ง"
                 "ต่อจากนี้จะมีความจริงแบบไหนรอเราอยู่กันนะ?"
                 # hide puzzle8
@@ -55,7 +55,7 @@ label after_room_9:
     play music up_to_you
 
     mary0  "เธอชอบดื่มกาแฟเหรอ?"
-    yume   "Café au lait มันก็อร่อยดีนะ"
+    yume   "Cafe au lait มันก็อร่อยดีนะ"
     "เราตอบคำถามของคู่สนทนาเรียบๆก่อนจะจิบกาแฟหนึ่งอึก"
     mary0  "เลี้ยงกาแฟฉันหน่อยสิ"
     yume  "หา?"
@@ -130,6 +130,6 @@ label after_room_9:
     "ไม่ช้าหลังจากนั้น แสงสีขาวก็ขยายตัวกว้างขึ้นและกลืนกินร่างของเราเข้าไป"
 
 
-    jump main_map
+    jump final
 
 
