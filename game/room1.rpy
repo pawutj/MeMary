@@ -30,6 +30,7 @@ label answer_roome01:
             "try"
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "golderequiem":
+                scene white with dissolve
                 $ room01_is_pass = True
                 "สีขาวกลืนทิวทัศน์ตรงหน้าเราอีกครั้ง"
                 "ภาพความทรงจำต่อไปจะเป็นอะไรกันนะ?"
@@ -62,7 +63,7 @@ label after_room_1:
     yume "ก็ได้ๆ ฮะๆๆๆ"
     "ความทรงจำปิดด้วยเสียงหัวเราะของเรา"
     "ก่อนที่ภาพตรงหน้าจะจมลงสู่ความมืด"
-
+    scene black with dissolve
     stop music
     play music 哀愁漂うホラー的な
     scene library_s_1080 with dissolve 

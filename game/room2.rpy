@@ -18,7 +18,7 @@ label room02:
         "ถ้าเป็นอย่างนั้น เราก็คงต้องตอบคำถามข้อนี้ให้ได้"
         hide cat
 
-        show puzzle3
+        show puzzle3 with dissolve
         jump answer_roome02
         
     else :

@@ -1,4 +1,14 @@
+label memary_scene:
+    scene memary with Dissolve(5.0)
+    scene black with Dissolve(5.0)
+
+    jump after_room_0_1
+    return 
+
 label intro:
+    #Just Test
+    # jump room9
+
     scene rouka_s_1080
     play music 廃墟洋館
     "... เส้นทางที่ไม่รู้จุดหมายทอดยาวต่อหน้าเรา..."
@@ -139,6 +149,7 @@ label answer_roome0:
             "try"
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "memary":
+                scene white with dissolve
                 "ทันใดที่เราเขียนคำตอบที่ถูกต้อง โลกรอบข้างก็ถูกสีขาวกลืนเข้าไป"
                 "แสงสว่าง?"
                 "มันเกิดอะไรขึ้นกันแน่?"
@@ -169,13 +180,17 @@ label after_room_0:
     yume "อืมม..."
     mary0 "ว่าไงจ้ะ?"
     yume "งั้นเอาเป็นชื่อ..."
+
+    scene black with dissolve
     
     "ภาพตรงหน้าจมลงสู่ความมืดในทันที"
     "เงาร่างอันลางเรือนที่ปรากฏตรงหน้าเราหายไปแล้ว"
     "เหลือทิ้งไว้เพียงคำบางอย่างที่ตกค้างในความทรงจำ"
 
-    "MeMary"
+    jump memary_scene
 
+
+label after_room_0_1:
     stop music 
     play music 泣カナイデ
 

@@ -64,7 +64,7 @@ label start:
 label main_map:
     
     window hide
-    show screen map_screen
+    show screen map_screen with dissolve
     
     $ renpy.pause(hard=True)
     
