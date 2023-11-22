@@ -14,7 +14,11 @@ define mary0 = Character("???",color="#F0F8FF", who_outlines=[(2,"#000000")], wh
 define mary = Character("แมรี่",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define father = Character("พ่อของแมรี่",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 image moonlight3 = im.Scale("bg/moonlight3.png",1920,1080)
-
+image sky_cloudy = im.Scale("bg/sky_cloudy.png",1920,1080)
+image classroom_sunset = im.Scale("bg/classroom_sunset.png",1920,1080)
+image classroom_morning = im.Scale("bg/classroom_morning.jpg",1920,1080)
+image sky_morning = im.Scale("bg/sky_morning.png",1920,1080)
+image nightsky = im.Scale("bg/nightsky.png",1920,1080)
 style default:
     line_spacing 10
 init python:
