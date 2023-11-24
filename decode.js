@@ -35,7 +35,9 @@ console.log(temp)
 const decode = s=> {
 
     const a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    const b=  "kx*mcnoph*rs*yi*adlegwruftKX*MCNOPH*RS*YI*ADLEGWRUFT"
+    const b = "*****n**********ad************************A*********"
+   
+  
     
         if(a.indexOf(s) >=0){
             return b[a.indexOf(s)]
@@ -50,3 +52,4 @@ for(var i=0;i<d2.length;i++){
 }
 
 console.log(temp2)
+// const b=  "kx*mcnoph*rs*yi*adlegwruftKX*MCNOPH*RS*YI*ADLEGWRUFT"
