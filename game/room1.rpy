@@ -26,7 +26,7 @@ label room01:
 
 label answer_roome01:
     menu:
-        "answer":
+        "ตอบคำถาม":
             "try"
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "golderequiem":
@@ -39,7 +39,10 @@ label answer_roome01:
             else :
                 "it's not answer"
                 jump answer_roome01
-        "return":
+        "ใบ้หน่อยสิ":
+            "โซเดียม เอเลี่ยน โพเดี้ยม อันต่อไปคืออะไรนะ คล้ายๆกับ Stanxd JXJX ซักอย่างเลย ลอง Scan QRCode ดูหน่อยดีไหมนะ"
+            jump answer_roome01
+        "กลับห้องรวม":
             hide puzzle1
             jump main_map
 

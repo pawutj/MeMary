@@ -26,7 +26,7 @@ label room02:
         jump main_map 
 label answer_roome02:
     menu:
-        "answer":
+        "ตอบคำถาม":
             "try"
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "oblivion":
@@ -37,7 +37,9 @@ label answer_roome02:
             else :
                 "it's not answer"
                 jump answer_roome02
-        "return":
+        "ใบ้หน่อยสิ":
+            
+        "กลับห้องรวม":
             hide puzzle3
             jump main_map
     
