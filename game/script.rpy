@@ -19,6 +19,21 @@ image classroom_sunset = im.Scale("bg/classroom_sunset.png",1920,1080)
 image classroom_morning = im.Scale("bg/classroom_morning.jpg",1920,1080)
 image sky_morning = im.Scale("bg/sky_morning.png",1920,1080)
 image nightsky = im.Scale("bg/nightsky.png",1920,1080)
+
+image hospital =im.Scale("bg/hospital.png",1920,1080)
+image road = im.Scale("bg/road.jpg",1920,1080)
+
+image fb1 = im.Scale("cg/fb1.png",1920,1080)
+image fb2_1 = im.Scale("cg/fb2_1.png",1920,1080)
+image fb2_2 = im.Scale("cg/fb2_2.png",1920,1080)
+image fb2_3 = im.Scale("cg/fb2_3.png",1920,1080)
+
+image fb3_1 = im.Scale("cg/fb3_1.png",1920,1080)
+image fb3_1 = im.Scale("cg/fb3_1.png",1920,1080)
+image fb3_1 = im.Scale("cg/fb3_1.png",1920,1080)
+
+image cg3 = im.Scale("cg/cg3.png",1920,1080)
+
 style default:
     line_spacing 10
 init python:
