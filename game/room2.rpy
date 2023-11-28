@@ -38,7 +38,8 @@ label answer_roome02:
                 "it's not answer"
                 jump answer_roome02
         "ใบ้หน่อยสิ":
-            
+            "ดูถ้าจะคล้ายๆกับ อักษรรูน นะ ดูเหมือนจะเทียบอักษรเป็นภาษาอังกฤษได้อยู่นะ"
+            jump answer_roome02
         "กลับห้องรวม":
             hide puzzle3
             jump main_map
