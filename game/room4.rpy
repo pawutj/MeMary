@@ -44,6 +44,9 @@ label answer_roome04:
             else :
                 "it's not answer"
                 jump answer_roome04
+        "ใบ้หน่อยสิ":
+            "โจทย์ก็บอกว่าอยู่ว่า Easier Than You Think"
+            jump answer_roome04
         "return":
             hide puzzle4
             jump main_map

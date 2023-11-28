@@ -51,6 +51,9 @@ label answer_roome07:
             else :
                 "it's not answer"
                 jump answer_roome07
+        "ใบ้หน่อยสิ":
+            ""
+            jump answer_roome07
         "return":
             hide puzzle7
             jump main_map

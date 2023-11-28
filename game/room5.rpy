@@ -32,6 +32,9 @@ label answer_roome05:
             else :
                 "it's not answer"
                 jump answer_roome05
+        "ใบ้หน่อยสิ":
+            "เอ.. สเปคตรัม? แกรม? มันคืออะไรกันนะ"
+            jump answer_roome05
         "return":
             hide puzzle5
             jump main_map
