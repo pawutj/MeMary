@@ -1,5 +1,5 @@
 label final:
-    scene mirror with dissolve
+    scene cg2 with dissolve
     stop music
     play music reflect
 

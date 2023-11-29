@@ -7,7 +7,7 @@ label memary_scene:
 
 label intro:
     #Just Test
-    jump true_end
+    jump final
 
     scene rouka_s_1080
     play music 廃墟洋館
