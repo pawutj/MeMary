@@ -29,9 +29,11 @@ image fb2_2 = im.Scale("cg/fb2_2.png",1920,1080)
 image fb2_3 = im.Scale("cg/fb2_3.png",1920,1080)
 
 image fb3_1 = im.Scale("cg/fb3_1.png",1920,1080)
-image fb3_1 = im.Scale("cg/fb3_1.png",1920,1080)
-image fb3_1 = im.Scale("cg/fb3_1.png",1920,1080)
-
+image fb3_2 = im.Scale("cg/fb3_2.png",1920,1080)
+image fb3_3 = im.Scale("cg/fb3_3.png",1920,1080)
+image fb3_4 = im.Scale("cg/fb3_4.png",1920,1080)
+image fb3_5 = im.Scale("cg/fb3_5.png",1920,1080)
+image fb3_6 = im.Scale("cg/fb3_6.png",1920,1080)
 image cg3 = im.Scale("cg/cg3.png",1920,1080)
 
 style default:
