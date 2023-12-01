@@ -3,6 +3,8 @@
 
 
 screen map_screen:
+    
+
     add "map/map.png"  # Replace with the path to your map image.
 
     
@@ -69,7 +71,7 @@ screen map_screen:
     else:
         imagebutton : 
             idle "map/room09_disable.png"
-
+    
         
 
         

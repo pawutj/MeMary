@@ -1,5 +1,6 @@
 
 label room02:
+    $ _skipping = True
     scene hall_s_1080 with dissolve
     stop music
     play music 不穏

@@ -20,6 +20,20 @@ image classroom_morning = im.Scale("bg/classroom_morning.png",1920,1080)
 image sky_morning = im.Scale("bg/sky_morning.png",1920,1080)
 image nightsky = im.Scale("bg/nightsky.png",1920,1080)
 
+image puzzle0 :
+    "puzzle/puzzle0.png"
+    zoom 0.6
+    yalign 0.4
+
+
+
+image puzzle3 :
+    "puzzle/puzzle3.png"
+    zoom 0.6
+    yalign 0.4
+
+
+
 image hospital =im.Scale("bg/hospital.png",1920,1080)
 image road = im.Scale("bg/road.jpg",1920,1080)
 
@@ -85,9 +99,11 @@ label start:
     return
 
 label main_map:
-    
+    $ renpy.config.skipping = False
+    $ _skipping = False
     window hide
     show screen map_screen with dissolve
     
     $ renpy.pause(hard=True)
+    
     

@@ -1,5 +1,5 @@
 label room03:
-
+    $ _skipping = True
     scene room_s_1080 with dissolve
     stop music
     play music 哀愁漂うホラー的な
