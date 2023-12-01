@@ -32,6 +32,36 @@ image puzzle3 :
     zoom 0.6
     yalign 0.4
 
+image puzzle4 :
+    "puzzle/puzzle4.png"
+    zoom 0.6
+    yalign 0.4
+
+image puzzle5 :
+    "puzzle/puzzle5.png"
+    zoom 0.6
+    yalign 0.4
+
+
+image puzzle6 :
+    "puzzle/puzzle6.png"
+    zoom 0.6
+    yalign 0.4
+
+
+image puzzle7 :
+    "puzzle/puzzle7.png"
+    zoom 0.6
+    yalign 0.4
+
+
+image puzzle8 :
+    "puzzle/puzzle8.png"
+    zoom 0.6
+    yalign 0.4
+
+
+
 
 
 image hospital =im.Scale("bg/hospital.png",1920,1080)
