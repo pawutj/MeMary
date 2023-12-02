@@ -60,6 +60,22 @@ image puzzle8 :
     zoom 0.6
     yalign 0.4
 
+image puzzle2_1:
+    "puzzle/puzzle2_1_new.png"
+    zoom 0.3
+    yalign 0.4
+
+image puzzle2_2:
+    "puzzle/puzzle2_2_new.png"
+    zoom 0.3
+    yalign 0.4
+
+image puzzle2_3:
+    "puzzle/puzzle2_3_new.png"
+    zoom 0.3
+    yalign 0.4
+
+
 
 
 
@@ -81,6 +97,7 @@ image fb3_4 = im.Scale("cg/fb3_4.png",1920,1080)
 image fb3_5 = im.Scale("cg/fb3_5.png",1920,1080)
 image fb3_6 = im.Scale("cg/fb3_6.png",1920,1080)
 image cg3 = im.Scale("cg/cg3.png",1920,1080)
+
 
 style default:
     line_spacing 10
