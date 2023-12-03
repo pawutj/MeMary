@@ -347,6 +347,9 @@ style navigation_button_text:
 ## Used to display the main menu when Ren'Py starts.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
+image blackimage = Solid("#ff0000")
+screen black_screen():
+    add (blackimage)
 
 screen main_menu():
 
