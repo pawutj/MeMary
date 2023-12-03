@@ -380,6 +380,7 @@ label final:
     scene blood with dissolve
     mary "ไม่นะ!! ยูเมะ!!"
     "เสียงกรีดร้องของแมรี่ดังขึ้น"
+    scene black with dissolve
     "รู้สึกตัวอีกที เราก็จบชีวิตคนคนหนึ่งไปแล้ว"
 
     scene fb3_4 with dissolve
@@ -445,4 +446,29 @@ label final:
     yume "...แมรี่..."
     "เราพึมพำชื่อของเด็กสาวผมทองตรงหน้า"
     "นี่คือการเผชิญหน้าระหว่างพวกเราสองคนที่ไม่อาจหลีกเลี่ยง"
+
+    show puzzle10 with dissolve
+    jump answer_roome10
+
     return
+
+label answer_roome10:
+
+    menu:
+        "answer":
+            "try"
+            $ input_value = renpy.input("Answer?")
+            if prepare(input_value) == "togetherforever":
+                hide puzzle10
+                jump common_end
+            
+            if prepare(input_value) == "iwilllive":
+                hide puzzle10
+                jump true_end
+            
+            "ยังไม่ใช่คำตอบที่ถูกนะ"
+            jump answer_roome10
+        "ใบ้หน่อยสิ":
+            "ขอยันข้อสุดท้ายเลยหรอ ไปทำเองไป้"
+            hide puzzle10
+            jump answer_roome10
