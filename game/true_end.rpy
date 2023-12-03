@@ -309,6 +309,6 @@ label true_end:
     "....."
     "...ใช่ไหมล่ะ...แมรี่ของฉัน..."
     scene white with Dissolve(3)
-    scene meandmary with dissolve(3)
+    scene meandmary with Dissolve(3)
     scene black with Dissolve(5)
     return

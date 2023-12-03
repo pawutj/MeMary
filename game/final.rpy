@@ -1,5 +1,5 @@
 label final:
-    scene fb3_1 with Dissolve(3)
+    scene cg2_1 with Dissolve(3)
     stop music
     play music reflect
 
@@ -20,6 +20,7 @@ label final:
     "ภาพที่เราเห็นตอนนี้คือ...ใบหน้าที่แท้จริงของเรา..."
 
     yume "...ผู้หญิง?"
+    scene cg2_2 with dissolve
 
     "เรามั่นใจว่าคนในความทรงจำที่เราคุยด้วยคือผู้หญิง"
     "...แต่ตัวเรา...?"
