@@ -1,5 +1,5 @@
 label final:
-    scene cg2 with dissolve
+    scene fb3_1 with Dissolve(3)
     stop music
     play music reflect
 

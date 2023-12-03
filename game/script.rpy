@@ -66,6 +66,11 @@ image puzzle8 :
     zoom 0.6
     yalign 0.4
 
+image puzzle9 :
+    "puzzle/puzzle9.png"
+    zoom 0.6
+    yalign 0.4
+
 image puzzle2_1:
     "puzzle/puzzle2_1_new.png"
     zoom 0.3

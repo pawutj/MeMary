@@ -23,7 +23,7 @@ label room09:
         "นี่เราคิดไปเองหรือเปล่านะว่ามันกำลังแอบส่งยิ้มให้เรา"
 
 
-        # show puzzle8
+        show puzzle9
         jump answer_roome09
     
     else :
@@ -40,17 +40,17 @@ label answer_roome09:
                 $ room09_is_pass = True
                 "ภาพอดีตถูกฉายขึ้นอีกครั้ง"
                 "ต่อจากนี้จะมีความจริงแบบไหนรอเราอยู่กันนะ?"
-                # hide puzzle8
+                hide puzzle9
                 jump after_room_9
             else :
                 "it's not answer"
                 jump answer_roome09
         "return":
-            # hide puzzle8
+            hide puzzle9
             jump main_map
 
 label after_room_9:
-    scene flashback with dissolve
+    scene fb2_3 with dissolve
     stop music
     play music up_to_you
 
