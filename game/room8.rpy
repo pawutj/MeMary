@@ -1,6 +1,6 @@
 
 label room08:
-
+    $ _skipping = True
     scene library_s_1080 with dissolve
     stop music
     play music midnight

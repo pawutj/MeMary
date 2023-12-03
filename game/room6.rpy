@@ -1,6 +1,6 @@
 
 label room06:
-
+    $ _skipping = True
     scene garden_n_1080 with dissolve
     stop music
     play music midnight

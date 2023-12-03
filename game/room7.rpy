@@ -1,6 +1,6 @@
 
-label room07:
-
+label room07:   
+    $ _skipping = True
     scene library_s_1080 with dissolve
     stop music
     play music 廃墟洋館

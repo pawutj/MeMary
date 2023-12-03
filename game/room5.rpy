@@ -1,5 +1,6 @@
 
 label room05:
+    $ _skipping = True
     scene library_s_1080 with dissolve
     stop music
     play music 不可解な事件簿的な

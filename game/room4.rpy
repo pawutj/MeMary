@@ -1,6 +1,6 @@
 
 label room04:
-
+    $ _skipping = True
     scene gyokuza_s_1080 with dissolve
     stop music
     play music 不穏
