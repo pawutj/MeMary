@@ -237,26 +237,32 @@ style choice_button_text is default:
 ## menus.
 
 screen quick_menu():
+    add "blackk.png"
 
     ## Ensure this appears on top of other screens.
     zorder 100
 
     if quick_menu:
-
         hbox:
             style_prefix "quick"
 
-            xalign 0.5
+            xalign 0.95
             yalign 1.0
-
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
+            textbutton _("Save") :  
+                action ShowMenu("save")
+                #activate_sound "audio/system/System_3.mp3" 
+            textbutton _("Load") :
+                action ShowMenu("load")
+                #activate_sound "audio/system/System_4.mp3" 
+            textbutton _("History") action ShowMenu('history2')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Config") :
+                action ShowMenu("config")
+                #activate_sound "audio/system/System_6.mp3" 
+            # textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
