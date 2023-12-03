@@ -20,6 +20,66 @@ image classroom_morning = im.Scale("bg/classroom_morning.png",1920,1080)
 image sky_morning = im.Scale("bg/sky_morning.png",1920,1080)
 image nightsky = im.Scale("bg/nightsky.png",1920,1080)
 
+image puzzle0 :
+    "puzzle/puzzle0.png"
+    zoom 0.6
+    yalign 0.4
+
+
+
+image puzzle3 :
+    "puzzle/puzzle3.png"
+    zoom 0.6
+    yalign 0.4
+
+image puzzle4 :
+    "puzzle/puzzle4.png"
+    zoom 0.6
+    yalign 0.4
+
+image puzzle5 :
+    "puzzle/puzzle5.png"
+    zoom 0.6
+    yalign 0.4
+
+
+image puzzle6 :
+    "puzzle/puzzle6.png"
+    zoom 0.6
+    yalign 0.4
+
+
+image puzzle7 :
+    "puzzle/puzzle7.png"
+    zoom 0.6
+    yalign 0.4
+
+
+image puzzle8 :
+    "puzzle/puzzle8.png"
+    zoom 0.6
+    yalign 0.4
+
+image puzzle2_1:
+    "puzzle/puzzle2_1_new.png"
+    zoom 0.3
+    yalign 0.4
+
+image puzzle2_2:
+    "puzzle/puzzle2_2_new.png"
+    zoom 0.3
+    yalign 0.4
+
+image puzzle2_3:
+    "puzzle/puzzle2_3_new.png"
+    zoom 0.3
+    yalign 0.4
+
+
+
+
+
+
 image hospital =im.Scale("bg/hospital.png",1920,1080)
 image road = im.Scale("bg/road.jpg",1920,1080)
 
@@ -37,6 +97,7 @@ image fb3_4 = im.Scale("cg/fb3_4.png",1920,1080)
 image fb3_5 = im.Scale("cg/fb3_5.png",1920,1080)
 image fb3_6 = im.Scale("cg/fb3_6.png",1920,1080)
 image cg3 = im.Scale("cg/cg3.png",1920,1080)
+
 
 style default:
     line_spacing 10
@@ -61,8 +122,6 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
-
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
@@ -85,9 +144,11 @@ label start:
     return
 
 label main_map:
-    
+    $ renpy.config.skipping = False
+    $ _skipping = False
     window hide
     show screen map_screen with dissolve
     
     $ renpy.pause(hard=True)
+    
     

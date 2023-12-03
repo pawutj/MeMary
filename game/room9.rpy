@@ -1,6 +1,6 @@
 
 label room09:
-
+    $ _skipping = True
     scene library_s_1080 with dissolve
     stop music
     play music 不穏

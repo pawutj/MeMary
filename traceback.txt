@@ -1,30 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/room0.rpy", line 3, in script
-    scene memary with dissolve(2.0)
-TypeError: 'Dissolve' object is not callable
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    jump expression _game_menu_screen
+ScriptError: could not find label 'config_screen'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/room0.rpy", line 3, in script
-    scene memary with dissolve(2.0)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1678, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\exports.py", line 1757, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 2975, in do_with
-    return self.interact(trans_pause=True,
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3973, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3919, in instantiate_transition
-    trans = self.ongoing_transition[layer](
-TypeError: 'Dissolve' object is not callable
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    jump expression _game_menu_screen
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1992, in execute
+    rv = renpy.game.script.lookup(target)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\script.py", line 1013, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'config_screen'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 MeMary 1.0
-Tue Oct 31 02:53:28 2023
+Sun Dec  3 22:58:14 2023

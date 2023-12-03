@@ -1,5 +1,6 @@
 
 label room05:
+    $ _skipping = True
     scene library_s_1080 with dissolve
     stop music
     play music 不可解な事件簿的な
@@ -40,7 +41,7 @@ label answer_roome05:
             jump main_map
 
 label after_room_5:
-    scene flashback with dissolve
+    scene fb2_2 with dissolve
     stop music
     play music up_to_you
 

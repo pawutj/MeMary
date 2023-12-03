@@ -237,26 +237,32 @@ style choice_button_text is default:
 ## menus.
 
 screen quick_menu():
+    add "blackk.png"
 
     ## Ensure this appears on top of other screens.
     zorder 100
 
     if quick_menu:
-
         hbox:
             style_prefix "quick"
 
-            xalign 0.5
+            xalign 0.95
             yalign 1.0
-
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
+            textbutton _("Save") :  
+                action ShowMenu("save")
+                #activate_sound "audio/system/System_3.mp3" 
+            textbutton _("Load") :
+                action ShowMenu("load")
+                #activate_sound "audio/system/System_4.mp3" 
+            textbutton _("History") action ShowMenu('history2')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Config") :
+                action ShowMenu("config")
+                #activate_sound "audio/system/System_6.mp3" 
+            # textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -347,6 +353,9 @@ style navigation_button_text:
 ## Used to display the main menu when Ren'Py starts.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
+image blackimage = Solid("#ff0000")
+screen black_screen():
+    add (blackimage)
 
 screen main_menu():
 
@@ -356,23 +365,50 @@ screen main_menu():
     add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    # frame:
+    #     style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    # use navigation
 
-    if gui.show_name:
+    # button :
+    #     add "main_menu/Home_logo.png"
 
-        vbox:
-            style "main_menu_vbox"
+    imagebutton auto "main_menu/main_start_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+        action ShowMenu("black_screen",Dissolve(0.1)), Start()
 
-            text "[config.name!t]":
-                style "main_menu_title"
+    
+    imagebutton auto "main_menu/main_continue_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+        action ShowMenu("black_screen",Dissolve(0.1)),QuickLoad()
 
-            text "[config.version]":
-                style "main_menu_version"
+    
+    imagebutton auto "main_menu/main_load_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        #activate_sound "audio/system/System_4.mp3" 
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+        action ShowMenu("load_main")
+
+    
+    imagebutton auto "main_menu/main_config_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        #activate_sound "audio/system/System_6.mp3" 
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+        action ShowMenu("config_main")
 
 
 style main_menu_frame is empty
@@ -580,17 +616,234 @@ style about_label_text:
 ## www.renpy.org/doc/html/screen_special.html#load
 
 screen save():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
+    tag save
+    fixed:
+    
+        add gui.save_menu_background
 
-    tag menu
+        # for i in range(8):
+        #     if persistent.page == i:
+        #         button :
+        #             background f"save_load/page0{str(i+1)}_hover.png"
+        #             focus_mask True
+        #             action SetVariable("persistent.page" , i)
+        #             activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        #     else:
+        #         button :
+        #             background f"save_load/page0{str(i+1)}_idle.png"
+        #             focus_mask True
+        #             action SetVariable("persistent.page" , i)
+        #             activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+    
 
-    use file_slots(_("Save"))
+    
+        imagebutton auto "save_load/back_%s.png":
+            focus_mask True
+            action Return()
+            hover_sound "audio/UIsound/cursor.ogg"
+            activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        
+        imagebutton auto "save_load/title_%s.png":
+            focus_mask True
+            action MainMenu()
+            hover_sound "audio/UIsound/cursor.ogg"
+            activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        # button :
+        #     background "save_load/save.png"
+        #     focus_mask True
+
+
+        imagebutton auto "save_load/load_button_%s.png":
+            focus_mask True
+            action [ShowMenu("load"),Hide("save")]
+            #activate_sound "audio/system/System_4.mp3" 
+
+
+        grid gui.file_slot_cols gui.file_slot_rows:
+            style_prefix "slot"
+
+            xalign 0.81
+            yalign 0.4
+
+            spacing gui.slot_spacing
+
+
+
+            for i in range(gui.file_slot_cols * gui.file_slot_rows):
+
+                        $ slot = i + 1 + persistent.page*10
+
+                        button:
+                            action FileSave(slot,confirm = False)
+
+
+                            add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
+
+                            text FileTime(slot, format=_("{#file_time} %B %d %Y, %H:%M"), empty=_("empty slot")):
+                                style "slot_time_text"
+
+                            # text FileSaveName(slot):
+                            #     style "slot_name_text"
+                            xsize 650
+                            ysize 150
+
+                            background "save_load/data" + str(i+1) +"_idle1.png"
+                            hover_background "save_load/data" + str(i+1) +"_hover1.png"
+                            activate_sound "audio/UIsound/save_01.ogg" 
 
 
 screen load():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
+    tag load
+    add gui.load_menu_background
 
-    tag menu
+    
+    # for i in range(8):
+    #     if persistent.page == i:
+    #         button :
+    #                 background f"save_load/page0{str(i+1)}_hover.png"
+    #                 focus_mask True
+    #                 action SetVariable("persistent.page" , i)
+    #                 activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+    #     else:
+    #         button :
+    #             background f"save_load/page0{str(i+1)}_idle.png"
+    #             focus_mask True
+    #             action SetVariable("persistent.page" , i)
+    #             activate_sound "audio/UIsound/choice_confirm_01.ogg" 
 
-    use file_slots(_("Load"))
+    imagebutton auto "save_load/back_%s.png":
+        focus_mask True
+        action Return()
+    
+    imagebutton auto "save_load/title_%s.png":
+        focus_mask True
+        action MainMenu()
+
+    
+    # button :
+    #     background "save_load/load.png"
+    #     focus_mask True
+
+    imagebutton auto "save_load/save_button_%s.png":
+        focus_mask True
+        action [ShowMenu("save"),Hide("load")]
+        #activate_sound "audio/system/System_3.mp3" 
+
+    
+
+
+    grid gui.file_slot_cols gui.file_slot_rows:
+        style_prefix "slot"
+
+        xalign 0.81
+        yalign 0.4
+
+        spacing gui.slot_spacing
+
+        for i in range(gui.file_slot_cols * gui.file_slot_rows):
+
+                    $ slot = i + 1 + persistent.page*10
+
+                    button:
+                        activate_sound "audio/UIsound/load_01.ogg" 
+                        action FileLoad(slot)
+
+
+                        add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
+
+                        text FileTime(slot, format=_("{#file_time} %B %d %Y, %H:%M"), empty=_("empty slot")):
+                            style "slot_time_text"
+
+                        # text FileSaveName(slot):
+                        #     style "slot_name_text"
+
+                        key "save_delete" action FileDelete(slot)
+
+                        xsize 650
+                        ysize 150
+
+
+                        background "save_load/data" + str(i+1) +"_idle1.png"
+                        hover_background "save_load/data" + str(i+1) +"_hover1.png"
+                      
+
+
+screen load_main():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
+    tag load_main
+
+    imagebutton:
+        focus_mask True
+        idle gui.load_menu_background
+        hover gui.load_menu_background
+        action SetVariable("persistent.nothing" , 0)
+   
+    imagebutton auto "save_load/back_%s.png":
+        focus_mask True
+        action Hide('load_main')
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+
+    # for i in range(8):
+    #     if persistent.page == i:
+    #         button :
+    #             background f"save_load/page0{str(i+1)}_hover.png"
+    #             focus_mask True
+    #             action SetVariable("persistent.page" , i)
+    #             activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+    #     else:
+    #         button :
+    #             background f"save_load/page0{str(i+1)}_idle.png"
+    #             focus_mask True
+    #             action SetVariable("persistent.page" , i)
+    #             activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+    
+
+    grid gui.file_slot_cols gui.file_slot_rows:
+        style_prefix "slot"
+
+        xalign 0.81
+        yalign 0.4
+
+        spacing gui.slot_spacing
+
+        for i in range(gui.file_slot_cols * gui.file_slot_rows):
+
+                    $ slot = i + 1 + persistent.page*10
+
+                    button:
+                        action FileLoad(slot)
+
+
+                        add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
+
+                        text FileTime(slot, format=_("{#file_time} %B %d %Y, %H:%M"), empty=_("empty slot")):
+                            style "slot_time_text"
+
+                        # text FileSaveName(slot):
+                        #     style "slot_name_text"
+
+                        key "save_delete" action FileDelete(slot)
+
+                        xsize 650
+                        ysize 150
+
+
+                        background "save_load/data" + str(i+1) +"_idle1.png"
+                        hover_background "save_load/data" +  str(i+1) +"_hover1.png"
+                        activate_sound "audio/UIsound/load_01.ogg" 
+    
+
+
+    
+    # button :
+    #     background "save_load/load.png"
+    #     focus_mask True
 
 
 screen file_slots(title):
@@ -968,6 +1221,212 @@ style history_label_text:
 ## A screen that gives information about key and mouse bindings. It uses other
 ## screens (keyboard_help, mouse_help, and gamepad_help) to display the actual
 ## help.
+
+screen config_main():
+    key "mouseup_3" action Hide('config_main')
+    key "K_ESCAPE" action Hide('config_main')
+    imagebutton:
+        focus_mask True
+        idle "config/setting_th_bg.png" 
+        hover "config/setting_th_bg.png" 
+        action SetVariable("persistent.nothing" , 0)
+    # add "config/setting_th_bg.png"      
+    imagebutton auto "config/config_back_%s.png":
+        focus_mask True
+        action Hide('config_main')
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        
+
+    
+    if  preferences.skip_unseen ==True:
+        imagebutton:
+            focus_mask True
+            idle "config/all_hover.png"
+        imagebutton auto "config/read_only_%s.png":
+            focus_mask True
+            action Preference("skip", "toggle")
+    else:
+        imagebutton:
+            focus_mask True
+            idle "config/read_only_hover.png"
+        imagebutton auto "config/all_%s.png":
+            focus_mask True
+            action Preference("skip", "toggle")
+    
+    if  preferences.fullscreen==False:
+        imagebutton:
+            focus_mask True
+            idle "config/window_hover.png"
+        imagebutton auto "config/fullscreen_%s.png":
+            focus_mask True
+            action Preference("display", "fullscreen")
+            
+    else:
+        imagebutton:
+            focus_mask True
+            idle "config/fullscreen_hover.png"
+        imagebutton auto "config/window_%s.png":
+            focus_mask True
+            action Preference("display", "window")
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("music volume")
+                xsize 450
+            xpos 390
+            ypos 590
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("sound volume")
+                xsize 450
+            xpos 390
+            ypos 720
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("voice volume")
+                xsize 450
+            xpos 390
+            ypos 860
+                
+    
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("Text Speed")
+                xsize 450
+            xpos 1075
+            ypos 590
+                
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                bar_invert True
+                value Preference("auto-forward time")
+                xsize 450
+            xpos 1075
+            ypos 720
+
+screen config():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
+    
+    imagebutton auto "config/config_back_%s.png":
+        focus_mask True
+        action Return()
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+    add "config/setting_th_bg.png"      
+    imagebutton auto "config/config_back_%s.png":
+        focus_mask True
+        action Return()
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        
+    imagebutton auto "config/config_title_%s.png":
+        focus_mask True
+        action MainMenu()
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+
+    
+    if  preferences.skip_unseen ==True:
+        imagebutton:
+            focus_mask True
+            idle "config/all_hover.png"
+        imagebutton auto "config/read_only_%s.png":
+            focus_mask True
+            action Preference("skip", "toggle")
+    else:
+        imagebutton:
+            focus_mask True
+            idle "config/read_only_hover.png"
+        imagebutton auto "config/all_%s.png":
+            focus_mask True
+            action Preference("skip", "toggle")
+    
+    if  preferences.fullscreen==False:
+        imagebutton:
+            focus_mask True
+            idle "config/window_hover.png"
+        imagebutton auto "config/fullscreen_%s.png":
+            focus_mask True
+            action Preference("display", "fullscreen")
+            
+    else:
+        imagebutton:
+            focus_mask True
+            idle "config/fullscreen_hover.png"
+        imagebutton auto "config/window_%s.png":
+            focus_mask True
+            action Preference("display", "window")
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("music volume")
+                xsize 450
+            xpos 390
+            ypos 590
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("sound volume")
+                xsize 450
+            xpos 390
+            ypos 720
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("voice volume")
+                xsize 450
+            xpos 390
+            ypos 860
+                
+    
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("Text Speed")
+                xsize 450
+            xpos 1075
+            ypos 590
+                
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                bar_invert True
+                value Preference("auto-forward time")
+                xsize 450
+            xpos 1075
+            ypos 720
 
 screen help():
 

@@ -1,5 +1,5 @@
 label room03:
-
+    $ _skipping = True
     scene room_s_1080 with dissolve
     stop music
     play music 哀愁漂うホラー的な
@@ -29,26 +29,27 @@ label answer_roome03:
         "answer":
             "try"
             $ input_value = renpy.input("Answer?")
-            if input_value == "h5+":
+            if prepare(input_value) == "ra6":
                 "pass"
+                show puzzle2_2 with dissolve
                 hide puzzle2_1
-                
-                show puzzle2_2
-                "puzzle"
+                ".."
+                show puzzle2_3 with dissolve
+                hide puzzle2_2
                 $ input_value = renpy.input("Answer?")
-                if input_value == "Nf7#":
+                if prepare(input_value) == "ra7#":
                     $ room03_is_pass = True
                     "สีขาวกลืนกินทุกอย่าง ภาพในอดีตปรากฏขึ้นต่อหน้า"
-                    hide puzzle2_2
+                    hide puzzle2_3
                     jump after_room_3
                 else:   
-                    "it's not answer"
-                    hide puzzle2_2
+                    "it's not answer1"
+                    hide puzzle2_3
                     show puzzle2_1 with dissolve
                     jump answer_roome03
 
             else :
-                "it's not answer"
+                "it's not answer0"
                 jump answer_roome03
         "return":
             hide puzzle2_1
@@ -59,7 +60,7 @@ label answer_roome03:
 label after_room_3:
     stop music
     play music 星が輝く冬
-    scene flashback
+    scene fb1 with dissolve
     
     yume "ฉันมองเห็นแล้ว"
     mary0 "เห็นอะไรเหรอจ้ะ?"

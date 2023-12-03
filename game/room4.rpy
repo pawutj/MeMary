@@ -1,6 +1,6 @@
 
 label room04:
-
+    $ _skipping = True
     scene gyokuza_s_1080 with dissolve
     stop music
     play music 不穏
@@ -52,7 +52,7 @@ label answer_roome04:
             jump main_map
     
 label after_room_4:
-    scene flashback with dissolve
+    scene fb2_1 with dissolve
     stop music
     play music 星が輝く冬
 

@@ -5,9 +5,9 @@ label memary_scene:
     jump after_room_0_1
     return 
 
-label intro:
+label intro:    
+ 
     #Just Test
-    jump final
 
     scene rouka_s_1080
     play music 廃墟洋館
@@ -64,7 +64,7 @@ label intro:
     yume "ผู้นำทาง?"
     "แมวลายส้มตากลมโตจ้องมองเราด้วยความประหลาดใจ"
     "ทั้งๆที่แมวไม่ควรจะแสดงสีหน้าได้ชัดเจน แต่แมวตัวนี้กลับแสดงอารมณ์ได้ราวกับเป็นคน"
-
+    
 
     cat ah "ดูเหมือนว่าเธอจะไม่รู้อะไรเลยสินะ" with dissolve 
     yume "ฉัน?"
@@ -163,7 +163,7 @@ label answer_roome0:
 
 label after_room_0:
     play music up_to_you
-    scene flashback
+    scene fb1 with Dissolve(2)
     mary0 "ถ้าเราจะตั้งชื่อเกมทายปริศนา เราจะตั้งชื่อว่าอะไรดี?"
     yume "ฉันสงสัยมากกว่าว่าทำไมเธอถึงชอบเกมปริศนาขนาดนั้น"
     mary0 "ไม่มีเหตุผลเป็นพิเศษหรอกจ้ะ"

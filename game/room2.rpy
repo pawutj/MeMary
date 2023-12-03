@@ -1,6 +1,7 @@
 
 label room02:
-    scene hall_s_1080 with dissolve
+    $ _skipping = True
+    scene library_n_1080 with dissolve
     stop music
     play music 不穏
 
@@ -48,7 +49,7 @@ label answer_roome02:
 label after_room_2:
     stop music
     play music up_to_you
-    scene flashback
+    scene fb1 with dissolve
     yume "อักษรหน้าตาประหลาดพวกนี้คืออะไร?"
     mary0 "มันคืออักษรรูนจ้ะ"
     yume "อ่านไม่เห็นออกเลย มันมีไว้ทำอะไรรึ?"

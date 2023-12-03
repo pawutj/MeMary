@@ -1,6 +1,6 @@
 
 label room01:
-
+    $ _skipping = True
     scene library_s_1080 with dissolve
     stop music
     play music 哀愁漂うホラー的な
@@ -49,7 +49,7 @@ label answer_roome01:
 label after_room_1:
     stop music
     play music 星が輝く冬
-    scene flashback
+    scene fb1 with dissolve
     mary0 "เธอรู้จักสแตxด์หรือเปล่าล่ะ?"
     yume "หา?"
     mary0 "ตอบคำถามฉันมาสิ"
