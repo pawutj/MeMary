@@ -88,9 +88,11 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/main_menu.png"
+define gui.main_menu_background_2 = "gui/Home/Home02.png"
+define gui.main_menu_background = "gui/Home/Home02.png"
 define gui.game_menu_background = "gui/game_menu.png"
-
+define gui.load_menu_background = "gui/load/load_bg.png"
+define gui.save_menu_background = "gui/load/save_bg.png"
 
 ## Dialogue ####################################################################
 ##
@@ -238,8 +240,8 @@ define config.thumbnail_width = 384
 define config.thumbnail_height = 216
 
 ## The number of columns and rows in the grid of save slots.
-define gui.file_slot_cols = 3
-define gui.file_slot_rows = 2
+define gui.file_slot_cols = 2
+define gui.file_slot_rows = 5
 
 
 ## Positioning and Spacing #####################################################

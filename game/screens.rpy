@@ -361,18 +361,45 @@ screen main_menu():
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    # use navigation
 
-    if gui.show_name:
+    # button :
+    #     add "main_menu/Home_logo.png"
 
-        vbox:
-            style "main_menu_vbox"
+    imagebutton auto "main_menu/main_start_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+        action ShowMenu("black_screen",Dissolve(0.1)), Start()
 
-            text "[config.name!t]":
-                style "main_menu_title"
+    
+    imagebutton auto "main_menu/main_continue_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+        action ShowMenu("black_screen",Dissolve(0.1)),QuickLoad()
 
-            text "[config.version]":
-                style "main_menu_version"
+    
+    imagebutton auto "main_menu/main_load_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        #activate_sound "audio/system/System_4.mp3" 
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+        action ShowMenu("load_main")
+
+    
+    imagebutton auto "main_menu/main_config_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        activate_sound "audio/system/System_6.mp3" 
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+        action ShowMenu("config_main")
 
 
 style main_menu_frame is empty
@@ -591,6 +618,80 @@ screen load():
     tag menu
 
     use file_slots(_("Load"))
+
+
+screen load_main():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
+    tag load_main
+
+    imagebutton:
+        focus_mask True
+        idle gui.load_menu_background
+        hover gui.load_menu_background
+        action SetVariable("persistent.nothing" , 0)
+   
+    imagebutton auto "save_load/back_%s.png":
+        focus_mask True
+        action Hide('load_main')
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+
+    for i in range(8):
+        if persistent.page == i:
+            button :
+                background f"save_load/page0{str(i+1)}_hover.png"
+                focus_mask True
+                action SetVariable("persistent.page" , i)
+                activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        else:
+            button :
+                background f"save_load/page0{str(i+1)}_idle.png"
+                focus_mask True
+                action SetVariable("persistent.page" , i)
+                activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+    
+
+    grid gui.file_slot_cols gui.file_slot_rows:
+        style_prefix "slot"
+
+        xalign 0.81
+        yalign 0.4
+
+        spacing gui.slot_spacing
+
+        for i in range(gui.file_slot_cols * gui.file_slot_rows):
+
+                    $ slot = i + 1 + persistent.page*10
+
+                    button:
+                        action FileLoad(slot)
+
+
+                        add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
+
+                        text FileTime(slot, format=_("{#file_time} %B %d %Y, %H:%M"), empty=_("empty slot")):
+                            style "slot_time_text"
+
+                        # text FileSaveName(slot):
+                        #     style "slot_name_text"
+
+                        key "save_delete" action FileDelete(slot)
+
+                        xsize 650
+                        ysize 150
+
+
+                        background "save_load/data" + str(i+1) +"_idle1.png"
+                        hover_background "save_load/data" +  str(i+1) +"_hover1.png"
+                        activate_sound "audio/UIsound/load_01.ogg" 
+    
+
+
+    
+    button :
+        background "save_load/load.png"
+        focus_mask True
 
 
 screen file_slots(title):
