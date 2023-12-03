@@ -25,6 +25,10 @@ image puzzle0 :
     zoom 0.6
     yalign 0.4
 
+image puzzle1 :
+    "puzzle/puzzle1.png"
+    zoom 0.6
+    yalign 0.4
 
 
 image puzzle3 :
