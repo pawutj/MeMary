@@ -404,7 +404,7 @@ screen main_menu():
     
     imagebutton auto "main_menu/main_config_%s.png":
         hover_sound "audio/UIsound/cursor.ogg" 
-        activate_sound "audio/system/System_6.mp3" 
+        #activate_sound "audio/system/System_6.mp3" 
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
@@ -1221,6 +1221,212 @@ style history_label_text:
 ## A screen that gives information about key and mouse bindings. It uses other
 ## screens (keyboard_help, mouse_help, and gamepad_help) to display the actual
 ## help.
+
+screen config_main():
+    key "mouseup_3" action Hide('config_main')
+    key "K_ESCAPE" action Hide('config_main')
+    imagebutton:
+        focus_mask True
+        idle "config/setting_th_bg.png" 
+        hover "config/setting_th_bg.png" 
+        action SetVariable("persistent.nothing" , 0)
+    # add "config/setting_th_bg.png"      
+    imagebutton auto "config/config_back_%s.png":
+        focus_mask True
+        action Hide('config_main')
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        
+
+    
+    if  preferences.skip_unseen ==True:
+        imagebutton:
+            focus_mask True
+            idle "config/all_hover.png"
+        imagebutton auto "config/read_only_%s.png":
+            focus_mask True
+            action Preference("skip", "toggle")
+    else:
+        imagebutton:
+            focus_mask True
+            idle "config/read_only_hover.png"
+        imagebutton auto "config/all_%s.png":
+            focus_mask True
+            action Preference("skip", "toggle")
+    
+    if  preferences.fullscreen==False:
+        imagebutton:
+            focus_mask True
+            idle "config/window_hover.png"
+        imagebutton auto "config/fullscreen_%s.png":
+            focus_mask True
+            action Preference("display", "fullscreen")
+            
+    else:
+        imagebutton:
+            focus_mask True
+            idle "config/fullscreen_hover.png"
+        imagebutton auto "config/window_%s.png":
+            focus_mask True
+            action Preference("display", "window")
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("music volume")
+                xsize 450
+            xpos 390
+            ypos 590
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("sound volume")
+                xsize 450
+            xpos 390
+            ypos 720
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("voice volume")
+                xsize 450
+            xpos 390
+            ypos 860
+                
+    
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("Text Speed")
+                xsize 450
+            xpos 1075
+            ypos 590
+                
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                bar_invert True
+                value Preference("auto-forward time")
+                xsize 450
+            xpos 1075
+            ypos 720
+
+screen config():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
+    
+    imagebutton auto "config/config_back_%s.png":
+        focus_mask True
+        action Return()
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+    add "config/setting_th_bg.png"      
+    imagebutton auto "config/config_back_%s.png":
+        focus_mask True
+        action Return()
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        
+    imagebutton auto "config/config_title_%s.png":
+        focus_mask True
+        action MainMenu()
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+
+    
+    if  preferences.skip_unseen ==True:
+        imagebutton:
+            focus_mask True
+            idle "config/all_hover.png"
+        imagebutton auto "config/read_only_%s.png":
+            focus_mask True
+            action Preference("skip", "toggle")
+    else:
+        imagebutton:
+            focus_mask True
+            idle "config/read_only_hover.png"
+        imagebutton auto "config/all_%s.png":
+            focus_mask True
+            action Preference("skip", "toggle")
+    
+    if  preferences.fullscreen==False:
+        imagebutton:
+            focus_mask True
+            idle "config/window_hover.png"
+        imagebutton auto "config/fullscreen_%s.png":
+            focus_mask True
+            action Preference("display", "fullscreen")
+            
+    else:
+        imagebutton:
+            focus_mask True
+            idle "config/fullscreen_hover.png"
+        imagebutton auto "config/window_%s.png":
+            focus_mask True
+            action Preference("display", "window")
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("music volume")
+                xsize 450
+            xpos 390
+            ypos 590
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("sound volume")
+                xsize 450
+            xpos 390
+            ypos 720
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("voice volume")
+                xsize 450
+            xpos 390
+            ypos 860
+                
+    
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("Text Speed")
+                xsize 450
+            xpos 1075
+            ypos 590
+                
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                bar_invert True
+                value Preference("auto-forward time")
+                xsize 450
+            xpos 1075
+            ypos 720
 
 screen help():
 
