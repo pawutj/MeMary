@@ -59,7 +59,7 @@ label answer_roome03:
 label after_room_3:
     stop music
     play music 星が輝く冬
-    scene flashback
+    scene fb1 with dissolve
     
     yume "ฉันมองเห็นแล้ว"
     mary0 "เห็นอะไรเหรอจ้ะ?"

@@ -163,7 +163,7 @@ label answer_roome0:
 
 label after_room_0:
     play music up_to_you
-    scene flashback
+    scene fb1 with Dissolve(2)
     mary0 "ถ้าเราจะตั้งชื่อเกมทายปริศนา เราจะตั้งชื่อว่าอะไรดี?"
     yume "ฉันสงสัยมากกว่าว่าทำไมเธอถึงชอบเกมปริศนาขนาดนั้น"
     mary0 "ไม่มีเหตุผลเป็นพิเศษหรอกจ้ะ"
