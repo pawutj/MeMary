@@ -1,7 +1,7 @@
 
 label room07:   
     $ _skipping = True
-    scene library_s_1080 with dissolve
+    scene garden_n_1080 with dissolve
     stop music
     play music 廃墟洋館
 
@@ -14,6 +14,7 @@ label room07:
         cat normal "ทั้งๆที่ปากบอกเฉยๆ แต่น้ำเสียงมีแต่อารมณ์หม่นๆนะ"
         yume  "....."
         cat normal "ไม่ต้องคิดมากหรอกจ้ะ มองโจทย์สักพักก็เข้าใจเอง"
+        scene star3 with dissolve
         yume  "ฉันเห็นแต่แสงสว่างยุ่บยั่บเต็มไปหมด"
         cat normal "คำตอบมันก็อยู่ในแสงสว่างท่ามกลางท้องฟ้าสีดำพวกนั้นล่ะ"
         yume  "คำตอบครั้งนี้น่าจะหายากพอสมควร"
@@ -143,7 +144,7 @@ label after_room_7:
     "สัมผัสอันอ่อนโยนวางประทับเหนือศีรษะของเรา"
     "อ้อมกอดของเธอทำให้เรารู้สึกไม่ได้อยู่ตัวคนเดียวอีกต่อไป"
 
-    scene library_s_1080 with dissolve
+    scene garden_n_1080 with dissolve
     stop music
     play music 泣カナイデ
 
