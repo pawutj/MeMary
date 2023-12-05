@@ -20,11 +20,17 @@ image classroom_morning = im.Scale("bg/classroom_morning.png",1920,1080)
 image sky_morning = im.Scale("bg/sky_morning.png",1920,1080)
 image nightsky = im.Scale("bg/nightsky.png",1920,1080)
 
+image star3 = im.Scale("puzzle/star3.png",1920,1080)
+
 image puzzle0 :
     "puzzle/puzzle0.png"
     zoom 0.6
     yalign 0.4
 
+image puzzle1 :
+    "puzzle/puzzle1.png"
+    zoom 0.6
+    yalign 0.4
 
 
 image puzzle3 :
@@ -60,6 +66,11 @@ image puzzle8 :
     zoom 0.6
     yalign 0.4
 
+image puzzle9 :
+    "puzzle/puzzle9.png"
+    zoom 0.6
+    yalign 0.4
+
 image puzzle2_1:
     "puzzle/puzzle2_1_new.png"
     zoom 0.3
@@ -75,9 +86,10 @@ image puzzle2_3:
     zoom 0.3
     yalign 0.4
 
-
-
-
+image puzzle10 :
+    "puzzle/puzzle10.png"
+    zoom 0.6
+    yalign 0.4
 
 
 image hospital =im.Scale("bg/hospital.png",1920,1080)

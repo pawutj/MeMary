@@ -1607,28 +1607,22 @@ screen confirm(message, yes_action, no_action):
     style_prefix "confirm"
 
     add "gui/overlay/confirm.png"
+    add "images/confirm/confirm_bg.png"
 
-    frame:
+    imagebutton auto "images/confirm/yes_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        focus_mask True
+        action yes_action
 
-        vbox:
-            xalign .5
-            yalign .5
-            spacing 45
 
-            label _(message):
-                style "confirm_prompt"
-                xalign 0.5
+    imagebutton auto "images/confirm/no_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        focus_mask True
+        action no_action
 
-            hbox:
-                xalign 0.5
-                spacing 150
-
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
-
-    ## Right-click and escape answer "no".
     key "game_menu" action no_action
-
 
 style confirm_frame is gui_frame
 style confirm_prompt is gui_prompt
