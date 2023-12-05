@@ -29,16 +29,28 @@ label answer_roome01:
         "ตอบคำถาม":
             "try"
             $ input_value = renpy.input("Answer?")
-            if prepare(input_value) == "golderequiem":
+            if prepare(input_value) == "golderequiem" or prepare(input_value) == "goldexperiencerequiem" :
                 scene white with dissolve
                 $ room01_is_pass = True
                 "สีขาวกลืนทิวทัศน์ตรงหน้าเราอีกครั้ง"
                 "ภาพความทรงจำต่อไปจะเป็นอะไรกันนะ?"
                 hide puzzle1
                 jump after_room_1
-            else :
-                "it's not answer"
+            if prepare(input_value) == "golde" or prepare(input_value) == "goldexperience":
+                "ไปปักลูกศรมาก่อน"
                 jump answer_roome01
+            if prepare(input_value) == "requiem":
+                "ชื่อเต็มสิ"
+                jump answer_roome01
+            if prepare(input_value) == "jojo":
+                "ภาคไหนหล่ะ"
+                jump answer_roome01
+            if prepare(input_value) == "5" or prepare(input_value) == "goldenwind":
+                "ชื่อแสตนด์สิ"
+                jump answer_roome01
+
+            "it's not answer"
+            jump answer_roome01
         "ใบ้หน่อยสิ":
             "โซเดียม เอเลี่ยน โพเดี้ยม อันต่อไปคืออะไรนะ คล้ายๆกับ Stanxd JXJX ซักอย่างเลย ลอง Scan QRCode ดูหน่อยดีไหมนะ"
             jump answer_roome01
