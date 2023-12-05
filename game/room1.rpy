@@ -45,6 +45,9 @@ label answer_roome01:
             if prepare(input_value) == "jojo":
                 "ภาคไหนหล่ะ"
                 jump answer_roome01
+            if prepare(input_value) == "stand":
+                "ฉันชอบ Star Platinum นะ"
+                jump answer_roome01
             if prepare(input_value) == "5" or prepare(input_value) == "goldenwind":
                 "ชื่อแสตนด์สิ"
                 jump answer_roome01
