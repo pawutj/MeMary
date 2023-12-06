@@ -42,15 +42,31 @@ label answer_roome03:
                     "สีขาวกลืนกินทุกอย่าง ภาพในอดีตปรากฏขึ้นต่อหน้า"
                     hide puzzle2_3
                     jump after_room_3
-                else:   
-                    "it's not answer1"
+                if prepare(input_value) == "ra7":
+                    "ลืมบอกว่า Check Mate รึเปล่า?"
                     hide puzzle2_3
                     show puzzle2_1 with dissolve
                     jump answer_roome03
 
-            else :
-                "it's not answer0"
+                "it's not answer1"
+                hide puzzle2_3
+                show puzzle2_1 with dissolve
                 jump answer_roome03
+            if prepare(input_value) == "ra7":
+                "ลืมบอกว่ารุกรึเปล่า xRa7"
+                jump answer_roome03
+            if prepare(input_value) == "xra7":
+                "แบบนี้เกมส์น่าจะเสมอนะ"
+                jump answer_roome03
+            if prepare(input_value) == "b7":
+                "ลืมบอกว่ารุกรึเปล่า xB7"
+                jump answer_roome03
+            if prepare(input_value) == "xb7":
+                "แบบนี้เกมส์น่าจะเสมอนะ"
+                jump answer_roome03
+            
+            "it's not answer0"
+            jump answer_roome03
         "return":
             hide puzzle2_1
             jump main_map
