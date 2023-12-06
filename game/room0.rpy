@@ -147,8 +147,7 @@ label room0:
 
 label answer_roome0:
     menu:
-        "answer":
-            "try"
+        "ตอบคำถาม":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "memary":
                 scene white with dissolve
@@ -168,8 +167,26 @@ label answer_roome0:
                 "ไปลองค้นหาดูสิ"
                 jump answer_roome0
             
-            "it's not answer"
+            "ผิดจ้า"
             jump answer_roome0
+        "ไม่รู้":
+            if point_0 == 0 :
+                "ก็ลองคิดดูสิจ้ะ"
+                $ point_0 = point_0 +1
+                jump answer_roome0
+            if point_0 == 1 :
+                "ทำไมถึงคิดว่าตอบแบบนี้จะแก้ปัญหาได้ล่ะ"
+                $ point_0 = point_0 +1
+                jump answer_roome0
+            if point_0 == 2 :
+                "น่าจะต้องไปถามพ่อเธอดูล่ะจ้ะ"
+                $ point_0 = point_0 +1
+                jump answer_roome0  
+            if point_0 == 3 :
+                "ยินดีด้วย คุณได้รับฉากจบลับ"
+                $ point_0 = 0
+                jump answer_roome0
+
     
 
 label after_room_0:
