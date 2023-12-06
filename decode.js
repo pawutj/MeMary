@@ -10,7 +10,14 @@ const b=  "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
     return s
 }
 
-const d = "if we're gonna live, we'll live together, but if we're gonna die, i'd rather die with you."
+// const d = `If you're gonna live, 
+// we'll live together, 
+// but if you're gonna die, 
+// I'd rather die alongside with you.
+// Look at the letter.`
+const d = `
+Live a beautiful life
+`
 const d2 = `
 A constellation is an area on the celestial sphere in which a group of visible stars forms a perceived pattern or outline
 , typically representing an animal, mythological subject, or inanimate object.[1]
@@ -23,8 +30,15 @@ Some became popular, only to drop into obscurity. Some were limited to a single 
 Naming constellations also helped astronomers and navigators identify stars more easily.[2]`
 
 
-
 let temp = ""
+for(var i=0;i<d.length;i++){
+    temp+=encode(d[i])
+}
+console.log("______________________________________________")
+console.log(temp)
+
+
+temp = ""
 for(var i=0;i<d2.length;i++){
     temp+=encode(d2[i])
 }
