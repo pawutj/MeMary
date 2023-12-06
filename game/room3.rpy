@@ -26,48 +26,59 @@ label room03:
 
 label answer_roome03:
     menu:
-        "answer":
-            "try"
+        "ตอบคำถาม":
+            "ถ้าอยากเดิน Rook ไป A2 ให้ตอบว่า Ra2 นะ \nถ้า King ให้บอก K \nถ้า Pawn คือไม่ต้องระบุอะไรนะ ระบุช่องที่จะเดินได้เลย"
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "ra6":
-                "pass"
+                "เชิงหนาใช้ได้นะเนี่ย"
                 show puzzle2_2 with dissolve
                 hide puzzle2_1
                 ".."
                 show puzzle2_3 with dissolve
                 hide puzzle2_2
+                "เดินยังไงต่อดีล่ะ"
                 $ input_value = renpy.input("Answer?")
-                if prepare(input_value) == "ra7#":
+                if prepare(input_value) == "rxa7#":
+                    "Check Mate"
                     $ room03_is_pass = True
                     "สีขาวกลืนกินทุกอย่าง ภาพในอดีตปรากฏขึ้นต่อหน้า"
                     hide puzzle2_3
                     jump after_room_3
                 if prepare(input_value) == "ra7":
-                    "ลืมบอกว่า Check Mate รึเปล่า?"
+                    "ลืมบอกว่า Check Mate รึเปล่า? Rxa7#"
                     hide puzzle2_3
                     show puzzle2_1 with dissolve
                     jump answer_roome03
-
-                "it's not answer1"
+                "เกือบจะชนะแล้วแท้ๆ ลองใหม่ดีไหม?"
                 hide puzzle2_3
                 show puzzle2_1 with dissolve
                 jump answer_roome03
-            if prepare(input_value) == "ra7":
-                "ลืมบอกว่ารุกรึเปล่า xRa7"
+            if prepare(input_value) == "ra2":
+                "เค้าแค่ยกตัวอย่าง"
                 jump answer_roome03
-            if prepare(input_value) == "xra7":
-                "แบบนี้เกมส์น่าจะเสมอนะ"
+
+            if prepare(input_value) == "ra7":
+                "ลืมบอกว่ารุกรึเปล่า Rxa7+"
+                jump answer_roome03
+            if prepare(input_value) == "rxa7":
+                "ลืมบอกว่ารุกรึเปล่า Rxa7+"
+                jump answer_roome03
+            if prepare(input_value) == "rxa7+":
+                "หมากนี้เล่นต่อน่าจะแพ้นะ"
                 jump answer_roome03
             if prepare(input_value) == "b7":
                 "ลืมบอกว่ารุกรึเปล่า xB7"
                 jump answer_roome03
-            if prepare(input_value) == "xb7":
+            if prepare(input_value) == "bx7":
                 "แบบนี้เกมส์น่าจะเสมอนะ"
                 jump answer_roome03
             
-            "it's not answer0"
+            "ไม่ได้คล้ายเลยเธอ"
             jump answer_roome03
-        "return":
+        "ใบ้หน่อยสิ":
+            "คุ้นๆ Paul Morphy's problem บ้างไหม"
+            jump answer_roome03
+        "กลับห้องรวม":
             hide puzzle2_1
             jump main_map
     
