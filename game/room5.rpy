@@ -13,7 +13,6 @@ label room05:
         cat ah "ลองตอบคำถามดู"
         "เจ้าแมวส้มว่าแล้วก็ส่งยิ้มบางๆให้เรา"
         hide cat
-        show puzzle5
         jump answer_roome05
         
     else :
@@ -21,22 +20,29 @@ label room05:
         jump main_map 
 
 label answer_roome05:
+    show puzzle5 with dissolve
     menu:
-        "answer":
+        "ตอบคำถาม":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "springisintheair":
                 $ room05_is_pass = True
-                "pass"
+                "ถูกต้อง"
                 "ปริศนาได้รับการตอบ ความจริงในอดีตจึงฉายขึ้นอีกครั้ง"
                 hide puzzle5
                 jump after_room_5
+            if prepare(input_value) == "gstring":
+                "ชื่อเหมือนอะไรหื่นๆเลยนะจ้ะ" 
+                jump answer_roome05
+            if prepare(input_value) == "spectrogram":
+                "ดูมาถูกทางอยู่นะจ้ะ" 
+                jump answer_roome05
             else :
-                "it's not answer"
+                "ผิดจ้า"
                 jump answer_roome05
         "ใบ้หน่อยสิ":
             "เอ.. สเปคตรัม? แกรม? มันคืออะไรกันนะ"
             jump answer_roome05
-        "return":
+        "กลับห้องรวม":
             hide puzzle5
             jump main_map
 
