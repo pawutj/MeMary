@@ -78,7 +78,7 @@ label answer_roome03:
         "ใบ้หน่อยสิ":
             "คุ้นๆ Paul Morphy's problem บ้างไหม"
             jump answer_roome03
-        "กลับห้องรวม":
+        "กลับห้องโถง":
             hide puzzle2_1
             jump main_map
     

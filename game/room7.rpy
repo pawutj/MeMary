@@ -53,9 +53,9 @@ label answer_roome07:
                 "it's not answer"
                 jump answer_roome07
         "ใบ้หน่อยสิ":
-            ""
+            "เหมือนฉันจะเห็นดาวสีน้ำเงินเข้มอยู่ในภาพนะ ดูผิดธรรมชาติมากเลย"
             jump answer_roome07
-        "return":
+        "กลับห้องโถง":
             hide puzzle7
             jump main_map
 
