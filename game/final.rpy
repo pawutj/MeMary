@@ -459,11 +459,11 @@ label answer_roome10:
         "answer":
             "try"
             $ input_value = renpy.input("Answer?")
-            if prepare(input_value) == "togetherforever":
+            if prepare(input_value) == "diealongside":
                 hide puzzle10
                 jump common_end
             
-            if prepare(input_value) == "iwilllive":
+            if prepare(input_value) == "liveabeautifullife":
                 hide puzzle10
                 jump true_end
             
