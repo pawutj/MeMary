@@ -9,17 +9,30 @@ screen map_screen:
 
     
 
-    imagebutton auto "map/room01_%s.png":
-        focus_mask True
-        action [Hide("map_screen"),Jump("room01")]
+    if not room01_is_pass:
+        imagebutton auto "map/room01_%s.png":
+            focus_mask True
+            action [Hide("map_screen"),Jump("room01")]
+    else:
+        imagebutton:
+            idle "room01_clear"
 
-    imagebutton auto "map/room02_%s.png":
-        focus_mask True
-        action [Hide("map_screen"),Jump("room02")]
+    if not room02_is_pass:
+        imagebutton auto "map/room02_%s.png":
+            focus_mask True
+            action [Hide("map_screen"),Jump("room02")]
+    else:
+        imagebutton:
+            idle "room02_clear"
 
-    imagebutton auto "map/room03_%s.png":
-        focus_mask True
-        action [Hide("map_screen"),Jump("room03")]
+    if not room03_is_pass:
+        imagebutton auto "map/room03_%s.png":
+            focus_mask True
+            action [Hide("map_screen"),Jump("room03")]
+    else:
+        imagebutton:
+            idle "room03_clear"
+
     
     if room01_is_pass  or room02_is_pass or room03_is_pass :
         imagebutton auto "map/room04_%s.png":
