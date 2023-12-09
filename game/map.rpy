@@ -33,58 +33,82 @@ screen map_screen:
         imagebutton:
             idle "room03_clear"
 
-    
-    if room01_is_pass  or room02_is_pass or room03_is_pass :
-        imagebutton auto "map/room04_%s.png":
-            focus_mask True
-            action [Hide("map_screen"),Jump("room04")]
-    else :
+    if not room04_is_pass:
+        if room01_is_pass  or room02_is_pass or room03_is_pass :
+            imagebutton auto "map/room04_%s.png":
+                focus_mask True
+                action [Hide("map_screen"),Jump("room04")]
+        else :
+            imagebutton:
+                idle "map/room04_disable.png"
+    else:
         imagebutton:
-            idle "map/room04_disable.png"
+            idle "room04_clear"
 
-    if room01_is_pass or room02_is_pass or room03_is_pass :        
-        imagebutton auto "map/room05_%s.png":
-            focus_mask True
-            action [Hide("map_screen"),Jump("room05")]
-    else :
+    if not room05_is_pass:
+        if room01_is_pass or room02_is_pass or room03_is_pass :        
+            imagebutton auto "map/room05_%s.png":
+                focus_mask True
+                action [Hide("map_screen"),Jump("room05")]
+        else :
+            imagebutton:
+                idle "map/room05_disable.png"
+    else:
         imagebutton:
-            idle "map/room05_disable.png"
+            idle "room05_clear"
 
 
                 
-    if room01_is_pass or room02_is_pass or  room03_is_pass :    
-        imagebutton auto "map/room06_%s.png":
-            focus_mask True
-            action [Hide("map_screen"),Jump("room06")]
-    else : 
-        imagebutton : 
-            idle "map/room06_disable.png"
+    if not room06_is_pass:
+        if room01_is_pass or room02_is_pass or  room03_is_pass :    
+            imagebutton auto "map/room06_%s.png":
+                focus_mask True
+                action [Hide("map_screen"),Jump("room06")]
+        else : 
+            imagebutton : 
+                idle "map/room06_disable.png"
+    else:
+        imagebutton:
+            idle "room06_clear"
 
-    if room04_is_pass and room05_is_pass and room06_is_pass:    
-        imagebutton auto "map/room07_%s.png":
-            focus_mask True
-            action [Hide("map_screen"),Jump("room07")]
+    
+    if not room07_is_pass:
+        if room04_is_pass and room05_is_pass and room06_is_pass:    
+            imagebutton auto "map/room07_%s.png":
+                focus_mask True
+                action [Hide("map_screen"),Jump("room07")]
+        else :
+            imagebutton : 
+                idle "map/room07_disable.png"
     else :
-        imagebutton : 
-            idle "map/room07_disable.png"
-
-    if room04_is_pass and room05_is_pass and room06_is_pass: 
-        imagebutton auto "map/room08_%s.png":
-            focus_mask True
-            action [Hide("map_screen"),Jump("room08")]
-    else:
-        imagebutton : 
-            idle "map/room08_disable.png"
+        imagebutton:
+            idle "room07_clear"
 
     
-    if room07_is_pass and room08_is_pass: 
-        imagebutton auto "map/room09_%s.png":
-            focus_mask True
-            action [Hide("map_screen"),Jump("room09")]
-    else:
-        imagebutton : 
-            idle "map/room09_disable.png"
+    if not room08_is_pass:
+        if room04_is_pass and room05_is_pass and room06_is_pass: 
+            imagebutton auto "map/room08_%s.png":
+                focus_mask True
+                action [Hide("map_screen"),Jump("room08")]
+        else:
+            imagebutton : 
+                idle "map/room08_disable.png"
+    else :
+        imagebutton:
+            idle "room08_clear"
+
     
+    if not room09_is_pass:
+        if room07_is_pass and room08_is_pass: 
+            imagebutton auto "map/room09_%s.png":
+                focus_mask True
+                action [Hide("map_screen"),Jump("room09")]
+        else:
+            imagebutton : 
+                idle "map/room09_disable.png"
+    else : 
+        imagebutton:
+            idle "room09_clear"
         
 
         
