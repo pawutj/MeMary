@@ -7,7 +7,11 @@ screen map_screen:
 
     add "map/map.png"  # Replace with the path to your map image.
 
-    
+    imagebutton: 
+        idle "room10_clear"
+
+    imagebutton:
+        idle "room11_disable"
 
     if not room01_is_pass:
         imagebutton auto "map/room01_%s.png":
