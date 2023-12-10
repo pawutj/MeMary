@@ -157,32 +157,32 @@ label answer_roome0:
                 stop music
                 jump after_room_0
             if prepare(input_value) == "password" or prepare(input_value) == "pass" :
-                "ก็ Classic เกิ้น"
+                cat "ก็ Classic เกิ้น"
                 jump answer_roome0
             if prepare(input_value) == "answer":
-                "มาถูกทางแล้ว"
+                cat "มาถูกทางแล้ว"
                 jump answer_roome0
             if prepare(input_value) == "yourgamepath" or prepare(input_value) == "/clue/room0" :
-                "ไปลองค้นหาดูสิ"
+                cat "ไปลองค้นหาดูสิ"
                 jump answer_roome0
             
-            "ผิดจ้า"
+            cat "ผิดจ้า"
             jump answer_roome0
         "ไม่รู้":
             if point_0 == 0 :
-                "ก็ลองคิดดูสิจ้ะ"
+                cat "ก็ลองคิดดูสิจ้ะ"
                 $ point_0 = point_0 +1
                 jump answer_roome0
             if point_0 == 1 :
-                "ทำไมถึงคิดว่าตอบแบบนี้จะแก้ปัญหาได้ล่ะ"
+                cat "ทำไมถึงคิดว่าตอบแบบนี้จะแก้ปัญหาได้ล่ะ"
                 $ point_0 = point_0 +1
                 jump answer_roome0
             if point_0 == 2 :
-                "น่าจะต้องไปถามพ่อเธอดูล่ะจ้ะ"
+                cat "น่าจะต้องไปถามพ่อเธอดูล่ะจ้ะ"
                 $ point_0 = point_0 +1
                 jump answer_roome0  
             if point_0 == 3 :
-                "ยินดีด้วย คุณได้รับฉากจบลับ"
+                cat "ยินดีด้วย คุณได้รับฉากจบลับ"
                 $ point_0 = 0
                 jump answer_roome0
 

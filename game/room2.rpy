@@ -37,18 +37,18 @@ label answer_roome02:
                 jump after_room_2
 
             if prepare(input_value) == "rune":
-                "ลองเทียบอักษรดูสิ"
+                cat "ลองเทียบอักษรดูสิ"
                 hide puzzle3
                 jump answer_roome02
             if prepare(input_value) == "obliion":
-                "คำมันแปลกๆอยู่นะ ลองๆเติมอะไรให้มันอ่านออกมั้ย"
+                cat "คำมันแปลกๆอยู่นะ ลองๆเติมอะไรให้มันอ่านออกมั้ย"
                 hide puzzle3
                 jump answer_roome02
             else :
-                "ผิดจ้า"
+                cat "ผิดจ้า"
                 jump answer_roome02
         "ใบ้หน่อยสิ":
-            "ดูถ้าจะคล้ายๆกับ อักษรรูน นะ ดูเหมือนจะเทียบอักษรเป็นภาษาอังกฤษได้อยู่นะ"
+            cat "ดูถ้าจะคล้ายๆกับ อักษรรูน นะ ดูเหมือนจะเทียบอักษรเป็นภาษาอังกฤษได้อยู่นะ"
             jump answer_roome02
         "กลับห้องรวม":
             hide puzzle3

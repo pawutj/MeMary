@@ -36,25 +36,25 @@ label answer_roome04:
         "ตอบคำถาม":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "easierthanyouthink":
-                "ง่ายกว่าที่เธอคิดใช่ไหม?"
+                cat  "ง่ายกว่าที่เธอคิดใช่ไหม?"
                 $ room04_is_pass = True
                 "หลังจากตอบคำถามได้ สีขาวก็ปกคลุมการมองเห็นของเรา"
                 hide puzzle4
                 jump after_room_4
             if prepare(input_value) == "0":
-                "ไม่ใช่ว่าเจออะไรก็ตอบ 0 ก่อนสิ"
+                cat "ไม่ใช่ว่าเจออะไรก็ตอบ 0 ก่อนสิ"
                 jump answer_roome04
             if prepare(input_value) == "1":
-                "ฉันว่าเธอน่าจะบวกเลขผิดนะ"
+                cat "ฉันว่าเธอน่าจะบวกเลขผิดนะ"
                 jump answer_roome04
             if prepare(input_value) == "2":
-                "เธอไปหาคำตอบมาจริงๆหรอเนี่ย แต่เสียใจด้วยจ้ะ"
+                cat "เธอไปหาคำตอบมาจริงๆหรอเนี่ย แต่เสียใจด้วยจ้ะ"
                 jump answer_roome04
             else :
-                "ผิดจ้า"
+                cat "ผิดจ้า"
                 jump answer_roome04
         "ใบ้หน่อยสิ":
-            "X^3 + Y^3 = (X+Y) * (X^2 - XY + X^2)  
+            cat "X^3 + Y^3 = (X+Y) * (X^2 - XY + X^2)  
             \nเห็นไหมล่ะ? Easier Than You Think"
             jump answer_roome04
         "return":

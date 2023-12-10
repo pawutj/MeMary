@@ -38,25 +38,25 @@ label answer_roome01:
                 hide puzzle1
                 jump after_room_1
             if prepare(input_value) == "golde" or prepare(input_value) == "goldexperience":
-                "ไปปักลูกศรมาก่อน"
+                cat "ไปปักลูกศรมาก่อน"
                 jump answer_roome01
             if prepare(input_value) == "requiem":
-                "ชื่อเต็มสิ"
+                cat "ชื่อเต็มสิ"
                 jump answer_roome01
             if prepare(input_value) == "jojo":
-                "ภาคไหนหล่ะ"
+                cat "ภาคไหนหล่ะ"
                 jump answer_roome01
             if prepare(input_value) == "stand":
-                "ฉันชอบ Star Platinum นะ"
+                cat "ฉันชอบ Star Platinum นะ"
                 jump answer_roome01
             if prepare(input_value) == "5" or prepare(input_value) == "goldenwind":
-                "ชื่อแสตนด์สิ"
+                cat "ชื่อแสตนด์สิ"
                 jump answer_roome01
 
-            "ผิดจ้า"
+            cat "ผิดจ้า"
             jump answer_roome01
         "ใบ้หน่อยสิ":
-            "โซเดียม เอเลี่ยน โพเดี้ยม อันต่อไปคืออะไรนะ คล้ายๆกับ Stanxd JXJX ซักอย่างเลย ลอง Scan QRCode ดูหน่อยดีไหมนะ"
+            cat "โซเดียม เอเลี่ยน โพเดี้ยม อันต่อไปคืออะไรนะ คล้ายๆกับ Stanxd JXJX ซักอย่างเลย ลอง Scan QRCode ดูหน่อยดีไหมนะ"
             jump answer_roome01
         "กลับห้องรวม":
             hide puzzle1
