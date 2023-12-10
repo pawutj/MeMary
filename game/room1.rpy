@@ -95,8 +95,8 @@ label after_room_1:
     "เราตอบเจ้าแมวส้มสั้นๆ"
     "ก่อนที่เราจะมุ่งหน้าไปยังประตูต่อไป"
 
-    hide cat 
-    jump main_map
+    hide cat
+    jump cutscene_main
 
 
     

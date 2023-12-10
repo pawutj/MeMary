@@ -91,4 +91,4 @@ label after_room_5:
     "...สู่ประตูต่อไป..."
 
     hide cat
-    jump main_map
+    jump cutscene_main

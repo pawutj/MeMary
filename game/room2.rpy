@@ -95,4 +95,4 @@ label after_room_2:
     "เจ้าแมวส้มเดินนำหน้าเราประมาณสองช่วงตัวคน เราจึงค่อยๆเดินตามมัน"
     "...สู่ประตูต่อไป..."
     hide cat
-    jump main_map
+    jump cutscene_main

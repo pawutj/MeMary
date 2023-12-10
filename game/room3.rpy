@@ -135,4 +135,4 @@ label after_room_3:
     "สู่ประตูบานต่อไป..."
 
     hide cat
-    jump main_map
+    jump cutscene_main

@@ -106,7 +106,7 @@ label after_room_6:
 
     hide cat
 
-    jump main_map
+    jump cutscene_main
 
 
 
