@@ -25,7 +25,7 @@ label answer_roome08:
 
     menu:
         "answer":
-            "try"
+            "ตอบคำถาม"
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "russell":
                 $ room08_is_pass = True

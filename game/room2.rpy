@@ -19,27 +19,36 @@ label room02:
         "ถ้าเป็นอย่างนั้น เราก็คงต้องตอบคำถามข้อนี้ให้ได้"
         hide cat
 
-        show puzzle3 with dissolve
+        
         jump answer_roome02
         
     else :
         "this room has nothing"
         jump main_map 
 label answer_roome02:
+    show puzzle3 with dissolve
     menu:
         "ตอบคำถาม":
-            "try"
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "oblivion":
                 $ room02_is_pass = True
                 "สีขาวกลืนกินทุกอย่างอีกครั้ง ภาพความทรงจำอันลางเรือนปรากฏขึ้น"
                 hide puzzle3
                 jump after_room_2
+
+            if prepare(input_value) == "rune":
+                cat "ลองเทียบอักษรดูสิ"
+                hide puzzle3
+                jump answer_roome02
+            if prepare(input_value) == "obliion":
+                cat "คำมันแปลกๆอยู่นะ ลองๆเติมอะไรให้มันอ่านออกมั้ย"
+                hide puzzle3
+                jump answer_roome02
             else :
-                "it's not answer"
+                cat "ผิดจ้า"
                 jump answer_roome02
         "ใบ้หน่อยสิ":
-            "ดูถ้าจะคล้ายๆกับ อักษรรูน นะ ดูเหมือนจะเทียบอักษรเป็นภาษาอังกฤษได้อยู่นะ"
+            cat "ดูถ้าจะคล้ายๆกับ อักษรรูน นะ ดูเหมือนจะเทียบอักษรเป็นภาษาอังกฤษได้อยู่นะ"
             jump answer_roome02
         "กลับห้องรวม":
             hide puzzle3
@@ -86,4 +95,4 @@ label after_room_2:
     "เจ้าแมวส้มเดินนำหน้าเราประมาณสองช่วงตัวคน เราจึงค่อยๆเดินตามมัน"
     "...สู่ประตูต่อไป..."
     hide cat
-    jump main_map
+    jump cutscene_main
