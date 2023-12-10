@@ -115,7 +115,7 @@ style default:
     line_spacing 10
 init python:
     def prepare(s):
-        return s.lower().replace(" ", "").replace("_","")
+        return s.lower().replace(" ", "").replace("_","").replace("-","")
 label start:
     $ point_0 = 0
     $ room01_is_pass = False

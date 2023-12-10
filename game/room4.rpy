@@ -41,6 +41,14 @@ label answer_roome04:
                 "หลังจากตอบคำถามได้ สีขาวก็ปกคลุมการมองเห็นของเรา"
                 hide puzzle4
                 jump after_room_4
+
+            if prepare(input_value) == "passwordiseasierthanyouthink":
+                cat "ทำไมถึงอ่านตามกระดานอย่างนั้นล่ะ"
+                jump answer_roome04
+            
+            if prepare(input_value) == "iseasierthanyouthink":
+                cat "แปลกๆอยู่นะ มันน่าจะเป็นคณิตศาสตร์รึเปล่า"
+                jump answer_roome04
             if prepare(input_value) == "0":
                 cat "ไม่ใช่ว่าเจออะไรก็ตอบ 0 ก่อนสิ"
                 jump answer_roome04
