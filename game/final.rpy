@@ -457,7 +457,6 @@ label answer_roome10:
 
     menu:
         "answer":
-            "try"
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "diealongside":
                 hide puzzle10

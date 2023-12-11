@@ -109,8 +109,7 @@ label after_room_8:
     yume "....."
     cat smile "คำตอบอยู่อีกไม่ไกลแล้ว"
     "เจ้าแมวส้มเดินนำหน้าเรา เราจึงเดินตามมัน"
-    "สู่ประตูบานต่อไป"
     hide cat
-    jump main_map
+    jump cutscene_main
 
 

@@ -2,13 +2,16 @@ label cutscene_main:
     if ((room01_is_pass == True)  + (room02_is_pass == True) + (room03_is_pass == True) ) == 1:
         jump cutscene_2
 
-    if ( (room01_is_pass == True)  + (room02_is_pass == True) + (room03_is_pass == True) + (room04_is_pass == True) + (room05_is_pass == True) + (room06_is_pass == True)) == 3 :
+    if ( (room01_is_pass == True)  + (room02_is_pass == True) + (room03_is_pass == True) + (room04_is_pass == True) + (room05_is_pass == True) + (room06_is_pass == True) + (room07_is_pass == True) + (room08_is_pass == True) ) == 3 :
         jump cutscene_0
-    if ( (room01_is_pass == True)  + (room02_is_pass == True) + (room03_is_pass == True) + (room04_is_pass == True) + (room05_is_pass == True) + (room06_is_pass == True)) == 6 :
+    if ( (room01_is_pass == True)  + (room02_is_pass == True) + (room03_is_pass == True) + (room04_is_pass == True) + (room05_is_pass == True) + (room06_is_pass == True)  + (room07_is_pass == True) + (room08_is_pass == True)) == 6 :
         jump cutscene_1
+
+    if ( (room07_is_pass == True) + (room08_is_pass == True) == 2  ):
+        jump cutscene_3
     jump main_map
 label cutscene_2:
-    scene rouka_s_1080 with dissolve
+    scene hall_n_1080 with dissolve
     "เสียงปลดล็อกงั้นหรอ หรือว่ามีห้องถูกปลดล็อกเพิ่มกันนะ"
     show cat normal with dissolve
     cat lick "อยากรู้ก็ลองไปดูสิ"
@@ -16,9 +19,29 @@ label cutscene_2:
     "มีประตูเปิดเพิ่มอีก 3 บาน"
     jump main_map
 
+label cutscene_3:
+    scene hall_n_1080 with dissolve
+    yume "ตอนนี้ผ่านมานานเท่าไหร่แล้วนะ"
+
+    show cat normal with dissolve
+    cat smile "ช้าหรือเร็ว อยู่กับว่าเธอไขปริศนาได้เร็วแค่ไหน"
+    cat ah "ถ้ารู้สึกว่านาน แสดงว่าเธอไขปริศนาได้ช้ารึเปล่า"
+    cat lick "แต่ถ้าเธอรู้สึกว่าเร็วเกินไป ฉันว่า เธอแอบเปิดโพยรึเปล่า?"
+    "..."
+
+    cat ah "เหลืออีกไม่กี่ห้องก็จบแล้วสินะ หลังจากที่เราแยกกัน เธออาจจะคิดถึงฉันก็ได้ \n"
+    cat lick "ฉันจะอนุญาติให้เธอลูบหัวเป็นกรณีพิเศษก็ได้"
+
+    yume "ไม่ล่ะ ขอบใจ"
+
+    #sfx click
+    cat normal "ดูเหมือนห้องจะปลดล็อกเพิ่มขึ้นอีกแล้วสินะ"
+    yume "รีบทำให้มันจบลงดีกว่า"
+    "ความจริงอยู่แค่เอื้อมแล้ว"
+    jump main_map
 
 label cutscene_0:
-    scene rouka_s_1080 with dissolve
+    scene hall_n_1080 with dissolve
     play music 星が輝く冬
     "เรากับเจ้าแมวส้มเดินกลับมายังห้องโถงที่ถูกรายล้อมด้วยประตูมากมาย"
     "ก่อนที่จะเดินเข้าห้องต่อไป จู่ๆเจ้าแมวส้มก็หันมาคุยกับเรา"
@@ -62,7 +85,7 @@ label cutscene_0:
 
 label cutscene_1:
     play music 星が輝く冬
-    scene rouka_s_1080 with dissolve
+    scene hall_n_1080 with dissolve
     yume "ก่อนเข้าห้องต่อไป ฉันมีอะไรจะถามแกสักหน่อย"
     "คำเรียกของเราทำให้เจ้าแมวส้มหันหน้ามามองเราด้วยความฉงน"
     "ดวงตาคู่โตของมันเบิกกว้างขึ้นเล็กน้อยทำให้น่าเอ็นดูขึ้น"
@@ -108,6 +131,9 @@ label cutscene_1:
     yume "หา?"
     cat normal "เดี๋ยวเธอก็เข้าใจเอง "
     "เจ้าแมวทิ้งท้ายไว้เท่านั้นก่อนที่มันจะนำทางเราไปยังห้องแห่งปริศนาต่อไป"
+    #sfx 
+    cat ah "ดูเหมือนจะมีห้องที่ถูกปลดล็อกเพิ่มขึ้นแล้วนะ"
+    cat normal "รีบไปสิ อยากรู้ความจริงไม่ใช่เหรอ"
     hide cat
     jump main_map
    
