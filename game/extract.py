@@ -7,27 +7,27 @@ l = ["room0" ,"room1"
      , "final", "common_end", "true_end"  
      ]
 
-with open( l[0]+'.rpy' , encoding="utf-8") as f:
-    content = f.read()
-    lines  = content.split("\n")
-    count = 0
-    for s in lines:
+for i in range(len(l)):
+    with open( l[i]+'.rpy' , encoding="utf-8") as f:
+        content = f.read()
+        lines  = content.split("\n")
+        count = 0
+        for s in lines:
 
-
-        if(len(s) <=1):
-            continue
-        if("hide" in s):
-            continue
-        if("play" in s):
-            continue
-        if("show" in s):
-            continue
-        if("stop" in s):
-            continue
-        if("scene" in s):
-            continue
-    
-        if("cat" in s):
-            x = "{0:0=3d}".format(count)
-            print(s + " cat_0_"+x+".mp3")
-            count = count+1
+            if(len(s) <=1):
+                continue
+            if("hide" in s):
+                continue
+            if("play" in s):
+                continue
+            if("show" in s):
+                continue
+            if("stop" in s):
+                continue
+            if("scene" in s):
+                continue
+        
+            if("cat" in s):
+                x = "{0:0=3d}".format(count)
+                print(s + " cat_" + str(i)  + "_" +x+".mp3")
+                count = count+1
