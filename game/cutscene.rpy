@@ -9,7 +9,11 @@ label cutscene_main:
     jump main_map
 label cutscene_2:
     scene rouka_s_1080 with dissolve
-    "เปิดห้องเพิ่ม SFX คลิ๊ก!// เดวพี่เคนมาแก้เอง"
+    "เสียงปลดล็อกงั้นหรอ หรือว่ามีห้องถูกปลดล็อกเพิ่มกันนะ"
+    show cat normal with dissolve
+    cat lick "อยากรู้ก็ลองไปดูสิ"
+    hide cat
+    "มีประตูเปิดเพิ่มอีก 3 บาน"
     jump main_map
 
 
