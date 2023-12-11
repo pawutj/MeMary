@@ -6,9 +6,7 @@ label room01:
     play music 哀愁漂うホラー的な
 
     if room01_is_pass == False: 
-        "problem room1"
         show cat normal with dissolve
-
         cat normal "พร้อมสำหรับโจทย์ข้อต่อไปหรือยังล่ะ?" with dissolve
         "เรามองรูปจำนวนมากบนกระดานที่ดูไม่เกี่ยวกันเลย"
         "นี่คือโจทย์สินะ" 
