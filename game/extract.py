@@ -4,7 +4,7 @@
 l = ["room0" ,"room1" 
      , "room2" , "room3" , "room4" , "room5" 
      , "room6" , "room7" , "room8" , "room9"
-     , "final", "common_end", "true_end"  
+     , "final", "common_end", "true_end"    
      ]
 
 for i in range(len(l)):
@@ -27,7 +27,7 @@ for i in range(len(l)):
             if("scene" in s):
                 continue
         
-            if("cat" in s):
+            if("mary" in s):
                 x = "{0:0=3d}".format(count)
-                print(s + " cat_" + str(i)  + "_" +x+".mp3")
+                print(s + " mary_" + str(i) + "_" + str(x) +".mp3")
                 count = count+1
