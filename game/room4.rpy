@@ -62,7 +62,7 @@ label answer_roome04:
                 cat "ผิดจ้า"
                 jump answer_roome04
         "ใบ้หน่อยสิ":
-            cat "X^3 + Y^3 = (X+Y) * (X^2 - XY + X^2)  
+            cat "X^3 + Y^3 = (X+Y) * (X^2 - XY + Y^2)  
             \nเห็นไหมล่ะ? Easier Than You Think"
             jump answer_roome04
         "return":
