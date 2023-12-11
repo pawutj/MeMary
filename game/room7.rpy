@@ -40,7 +40,6 @@ label room07:
 label answer_roome07:
     menu:
         "answer":
-            "try"
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "orion":
                 $ room07_is_pass = True
