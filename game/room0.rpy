@@ -9,7 +9,6 @@ label memary_scene:
 label intro:    
  
     #Just Test
-    
 
     scene rouka_s_1080
     play music 廃墟洋館
@@ -111,7 +110,9 @@ label room0:
     cat lick "ถ้าเธออยากรู้คำตอบ เธอก็ต้องเปิดประตู"
     yume "...."
 
-    cat normal "เธอไม่มีทางเลือกหรอก เจ้าแมวส้มยืนยันเสียงแข็ง ดูเหมือนว่าเราจะไม่มีเส้นทางอื่นให้ไปนอกจากนี้ สุดท้าย เราก็เปิดประตูและเดินเข้าไปในห้อง"
+    cat normal "เธอไม่มีทางเลือกหรอก"
+    "เจ้าแมวส้มยืนยันเสียงแข็ง" 
+    "ดูเหมือนว่าเราจะไม่มีเส้นทางอื่นให้ไปนอกจากนี้ สุดท้าย เราก็เปิดประตูและเดินเข้าไปในห้อง"
     
     scene library_s_1080 with dissolve
     
@@ -147,8 +148,7 @@ label room0:
 
 label answer_roome0:
     menu:
-        "answer":
-            "try"
+        "ตอบคำถาม":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "memary":
                 scene white with dissolve
@@ -159,17 +159,35 @@ label answer_roome0:
                 stop music
                 jump after_room_0
             if prepare(input_value) == "password" or prepare(input_value) == "pass" :
-                "ก็ Classic เกิ้น"
+                cat "ก็ Classic เกิ้น"
                 jump answer_roome0
             if prepare(input_value) == "answer":
-                "มาถูกทางแล้ว"
+                cat "มาถูกทางแล้ว"
                 jump answer_roome0
             if prepare(input_value) == "yourgamepath" or prepare(input_value) == "/clue/room0" :
-                "ไปลองค้นหาดูสิ"
+                cat "ไปลองค้นหาดูสิ"
                 jump answer_roome0
             
-            "it's not answer"
+            cat "ผิดจ้า"
             jump answer_roome0
+        "ไม่รู้":
+            if point_0 == 0 :
+                cat "ก็ลองคิดดูสิจ้ะ"
+                $ point_0 = point_0 +1
+                jump answer_roome0
+            if point_0 == 1 :
+                cat "ทำไมถึงคิดว่าตอบแบบนี้จะแก้ปัญหาได้ล่ะ"
+                $ point_0 = point_0 +1
+                jump answer_roome0
+            if point_0 == 2 :
+                cat "น่าจะต้องไปถามพ่อเธอดูล่ะจ้ะ"
+                $ point_0 = point_0 +1
+                jump answer_roome0  
+            if point_0 == 3 :
+                cat "ยินดีด้วย คุณได้รับฉากจบลับ"
+                $ point_0 = 0
+                jump answer_roome0
+
     
 
 label after_room_0:
@@ -222,15 +240,37 @@ label after_room_0_1:
     cat smile "ใช่แล้ว"
     "เจ้าแมวส้มตอบรับเราพลางพยักหน้า เราที่ไม่มีทางเลือกอื่นจึงทำได้แต่เดิมตามเกมของมัน"
     "เมื่อเราจะเดินเข้าสู่ประตูบานต่อไป เรากลับพบกับวัตถุบางอย่างบนพื้นก่อน"
+    show letter with Dissolve(1)
     cat  lick "เก็บมันไปสิ"
     yume  "จดหมาย?"
+
     cat ah "มันคือรางวัลของผู้ชนะห้องแรก พกไปเถอะ มันไม่มีอันตรายอะไรหรอก"
     "เจ้าแมวส้มยืนยัน เราจึงถือจดหมายไว้"
     "ไม่นานหลังจากนั้น เราก็พบตัวเองอยู่ตรงหน้าประตูบานต่อไป"
-    cat  bored "....."
+    hide letter
+    cat  smile  "....."
     "ถึงแม้จะยังไม่เข้าใจอะไร แต่เมื่อเราได้เห็นภาพอันลางเรือนหลังตอบคำถามแล้ว ความรู้สึกถวิลหาก็ปรากฏขึ้นในใจของเรา"
     "คนที่คุยกับเราในภาพความทรงจำนั้นคือใคร?"
     "...ความรู้สึกอันรุนแรงเพรียกร้องให้เราเดินต่อไปข้างหน้า..."
     "รู้ตัวอีกที เราก็เปิดประตูบานต่อไปแล้ว"
 
+    scene hall_n_1080 with dissolve
+    "ห้องที่อยู่ต่อหน้าสายตาของฉันเป็นห้องที่กว้างขวาง มีประตูจำนวนมากขนาบอยู่ด้านข้าง"
+    show cat normal with dissolve
+    cat normal "ยินดีต้อนรับสู่ห้องโถงของคฤหาสน์แห่งนี้ นี่จะเป็นห้องที่เชื่อมต่อกับห้องอื่นๆมากมายในคฤหาสน์"
+    cat lick "เธอสามารถเปิดประตูบานไหนก็ได้ เพื่อเข้าสู่ห้องต่อไป"
+    hide cat with dissolve
+    "ฉันเดินไปหาประตูที่ใกล้ที่สุดด้านขวามือ"
+    #sfx คลิ๊ก
+    yume "ไม่เห็นเปิดออกเลย"
+    
+    show cat lick with dissolve
+    cat lick "ไม่ได้บอกนี่ว่ามันไม่ได้ล็อก"
+    "ซักวันนึง แมวตัวนี้ต้องถูกนำไปโกนขน ฉันสาบานตัวเองไว้เช่นนั้น"
+    cat smile "ไม่ต้องมองด้วยสายตาอาฆาตขนาดนั้นก็ได้ เธอลองมองที่แผนผังอันนี้สิ"
+    hide cat
+    #show minimap
+    "..."
+    cat ah "ขอแค่มีแผนผังนี่ เธอก็สามารถรู้ได้แล้วว่า ห้องไหนที่เข้าได้หรือไม่ได้ \nแล้วมันยังบอกด้วยว่าห้องไหนที่เราเคยผ่านมาแล้ว"
+    "ถ้างั้น ฉันจะเริ่มที่ห้องไหนดี?"
     jump main_map

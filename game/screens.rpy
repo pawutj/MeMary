@@ -1457,6 +1457,107 @@ screen help():
                 use gamepad_help
 
 
+screen history2():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
+    tag menu
+
+
+    predict False
+    add "backlog_BG.png"
+    imagebutton auto "backlog/title_%s.png":
+        focus_mask True 
+        action Return()
+    frame:
+
+        style_prefix "history"
+
+        ## Style this as needed in the style definitions
+        
+
+        ## If you have a custom image you want to use for the screen, you can set it as
+        ## a Frame below.
+
+        background Frame(["gui/zero.png"], tile=True)
+
+        ## Using margin properties will allow the screen to automatically adjust should
+        ## you choose to use a different resolution than 1080p, and will always be centered. 
+        ## You can also resize the screen using "xmaximum", "ymaximum", or "maximum(x,y)"
+        ## if desired, but you will need to use "align(x,y)" to manually position it.
+
+        ## xmargin essentially combines the left_margin and right_margin properties
+        ## and sets them to the same value
+        xmargin 150
+
+        ## ymargin essentially combines the top_margin and bottom_margin properties
+        ## and sets them to the same value
+        ymargin 50
+
+        ## xpadding essentially combines the left_padding and right_padding properties
+        ## and sets them to the same value
+        xpadding 50
+
+        ## ypadding essentially combines the top_padding and bottom_padding properties
+        ## and sets them to the same value
+        ypadding 150
+
+        vpgrid:
+
+            cols 1.0
+            yinitial 1.0
+
+            draggable True
+            mousewheel True
+            scrollbars "vertical"
+
+            vbox:
+
+                for h in _history_list:
+
+                    window:
+
+                        ## This lays things out properly if history_height is None.
+                        has fixed:
+                            yfit True
+
+                        if h.who:
+                           
+                            label h.who:
+                                style "history_name_text"
+                                
+                                substitute False
+
+                                ## Take the color of the who text from the Character, if
+                                ## set.
+                                if "color" in h.who_args:
+                                    text_color h.who_args["color"]
+
+                        $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
+                        text what:
+                            line_spacing 5
+                            substitute False
+                            size 30
+                            font "SukhumvitSet-Medium.ttf"
+                            
+
+                    ## This puts some space between entries so it's easier to read
+                    null height 20
+
+                if not _history_list:
+
+                    text "The text log is empty." line_spacing 10
+                    ## Adding line_spacing prevents the bottom of the text
+                    ## from getting cut off. Adjust when replacing the
+                    ## default fonts.
+
+    
+
+        # textbutton "Return":
+        #     style "history_return_button"
+        #     action Return()
+        #     alt _("Return") 
+
+
 screen keyboard_help():
 
     hbox:

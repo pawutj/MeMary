@@ -33,19 +33,37 @@ label room04:
 
 label answer_roome04:
     menu:
-        "answer":
-            "try"
+        "ตอบคำถาม":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "easierthanyouthink":
+                cat  "ง่ายกว่าที่เธอคิดใช่ไหม?"
                 $ room04_is_pass = True
                 "หลังจากตอบคำถามได้ สีขาวก็ปกคลุมการมองเห็นของเรา"
                 hide puzzle4
                 jump after_room_4
+
+            if prepare(input_value) == "passwordiseasierthanyouthink":
+                cat "ทำไมถึงอ่านตามกระดานอย่างนั้นล่ะ"
+                jump answer_roome04
+            
+            if prepare(input_value) == "iseasierthanyouthink":
+                cat "แปลกๆอยู่นะ มันน่าจะเป็นคณิตศาสตร์รึเปล่า"
+                jump answer_roome04
+            if prepare(input_value) == "0":
+                cat "ไม่ใช่ว่าเจออะไรก็ตอบ 0 ก่อนสิ"
+                jump answer_roome04
+            if prepare(input_value) == "1":
+                cat "ฉันว่าเธอน่าจะบวกเลขผิดนะ"
+                jump answer_roome04
+            if prepare(input_value) == "2":
+                cat "เธอไปหาคำตอบมาจริงๆหรอเนี่ย แต่เสียใจด้วยจ้ะ"
+                jump answer_roome04
             else :
-                "it's not answer"
+                cat "ผิดจ้า"
                 jump answer_roome04
         "ใบ้หน่อยสิ":
-            "โจทย์ก็บอกว่าอยู่ว่า Easier Than You Think"
+            cat "X^3 + Y^3 = (X+Y) * (X^2 - XY + Y^2)  
+            \nเห็นไหมล่ะ? Easier Than You Think"
             jump answer_roome04
         "return":
             hide puzzle4
@@ -99,4 +117,4 @@ label after_room_4:
     "...สู่ประตูต่อไป..."
 
     hide cat
-    jump main_map
+    jump cutscene_main

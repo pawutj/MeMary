@@ -25,7 +25,7 @@ label answer_roome08:
 
     menu:
         "answer":
-            "try"
+            "ตอบคำถาม"
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "russell":
                 $ room08_is_pass = True
@@ -109,8 +109,7 @@ label after_room_8:
     yume "....."
     cat smile "คำตอบอยู่อีกไม่ไกลแล้ว"
     "เจ้าแมวส้มเดินนำหน้าเรา เราจึงเดินตามมัน"
-    "สู่ประตูบานต่อไป"
     hide cat
-    jump main_map
+    jump cutscene_main
 
 

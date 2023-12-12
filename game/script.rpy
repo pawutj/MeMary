@@ -115,8 +115,9 @@ style default:
     line_spacing 10
 init python:
     def prepare(s):
-        return s.lower().replace(" ", "").replace("_","")
+        return s.lower().replace(" ", "").replace("_","").replace("-","")
 label start:
+    $ point_0 = 0
     $ room01_is_pass = False
     $ room02_is_pass = False
     $ room03_is_pass = False
@@ -138,7 +139,6 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    "Start"
 
     jump intro
 

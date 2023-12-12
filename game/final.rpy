@@ -67,7 +67,7 @@ label final:
 
     "หลังจากนั้นไม่นาน แม่ก็ถูกจับเข้าเรือนจำ"
     "ข่าวการเป็นฆาตกรของแม่แพร่สะพัดไปอย่างรวดเร็ว"
-    "ญาติสูงอายุที่แม่เราฆ่าเป็นคนที่เป็นนับหน้าถือตาในชุมชน จึงไม่ใช่เรื่องแปลกที่จะข้อมูลจะจะถูกรู้อย่างทั่วถึงในเวลาไม่กี่วัน"
+    "ญาติที่แม่เราฆ่าเป็นที่เป็นนับหน้าถือตาในชุมชน จึงไม่ใช่เรื่องแปลกที่จะข้อมูลจะจะถูกรู้อย่างทั่วถึงในเวลาไม่กี่วัน"
 
     "แน่นอนว่ามันมีผลมาถึงชีวิตในโรงเรียนของเราด้วย"
     "....."
@@ -457,13 +457,12 @@ label answer_roome10:
 
     menu:
         "answer":
-            "try"
             $ input_value = renpy.input("Answer?")
-            if prepare(input_value) == "togetherforever":
+            if prepare(input_value) == "diealongside":
                 hide puzzle10
                 jump common_end
             
-            if prepare(input_value) == "iwilllive":
+            if prepare(input_value) == "liveabeautifullife":
                 hide puzzle10
                 jump true_end
             

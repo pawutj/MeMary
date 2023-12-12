@@ -40,7 +40,6 @@ label room07:
 label answer_roome07:
     menu:
         "answer":
-            "try"
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "orion":
                 $ room07_is_pass = True
@@ -53,9 +52,9 @@ label answer_roome07:
                 "it's not answer"
                 jump answer_roome07
         "ใบ้หน่อยสิ":
-            ""
+            "เหมือนฉันจะเห็นดาวสีน้ำเงินเข้มอยู่ในภาพนะ ดูผิดธรรมชาติมากเลย"
             jump answer_roome07
-        "return":
+        "กลับห้องโถง":
             hide puzzle7
             jump main_map
 
@@ -163,10 +162,9 @@ label after_room_7:
     yume "....."
     "เจ้าแมวพูดถูก"
     "ถึงความรู้สึกอึดอัดจะก่อตัวขึ้น ถึงความหมองหม่นจะไม่หายไป แต่ถ้ายังไม่ไปถึงปลายทาง เราก็ไม่รู้ว่าบทสรุปที่แท้จริงคืออะไรกัน"
-    "...สู่ประตูต่อไป..."
 
     hide cat
-    jump main_map
+    jump cutscene_main
 
     
  

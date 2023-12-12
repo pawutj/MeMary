@@ -26,18 +26,27 @@ label room06:
 
 label answer_roome06:
     menu:
-        "answer":
-            "try"
+        "ตอบคำถาม":
             $ input_value = renpy.input("Answer?")
-            if prepare(input_value) == "spiderlily":
+            if prepare(input_value) == "lycorisradiata":
+                "ถูกต้อง"
                 $ room06_is_pass = True
                 "ภาพดอกไม้เลือนหายไป ภาพอดีตปรากฏขึ้นอีกครั้ง"
                 hide puzzle6
                 jump after_room_6
-            else :
-                "it's not answer"
+            if prepare(input_value) == "spiderlily":
+                "ตอบเป็นชื่อวิทยาศาสตร์"
                 jump answer_roome06
-        "return":
+            if prepare(input_value) == "sunflower":
+                "อะไรที่มันแทนที่ดอกทานตะวันกันนะ?"
+                jump answer_roome06
+            else :
+                "ผิดจ้า"
+                jump answer_roome06
+        "ใบ้หน่อยสิ":
+            "เหมือนฉันเคยได้ยินบทกวีนี้นะ แต่เอ้ะ เหมือนมีอะไรต่างจากต้นฉบับอยู่"
+            jump answer_roome06
+        "กลับห้องโถง":
             hide puzzle6
             jump main_map
 
@@ -97,7 +106,7 @@ label after_room_6:
 
     hide cat
 
-    jump main_map
+    jump cutscene_main
 
 
 
