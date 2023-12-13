@@ -372,10 +372,24 @@ screen main_menu():
     ## contents of the main menu are in the navigation screen.
     # use navigation
 
-    # button :
-    #     add "main_menu/Home_logo.png"
+    button :
+        add "main/main_logo.png"
 
-    imagebutton auto "main_menu/main_start_%s.png":
+    if persistent.language == "thai":
+        imagebutton auto "main/thai_%s.png":
+            action SetVariable("persistent.language" , "eng")
+            focus_mask True
+    else :
+        imagebutton auto "main/eng_%s.png":
+            action SetVariable("persistent.language" , "thai")
+            focus_mask True
+
+
+
+
+    
+
+    imagebutton auto "main/start_%s.png":
         hover_sound "audio/UIsound/cursor.ogg" 
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         #idle "map/m bath house_idle.png" 
@@ -384,16 +398,8 @@ screen main_menu():
         action ShowMenu("black_screen",Dissolve(0.1)), Start()
 
     
-    imagebutton auto "main_menu/main_continue_%s.png":
-        hover_sound "audio/UIsound/cursor.ogg" 
-        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
-        #idle "map/m bath house_idle.png" 
-        #hover "map/m bath house_hover.png" 
-        focus_mask True 
-        action ShowMenu("black_screen",Dissolve(0.1)),QuickLoad()
-
     
-    imagebutton auto "main_menu/main_load_%s.png":
+    imagebutton auto "main/load_%s.png":
         hover_sound "audio/UIsound/cursor.ogg" 
         #activate_sound "audio/system/System_4.mp3" 
         #idle "map/m bath house_idle.png" 
@@ -402,7 +408,7 @@ screen main_menu():
         action ShowMenu("load_main")
 
     
-    imagebutton auto "main_menu/main_config_%s.png":
+    imagebutton auto "main/setting_%s.png":
         hover_sound "audio/UIsound/cursor.ogg" 
         #activate_sound "audio/system/System_6.mp3" 
         #idle "map/m bath house_idle.png" 
