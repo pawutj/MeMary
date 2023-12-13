@@ -12,6 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
+
 define config.name = _("MeMary")
 
 
@@ -208,3 +209,4 @@ init python:
 
 # define build.itch_project = "renpytom/test-project"
 default persistent.page = 0
+default persistent.language = "thai"
