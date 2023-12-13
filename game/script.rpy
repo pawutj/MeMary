@@ -3,10 +3,15 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+define en = Character(None, condition='persistent.language == "eng"')
+define th = Character(None, condition='persistent.language == "thai"')
+
 define e = Character("Eileen")
 define yume = Character("เรา",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define cat0 = Character("???",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define cat = Character("แมว", image ="cat" ,color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+
+
 # label config_value:
 #     $ room01_is_pass = False
 
