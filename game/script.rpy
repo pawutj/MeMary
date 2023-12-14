@@ -144,7 +144,6 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    jump pv
     jump intro
 
     # These display lines of dialogue.
