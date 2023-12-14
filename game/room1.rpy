@@ -7,6 +7,7 @@ label room01:
 
     if room01_is_pass == False: 
         show cat normal with dissolve
+    ##voice "audio/voice/room1/cat_1_000.mp3"
         cat normal "พร้อมสำหรับโจทย์ข้อต่อไปหรือยังล่ะ?" with dissolve
         "เรามองรูปจำนวนมากบนกระดานที่ดูไม่เกี่ยวกันเลย"
         "นี่คือโจทย์สินะ" 
@@ -36,24 +37,31 @@ label answer_roome01:
                 hide puzzle1
                 jump after_room_1
             if prepare(input_value) == "golde" or prepare(input_value) == "goldexperience":
+    ##voice "audio/voice/room1/cat_1_001.mp3"
                 cat "ไปปักลูกศรมาก่อน"
                 jump answer_roome01
             if prepare(input_value) == "requiem":
+    ##voice "audio/voice/room1/cat_1_002.mp3"
                 cat "ชื่อเต็มสิ"
                 jump answer_roome01
             if prepare(input_value) == "jojo":
+    ##voice "audio/voice/room1/cat_1_003.mp3"
                 cat "ภาคไหนหล่ะ"
                 jump answer_roome01
             if prepare(input_value) == "stand":
+    ##voice "audio/voice/room1/cat_1_004.mp3"
                 cat "ฉันชอบ Star Platinum นะ"
                 jump answer_roome01
             if prepare(input_value) == "5" or prepare(input_value) == "goldenwind":
+    ##voice "audio/voice/room1/cat_1_005.mp3"
                 cat "ชื่อแสตนด์สิ"
                 jump answer_roome01
 
+    ##voice "audio/voice/room1/cat_1_006.mp3"
             cat "ผิดจ้า"
             jump answer_roome01
         "ใบ้หน่อยสิ":
+    ##voice "audio/voice/room1/cat_1_007.mp3"
             cat "โซเดียม เอเลี่ยน โพเดี้ยม อันต่อไปคืออะไรนะ คล้ายๆกับ Stanxd JXJX ซักอย่างเลย ลอง Scan QRCode ดูหน่อยดีไหมนะ"
             jump answer_roome01
         "กลับห้องรวม":
@@ -64,18 +72,25 @@ label after_room_1:
     stop music
     play music 星が輝く冬
     scene fb1 with dissolve
+    ##voice "audio/voice/room1/mary_1_000.mp3"
     mary0 "เธอรู้จักสแตxด์หรือเปล่าล่ะ?"
     yume "หา?"
+    ##voice "audio/voice/room1/mary_1_001.mp3"
     mary0 "ตอบคำถามฉันมาสิ"
     yume "ก็รู้จักแหละว่ามันมาจากอนิเมะ แต่เธอไม่ต้องถามแบบทำหน้าเข้มๆก็ได้นะ"
+    ##voice "audio/voice/room1/mary_1_002.mp3"
     mary0 "ว่ากันว่า ผู้ใช้สแตxด์จะดึงดูดผู้ใช้สแตxด์ด้วยกัน"
     yume "...เหรอ"
+    ##voice "audio/voice/room1/mary_1_003.mp3"
     mary0 "ใช่แล้ว ฉันน่ะ...เป็นผู้ใช้สแตนด์ยังไงล่ะ!!!"
     yume "............."
+    ##voice "audio/voice/room1/mary_1_004.mp3"
     mary0 "เออะ...ไม่ขำเหรอ..."
     yume "เฮ้อ ปัญญาอ่อน"
+    ##voice "audio/voice/room1/mary_1_005.mp3"
     mary0 "ใจร้าย เค้าแค่ล้อเล่นเอง"
     yume "วันหลังหัดเล่นมุกให้เก่งกว่านี้หน่อยนะ แบบนี้แค่หัวเราะเป็นมารยาทยังทำไม่ลงเลย"
+    ##voice "audio/voice/room1/mary_1_006.mp3"
     mary0 "อย่าล้อเค้า!"
     yume "ก็ได้ๆ ฮะๆๆๆ"
     "ความทรงจำปิดด้วยเสียงหัวเราะของเรา"
@@ -88,6 +103,7 @@ label after_room_1:
     "เราตื่นขึ้นพร้อมกับหัวเราะน้อยๆ"
     "ความทรงจำที่ไร้สาระแต่ชวนให้อบอุ่นใจทำให้เราอดยิ้มออกมาไม่ได้"
     show cat normal 
+    ##voice "audio/voice/room1/cat_1_008.mp3"
     cat normal "เธอเห็นอะไรเหรอ?" 
     yume "เรื่องตลกน่ะ"
     "เราตอบเจ้าแมวส้มสั้นๆ"
@@ -98,3 +114,4 @@ label after_room_1:
 
 
     
+
