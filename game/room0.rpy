@@ -19,24 +19,37 @@ label intro:
     play music 廃墟洋館
     
     th "... เส้นทางที่ไม่รู้จุดหมายทอดยาวต่อหน้าเรา..."
-    en "tx1"
+    en "... A path with no known destination stretches out before me..."
     
     th "ที่นี่คือที่ไหนกัน?"
-    en "tx2"
+    en "Where is this place?"
 
     th "ตัวเราคือใครกัน?"
-    en "tx3"
+    en "Where is this place?"
 
     th "....."
     en "....."
 
-    "ความมืดมิดโอบล้อมรอบร่างกายจนกระทั่งเราลืมตาตื่นขึ้น"
-    "ทัศนะการมองเห็นค่อยๆกลับมาแจ่มชัด"
-    "ร่างกายที่รู้สึกหนักหน่วงค่อยๆเบาบางลง"
-    "สิ่งแรกที่เราทำหลังจากหยั่งยืนบนพื้นทางเดินอันมืดมนคือจ้องมองแขนขาและเรือนร่างของตัวเอง"
-    yume "นี่มัน...."
-    "น้ำเสียงของเราแหบพร่าอย่างผิดปกติ"
-    "แต่สิ่งที่น่าประหลาดยิ่งกว่านั้นคือร่างกายของเรากลับมีเพียงความว่างเปล่า"
+    th "ความมืดมิดโอบล้อมรอบร่างกายจนกระทั่งเราลืมตาตื่นขึ้น"
+    en "As darkness envelops my body, I open my eyes to wakefulness."
+
+    th "ทัศนะการมองเห็นค่อยๆกลับมาแจ่มชัด"
+    en "My vision gradually becomes clearer."
+    
+    th "ร่างกายที่รู้สึกหนักหน่วงค่อยๆเบาบางลง"
+    en "My heavy body slowly feels lighter."
+
+    th "สิ่งแรกที่เราทำหลังจากหยั่งยืนบนพื้นทางเดินอันมืดมนคือจ้องมองแขนขาและเรือนร่างของตัวเอง"
+    en "The first thing I do after standing on the dark path is to gaze at my arms, legs, and body."
+    
+    yume_th "นี่มัน...."
+    yume_en "This is...."
+
+    yume_th "น้ำเสียงของเราแหบพร่าอย่างผิดปกติ"
+    yume_en "My voice is unusually hoarse."
+    
+    yume_th "แต่สิ่งที่น่าประหลาดยิ่งกว่านั้นคือร่างกายของเรากลับมีเพียงความว่างเปล่า"
+    yume_en "But what's more strange is that my body is just emptiness."
 
     yume "...ทำ...ไม...?"
     "คำพูดของเราขาดห้วง"
