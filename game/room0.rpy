@@ -1,8 +1,13 @@
 label memary_scene:
-    scene memary  with Dissolve(3.0)
-    $ renpy.pause(3.0)
+
+
+
+    scene memary  with Dissolve(5.0)
+    $ renpy.pause(1 , hard=True)
+    scene nameless with Dissolve(3.0)
+    $ renpy.pause(1 , hard=True)
     scene black with Dissolve(3.0)
-    $ renpy.pause(3.0)
+
     jump after_room_0_1
     return 
 
