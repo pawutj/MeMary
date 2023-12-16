@@ -52,39 +52,77 @@ label intro:
     yume_en "But what's more strange is that my body is just emptiness."
 
     yume_th "...ทำ...ไม...?"
+    yume_en "...Why...?"
+    
     th "คำพูดของเราขาดห้วง"
+    en "My words are incomplete."
+
     th "ทั้งๆที่เราประสาทสัมผัสบอกเราว่าร่างกายของเรามีอยู่จริง ทั้งแขนทั้งขากำลังขยับตามคำสั่งของเราทุกประการ แต่เมื่อจ้องมองไปยังส่วนที่ควรจะเป็นเรือนร่าง เรากลับพบเพียงอากาศธาตุเท่านั้น"
+    en "Even though my senses tell me that my body is real, that my arms and legs are moving as I command, when I gaze at where my body should be, I see only air."
+
     th "ร่างกาย...ของเรา...?"
+    en "My body...?"
+    
     th "...นี่เรากำลังล่องหนอยู่เหรอ?"
+    en "...Am I a ghost?"
+
     th "...หรือว่าเราไม่มีร่างกายตั้งแต่แรก?"
+    en "Or have I never had a body to begin with?"
+    
     th "เราพยายามนึกถึงเหตุผลที่ทำไมเรามาอยู่ตรงนี้ แต่ไม่ว่าพยายามนึกถึงเท่าไหร่ก็นึกไม่ออก"
+    en "I try to remember why I am here, but no matter how hard I try, I can't recall."
 
     th "ที่นี่คือสถานที่ที่เราไม่รู้จัก"
+    en "This place is unfamiliar to me."
+
     th "มันทั้งมืดมิด ทั้งหนาวเหน็บและวังเวงไร้ผู้คน"
+    en "It's dark, cold, and eerily empty."
 
     yume_th "....."
+    yume_en "....."
+
     th "ต้นกำเนิดแสงหนึ่งเดียวมีเพียงแสงสว่างที่ทอดผ่านหน้าต่างบานใหญ่ลงมา"
+    en "The only source of light is the moonlight streaming through a large window."
+    
     scene moonlight3 with dissolve
     th "ดวงจันทร์สีเงินขนาดใหญ่สาดทอแสง ราวกับมันกำลังจ้องมองเราจากเบื้องบนไม่มีผิด"
+    en "The large silver moon seems to be watching me from above."
 
     th "....."
+    en "....."
+
     th "เราก้มมองร่างกายของตัวเองที่เหลือเพียงความว่างเปล่าพร้อมกับตั้งคำถาม"
+    en "I look down at my empty body and ask myself."
+
     th "ไม่ใช่เพียงร่างกายที่หายไป แต่ความทรงจำข้างในก็กลวงเปล่าเช่นกัน"
+    en "Not only is my body gone, but my memories inside are empty as well."
+
     th "...นี่เรา...เป็นใครกัน?"
+    en "I: ...Who am I?"
+
     th "....."
+    en "....."
+
     scene rouka_s_1080 with dissolve
     ##voice "audio/voice/room0/cat_0_000.mp3"
     cat0_th "ไม่มีใครมาที่นี่นานแล้ว"
+    cat0_en "No one has been here for a long time."
+
     yume_th "นั่นเสียงใคร?"
+    yume_en "Whose voice is that?"
     ##voice "audio/voice/room0/cat_0_001.mp3"
     cat0_th "ก้มลงมองข้างล่างสิ"
-    
+    cat0_en "Look down."
+
     stop music
     play music 不穏
     
     show cat normal with dissolve
     th "เราเผลอมองตามคำพูดลึกลับด้วยความอยากรู้อยากเห็น"
+    en "I curiously look down as the mysterious voice suggested."
+
     th "เจ้าของเสียงเล็กแหลมที่ดังขึ้นข้างกายเรามีขนาดเล็กจ้อยพอๆกับสองฝ่ามือคนเท่านั้น"
+    
 
     yume_th  "...แมว?"
     th "เราอุทานขึ้นด้วยความตกใจเพราะไม่เคยเห็นสัตว์พูดได้มาก่อน"
