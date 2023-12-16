@@ -110,6 +110,7 @@ label intro:
 
     yume_th "นั่นเสียงใคร?"
     yume_en "Whose voice is that?"
+    
     voice "audio/voice/room0/cat_0_001.mp3"
     cat0_th "ก้มลงมองข้างล่างสิ"
     cat0_en "Look down."
@@ -122,42 +123,80 @@ label intro:
     en "I curiously look down as the mysterious voice suggested."
 
     th "เจ้าของเสียงเล็กแหลมที่ดังขึ้นข้างกายเรามีขนาดเล็กจ้อยพอๆกับสองฝ่ามือคนเท่านั้น"
+    en "The owner of the sharp little voice next to me is as small as two human palms."
 
+    yume_th "...แมว?"
+    yume_en "...A cat?"
 
-    yume_th  "...แมว?"
     th "เราอุทานขึ้นด้วยความตกใจเพราะไม่เคยเห็นสัตว์พูดได้มาก่อน"
+    en "I exclaim in surprise as I've never seen a talking animal before."
+
     th "เจ้าแมวลายส้มหรี่ตามองเราราวกับไม่สบอารมณ์น้อยๆ"
+    en "The orange-striped cat squints at me as if slightly displeased."
 
     voice "audio/voice/room0/cat_0_002.mp3"
     cat_th smile "ไม่ใช่แมว แต่เป็นผู้นำทางต่างหาก"  with dissolve
+    cat_en smile "I'm not a cat, but a guide."  with dissolve
+
     yume_th "ผู้นำทาง?"
+    yume_en "A guide?"
+
+
     th "แมวลายส้มตากลมโตจ้องมองเราด้วยความประหลาดใจ"
-    th "ทั้งๆที่แมวไม่ควรจะแสดงสีหน้าได้ชัดเจน แต่แมวตัวนี้กลับแสดงอารมณ์ได้ราวกับเป็นคน"
+    en "The orange-striped cat with big round eyes looks at me in surprise."
     
+    th "ทั้งๆที่แมวไม่ควรจะแสดงสีหน้าได้ชัดเจน แต่แมวตัวนี้กลับแสดงอารมณ์ได้ราวกับเป็นคน"
+    en "Even though cats shouldn't be able to express emotions clearly, this one seems to emote like a human."
 
     voice "audio/voice/room0/cat_0_003.mp3"
     cat_th ah "ดูเหมือนว่าเธอจะไม่รู้อะไรเลยสินะ" with dissolve 
-    yume_th "ฉัน?"
-    th "เราพูดขึ้นด้วยความสงสัย"
-    th "เมื่อถูกถามคำถามนั้น เราก็พยายามนึกถึงเรื่องของตัวเองเพื่อให้ตอบคำถามได้"
+    cat_en ah "It seems you don't know anything." with dissolve 
 
-    yume_th  "...อึก!!"
+    yume_th "ฉัน?"
+    yume_en "Me?"
+
+    th "เราพูดขึ้นด้วยความสงสัย"
+    en "speak, puzzled."
+
+    th "เมื่อถูกถามคำถามนั้น เราก็พยายามนึกถึงเรื่องของตัวเองเพื่อให้ตอบคำถามได้"
+    en "When asked that question, I try to think of something about myself to answer."
+
+    yume_th "...อึก!!"
+    yume_en "...Ugh!!"
+
     th "ทันใดที่เราพยายามนึกถึงบางสิ่ง ความเจ็บปวดทรมานก็แล่นไปทั่ว"
+    en "As soon as I try to remember something, a painful torment spreads throughout my non-existent body, resisting my own will."
+
     th "ร่างกายที่ไม่มีอยู่จริงกำลังต่อต้านเจตจำนงของตัวเอง"
+    en ""
+
     th "...นี่มัน...อะไรกัน...?"
+    en "...What is this...?"
 
     voice "audio/voice/room0/cat_0_004.mp3"
     cat_th normal "เธออย่าฝืนจะดีกว่า" with dissolve
+    cat_en normal "You better not force it." with dissolve
+
     yume_th "ฝืน?"
+    yume_en "Force?"
+
     voice "audio/voice/room0/cat_0_005.mp3"
     cat_th lick "ตอนนี้เธอไม่สามารถนึกได้หรอกว่าตัวเธอเป็นใคร"
+    cat_en lick "You better not force it."
+
     yume_th "....."
+    yume_en "....."
 
     voice "audio/voice/room0/cat_0_006.mp3"
     cat_th smile "ถ้าเธออยากได้คำตอบว่าเธอเป็นใคร ทำไมเธอถึงอยู่ที่นี่ เธอมีทางเลือกเดียวเท่านั้น" with dissolve
-    yume_th  "ทางเลือก?"
+    cat_th smile "If you want answers about who you are and why you are here, there's only one choice." with dissolve
+
+    yume_th "ทางเลือก?"
+    yume_en "A choice?"
+
     voice "audio/voice/room0/cat_0_007.mp3"
     cat_th  normal "ตามฉันมา" with dissolve
+    cat_en  normal "Follow me." with dissolve
     hide cat
     jump room0
 
