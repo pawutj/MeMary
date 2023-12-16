@@ -104,13 +104,13 @@ label intro:
     en "....."
 
     scene rouka_s_1080 with dissolve
-    ##voice "audio/voice/room0/cat_0_000.mp3"
+    voice "audio/voice/room0/cat_0_000.mp3"
     cat0_th "ไม่มีใครมาที่นี่นานแล้ว"
     cat0_en "No one has been here for a long time."
 
     yume_th "นั่นเสียงใคร?"
     yume_en "Whose voice is that?"
-    ##voice "audio/voice/room0/cat_0_001.mp3"
+    voice "audio/voice/room0/cat_0_001.mp3"
     cat0_th "ก้มลงมองข้างล่างสิ"
     cat0_en "Look down."
 
@@ -122,20 +122,20 @@ label intro:
     en "I curiously look down as the mysterious voice suggested."
 
     th "เจ้าของเสียงเล็กแหลมที่ดังขึ้นข้างกายเรามีขนาดเล็กจ้อยพอๆกับสองฝ่ามือคนเท่านั้น"
-    
+
 
     yume_th  "...แมว?"
     th "เราอุทานขึ้นด้วยความตกใจเพราะไม่เคยเห็นสัตว์พูดได้มาก่อน"
     th "เจ้าแมวลายส้มหรี่ตามองเราราวกับไม่สบอารมณ์น้อยๆ"
 
-    ##voice "audio/voice/room0/cat_0_002.mp3"
+    voice "audio/voice/room0/cat_0_002.mp3"
     cat_th smile "ไม่ใช่แมว แต่เป็นผู้นำทางต่างหาก"  with dissolve
     yume_th "ผู้นำทาง?"
     th "แมวลายส้มตากลมโตจ้องมองเราด้วยความประหลาดใจ"
     th "ทั้งๆที่แมวไม่ควรจะแสดงสีหน้าได้ชัดเจน แต่แมวตัวนี้กลับแสดงอารมณ์ได้ราวกับเป็นคน"
     
 
-    ##voice "audio/voice/room0/cat_0_003.mp3"
+    voice "audio/voice/room0/cat_0_003.mp3"
     cat_th ah "ดูเหมือนว่าเธอจะไม่รู้อะไรเลยสินะ" with dissolve 
     yume_th "ฉัน?"
     th "เราพูดขึ้นด้วยความสงสัย"
@@ -146,17 +146,17 @@ label intro:
     th "ร่างกายที่ไม่มีอยู่จริงกำลังต่อต้านเจตจำนงของตัวเอง"
     th "...นี่มัน...อะไรกัน...?"
 
-    ##voice "audio/voice/room0/cat_0_004.mp3"
+    voice "audio/voice/room0/cat_0_004.mp3"
     cat_th normal "เธออย่าฝืนจะดีกว่า" with dissolve
     yume_th "ฝืน?"
-    ##voice "audio/voice/room0/cat_0_005.mp3"
+    voice "audio/voice/room0/cat_0_005.mp3"
     cat_th lick "ตอนนี้เธอไม่สามารถนึกได้หรอกว่าตัวเธอเป็นใคร"
     yume_th "....."
 
-    ##voice "audio/voice/room0/cat_0_006.mp3"
+    voice "audio/voice/room0/cat_0_006.mp3"
     cat_th smile "ถ้าเธออยากได้คำตอบว่าเธอเป็นใคร ทำไมเธอถึงอยู่ที่นี่ เธอมีทางเลือกเดียวเท่านั้น" with dissolve
     yume_th  "ทางเลือก?"
-    ##voice "audio/voice/room0/cat_0_007.mp3"
+    voice "audio/voice/room0/cat_0_007.mp3"
     cat_th  normal "ตามฉันมา" with dissolve
     hide cat
     jump room0
@@ -164,32 +164,32 @@ label intro:
 label room0:
     yume_th "ประตู?"
     show cat normal with dissolve
-    ##voice "audio/voice/room0/cat_0_008.mp3"
+    voice "audio/voice/room0/cat_0_008.mp3"
     cat_th ah "เปิดเข้าไปสิ"
     th "เรามองแมวสีส้มด้วยความไม่ไว้ใจ"
     th "ดูเหมือนเจ้าแมวส้มจะอ่านความคิดเราออกมา มันเลยพูดขึ้น"
-    ##voice "audio/voice/room0/cat_0_009.mp3"
+    voice "audio/voice/room0/cat_0_009.mp3"
     cat_th normal "ฉันเข้าใจว่ามันไม่น่าไว้ใจ แต่ถ้าเธอไม่ทำตามคำพูดฉัน เธอก็ไม่มีทางเลือกอื่นนอกจากกลับไปหลงที่ทางเดินอย่างไร้จุดหมาย" with dissolve
     yume_th "....."
 
-    ##voice "audio/voice/room0/cat_0_010.mp3"
+    voice "audio/voice/room0/cat_0_010.mp3"
     cat_th lick "เธอจำอะไรไม่ได้สักอย่างเลยสินะ" with dissolve
     yume_th "...อืม"
 
-    ##voice "audio/voice/room0/cat_0_011.mp3"
+    voice "audio/voice/room0/cat_0_011.mp3"
     cat_th normal "ไม่แปลกหรอก ถ้าหากเธอรู้ว่าตัวเองเป็นใคร เธอจะไม่มีวันเดินหลงในสถานที่แห่งนี้เป็นอันขาด" with dissolve
     yume_th "ที่นี่คือที่ไหน?"
-    ##voice "audio/voice/room0/cat_0_012.mp3"
+    voice "audio/voice/room0/cat_0_012.mp3"
     cat_th bored "...."
 
     yume_th "แล้วฉันล่ะ...เป็นใคร...?"
 
     th "เจ้าแมวส้มจ้องหน้าเรา ดวงตาของมันมองเข้ามาในตาของเราราวกับมองทะลุไปถึงตัวตนข้างใน"
-    ##voice "audio/voice/room0/cat_0_013.mp3"
+    voice "audio/voice/room0/cat_0_013.mp3"
     cat_th lick "ถ้าเธออยากรู้คำตอบ เธอก็ต้องเปิดประตู"
     yume_th "...."
 
-    ##voice "audio/voice/room0/cat_0_014.mp3"
+    voice "audio/voice/room0/cat_0_014.mp3"
     cat_th normal "เธอไม่มีทางเลือกหรอก"
     th "เจ้าแมวส้มยืนยันเสียงแข็ง" 
     th "ดูเหมือนว่าเราจะไม่มีเส้นทางอื่นให้ไปนอกจากนี้ สุดท้าย เราก็เปิดประตูและเดินเข้าไปในห้อง"
@@ -199,27 +199,27 @@ label room0:
     stop music
     play music 神隠しの真相
     yume_th "...นี่มัน...?"
-    ##voice "audio/voice/room0/cat_0_015.mp3"
+    voice "audio/voice/room0/cat_0_015.mp3"
     cat_th lick "ปริศนาไงล่ะ"
     yume_th "ปริศนา?"
     hide cat
     show puzzle0 with dissolve
     th "เราจ้องมองโจทย์ที่ถูกเขียนบนกระดานและพูดทวนคำเจ้าแมวส้มด้วยความไม่เข้าใจ"
     th "เมื่อเจ้าแมวเห็นเราสงสัย มันจึงพูดขยายความขึ้น"
-    ##voice "audio/voice/room0/cat_0_016.mp3"
+    voice "audio/voice/room0/cat_0_016.mp3"
     cat_th normal "นี่ไม่ใช่ห้องๆเดียว เส้นทางต่อจากนี้ยังมีอีกหลายห้อง"
-    ##voice "audio/voice/room0/cat_0_017.mp3"
+    voice "audio/voice/room0/cat_0_017.mp3"
     cat_th ah "ทางเดียวที่เธอจะไปถึงความจริงได้คือเธอต้องตอบปริศนาที่อยู่ในแต่ละห้องให้ถูกต้อง"
-    ##voice "audio/voice/room0/cat_0_018.mp3"
+    voice "audio/voice/room0/cat_0_018.mp3"
     cat_th normal "เมื่อตอบปริศนาประจำห้องถูกต้อง ประตูห้องต่อไปจะเปิดออก"
-    ##voice "audio/voice/room0/cat_0_019.mp3"
+    voice "audio/voice/room0/cat_0_019.mp3"
     cat_th lick "เมื่อถึงประตูบานสุดท้าย เธอจะเข้าใจความจริงทุกอย่างเอง"
 
     th "เจ้าแมวส้มอธิบายสิ่งที่เราต้องเจอต่อจากนี้ไป"
     th "สถานที่ที่แปลกประหลาดนี้มีบททดสอบที่ถูกสร้างขึ้นอย่างจงใจด้วยสาเหตุบางอย่าง"
     th "ทำไมต้องเป็นปริศนา?"
     th "ทำไมกัน?"
-    ##voice "audio/voice/room0/cat_0_020.mp3"
+    voice "audio/voice/room0/cat_0_020.mp3"
     cat_th normal "ปริศนาข้อแรกคือข้อที่ง่ายที่สุด ถ้าหากทำข้อนี้ไม่ได้ก็ไม่มีวันไปถึงข้อต่อไปได้"
     th "เราพูดไม่ออก"
     th "สายตาของเจ้าแมวส้มคล้ายกับกำลังหยั่งเชิงเราไม่มีผิด"
@@ -331,32 +331,32 @@ label after_room_0_1:
     yume_th  "...อึก"
     th "เราลืมตาตื่นขึ้นและพบตัวเองในห้องเดิม"
     yume_th "เมื่อกี้นี้...เกิดอะไรขึ้น...?"
-    ##voice "audio/voice/room0/cat_0_029.mp3"
+    voice "audio/voice/room0/cat_0_029.mp3"
     cat_th normal "มันคือเศษเสี้ยวของความทรงจำ"
     yume_th  "ความทรงจำ?"
-    ##voice "audio/voice/room0/cat_0_030.mp3"
+    voice "audio/voice/room0/cat_0_030.mp3"
     cat_th  smile "ทุกครั้งที่เธอตอบคำถามได้ เธอจะได้ความทรงจำของเธอกลับมาส่วนหนึ่ง"
     yume_th  "....."
-    ##voice "audio/voice/room0/cat_0_031.mp3"
+    voice "audio/voice/room0/cat_0_031.mp3"
     cat_th normal "เธออาจไม่เข้าใจว่าทำไมสถานที่แห่งนี้ถึงทำงานแบบนี้ แต่เมื่อเธอได้ความทรงจำกลับมาทั้งหมด เธอจะรู้ตัวตนที่แท้จริงของตัวเองและเหตุผลที่เธอมาที่นี่เอง"
     th "เจ้าแมวส้มจับจ้องเข้ามาในดวงตาเราตรงๆ"
     th "สายตาเจนจัดของมันทำให้เรารู้สึกเหมือนจ้องหน้ามนุษย์ไม่มีผิด"
     yume_th  "ถ้างั้นก็มีแต่ต้องตอบคำถามไปเรื่อยๆสินะ"
-    ##voice "audio/voice/room0/cat_0_032.mp3"
+    voice "audio/voice/room0/cat_0_032.mp3"
     cat_th smile "ใช่แล้ว"
     th "เจ้าแมวส้มตอบรับเราพลางพยักหน้า เราที่ไม่มีทางเลือกอื่นจึงทำได้แต่เดิมตามเกมของมัน"
     th "เมื่อเราจะเดินเข้าสู่ประตูบานต่อไป เรากลับพบกับวัตถุบางอย่างบนพื้นก่อน"
     show letter with Dissolve(1)
-    ##voice "audio/voice/room0/cat_0_033.mp3"
+    voice "audio/voice/room0/cat_0_033.mp3"
     cat_th  lick "เก็บมันไปสิ"
     yume_th  "จดหมาย?"
 
-    ##voice "audio/voice/room0/cat_0_034.mp3"
+    voice "audio/voice/room0/cat_0_034.mp3"
     cat_th ah "มันคือรางวัลของผู้ชนะห้องแรก พกไปเถอะ มันไม่มีอันตรายอะไรหรอก"
     th "เจ้าแมวส้มยืนยัน เราจึงถือจดหมายไว้"
     th "ไม่นานหลังจากนั้น เราก็พบตัวเองอยู่ตรงหน้าประตูบานต่อไป"
     hide letter
-    ##voice "audio/voice/room0/cat_0_035.mp3"
+    voice "audio/voice/room0/cat_0_035.mp3"
     cat_th  smile  "....."
     th "ถึงแม้จะยังไม่เข้าใจอะไร แต่เมื่อเราได้เห็นภาพอันลางเรือนหลังตอบคำถามแล้ว ความรู้สึกถวิลหาก็ปรากฏขึ้นในใจของเรา"
     th "คนที่คุยกับเราในภาพความทรงจำนั้นคือใคร?"
@@ -366,9 +366,9 @@ label after_room_0_1:
     scene hall_n_1080 with dissolve
     th "ห้องที่อยู่ต่อหน้าสายตาของฉันเป็นห้องที่กว้างขวาง มีประตูจำนวนมากขนาบอยู่ด้านข้าง"
     show cat normal with dissolve
-    ##voice "audio/voice/room0/cat_0_036.mp3"
+    voice "audio/voice/room0/cat_0_036.mp3"
     cat_th normal "ยินดีต้อนรับสู่ห้องโถงของคฤหาสน์แห่งนี้ นี่จะเป็นห้องที่เชื่อมต่อกับห้องอื่นๆมากมายในคฤหาสน์"
-    ##voice "audio/voice/room0/cat_0_037.mp3"
+    voice "audio/voice/room0/cat_0_037.mp3"
     cat_th lick "เธอสามารถเปิดประตูบานไหนก็ได้ เพื่อเข้าสู่ห้องต่อไป"
     hide cat with dissolve
     th "ฉันเดินไปหาประตูที่ใกล้ที่สุดด้านขวามือ"
@@ -376,15 +376,15 @@ label after_room_0_1:
     yume_th "ไม่เห็นเปิดออกเลย"
     
     show cat lick with dissolve
-    ##voice "audio/voice/room0/cat_0_038.mp3"
+    voice "audio/voice/room0/cat_0_038.mp3"
     cat_th lick "ไม่ได้บอกนี่ว่ามันไม่ได้ล็อก"
     th "ซักวันนึง แมวตัวนี้ต้องถูกนำไปโกนขน ฉันสาบานตัวเองไว้เช่นนั้น"
-    ##voice "audio/voice/room0/cat_0_039.mp3"
+    voice "audio/voice/room0/cat_0_039.mp3"
     cat_th smile "ไม่ต้องมองด้วยสายตาอาฆาตขนาดนั้นก็ได้ เธอลองมองที่แผนผังอันนี้สิ"
     hide cat
     #show minimap
     th "..."
-    ##voice "audio/voice/room0/cat_0_040.mp3"
+    voice "audio/voice/room0/cat_0_040.mp3"
     cat_th ah "ขอแค่มีแผนผังนี่ เธอก็สามารถรู้ได้แล้วว่า ห้องไหนที่เข้าได้หรือไม่ได้ \nแล้วมันยังบอกด้วยว่าห้องไหนที่เราเคยผ่านมาแล้ว"
     th "ถ้างั้น ฉันจะเริ่มที่ห้องไหนดี?"
     jump main_map
