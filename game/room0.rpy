@@ -202,71 +202,134 @@ label intro:
 
 label room0:
     yume_th "ประตู?"
+    yume_en "A door?"
     show cat normal with dissolve
     voice "audio/voice/room0/cat_0_008.mp3"
     cat_th ah "เปิดเข้าไปสิ"
+    cat_en ah "Open it."
+
     th "เรามองแมวสีส้มด้วยความไม่ไว้ใจ"
+    en "I look at the orange cat with distrust."
+
     th "ดูเหมือนเจ้าแมวส้มจะอ่านความคิดเราออกมา มันเลยพูดขึ้น"
+    en "It seems like the orange cat can read my thoughts, so it speaks up."
     voice "audio/voice/room0/cat_0_009.mp3"
     cat_th normal "ฉันเข้าใจว่ามันไม่น่าไว้ใจ แต่ถ้าเธอไม่ทำตามคำพูดฉัน เธอก็ไม่มีทางเลือกอื่นนอกจากกลับไปหลงที่ทางเดินอย่างไร้จุดหมาย" with dissolve
+    cat_en normal "I understand it doesn't seem trustworthy, but if you don't follow my words, your only other option is to wander aimlessly back in the corridors." with dissolve
+    
     yume_th "....."
+    yume_en "....."
 
     voice "audio/voice/room0/cat_0_010.mp3"
     cat_th lick "เธอจำอะไรไม่ได้สักอย่างเลยสินะ" with dissolve
+    cat_en lick "You can't remember anything, can you?" with dissolve
+
     yume_th "...อืม"
+    yume_en "...Yeah."
 
     voice "audio/voice/room0/cat_0_011.mp3"
     cat_th normal "ไม่แปลกหรอก ถ้าหากเธอรู้ว่าตัวเองเป็นใคร เธอจะไม่มีวันเดินหลงในสถานที่แห่งนี้เป็นอันขาด" with dissolve
+    cat_en normal " It's not surprising. If you knew who you were, you would never wander lost in this place." with dissolve
+
     yume_th "ที่นี่คือที่ไหน?"
+    yume_en "Where is this place?"
+
     voice "audio/voice/room0/cat_0_012.mp3"
     cat_th bored "...."
+    can_en bored "...."
 
     yume_th "แล้วฉันล่ะ...เป็นใคร...?"
+    yume_en "And who am I...?"
 
     th "เจ้าแมวส้มจ้องหน้าเรา ดวงตาของมันมองเข้ามาในตาของเราราวกับมองทะลุไปถึงตัวตนข้างใน"
+    en "The orange cat gazes at me."
+
     voice "audio/voice/room0/cat_0_013.mp3"
     cat_th lick "ถ้าเธออยากรู้คำตอบ เธอก็ต้องเปิดประตู"
+    cat_en lick "Its eyes seem to penetrate into mine, seeing through to my inner self."
+
     yume_th "...."
+    yume_en "...."
 
     voice "audio/voice/room0/cat_0_014.mp3"
     cat_th normal "เธอไม่มีทางเลือกหรอก"
+    cat_en normal "You don't have a choice."
+
     th "เจ้าแมวส้มยืนยันเสียงแข็ง" 
+    en "The orange cat asserts firmly, making it clear that there is no other path for me but this one."
+
     th "ดูเหมือนว่าเราจะไม่มีเส้นทางอื่นให้ไปนอกจากนี้ สุดท้าย เราก็เปิดประตูและเดินเข้าไปในห้อง"
+    en "Finally, I open the door and step into the room."
     
     scene library_s_1080 with dissolve
     
     stop music
     play music 神隠しの真相
     yume_th "...นี่มัน...?"
+    yume_en "...What is this...?"
+
     voice "audio/voice/room0/cat_0_015.mp3"
     cat_th lick "ปริศนาไงล่ะ"
+    cat_en lick "It's a puzzle."
+
     yume_th "ปริศนา?"
+    yume_en "A puzzle?"
+    
     hide cat
     show puzzle0 with dissolve
     th "เราจ้องมองโจทย์ที่ถูกเขียนบนกระดานและพูดทวนคำเจ้าแมวส้มด้วยความไม่เข้าใจ"
+    en "I stare at the problem written on the board and repeat the orange cat's words in confusion."
+
     th "เมื่อเจ้าแมวเห็นเราสงสัย มันจึงพูดขยายความขึ้น"
+    en "Seeing my bewilderment, the cat elaborates."
+
     voice "audio/voice/room0/cat_0_016.mp3"
     cat_th normal "นี่ไม่ใช่ห้องๆเดียว เส้นทางต่อจากนี้ยังมีอีกหลายห้อง"
+    cat_en normal "This is not the only room. There are many more rooms along this path."
+
     voice "audio/voice/room0/cat_0_017.mp3"
     cat_th ah "ทางเดียวที่เธอจะไปถึงความจริงได้คือเธอต้องตอบปริศนาที่อยู่ในแต่ละห้องให้ถูกต้อง"
+    cat_en ah "The only way you can reach the truth is by solving the puzzles in each room."
+    
     voice "audio/voice/room0/cat_0_018.mp3"
     cat_th normal "เมื่อตอบปริศนาประจำห้องถูกต้อง ประตูห้องต่อไปจะเปิดออก"
-    voice "audio/voice/room0/cat_0_019.mp3"
+    cat_en normal "When you solve the puzzle of a room correctly, the door to the next room will open."
+    
+    voice "audio/voice/room0/cat_0_019.mp3" 
     cat_th lick "เมื่อถึงประตูบานสุดท้าย เธอจะเข้าใจความจริงทุกอย่างเอง"
+    cat_en lick "Once you reach the final door, you will understand everything."
+
 
     th "เจ้าแมวส้มอธิบายสิ่งที่เราต้องเจอต่อจากนี้ไป"
+    en "The orange cat explains what I will encounter next."
+
     th "สถานที่ที่แปลกประหลาดนี้มีบททดสอบที่ถูกสร้างขึ้นอย่างจงใจด้วยสาเหตุบางอย่าง"
+    en "This strange place has tests deliberately created for some reason."
+
     th "ทำไมต้องเป็นปริศนา?"
+    en "Why puzzles?"
+    
     th "ทำไมกัน?"
+    en "Why?"
+    
     voice "audio/voice/room0/cat_0_020.mp3"
     cat_th normal "ปริศนาข้อแรกคือข้อที่ง่ายที่สุด ถ้าหากทำข้อนี้ไม่ได้ก็ไม่มีวันไปถึงข้อต่อไปได้"
+    cat_en normal "The first puzzle is the easiest. If you can't solve this one, you'll never reach the next."
+
     th "เราพูดไม่ออก"
+    en "I am speechless."
+    
     th "สายตาของเจ้าแมวส้มคล้ายกับกำลังหยั่งเชิงเราไม่มีผิด"
-
+    en "The cat's gaze seems to be testing me."
+    
     yume_th "...ก็ได้"
-    th"ในเมื่อเราไม่มีทางอื่นให้มุ่งหน้าไป ก็มีแต่ต้องตอบปริศนาให้ได้"
+    yume_en "...Alright."
+    
+    th "ในเมื่อเราไม่มีทางอื่นให้มุ่งหน้าไป ก็มีแต่ต้องตอบปริศนาให้ได้"
+    en "Since I have no other path to take, I must solve the puzzle."
+    
     th "ลองสักตั้งก็คงไม่เสียหาย"
-
+    en "Trying won't hurt."
     jump answer_roome0
 
 
