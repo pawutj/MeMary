@@ -9,9 +9,16 @@ label room01:
         show cat normal with dissolve
     ##voice "audio/voice/room1/cat_1_000.mp3"
         cat_th normal "พร้อมสำหรับโจทย์ข้อต่อไปหรือยังล่ะ?" with dissolve
+        cat_en normal "Ready for the next challenge?" with dissolve
+        
         th "เรามองรูปจำนวนมากบนกระดานที่ดูไม่เกี่ยวกันเลย"
+        en "I gaze at the many unrelated images on the board."
+        
         th "นี่คือโจทย์สินะ" 
+        en "This is the challenge."
+        
         th "คนที่คิดโจทย์แบบนี้ต้องเป็นคนประหลาดแค่ไหนกัน?"
+        en "Whoever came up with this must be quite peculiar."
         hide cat
         show puzzle1
         jump answer_roome01
@@ -33,7 +40,10 @@ label answer_roome01:
                 $ room01_is_pass = True
 
                 th "สีขาวกลืนทิวทัศน์ตรงหน้าเราอีกครั้ง"
+                en "The white engulfs the scenery in front of me again."
+
                 th "ภาพความทรงจำต่อไปจะเป็นอะไรกันนะ?"
+                en "What will the next memory flashback be?"
                 hide puzzle1
                 jump after_room_1
             if prepare(input_value) == "golde" or prepare(input_value) == "goldexperience":
@@ -74,40 +84,81 @@ label after_room_1:
     scene fb1 with dissolve
     ##voice "audio/voice/room1/mary_1_000.mp3"
     mary0_th "เธอรู้จักสแตxด์หรือเปล่าล่ะ?"
+    mary0_en "Do you know about Stands?"
+
     yume_th "หา?"
+    yume_en "Huh?"
     ##voice "audio/voice/room1/mary_1_001.mp3"
     mary0_th "ตอบคำถามฉันมาสิ"
+    mary0_en "Just answer my question."
+    
     yume_th "ก็รู้จักแหละว่ามันมาจากอนิเมะ แต่เธอไม่ต้องถามแบบทำหน้าเข้มๆก็ได้นะ"
+    yume_en "I know they're from an anime, but you don't have to ask with such a stern face."
+
     ##voice "audio/voice/room1/mary_1_002.mp3"
     mary0_th "ว่ากันว่า ผู้ใช้สแตxด์จะดึงดูดผู้ใช้สแตxด์ด้วยกัน"
+    mary0_en "It's said that Stand users attract other Stand users"
+    
     yume_th "...เหรอ"
+    yume_en "...Really?"
+    
     ##voice "audio/voice/room1/mary_1_003.mp3"
     mary0_th "ใช่แล้ว ฉันน่ะ...เป็นผู้ใช้สแตนด์ยังไงล่ะ!!!"
+    mary0_en "Yes, I am... a Stand user!!!"
+
     yume_th "............."
+    yume_en "............."
+    
     ##voice "audio/voice/room1/mary_1_004.mp3"
     mary0_th "เออะ...ไม่ขำเหรอ..."
+    mary0_en "Uh... not funny?"
+
     yume_th "เฮ้อ ปัญญาอ่อน"
+    yume_en "Sigh, so silly."
+    
     ##voice "audio/voice/room1/mary_1_005.mp3"
     mary0_th "ใจร้าย เค้าแค่ล้อเล่นเอง"
+    mary0_en "That's mean. I was just joking."
+
     yume_th "วันหลังหัดเล่นมุกให้เก่งกว่านี้หน่อยนะ แบบนี้แค่หัวเราะเป็นมารยาทยังทำไม่ลงเลย"
+    yume_en "Next time, try to make a better joke. I can't even give you a courtesy laugh for that one."
+
     ##voice "audio/voice/room1/mary_1_006.mp3"
     mary0_th "อย่าล้อเค้า!"
+    mary0_en "Don't tease me!"
+
     yume_th "ก็ได้ๆ ฮะๆๆๆ"
+    yume_en "Alright, alright. Ha ha ha."
+
     th "ความทรงจำปิดด้วยเสียงหัวเราะของเรา"
+    en "The memory ends with my laughter."
+
     th "ก่อนที่ภาพตรงหน้าจะจมลงสู่ความมืด"
+    en "Before the scene before me plunges into darkness."
     scene black with dissolve
     stop music
     play music 哀愁漂うホラー的な
     scene library_s_1080 with dissolve 
 
     th "เราตื่นขึ้นพร้อมกับหัวเราะน้อยๆ"
+    en "I wake up with a soft chuckle."
+
     th "ความทรงจำที่ไร้สาระแต่ชวนให้อบอุ่นใจทำให้เราอดยิ้มออกมาไม่ได้"
+    en "This silly but heartwarming memory makes me smile involuntarily."
+    
     show cat normal 
     ##voice "audio/voice/room1/cat_1_008.mp3"
-    cat_th normal "เธอเห็นอะไรเหรอ?" 
+    cat_th normal "เธอเห็นอะไรเหรอ?"    
+    cat_en normal "What did you see?"
+
     yume_th "เรื่องตลกน่ะ"
+    yume_en "A funny story."
+
     th "เราตอบเจ้าแมวส้มสั้นๆ"
+    en "I give the orange cat a brief answer."
+
     th "ก่อนที่เราจะมุ่งหน้าไปยังประตูต่อไป"
+    en "Before heading towards the next door."
 
     hide cat
     jump cutscene_main
