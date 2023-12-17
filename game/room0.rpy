@@ -341,6 +341,7 @@ label answer_roome0:
             if prepare(input_value) == "memary":
                 scene white with dissolve
                 th "ทันใดที่เราเขียนคำตอบที่ถูกต้อง โลกรอบข้างก็ถูกสีขาวกลืนเข้าไป"
+                en ""
                 th "แสงสว่าง?"
                 th "มันเกิดอะไรขึ้นกันแน่?"
                 hide puzzle0
@@ -391,34 +392,71 @@ label after_room_0:
     scene fb1 with Dissolve(2)
     voice "audio/voice/room0/mary_0_000.mp3"
     mary0_th "ถ้าเราจะตั้งชื่อเกมทายปริศนา เราจะตั้งชื่อว่าอะไรดี?"
+    mary0_en "If we were to name this puzzle game, what would we call it?"
+
     yume_th "ฉันสงสัยมากกว่าว่าทำไมเธอถึงชอบเกมปริศนาขนาดนั้น"
+    yume_en "I'm more curious about why you like puzzles so much."
+
     voice "audio/voice/room0/mary_0_001.mp3"
     mary0_th "ไม่มีเหตุผลเป็นพิเศษหรอกจ้ะ"
+    mary0_en "No special reason."
+
     yume_th  "เธอนี่แปลกคนจริงๆ"
+    yume_en  "You're really a strange one."
+    
     voice "audio/voice/room0/mary_0_002.mp3"
     mary0_th "เธอก็แปลกเหมือนกันจ้ะ ทั้งๆที่ไม่ชอบปริศนาแต่ก็ยังตอบคำถามฉันทุกครั้ง"
+    mary0_en "You're strange too. Despite not liking puzzles, you still answer every question I ask."
+    
     yume_th "ถ้าทิ้งให้เธอคิดคำถามคนเดียวแล้วฉันไม่ตอบ ฉันจะรู้สึกผิดน่ะสิ"
+    yume_en "If I left you to think of questions alone and didn't answer, I would feel guilty."
+
     voice "audio/voice/room0/mary_0_003.mp3"
     mary0_th "ใจดีจริงๆเลยนะ ฮะๆๆ"
+    mary0_en "That's very kind of you. Ha ha ha."
+
     yume_th "อึก...ไม่ได้มากมายอะไรขนาดนั้นหรอก..."
+    yume_en "Uh... it's not that big of a deal..."
+
     voice "audio/voice/room0/mary_0_004.mp3"
     mary0_th "กลับมาที่สาระเดิมดีกว่าจ้ะ"
+    mary0_en "Let's get back to the point."
+
     yume_th "ที่เราคุยกันนี่มีสาระจริงๆเหรอ?"
+    yume_en "Our conversation has a point?"
+
     voice "audio/voice/room0/mary_0_005.mp3"
     mary0_th "โหดร้ายจริงๆนะ เธอไม่คิดว่าเรื่องไร้สาระก็มีความสนุกในรูปแบบของมันเหรอ?"
+    mary0_en "That's harsh. Don't you think even silly things can be fun in their own way?"
+
+
     yume_th "ก็ได้ๆ...ให้คิดชื่อเกมปริศนาให้เธอใช่ไหม?"
+    yume_en "Alright, alright... You want me to think of a name for your puzzle game, right?"
+
     voice "audio/voice/room0/mary_0_006.mp3"
     mary0_th "ใช่จ้ะ"
+    mary0_en "Yes."
+    
     yume_th "อืมม..."
+    yume_en "Hmm..."
+    
     voice "audio/voice/room0/mary_0_007.mp3"
     mary0_th "ว่าไงจ้ะ?"
+    mary0_en "What do you think?"
+
     yume_th "งั้นเอาเป็นชื่อ..."
+    yume_en "Then how about the name..."
 
     scene black with dissolve
     
-    "ภาพตรงหน้าจมลงสู่ความมืดในทันที"
-    "เงาร่างอันลางเรือนที่ปรากฏตรงหน้าเราหายไปแล้ว"
-    "เหลือทิ้งไว้เพียงคำบางอย่างที่ตกค้างในความทรงจำ"
+    th "ภาพตรงหน้าจมลงสู่ความมืดในทันที"
+    en "Suddenly, the scene in front of me plunges into darkness."
+    
+    th "เงาร่างอันลางเรือนที่ปรากฏตรงหน้าเราหายไปแล้ว"
+    en "The faint silhouette that appeared before me disappears."
+    
+    th "เหลือทิ้งไว้เพียงคำบางอย่างที่ตกค้างในความทรงจำ"
+    en "All that's left are some words lingering in my memory."
 
     jump memary_scene
 
@@ -431,39 +469,85 @@ label after_room_0_1:
     
     show cat normal
     yume_th  "...อึก"
+    yume_en "...Uh."
+
     th "เราลืมตาตื่นขึ้นและพบตัวเองในห้องเดิม"
+    en "I open my eyes and find myself back in the same room."
+    
     yume_th "เมื่อกี้นี้...เกิดอะไรขึ้น...?"
+    yume_en "What just happened...?"
+
     voice "audio/voice/room0/cat_0_029.mp3"
     cat_th normal "มันคือเศษเสี้ยวของความทรงจำ"
+    cat_en normal "It was a fragment of your memory."
+
     yume_th  "ความทรงจำ?"
+    yume_en "Memory?"
+
+
     voice "audio/voice/room0/cat_0_030.mp3"
     cat_th  smile "ทุกครั้งที่เธอตอบคำถามได้ เธอจะได้ความทรงจำของเธอกลับมาส่วนหนึ่ง"
+    cat_en  smile "Every time you answer a question correctly, you regain a part of your memories."
+
     yume_th  "....."
+    yume_en "....."
+
     voice "audio/voice/room0/cat_0_031.mp3"
     cat_th normal "เธออาจไม่เข้าใจว่าทำไมสถานที่แห่งนี้ถึงทำงานแบบนี้ แต่เมื่อเธอได้ความทรงจำกลับมาทั้งหมด เธอจะรู้ตัวตนที่แท้จริงของตัวเองและเหตุผลที่เธอมาที่นี่เอง"
+    cat_en normal "You may not understand why this place works like this, but when you regain all your memories, you will understand your true identity and the reason you came here."    
+    
     th "เจ้าแมวส้มจับจ้องเข้ามาในดวงตาเราตรงๆ"
+    en "The orange cat stares directly into my eyes."
+
     th "สายตาเจนจัดของมันทำให้เรารู้สึกเหมือนจ้องหน้ามนุษย์ไม่มีผิด"
+    en "Its intense gaze makes me feel like I'm looking into the eyes of a human."
+
     yume_th  "ถ้างั้นก็มีแต่ต้องตอบคำถามไปเรื่อยๆสินะ"
+    yume_en "So, I just have to keep answering questions."
+
     voice "audio/voice/room0/cat_0_032.mp3"
     cat_th smile "ใช่แล้ว"
+    cat_en smile "Exactly."
+
     th "เจ้าแมวส้มตอบรับเราพลางพยักหน้า เราที่ไม่มีทางเลือกอื่นจึงทำได้แต่เดิมตามเกมของมัน"
+    en "The orange cat nods in agreement. With no other choice, I continue to follow its game."
+
     th "เมื่อเราจะเดินเข้าสู่ประตูบานต่อไป เรากลับพบกับวัตถุบางอย่างบนพื้นก่อน"
+    en "As I approach the next door, I find something on the floor."
+
     show letter with Dissolve(1)
     voice "audio/voice/room0/cat_0_033.mp3"
     cat_th  lick "เก็บมันไปสิ"
+    cat_en lick "Pick it up."
+
     yume_th  "จดหมาย?"
+    yume_en "A letter?"
 
     voice "audio/voice/room0/cat_0_034.mp3"
     cat_th ah "มันคือรางวัลของผู้ชนะห้องแรก พกไปเถอะ มันไม่มีอันตรายอะไรหรอก"
+    cat_en ah "It's the prize for the winner of the first room. Carry it with you. It's harmless."
+
     th "เจ้าแมวส้มยืนยัน เราจึงถือจดหมายไว้"
+    en "The orange cat assures me, so I take the letter."
+
     th "ไม่นานหลังจากนั้น เราก็พบตัวเองอยู่ตรงหน้าประตูบานต่อไป"
+    en "Soon after, I find myself in front of numerous doors."
     hide letter
     voice "audio/voice/room0/cat_0_035.mp3"
     cat_th  smile  "....."
+    cat_en  smile  "....."
+
     th "ถึงแม้จะยังไม่เข้าใจอะไร แต่เมื่อเราได้เห็นภาพอันลางเรือนหลังตอบคำถามแล้ว ความรู้สึกถวิลหาก็ปรากฏขึ้นในใจของเรา"
+    en "Even though I still don't understand everything, after seeing that fleeting image following the question, a sense of yearning emerges in my heart."
+
     th "คนที่คุยกับเราในภาพความทรงจำนั้นคือใคร?"
+    en "Who was the person I was talking to in that memory?"
+
     th "...ความรู้สึกอันรุนแรงเพรียกร้องให้เราเดินต่อไปข้างหน้า..."
+    en "An intense feeling urges me to keep moving forward."
+    
     th "รู้ตัวอีกที เราก็เปิดประตูบานต่อไปแล้ว"
+    en "Before I know it, I have opened one of those doors."
 
     scene hall_n_1080 with dissolve
     th "ห้องที่อยู่ต่อหน้าสายตาของฉันเป็นห้องที่กว้างขวาง มีประตูจำนวนมากขนาบอยู่ด้านข้าง"
