@@ -426,10 +426,42 @@ screen main_menu():
         focus_mask True 
         action ShowMenu("config_main")
 
+init python:
+
+    # Step 1. Create a MusicRoom instance.
+    mr = MusicRoom(fadeout=1.0, single_track=True)
+
+    # Step 2. Add music files.
+    mr.add("audio/bgm/crystal_battle.mp3")
+    mr.add("audio/bgm/house_of_terror.mp3")
+    mr.add("audio/bgm/lost.mp3")
+    mr.add("audio/bgm/midnight.mp3")
+    mr.add("audio/bgm/Midnight_Frozen_Piano.mp3")
+    mr.add("audio/bgm/up_to_you.mp3")
+    mr.add("audio/bgm/アクアの旅路.mp3")
+    mr.add("audio/bgm/不可解な事件簿的な.mp3")
+    mr.add("audio/bgm/不穏.mp3")
+    mr.add("audio/bgm/哀愁漂うホラー的な.mp3")
+    mr.add("audio/bgm/廃墟洋館.mp3")
+    mr.add("audio/bgm/憂鬱.mp3")
+    mr.add("audio/bgm/手紙のさよなら.mp3")
+    mr.add("audio/bgm/星が輝く冬.mp3")
+    mr.add("audio/bgm/泣カナイデ.mp3")
+    mr.add("audio/bgm/神隠しの真相.mp3")
+
+
+
+    # mr.add("audio/bgm/ashita_e_piano.mp3", always_unlocked=True)
+    # mr.add("audio/bgm/ashita_e.mp3", always_unlocked=True)
+
 screen extra():
-    $song_list = []
+
     key "mouseup_3" action Hide('extra')
     key "K_ESCAPE" action Hide('extra')
+
+    $song_list = ['crystal_battle' , 
+    'house_of_terror' ,'lost' , 'midnight'  
+    , 'Midnight_Frozen_Piano' , 'up_to_you' , 'Midnight_Frozen_Piano']
 
     imagebutton:
         focus_mask True
@@ -444,6 +476,7 @@ screen extra():
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
 
     $numbers = [f'{i:02d}' for i in range(1, 8)]
+    $numbers2 = [f'{i:02d}' for i in range(1,5)]
 
     for idx,i in enumerate(numbers) :
             imagebutton:
@@ -459,6 +492,11 @@ screen extra():
                 # action Show(f"show_cg{i}_01")
 
 
+    if persistent.extra_bgm_page == 1:
+        for idx,i in enumerate(numbers2) :
+            imagebutton auto f"extra/music{i}_%s.png":
+                focus_mask True
+                action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
