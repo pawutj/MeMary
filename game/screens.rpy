@@ -419,12 +419,36 @@ screen main_menu():
     imagebutton auto "main/extra_%s.png":
         hover_sound "audio/UIsound/cursor.ogg" 
         focus_mask True 
-        action ShowMenu("config_main")
+        action ShowMenu("extra")
 
     imagebutton auto "main/exit_%s.png":
         hover_sound "audio/UIsound/cursor.ogg" 
         focus_mask True 
         action ShowMenu("config_main")
+
+screen extra():
+    $song_list = []
+    key "mouseup_3" action Hide('extra')
+    key "K_ESCAPE" action Hide('extra')
+
+    imagebutton:
+        focus_mask True
+        idle "extra/gallery_bg.png"
+        hover "extra/gallery_bg.png"
+        action SetVariable("persistent.nothing" , 0)    
+
+    $numbers = [f'{i:02d}' for i in range(1, 7)]
+
+    for idx,i in enumerate(numbers) :
+            # imagebutton:
+            #     focus_mask True
+            #     idle f"extra/pic{i}_idle.png"
+            #     action Show(f"show_cg{i}_01")
+            imagebutton:
+                focus_mask True
+                idle f"extra/pic{i}_idle.png"
+                hover f"extra/pic{i}_hover.png"
+                # action Show(f"show_cg{i}_01")
 
 
 

@@ -210,3 +210,4 @@ init python:
 # define build.itch_project = "renpytom/test-project"
 default persistent.page = 0
 default persistent.language = "thai"
+default persistent.nothing = 0
