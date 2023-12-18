@@ -441,14 +441,15 @@ screen extra():
         focus_mask True
         action  Hide('extra')
         hover_sound "audio/UIsound/cursor.ogg"
-        #activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
 
-    $numbers = [f'{i:02d}' for i in range(1, 7)]
+    $numbers = [f'{i:02d}' for i in range(1, 8)]
 
     for idx,i in enumerate(numbers) :
             imagebutton:
                 focus_mask True
                 idle f"extra/image{i}_idle.png"
+                hover f"extra/image{i}_hover.png"
                 action Show(f"show_cg{i}_01")
            
             # imagebutton:

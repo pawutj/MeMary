@@ -236,7 +236,7 @@ label room0:
 
     voice "audio/voice/room0/cat_0_012.mp3"
     cat_th bored "...."
-    can_en bored "...."
+    cat_en bored "...."
 
     yume_th "แล้วฉันล่ะ...เป็นใคร...?"
     yume_en "And who am I...?"
