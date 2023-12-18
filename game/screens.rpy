@@ -416,6 +416,17 @@ screen main_menu():
         focus_mask True 
         action ShowMenu("config_main")
 
+    imagebutton auto "main/extra_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        focus_mask True 
+        action ShowMenu("config_main")
+
+    imagebutton auto "main/exit_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        focus_mask True 
+        action ShowMenu("config_main")
+
+
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
