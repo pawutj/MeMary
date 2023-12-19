@@ -50,55 +50,129 @@ label cutscene_3:
 label cutscene_0:
     scene hall_n_1080 with dissolve
     play music 星が輝く冬
-    "เรากับเจ้าแมวส้มเดินกลับมายังห้องโถงที่ถูกรายล้อมด้วยประตูมากมาย"
-    "ก่อนที่จะเดินเข้าห้องต่อไป จู่ๆเจ้าแมวส้มก็หันมาคุยกับเรา"
+    th "เรากับเจ้าแมวส้มเดินกลับมายังห้องโถงที่ถูกรายล้อมด้วยประตูมากมาย"
+    en "The orange cat and I walked back to the hall, surrounded by numerous doors."
+
+    th "ก่อนที่จะเดินเข้าห้องต่อไป จู่ๆเจ้าแมวส้มก็หันมาคุยกับเรา"
+    en "Before entering the next room, the cat suddenly turned to talk to me."
+
     show cat normal with dissolve
     ##voice "audio/voice/cutscene/cat_13_007.mp3"
-    cat normal "ฉันรู้นะว่าเธอจ้องสังเกตฉันอยู่"
-    "ความเงียบเป็นของเรา พร้อมกับความสงสัยที่ผุดพรายขึ้นในใจ"
-    "ระหว่างที่เรากำลังสับสน เจ้าแมวส้มก็ค่อยๆเดินใกล้เข้ามาและเงยหน้ามองเราด้วยดวงตาคู่โต"
+    cat_th normal "ฉันรู้นะว่าเธอจ้องสังเกตฉันอยู่"
+    cat_en normal "I know you've been watching me."
+
+    th "ความเงียบเป็นของเรา พร้อมกับความสงสัยที่ผุดพรายขึ้นในใจ"
+    en "Silence enveloped us, along with a rising curiosity in my heart."
+
+    th "ระหว่างที่เรากำลังสับสน เจ้าแมวส้มก็ค่อยๆเดินใกล้เข้ามาและเงยหน้ามองเราด้วยดวงตาคู่โต"
+    en "As I stood perplexed, the orange cat slowly approached and looked up at me with its large eyes."
+
     ##voice "audio/voice/cutscene/cat_13_008.mp3"
-    cat lick "ฉันเข้าใจเธอนะ"
-    yume "เข้าใจ?"
+    cat_th lick "ฉันเข้าใจเธอนะ"
+    cat_en lick "I understand you."
+
+    yume_th "เข้าใจ?"
+    yume_en "Understand?"
+
+
     ##voice "audio/voice/cutscene/cat_13_009.mp3"
-    cat normal "ไม่แปลกหรอกที่เธอจะสงสัยฉัน ลองคิดดูสิว่าจู่ๆเธอต้องมาทำปริศนาอะไรไม่รู้ แถมยังมีแมวลึกลับมาต่อล้อต่อเถียงกับเธออีกต่างหาก"
-    yume "...."
+    cat_th normal "ไม่แปลกหรอกที่เธอจะสงสัยฉัน ลองคิดดูสิว่าจู่ๆเธอต้องมาทำปริศนาอะไรไม่รู้ แถมยังมีแมวลึกลับมาต่อล้อต่อเถียงกับเธออีกต่างหาก"
+    cat_en normal "It's not strange that you're suspicious of me. Think about it: suddenly you're solving puzzles and arguing with a mysterious cat."
+    
+    yume_th "...."
+    yume_en "...."
+
     ##voice "audio/voice/cutscene/cat_13_010.mp3"
-    cat lick "เอางี้ไหม? เพื่อให้เธอไว้ใจฉันมากขึ้น ฉันจะตอบคำถามเธอสักข้อสองข้อ"
-    yume "ฉันสามารถถามอะไรก็ได้อย่างงั้นเหรอ?"
-    "คำถามของเราทำให้เจ้าแมวส้มหรี่ตาลงน้อยๆ"
-    "มันหุบยิ้มลงชั่วขณะ หลังจากนั้นรอยยิ้มของมันก็ปรากฏบนใบหน้าตามเดิม"
+    cat_th lick "เอางี้ไหม? เพื่อให้เธอไว้ใจฉันมากขึ้น ฉันจะตอบคำถามเธอสักข้อสองข้อ"
+    cat_en lick "How about this? To gain your trust, I'll answer one or two of your questions."
+
+
+    yume_th "ฉันสามารถถามอะไรก็ได้อย่างงั้นเหรอ?"
+    yume_en "Can I ask anything?"
+
+    th "คำถามของเราทำให้เจ้าแมวส้มหรี่ตาลงน้อยๆ"
+    en "My question made the orange cat narrow its eyes slightly."
+
+
+    th "มันหุบยิ้มลงชั่วขณะ หลังจากนั้นรอยยิ้มของมันก็ปรากฏบนใบหน้าตามเดิม"
+    en "It momentarily ceased smiling, but soon its grin returned."
+
     ##voice "audio/voice/cutscene/cat_13_011.mp3"
-    cat smile "ถ้าฉันตอบได้ ฉันจะตอบเธอก็แล้วกัน"  
-    yume "แล้วถ้าตอบไม่ได้ล่ะ?"
+    cat_th smile "ถ้าฉันตอบได้ ฉันจะตอบเธอก็แล้วกัน"  
+    cat_en smile "If I can answer, I will."
+
+    yume_th "แล้วถ้าตอบไม่ได้ล่ะ?"
+    yume_en "And if you can't?"
+
     ##voice "audio/voice/cutscene/cat_13_012.mp3"
-    cat lick "ก็คงทำหน้ามึนๆใส่เธอแล้วเดินหนีด้านๆล่ะมั้ง"
-    "เราพูดไม่ออกกับความตรงไปตรงมาของสัตว์ตัวน้อย"
-    "จะว่าเจ้าแมวส้มนี่ขี้เล่นหรือซื่อสัตย์แบบแปลกๆดีนะ?"
-    yume "ถ้าฉันถามว่าฉันเป็นใคร..."
+    cat_th lick "ก็คงทำหน้ามึนๆใส่เธอแล้วเดินหนีด้านๆล่ะมั้ง"
+    cat_en lick "I'll probably just give you a blank look and sneak away."
+
+    th "เราพูดไม่ออกกับความตรงไปตรงมาของสัตว์ตัวน้อย"
+    en "I was speechless at the creature's frankness."
+
+    th "จะว่าเจ้าแมวส้มนี่ขี้เล่นหรือซื่อสัตย์แบบแปลกๆดีนะ?"
+    en "Should I consider the orange cat playful or oddly honest?"
+
+    yume_th "ถ้าฉันถามว่าฉันเป็นใคร..."
+    yume_en "If I ask who I am..."
+
     ##voice "audio/voice/cutscene/cat_13_013.mp3"
-    cat ah "ลองดูสิ แล้วเธอจะเห็นฉันหันก้นวิ่งหนีเธอจ้ะ"
-    yume "..........."
-    "เราเงียบเป็นเป่าสากเมื่อเห็นหน้าเนือยๆของผู้ตอบคำถาม"
-    "ถ้าตอบเรื่องที่สำคัญที่สุดไม่ได้แล้วมันจะมีความหมายอะไรกัน"
+    cat_th ah "ลองดูสิ แล้วเธอจะเห็นฉันหันก้นวิ่งหนีเธอจ้ะ"
+    cat_en ah "Try it, and you'll see me turn and run away."
+
+    yume_th "..........."
+    yume_en "..........."
+
+    th "เราเงียบเป็นเป่าสากเมื่อเห็นหน้าเนือยๆของผู้ตอบคำถาม"
+    en "I fell silent upon seeing the nonchalant face of my respondent."
+
+    th "ถ้าตอบเรื่องที่สำคัญที่สุดไม่ได้แล้วมันจะมีความหมายอะไรกัน"
+    en "What's the point if it can't answer the most crucial question?"
+
     ##voice "audio/voice/cutscene/cat_13_014.mp3"
-    cat lick "ผู้ไขปริศนาที่ดีต้องไม่ถามเฉลยตรงๆนะ ไม่งั้นจะมีปริศนาไว้ทำไมล่ะ"
-    "มันพูดอีกก็ถูกอีก แต่ท่าทางยียวนผสมเจ้าเล่ห์ของมันทำให้เราไม่สบอารมณ์ยังไงก็ไม่รู้"
-    "น่าเสียดายที่เราไม่มีร่างกาย ถ้าเรามีเราคงเอาเท้าเขี่ยๆพุงเจ้าแมวสักทีแล้ว"
+    cat_th lick "ผู้ไขปริศนาที่ดีต้องไม่ถามเฉลยตรงๆนะ ไม่งั้นจะมีปริศนาไว้ทำไมล่ะ"
+    cat_en lick "A good puzzle solver shouldn't ask for the solution outright. Otherwise, what's the point of the puzzle?"
+
+    th "มันพูดอีกก็ถูกอีก แต่ท่าทางยียวนผสมเจ้าเล่ห์ของมันทำให้เราไม่สบอารมณ์ยังไงก็ไม่รู้"
+    en "The cat was right again, but its smug and cunning demeanor somehow irritated me."
+
+    th "น่าเสียดายที่เราไม่มีร่างกาย ถ้าเรามีเราคงเอาเท้าเขี่ยๆพุงเจ้าแมวสักทีแล้ว"
+    en "It's a pity I don't have a physical body; if I did, I'd probably nudge the cat's belly with my foot."
+
     ##voice "audio/voice/cutscene/cat_13_015.mp3"
-    cat smile "อึ๊ย..."
-    yume "หา?"
+    cat_th smile "อึ๊ย..."
+    cat_en smile "Oops..."
+
+    yume_th "หา?"
+    yume_en "Huh?"
+
     ##voice "audio/voice/cutscene/cat_13_016.mp3"
-    cat smile "นี่ฉันคิดไปเองหรือเปล่าว่าเธอแอบปล่อยแรงกดดันใส่ฉัน"
-    yume "แรงกดดัน?"
+    cat_th smile "นี่ฉันคิดไปเองหรือเปล่าว่าเธอแอบปล่อยแรงกดดันใส่ฉัน"
+    cat_en smile "Or am I just imagining that you're exerting some kind of pressure on me?"
+    
+    yume_th "แรงกดดัน?"
+    yume_en "Pressure?"
+
     ##voice "audio/voice/cutscene/cat_13_017.mp3"
-    cat ah "ไม่มีอะไรจ้ะ แค่ฉันจะบอกว่าสายตาเธอดูทิ่มแทงฉันผิดปกติเฉยๆ"
-    yume "...เหรอ...?"
+    cat_th ah "ไม่มีอะไรจ้ะ แค่ฉันจะบอกว่าสายตาเธอดูทิ่มแทงฉันผิดปกติเฉยๆ"
+    cat_en ah "Nothing. Just saying your gaze seems unusually piercing."
+
+    yume_th "...เหรอ...?"
+    yume_en "...Really..."
+
     ##voice "audio/voice/cutscene/cat_13_018.mp3"
-    cat  smile "ก็นั่นสินะจ้ะ"
-    "เจ้าแมวส้มพูดทิ้งท้ายไว้เท่านั้นแล้วมันก็ค่อยๆเดินนำหน้าเราทีละก้าวๆ"
-    "บทสนทนาระหว่างเรากับแมวสิ้นสุดลงแค่นั้น ทิ้งไว้ซึ่งความรู้สึกแปลกๆข้างในใจราวกับความจริงบางอย่างไม่กลมกลืนกัน"
-    "...ทำไม?"
+    cat_th  smile "ก็นั่นสินะจ้ะ"
+    cat_en smile "That's right."
+
+    th "เจ้าแมวส้มพูดทิ้งท้ายไว้เท่านั้นแล้วมันก็ค่อยๆเดินนำหน้าเราทีละก้าวๆ"
+    en "The orange cat concluded and began to lead the way again, step by step."
+
+    th "บทสนทนาระหว่างเรากับแมวสิ้นสุดลงแค่นั้น ทิ้งไว้ซึ่งความรู้สึกแปลกๆข้างในใจราวกับความจริงบางอย่างไม่กลมกลืนกัน"
+    en "That was the end of our conversation, leaving behind a strange feeling in my heart, as if something wasn't quite right."
+    
+    th "...ทำไม?"
+    en "...Why?"
     hide cat with dissolve
     jump main_map
 
