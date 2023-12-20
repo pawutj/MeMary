@@ -378,7 +378,7 @@ label answer_roome0:
     ##voice "audio/voice/room0/cat_0_027.mp3"
                 cat_th "น่าจะต้องไปถามพ่อเธอดูล่ะจ้ะ"
                 $ point_0 = point_0 +1
-                jump answer_roome0  
+                jump easteregg_1  
             if point_0 == 3 :
     ##voice "audio/voice/room0/cat_0_028.mp3"
                 cat_th "ยินดีด้วย คุณได้รับฉากจบลับ"
@@ -459,6 +459,32 @@ label after_room_0:
     en "All that's left are some words lingering in my memory."
 
     jump memary_scene
+
+label easteregg_1:
+    
+    yume_th "เดี๋ยวเถอะเจ้าแมวส้มเดี๋ยวก็จับเอาไปโกนขนซะเลย"
+    hide puzzle0 with dissolve
+    show cat normal with dissolve
+    cat_th normal "ดูเหมือนว่าสติปัญญาของเธอจะไม่คู่ควรสำหรับคฤหาสหลังนี้สินะ" with dissolve
+
+    cat_th ah "เปิดโหมดกำจัดสิ่งแปลกปลอม" with dissolve
+    
+    yume_th "เอ๋"
+
+    th "ทันใดนั้นตาของเจ้าแมวก้มีแสงกระพริบออกมาพร้อมเสียงนับถอยหลังของนาฬิกา"
+
+    yume_th "เดี๋ยวสิ…อย่าบอกนะว่า"
+    hide cat_th
+    scene bakuhatu1 with dissolve
+    th "ตู้มมมมมมม"
+
+    scene bakuhatu2 with dissolve
+    th "ทุกสิ่งทุกอย่างที่อยู่ตรงหน้าของฉันค่อยๆถูกเปลวเพลิงกลืนกินหายไปภายในชั่วพริบตา"
+
+    th "สิ่งสุดท้ายที่อยู่ในความคิดของฉันคือ ไม่น่าไปกวนตีนไอแมวนี่เลย…"
+
+    scene black with Dissolve(3)
+    return 
 
 
 label after_room_0_1:
