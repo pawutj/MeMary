@@ -40,6 +40,10 @@ label answer_roome02:
                 hide puzzle3
                 jump after_room_2
 
+            if prepare(input_value) == "idol":
+                hide puzzle3
+                jump easteregg_3
+
             if prepare(input_value) == "rune":
     ##voice "audio/voice/room2/cat_2_000.mp3"
                 cat_th "ลองเทียบอักษรดูสิ"
@@ -178,3 +182,37 @@ label after_room_2:
     en "...Towards the next door..."
     hide cat
     jump cutscene_main
+
+label easteregg_3:
+    scene white with Dissolve(3)
+
+    th "ใช่แล้วฉันนึกออกแล้ว ความรู้สึกนี้ เสียงของผู้คนรอบกาย"
+
+    #เสียงเชีย
+
+    th "ณ สถานที่แห่งนี้ เธอนี่แหละคือไอดอลของทุกคน!!"
+
+    scene idol00 with Dissolve(2)
+
+    th "เสียงเชียร์ของทุกคน กำลังกลายเป็นพลังให้กับเธอผู้นี้"
+    #[mary_e3_000]
+    mary0_th "ทุกคนนน ใครร้องได้ช่วยกันร้องด้วยนะ" 
+
+    #เสียงเชีย
+    #[mary_e3_001]
+    mary0_th " โปรดจงรับความรู้สึกที่ออกมาจากหัวใจของฉัน ขอส่งต่อมันให้กับทุกคนในเวทีแห่งนี้!!" 
+
+    #[mary_e3_002]
+    mary0_th "MeMary X'mas!!" 
+
+    #เสียงเชีย
+    th "......"
+
+    scene library_n_1080 with Dissolve(3)
+
+    yume_th "นี่ฉันเป็นติ่งไอดอลอย่างงั้นเหรอ!?"
+
+    #[cat_e3_000]
+    cat_th "จะไปใช่ได้ไงเล่า!" 
+
+    jump answer_roome02
