@@ -7,7 +7,7 @@ label room01:
 
     if room01_is_pass == False: 
         show cat normal with dissolve
-    ##voice "audio/voice/room1/cat_1_000.mp3"
+        voice "audio/voice/room1/cat_1_000.mp3"
         cat_th normal "พร้อมสำหรับโจทย์ข้อต่อไปหรือยังล่ะ?" with dissolve
         cat_en normal "Ready for the next challenge?" with dissolve
         
@@ -82,48 +82,48 @@ label after_room_1:
     stop music
     play music 星が輝く冬
     scene fb1 with dissolve
-    ##voice "audio/voice/room1/mary_1_000.mp3"
+    voice "audio/voice/room1/mary_1_000.mp3"
     mary0_th "เธอรู้จักสแตxด์หรือเปล่าล่ะ?"
     mary0_en "Do you know about Stands?"
 
     yume_th "หา?"
     yume_en "Huh?"
-    ##voice "audio/voice/room1/mary_1_001.mp3"
+    voice "audio/voice/room1/mary_1_001.mp3"
     mary0_th "ตอบคำถามฉันมาสิ"
     mary0_en "Just answer my question."
     
     yume_th "ก็รู้จักแหละว่ามันมาจากอนิเมะ แต่เธอไม่ต้องถามแบบทำหน้าเข้มๆก็ได้นะ"
     yume_en "I know they're from an anime, but you don't have to ask with such a stern face."
 
-    ##voice "audio/voice/room1/mary_1_002.mp3"
+    voice "audio/voice/room1/mary_1_002.mp3"
     mary0_th "ว่ากันว่า ผู้ใช้สแตxด์จะดึงดูดผู้ใช้สแตxด์ด้วยกัน"
     mary0_en "It's said that Stand users attract other Stand users"
     
     yume_th "...เหรอ"
     yume_en "...Really?"
     
-    ##voice "audio/voice/room1/mary_1_003.mp3"
+    voice "audio/voice/room1/mary_1_003.mp3"
     mary0_th "ใช่แล้ว ฉันน่ะ...เป็นผู้ใช้สแตนด์ยังไงล่ะ!!!"
     mary0_en "Yes, I am... a Stand user!!!"
 
     yume_th "............."
     yume_en "............."
     
-    ##voice "audio/voice/room1/mary_1_004.mp3"
+    voice "audio/voice/room1/mary_1_004.mp3"
     mary0_th "เออะ...ไม่ขำเหรอ..."
     mary0_en "Uh... not funny?"
 
     yume_th "เฮ้อ ปัญญาอ่อน"
     yume_en "Sigh, so silly."
     
-    ##voice "audio/voice/room1/mary_1_005.mp3"
+    voice "audio/voice/room1/mary_1_005.mp3"
     mary0_th "ใจร้าย เค้าแค่ล้อเล่นเอง"
     mary0_en "That's mean. I was just joking."
 
     yume_th "วันหลังหัดเล่นมุกให้เก่งกว่านี้หน่อยนะ แบบนี้แค่หัวเราะเป็นมารยาทยังทำไม่ลงเลย"
     yume_en "Next time, try to make a better joke. I can't even give you a courtesy laugh for that one."
 
-    ##voice "audio/voice/room1/mary_1_006.mp3"
+    voice "audio/voice/room1/mary_1_006.mp3"
     mary0_th "อย่าล้อเค้า!"
     mary0_en "Don't tease me!"
 
@@ -147,7 +147,7 @@ label after_room_1:
     en "This silly but heartwarming memory makes me smile involuntarily."
     
     show cat normal 
-    ##voice "audio/voice/room1/cat_1_008.mp3"
+    voice "audio/voice/room1/cat_1_008.mp3"
     cat_th normal "เธอเห็นอะไรเหรอ?"    
     cat_en normal "What did you see?"
 
