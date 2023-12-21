@@ -59,7 +59,7 @@ label room07:
         th "เจ้าแมวส้มส่งยิ้มให้เรา"
         en "The orange cat gave me a smile."
 
-        show puzzle7
+        
         jump answer_roome07
     
     else :
@@ -68,6 +68,7 @@ label room07:
         jump main_map 
 
 label answer_roome07:
+    show puzzle7
     menu:
         "answer":
             $ input_value = renpy.input("Answer?")
@@ -80,6 +81,9 @@ label answer_roome07:
 
                 hide puzzle7
                 jump after_room_7
+
+            if prepare(input_value) == "libra" :
+                jump easteregg_2
             else :
                 th "it's not answer"
                 jump answer_roome07
@@ -281,6 +285,39 @@ label after_room_7:
     hide cat
     jump cutscene_main
 
+label easteregg_2:
+    scene library_1080 with dissolve
+
+    th "ขณะที่พวกเราสองคนอ่านหนังสืออยู่ที่ห้องสมุด เธอคนนั้นก็ลุกขึ้นไปหยิบหนังสือบนบันไดพร้อมถามคำถามว่า"
+
+    mary_th "นี่เธอรู้รึเปล่าจ๊ะว่ากลุ่มดาวอะไรสามารถดูได้ที่คฤหาสน์นี้ตอนกลางวัน"
+
+    yume_th "ดาวเทียม?"
+
+    mary_th "ใช่ที่ไหนกันเล่า กลุ่มดาวไลบร้าต่างหากจ้ะ"
+
+    yume_th "ไลบร้า?"
+
+    mary_th "ก็ “ไลบร้า”ลี่ ที่หมายถึงห้องสมุดไง ไงล่ะจ้ะ ว่าไปนั่น"
+
+    th "ตัวฉันที่กำลังจะหันหน้าขึ้นไปต่อว่าเธอที่เล่นมุกไร้สาระนี่บนบันไดก็พบกับกลุ่มดาวอีกดวงที่สามารถเห็นได้ในตอนกลางวัน"
+
+    scene piyo with dissolve
+
+    yume_th "เห…ฉันนึกว่ามีแค่ดาวไลบร้าที่เห็นได้ตอนกลางวัน ไม่คิดว่าจะได้เห็นดาวลูกไก่ด้วย"
+
+    mary_th "นี่!! เดี๋ยวเถอะ!! นี่เธอแอบดูกางเกงในฉันหรอ!!"
+
+    scene garden_n_1080 with dissolve 
+    
+    cat_th "ดูจากสีหน้าแล้วเหมือนจะได้เห็นความทรงจำสุดลามกด้วยล่ะ"
+    
+    yume_th "ไม่ใช่เฟ้ย!"
+
+    jump answer_roome07
+
+
+    
     
  
     
