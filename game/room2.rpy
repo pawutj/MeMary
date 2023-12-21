@@ -206,9 +206,10 @@ label easteregg_3:
     mary0_th "MeMary X'mas!!" 
 
     #เสียงเชีย
+    scene white with Dissolve(3)
     th "......"
 
-    scene library_n_1080 with Dissolve(3)
+    scene library_n_1080 with Dissolve(1)
 
     yume_th "นี่ฉันเป็นติ่งไอดอลอย่างงั้นเหรอ!?"
 

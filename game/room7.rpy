@@ -286,10 +286,10 @@ label after_room_7:
     jump cutscene_main
 
 label easteregg_2:
-    scene library_1080 with dissolve
-
+    
+    scene white with Dissolve(2)
     th "ขณะที่พวกเราสองคนอ่านหนังสืออยู่ที่ห้องสมุด เธอคนนั้นก็ลุกขึ้นไปหยิบหนังสือบนบันไดพร้อมถามคำถามว่า"
-
+    scene library_1080 with Dissolve(3)
     mary_th "นี่เธอรู้รึเปล่าจ๊ะว่ากลุ่มดาวอะไรสามารถดูได้ที่คฤหาสน์นี้ตอนกลางวัน"
 
     yume_th "ดาวเทียม?"
@@ -302,13 +302,13 @@ label easteregg_2:
 
     th "ตัวฉันที่กำลังจะหันหน้าขึ้นไปต่อว่าเธอที่เล่นมุกไร้สาระนี่บนบันไดก็พบกับกลุ่มดาวอีกดวงที่สามารถเห็นได้ในตอนกลางวัน"
 
-    scene piyo with dissolve
+    scene piyo with Dissolve(2)
 
     yume_th "เห…ฉันนึกว่ามีแค่ดาวไลบร้าที่เห็นได้ตอนกลางวัน ไม่คิดว่าจะได้เห็นดาวลูกไก่ด้วย"
 
     mary_th "นี่!! เดี๋ยวเถอะ!! นี่เธอแอบดูกางเกงในฉันหรอ!!"
 
-    scene garden_n_1080 with dissolve 
+    scene garden_n_1080 with Dissolve(3) 
     
     cat_th "ดูจากสีหน้าแล้วเหมือนจะได้เห็นความทรงจำสุดลามกด้วยล่ะ"
     
