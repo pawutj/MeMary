@@ -89,7 +89,7 @@ label after_room_6:
     mary0_th "แต่ที่ฉันชอบมันคือสีขาวนี้จ้ะ แล้วภาษาดอกไม้ของมันก็ไม่เหมือนกับสีแดงด้วย"
     mary0_en "But the ones I like are these white ones. Their floral language isn't the same as the red ones."
     yume_th "สีแดงสื่อถึงความตาย แล้วสีขาวสื่อถึงอะไรล่ะ?"
-    yume_th "Red symbolizes death, but what does white signify?"
+    yume_en "Red symbolizes death, but what does white signify?"
     voice "audio/voice/room6/mary_6_003.mp3"
     mary0_th "ความหมายของมันโรแมนติคมากเลยล่ะ"
     mary0_en "Its meaning is quite romantic."

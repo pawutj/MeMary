@@ -189,7 +189,7 @@ label intro:
 
     voice "audio/voice/room0/cat_0_006.mp3"
     cat_th smile "ถ้าเธออยากได้คำตอบว่าเธอเป็นใคร ทำไมเธอถึงอยู่ที่นี่ เธอมีทางเลือกเดียวเท่านั้น" with dissolve
-    cat_th smile "If you want answers about who you are and why you are here, there's only one choice." with dissolve
+    cat_en smile "If you want answers about who you are and why you are here, there's only one choice." with dissolve
 
     yume_th "ทางเลือก?"
     yume_en "A choice?"

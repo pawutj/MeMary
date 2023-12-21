@@ -98,7 +98,7 @@ label after_room_5:
     yume_en "What do you mean by that!?"
     voice "audio/voice/room5/mary_5_008.mp3"
     mary0_th "ไม่ฟังเธอแล้ว ฟังเพลงดีกว่าจ้ะ"
-    mary0_th "I'm not listening to you anymore. I'd rather listen to the music."
+    mary0_en "I'm not listening to you anymore. I'd rather listen to the music."
     yume_th "ฉันขอโทษน่า!"
     yume_en "I'm sorry, okay!"
 

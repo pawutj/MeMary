@@ -242,7 +242,7 @@ label final:
     mary_en "You're welcome."
     yume_th "แต่ถ้ามาช่วยฉัน เธอจะโดนคนอื่นรังแกไปด้วยนะ"
     yume_en "But if you help me, you'll get bullied too."
-    voice "audio/voice/final/mary_10_005.mp3"
+    
     mary_th "....."
     mary_en "....."
     th "เราพูดความจริงต่อหน้าเด็กสาวผมทอง"
@@ -251,7 +251,7 @@ label final:
     en "Although I spoke to push her away, Mary handed me the cloth and smiled faintly."
     yume_th "ทำไม?"
     yume_en "Why?"
-    voice "audio/voice/final/mary_10_006.mp3"
+    voice "audio/voice/final/mary_10_005.mp3"
     mary_th "หา?"
     mary_en "Huh?"
     yume_th "ทำไมถึงช่วยฉันล่ะ?"
@@ -492,7 +492,7 @@ label final:
     yume_en "....."
     voice "audio/voice/final/mary_10_035.mp3"
     mary_th "ฉันน่ะ...ชอบเธอที่สุดเลย..."
-    mary_th 'I... like you the most...'
+    mary_en 'I... like you the most...'
 
     scene sky_morning
     stop music
@@ -540,8 +540,7 @@ label final:
     voice "audio/voice/final/mary_10_037.mp3"
     mary_th "เรื่องแค่นั้นไม่น่าเดายากจ้ะ"
     mary_en "It wasn't hard to guess."
-    th "There is no other possibility."
-    en ""
+
     th "คนกลายร่างเป็นแมวได้เป็นเรื่องที่น่าขำ แต่การมีอยู่ของคฤหาสน์ที่เปลี่ยนฉากในห้องได้อย่างอิสระและมีทางเดินที่ไม่มีจุดสิ้นสุดก็ดูเป็นเรื่องเหนือธรรมชาติอยู่แล้ว"
     en "It seemed ridiculous that a person could transform into a cat, but in a mansion where rooms changed scenes at will and corridors never ended, it didn't seem so far-fetched."
     th "การที่แมรี่กลายร่างได้อาจจะเป็นเรื่องที่ไม่ผิดแปลกในสถานที่แบบนี้"
@@ -662,7 +661,7 @@ label final:
     mary_en "Dad, I just..."
     father_th "ใครๆก็รู้ว่าครอบครัวเราแต่งงานเพื่อธุรกิจ แต่ใครมันจะไปทนอยู่กับพวกวิปริตทางเพศได้วะ"
     father_en "Everyone knows our family married for business. Who could stand being with perverts!"
-    voice "audio/voice/final/mary_10_045.mp3"
+    
     mary_th "....."
     mary_th "....."
     father_th "แกรู้ไหมว่ามันยุ่งยากแค่ไหนที่ฉันต้องมานั่งลบข่าวฉาวเรื่องแม่แกหนีตามกับผู้หญิงที่เป็นคนรักเก่า แม่แกทำให้ชื่อเสียงของฉันป่นปี้ไปหมด!"
@@ -781,7 +780,7 @@ label final:
     en "Every question in my heart remained unanswered."
     yume_th  "แล้ว...เรื่องราวต่อจากนั้นล่ะ...?"
     yume_en "And... what happened next...?"
-    voice "audio/voice/final/mary_10_057.mp3"
+    #voice "audio/voice/final/mary_10_057.mp3"
     mary_th "....."
     mary_en "....."
     yume_th "แมรี่ ตอบฉันที"

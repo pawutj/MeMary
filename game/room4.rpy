@@ -125,14 +125,14 @@ label after_room_4:
     yume_th "โจทย์มันเขียนมามึนๆงี้จะให้ทำยังไง?"
     yume_en "How am I supposed to solve it when the problem is written so confusingly?"
 
-    voice "audio/voice/room4/mary_4_001.mp3"
+    # voice "audio/voice/room4/mary_4_001.mp3"
     mary0_th "....."
     mary0_en "....."
 
     yume_th "แล้วข้างล่างที่เขียนว่า ‘ง่ายกว่าที่คิด’ นี่มันอะไรกัน?"
     yume_en "And what about the part written below that says ‘easier than you think’?"
 
-    voice "audio/voice/room4/mary_4_002.mp3"
+    # voice "audio/voice/room4/mary_4_002.mp3"
     mary0_th "....."
     mary0_en "....."
 
