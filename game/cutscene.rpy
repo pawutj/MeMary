@@ -10,41 +10,64 @@ label cutscene_main:
     if ( (room07_is_pass == True) + (room08_is_pass == True) == 2  ):
         jump cutscene_3
     jump main_map
+
 label cutscene_2:
     scene hall_n_1080 with dissolve
-    "เสียงปลดล็อกงั้นหรอ หรือว่ามีห้องถูกปลดล็อกเพิ่มกันนะ"
+    th "เสียงปลดล็อกงั้นหรอ หรือว่ามีห้องถูกปลดล็อกเพิ่มกันนะ"
+    en "Is that the sound of unlocking? Or are there more rooms being unlocked?"
     show cat normal with dissolve
     voice "audio/voice/cutscene/cat_13_000.mp3"
-    cat lick "อยากรู้ก็ลองไปดูสิ"
+    
+    cat_th lick "อยากรู้ก็ลองไปดูสิ"
+    cat_en lick "If you're curious, try going to check it out."
     hide cat
-    "มีประตูเปิดเพิ่มอีก 3 บาน"
+    
+    th "มีประตูเปิดเพิ่มอีก 3 บาน"
+    en "Three more doors have opened."
     jump main_map
 
 label cutscene_3:
     scene hall_n_1080 with dissolve
-    yume "ตอนนี้ผ่านมานานเท่าไหร่แล้วนะ"
-
+    yume_th "ตอนนี้ผ่านมานานเท่าไหร่แล้วนะ"
+    yume_en "How much time has passed now?"
+    
     show cat normal with dissolve
     voice "audio/voice/cutscene/cat_13_001.mp3"
-    cat smile "ช้าหรือเร็ว อยู่กับว่าเธอไขปริศนาได้เร็วแค่ไหน"
+    cat_th smile "ช้าหรือเร็ว อยู่กับว่าเธอไขปริศนาได้เร็วแค่ไหน"
+    cat_en smile "Slow or fast, it depends on how quickly you can solve the puzzle."
+    
     voice "audio/voice/cutscene/cat_13_002.mp3"
-    cat ah "ถ้ารู้สึกว่านาน แสดงว่าเธอไขปริศนาได้ช้ารึเปล่า"
+    cat_th ah "ถ้ารู้สึกว่านาน แสดงว่าเธอไขปริศนาได้ช้ารึเปล่า"
+    cat_en ah "If it feels like a long time, does that mean you're slow at solving the puzzle?"
+
     voice "audio/voice/cutscene/cat_13_003.mp3"
-    cat lick "แต่ถ้าเธอรู้สึกว่าเร็วเกินไป ฉันว่า เธอแอบเปิดโพยรึเปล่า?"
-    "..."
+    cat_th lick "แต่ถ้าเธอรู้สึกว่าเร็วเกินไป ฉันว่า เธอแอบเปิดโพยรึเปล่า?"
+    cat_en lick "But if you feel it's too quick, I wonder if you're cheating?"
+    
+    th "..."
+    en "..."
 
     voice "audio/voice/cutscene/cat_13_004.mp3"
-    cat ah "เหลืออีกไม่กี่ห้องก็จบแล้วสินะ หลังจากที่เราแยกกัน เธออาจจะคิดถึงฉันก็ได้ \n"
-    voice "audio/voice/cutscene/cat_13_005.mp3"
-    cat lick "ฉันจะอนุญาติให้เธอลูบหัวเป็นกรณีพิเศษก็ได้"
+    cat_th ah "เหลืออีกไม่กี่ห้องก็จบแล้วสินะ หลังจากที่เราแยกกัน เธออาจจะคิดถึงฉันก็ได้ \n"
+    cat_en ah "Not many rooms left now, after we separated, you might miss me."
 
-    yume "ไม่ล่ะ ขอบใจ"
+    voice "audio/voice/cutscene/cat_13_005.mp3"
+    cat_th lick "ฉันจะอนุญาติให้เธอลูบหัวเป็นกรณีพิเศษก็ได้"
+    cat_en lick "I could allow you to pat my head as a special case."
+
+    yume_th "ไม่ล่ะ ขอบใจ"
+    yume_en "No, thanks."
 
     #sfx click
     voice "audio/voice/cutscene/cat_13_006.mp3"
-    cat normal "ดูเหมือนห้องจะปลดล็อกเพิ่มขึ้นอีกแล้วสินะ"
-    yume "รีบทำให้มันจบลงดีกว่า"
-    "ความจริงอยู่แค่เอื้อมแล้ว"
+    cat_th normal "ดูเหมือนห้องจะปลดล็อกเพิ่มขึ้นอีกแล้วสินะ"
+    cat_en normal "It seems like more rooms have been unlocked."
+
+    yume_th "รีบทำให้มันจบลงดีกว่า"
+    yume_en "Better hurry up and finish this."
+    
+    th "ความจริงอยู่แค่เอื้อมแล้ว"
+    en "Better hurry up and finish this."
     jump main_map
 
 label cutscene_0:
@@ -179,75 +202,160 @@ label cutscene_0:
 label cutscene_1:
     play music 星が輝く冬
     scene hall_n_1080 with dissolve
-    yume "ก่อนเข้าห้องต่อไป ฉันมีอะไรจะถามแกสักหน่อย"
-    "คำเรียกของเราทำให้เจ้าแมวส้มหันหน้ามามองเราด้วยความฉงน"
-    "ดวงตาคู่โตของมันเบิกกว้างขึ้นเล็กน้อยทำให้น่าเอ็นดูขึ้น"
+    yume_th "ก่อนเข้าห้องต่อไป ฉันมีอะไรจะถามแกสักหน่อย"
+    yume_en "Before entering the next room, I have something to ask you."
+
+    th "คำเรียกของเราทำให้เจ้าแมวส้มหันหน้ามามองเราด้วยความฉงน"
+    en "Our call made the orange cat turn its head to look at us with confusion."
+
+    th "ดวงตาคู่โตของมันเบิกกว้างขึ้นเล็กน้อยทำให้น่าเอ็นดูขึ้น"
+    en "The cat's large eyes widened slightly, making it look more adorable."
     show cat lick with dissolve
     
     voice "audio/voice/cutscene/cat_13_019.mp3"
-    cat lick "ถามมาก็ตอบได้จ้ะ"
-    yume "ถ้างั้นฉันขอถามว่า..."
+    cat_th lick "ถามมาก็ตอบได้จ้ะ"
+    cat_en lick "Ask away, and I shall answer."
+
+    yume_th "ถ้างั้นฉันขอถามว่า..."
+    yume_en "In that case, I want to ask..."
+
     
     voice "audio/voice/cutscene/cat_13_020.mp3"
-    cat ah "แต่ห้ามถามว่าเธอเป็นใครนะจ้ะ บอกไว้ก่อน"
-    yume ".............."
-    "เราถูกขัดคอล่วงหน้าราวกับเจ้าแมวเดาคำพูดของเราได้"
-    "ดวงตากลมโตของมันมองเราด้วยความเจนจัดราวกับคนถือไพ่เหนือกว่า"
+    cat_th ah "แต่ห้ามถามว่าเธอเป็นใครนะจ้ะ บอกไว้ก่อน"
+    cat_en ah "But you must not ask who you are, just a heads up."
+
+    yume_th ".............."
+    yume_en ".............."
+
+    th "เราถูกขัดคอล่วงหน้าราวกับเจ้าแมวเดาคำพูดของเราได้"
+    en "We were interrupted in advance, as if the cat could guess our words."
+
+
+    th "ดวงตากลมโตของมันมองเราด้วยความเจนจัดราวกับคนถือไพ่เหนือกว่า"
+    en "The cat's round eyes looked at us sharply, like someone holding a superior hand of cards."
     
     voice "audio/voice/cutscene/cat_13_021.mp3"
-    cat lick "แหม...เมื่อกี้จะขอถามเฉลยตรงๆเลยใช่ไหมล่ะ?"
-    yume "แกคิดไปเอง"
-    "เราพยายามบ่ายเบี่ยงเพราะไม่อยากเสียเชิงแมวส้ม"
-    "อย่างไรก็ตาม เจ้าแมวดูไม่ลดละที่จะไล่ต้อนเรา"
-    yume "...!!!"
+    cat_th lick "แหม...เมื่อกี้จะขอถามเฉลยตรงๆเลยใช่ไหมล่ะ?"
+    cat_en lick "Oh... were you about to ask directly for the solution just now?"
+
+    yume_th "แกคิดไปเอง"
+    yume_en "You're imagining things."
+
+    th "เราพยายามบ่ายเบี่ยงเพราะไม่อยากเสียเชิงแมวส้ม"
+    en "We tried to evade because we didn't want to lose the initiative to the orange cat."
+
+    th "อย่างไรก็ตาม เจ้าแมวดูไม่ลดละที่จะไล่ต้อนเรา"
+    en "However, the cat seemed relentless in pursuing us."
+
+    yume_th "...!!!"
+    yume_en "...!!!"
+
     voice "audio/voice/cutscene/cat_13_022.mp3"
-    cat ah "เธอหลอกสายตาอันเฉียบคมของฉันไม่ได้หรอกนะ!!!"
-    "เจ้าแมวส้มยื่นหน้าพุ่งใส่เราอย่างไม่ทันตั้งตัว"
-    "เราผงะจนถอยหลังเล็กน้อย แต่เจ้าแมวก็ยังไล่กวดตามมาเหมือนจับหนู"
-    yume "เฮ้ย จะใกล้เกินไปแล้วนะ"
-    voice "audio/voice/cutscene/cat_13_023.mp3"
-    cat lick "ฉันดูออกนะ"
-    yume "จะดูออกหรือดูไม่ออกก็ช่างมันเถอะ ออกไปห่างๆฉันก่อน"
+    cat_th ah "เธอหลอกสายตาอันเฉียบคมของฉันไม่ได้หรอกนะ!!!"
+    cat_en ah "You can't deceive my keen eyes!!!"
+
+
+    th "เจ้าแมวส้มยื่นหน้าพุ่งใส่เราอย่างไม่ทันตั้งตัว"
+    en "The orange cat suddenly lunged its face towards us."
+
+    th "เราผงะจนถอยหลังเล็กน้อย แต่เจ้าแมวก็ยังไล่กวดตามมาเหมือนจับหนู"
+    en "We flinched and stepped back a little, but the cat kept following us like chasing a mouse."
     
+    yume_th "เฮ้ย จะใกล้เกินไปแล้วนะ"
+    yume_en "Hey, that's getting too close."
+
+    voice "audio/voice/cutscene/cat_13_023.mp3"
+    cat_th lick "ฉันดูออกนะ"
+    cat_en lick  "I can see through it."
+    
+    yume_th "จะดูออกหรือดูไม่ออกก็ช่างมันเถอะ ออกไปห่างๆฉันก่อน"
+    yume_en "Whether you can see through it or not, just stay away from me for now."
+
     voice "audio/voice/cutscene/cat_13_024.mp3"
-    cat smile "ฮะๆๆ ก็ได้ๆ"
-    "เจ้าแมวส้มหัวเราะร่วนสักพักก่อนที่มันจะกระโดดห่างจากเราสองสามก้าว"
+    cat_th smile "ฮะๆๆ ก็ได้ๆ"
+    cat_en smile "Ha ha, okay, okay."
+
+    th "เจ้าแมวส้มหัวเราะร่วนสักพักก่อนที่มันจะกระโดดห่างจากเราสองสามก้าว"
+    en "You haven't changed, still mischievous as ever. Where do you find puzzle solvers sneakily looking for solutions?"
+
     voice "audio/voice/cutscene/cat_13_025.mp3"
-    cat lick "เธอนี่นิสัยไม่ดีเหมือนเดิมเลยนะ คนไขปริศนาที่ไหนเค้าแอบหาเฉลยอ่านกัน"
-    yume "ถ้าโจทย์มันยากเกินไป ใครๆเค้าก็หาโพยทั้งนั้นแหละ"
-    "แมวส้มทำตาโตใส่เราพลางส่งเสียงถอนใจ"
-    "นี่เราคิดไปเองหรือเปล่าว่าเจ้าแมวตัวนี้กวนประสาทแปลกๆ"
+    cat_th lick "เธอนี่นิสัยไม่ดีเหมือนเดิมเลยนะ คนไขปริศนาที่ไหนเค้าแอบหาเฉลยอ่านกัน"
+    cat_en lick "You haven't changed, still naughty. Where does a puzzle solver secretly look up answers?"
+    yume_th "ถ้าโจทย์มันยากเกินไป ใครๆเค้าก็หาโพยทั้งนั้นแหละ"
+    yume_en "If the problem is too hard, everyone looks up the solution."
+    th "แมวส้มทำตาโตใส่เราพลางส่งเสียงถอนใจ"
+    en "The orange cat widens its eyes at us and sighs."
+    th "นี่เราคิดไปเองหรือเปล่าว่าเจ้าแมวตัวนี้กวนประสาทแปลกๆ"
+    en "Am I imagining that this cat is oddly annoying?"
     
     voice "audio/voice/cutscene/cat_13_026.mp3"
-    cat normal "เธอพูดไม่ผิดแหละ แต่ความสนุกของปริศนามาจากความยากและความท้าทาย ไม่ใช่ความง่ายระดับใครๆก็ตอบได้หรอก"
-    yume "อะไรๆก็ง่ายทั้งนั้นแหละถ้ามีโพยให้อ่าน"
-    "คำตอบของเราทำให้เจ้าแมวทำแก้มป่อง"
-    "ดวงตาคู่โตของเจ้าแมวมองเราอย่างไม่พอใจ"
+    cat_th normal "เธอพูดไม่ผิดแหละ แต่ความสนุกของปริศนามาจากความยากและความท้าทาย ไม่ใช่ความง่ายระดับใครๆก็ตอบได้หรอก"
+    cat_en normal "You're not wrong, but the fun of a puzzle comes from its difficulty and challenge, not from being so easy that anyone can answer."
+    
+    yume_th "อะไรๆก็ง่ายทั้งนั้นแหละถ้ามีโพยให้อ่าน"
+    yume_en "Everything's easy if you have the answers."
+
+    th "คำตอบของเราทำให้เจ้าแมวทำแก้มป่อง"
+    en "Our response made the cat puff up its cheeks."
+
+    th "ดวงตาคู่โตของเจ้าแมวมองเราอย่างไม่พอใจ"
+    en "The cat's big eyes looked at us displeased."
+
     voice "audio/voice/cutscene/cat_13_027.mp3"
-    cat lick "หนึ่งคำก็โพย สองคำก็โพย ตอนเธอเรียนหนังสือนี่คงลอกการบ้านคนอื่นทุกวันเลยล่ะสิ ไม่ไหวๆ"
-    "เจ้าแมวส่งเสียงเยาะเย้ยเรา"
-    "ความรู้สึกหงุดหงิดผุดพรายขึ้นมาในใจเราอย่างควบคุมไม่ได้"
-    yume "ฉันต่างหากล่ะที่ทำงานให้คนอื่นลอก!"
+    cat_th lick "หนึ่งคำก็โพย สองคำก็โพย ตอนเธอเรียนหนังสือนี่คงลอกการบ้านคนอื่นทุกวันเลยล่ะสิ ไม่ไหวๆ"
+    cat_th lick "One word is a cheat, two words are a cheat. You must have copied others' homework every day when you were studying, huh? Unbelievable."
+
+    th "เจ้าแมวส่งเสียงเยาะเย้ยเรา"
+    en "The cat scoffed at us."
+
+    th "ความรู้สึกหงุดหงิดผุดพรายขึ้นมาในใจเราอย่างควบคุมไม่ได้"
+    en  "An uncontrollable irritation bubbled up in our heart."
+
+    yume_th "ฉันต่างหากล่ะที่ทำงานให้คนอื่นลอก!"
+    yume_en "It was I who did the work for others to copy!"
     
     voice "audio/voice/cutscene/cat_13_028.mp3"
-    cat smile "เหรอ?"
-    yume "...อึก"
-    "เมื่อกี้มันอะไร? "
-    "จู่ๆเราก็พูดขึ้นมาทั้งๆที่เราไม่ได้อยากพูด"
-    "เราตอบสนองต่อคำพูดคนอื่นโดยที่ไม่รู้ตัวอย่างงั้นเหรอ?"
-    "นี่มันแปลกชะมัด"
+    cat_th smile "เหรอ?"
+    cat_en smile "Really?"
+
+    yume_th "...อึก"
+    yume_en "...Uh."
+
+    th "เมื่อกี้มันอะไร? "
+    en "What was that just now? I blurted out without wanting to speak."
+
+    th "จู่ๆเราก็พูดขึ้นมาทั้งๆที่เราไม่ได้อยากพูด"
+    en "Did I just react to someone else's words unconsciously?"
+
+    th "เราตอบสนองต่อคำพูดคนอื่นโดยที่ไม่รู้ตัวอย่างงั้นเหรอ?"
+    en "This is really strange."
+
+    th "นี่มันแปลกชะมัด"
+    en "You're starting to become your true self again."
+
     voice "audio/voice/cutscene/cat_13_029.mp3"
-    cat smile "เธอเริ่มจะกลับมาเป็นตัวของตัวเองแล้วนะ"
-    yume "หา?"
+    cat_th smile "เธอเริ่มจะกลับมาเป็นตัวของตัวเองแล้วนะ"
+    cat_en smile "Huh?"
+
+    yume_th "หา?"
+    yume_en "You'll understand soon enough."
+
     
     voice "audio/voice/cutscene/cat_13_030.mp3"
-    cat normal "เดี๋ยวเธอก็เข้าใจเอง "
-    "เจ้าแมวทิ้งท้ายไว้เท่านั้นก่อนที่มันจะนำทางเราไปยังห้องแห่งปริศนาต่อไป"
+    cat_th normal "เดี๋ยวเธอก็เข้าใจเอง "
+    cat_en normal "You'll understand soon enough."
+
+    th "เจ้าแมวทิ้งท้ายไว้เท่านั้นก่อนที่มันจะนำทางเราไปยังห้องแห่งปริศนาต่อไป"
+    en "The cat left it at that before leading us to the next puzzle room."
     #sfx 
     voice "audio/voice/cutscene/cat_13_031.mp3"
-    cat ah "ดูเหมือนจะมีห้องที่ถูกปลดล็อกเพิ่มขึ้นแล้วนะ"
+    cat_th ah "ดูเหมือนจะมีห้องที่ถูกปลดล็อกเพิ่มขึ้นแล้วนะ"
+    cat_en ah "It seems that more rooms have been unlocked now."
+
     voice "audio/voice/cutscene/cat_13_032.mp3"
-    cat normal "รีบไปสิ อยากรู้ความจริงไม่ใช่เหรอ"
+    cat_th normal "รีบไปสิ อยากรู้ความจริงไม่ใช่เหรอ"
+    cat_en normal "Hurry up, you want to know the truth, don't you?"
+
     hide cat
     jump main_map
    
