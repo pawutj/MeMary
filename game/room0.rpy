@@ -10,7 +10,8 @@ label memary_scene:
     return 
 
 label intro:    
-    
+    # $ persistent.common_end_pass = False
+    # $ persistent.true_end_pass = False
     #Just Test
     scene rouka_s_1080
     play music 廃墟洋館
