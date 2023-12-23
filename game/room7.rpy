@@ -86,6 +86,7 @@ label answer_roome07:
                 jump easteregg_2
             else :
                 th "it's not answer"
+                en "Wrong!"
                 jump answer_roome07
         "ใบ้หน่อยสิ":
             th "เหมือนฉันจะเห็นดาวสีน้ำเงินเข้มอยู่ในภาพนะ ดูผิดธรรมชาติมากเลย"

@@ -871,7 +871,8 @@ label answer_roome10:
                 hide puzzle10
                 jump true_end
             
-            "ยังไม่ใช่คำตอบที่ถูกนะ"
+            th "ยังไม่ใช่คำตอบที่ถูกนะ"
+            en "Wrong."
             jump answer_roome10
         "ใบ้หน่อยสิ":
             "ขอยันข้อสุดท้ายเลยหรอ ไปทำเองไป้"

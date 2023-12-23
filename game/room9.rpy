@@ -56,11 +56,13 @@ label answer_roome09:
             if prepare(input_value) == "cafeaulait":
                 $ room09_is_pass = True
                 th "ภาพอดีตถูกฉายขึ้นอีกครั้ง"
+                en "The past was projected once more."
                 th "ต่อจากนี้จะมีความจริงแบบไหนรอเราอยู่กันนะ?"
+                en "What kind of truth awaits us next?"
                 hide puzzle9
                 jump after_room_9
             else :
-                th "it's not answer"
+                th "Wrong!"
                 jump answer_roome09
         "return":
             hide puzzle9

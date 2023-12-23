@@ -45,6 +45,7 @@ label answer_roome08:
                 jump after_room_8
             else :
                 th "it's not answer"
+                en "Wrong!"
                 jump answer_roome08
         "return":
             hide puzzle8
