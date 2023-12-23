@@ -139,23 +139,37 @@ label after_room_6:
     play music midnight
 
     yume_th "....."
+    yume_en "....."
     th "ความทรงจำที่ชวนให้รำลึกถึงค่อยๆเพิ่มขึ้น"
+    en "The memories that evoke nostalgia are slowly increasing."
     th "ช่วงเวลาที่ทำให้มีความสุข ชวนให้เราถวิลหาถึงตัวตนในอดีตมากกว่าเดิม"
+    en "Times of happiness lead us to yearn more for our past selves."
     show cat normal with dissolve
     voice "audio/voice/room6/cat_6_001.mp3"
     cat_th normal "เธอรู้ไหมว่าดอกพลับพลึงสีขาวมีความหมายว่าอะไร?"
+    cat_en normal "Do you know what the white spider-lily signifies?"
     th "เจ้าแมวส้มเอ่ยคำถามที่เสียดแทงเข้ามาในใจเรา"
+    en "The orange cat asks a question that pierces our heart."
     th "หลายครั้งแล้วที่มันเหมือนกับกำลังอ่านใจเราอยู่ไม่มีผิด"
+    en "Many times it feels like it's reading our minds accurately."
     yume_th "ฉันปรารถนาแค่เธอคนเดียว"
+    yume_en "All I desire is just you."
     voice "audio/voice/room6/cat_6_002.mp3"
     cat_th lick "มันยังมีอีกความหมายหนึ่ง"
+    cat_en lick "There is another meaning to it."
     yume_th "คือ?"
+    yume_en "What is it?"
     voice "audio/voice/room6/cat_6_003.mp3"
     cat_th normal "ฉันเฝ้ารอวันที่จะมาพบกันอีกครั้ง"
+    cat_en normal "I am waiting for the day we will meet again."
     th "ความหมายที่สองทำให้เรารู้สึกเหมือนหัวใจกระตุกวูบ"
+    en "The second meaning makes us feel a sudden tug at our heart."
     th "ทั้งๆที่ไม่มีร่างกายแล้ว แต่ความเจ็บปวดนี่มันอะไรกันนะ?"
+    en "Even though I no longer have a body, what is this pain?"
     th "เจ้าแมวส้มพูดแค่นั้นแล้วมันก็เดินนำหน้าเราไปยังประตูอีกฝั่ง"
+    en "The orange cat says just that and then leads us to the door on the other side."
     th "...สู่ประตูต่อไป..."
+    en "...towards the next door..."
 
     hide cat
 
