@@ -6,7 +6,7 @@ label room06:
     play music midnight
 
     if room06_is_pass == False: 
-
+        play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
         th "เราจับจ้องโจทย์บนกระดานอย่างไม่วางตา"
         en "I stared intently at the puzzle on the board, unable to look away."
         yume_th "นี่มันดอกพลับพลึง?"
@@ -169,6 +169,7 @@ label after_room_6:
     en "Even though I no longer have a body, what is this pain?"
     th "เจ้าแมวส้มพูดแค่นั้นแล้วมันก็เดินนำหน้าเราไปยังประตูอีกฝั่ง"
     en "The orange cat says just that and then leads us to the door on the other side."
+    play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
     th "...สู่ประตูต่อไป..."
     en "...towards the next door..."
 

@@ -7,7 +7,7 @@ label room02:
 
     
     if room02_is_pass == False: 
-
+        play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
         show cat normal with dissolve
         th "น่าแปลก"
         en "It's curious."

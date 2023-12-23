@@ -5,6 +5,7 @@ label room05:
     stop music
     play music 不可解な事件簿的な
     if room05_is_pass == False:
+        play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
         show cat normal with dissolve
         
         th "ปริศนาข้อต่อไปนี่มันอะไรกันนะ?"
@@ -140,6 +141,7 @@ label after_room_5:
     cat_en normal "Don't rush. The journey is still long."
     th "เรากับเจ้าแมวส้มเดินไปข้างหน้า"
     en "The orange cat and I continued forward."
+    play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
     th "...สู่ประตูต่อไป..."
     en "...Towards the next door..."
 

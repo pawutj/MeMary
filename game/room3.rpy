@@ -5,7 +5,8 @@ label room03:
     play music 哀愁漂うホラー的な
 
 
-    if room03_is_pass == False: 
+    if room03_is_pass == False:
+        play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
         show cat normal with dissolve
         yume_th "หมากรุก?"
         yume_en "Chess?"

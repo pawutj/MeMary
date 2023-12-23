@@ -6,7 +6,7 @@ label room04:
     play music 不穏
 
     if room04_is_pass == False:
-        
+        play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
         th "เข้ามาข้างในห้องก็เจอกับกระดานดำที่เขียนโจทย์คณิตศาสตร์โชว์หรา"
         en "Upon entering the room, I was greeted by a blackboard covered in complex mathematical equations."
         

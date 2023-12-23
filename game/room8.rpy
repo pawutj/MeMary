@@ -6,6 +6,7 @@ label room08:
     play music midnight
 
     if room08_is_pass == False: 
+        play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
         show cat normal with dissolve
         yume_th "นี่คืออะไรกัน?"
         yume_en "What is this?"
@@ -197,6 +198,7 @@ label after_room_8:
     voice "audio/voice/room8/cat_8_004.mp3"
     cat_th smile "คำตอบอยู่อีกไม่ไกลแล้ว"
     cat_en normal "The answer isn't far away now."
+    play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
     th "เจ้าแมวส้มเดินนำหน้าเรา เราจึงเดินตามมัน"
     en "The orange cat walked ahead, and I followed."
     hide cat

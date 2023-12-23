@@ -283,7 +283,7 @@ label after_room_7:
     en "The cat was right."
     th "ถึงความรู้สึกอึดอัดจะก่อตัวขึ้น ถึงความหมองหม่นจะไม่หายไป แต่ถ้ายังไม่ไปถึงปลายทาง เราก็ไม่รู้ว่าบทสรุปที่แท้จริงคืออะไรกัน"
     en "Despite the suffocating feelings building up, despite the persisting gloom, I wouldn’t know the real ending unless I reached the destination."
-
+    play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
     hide cat
     jump cutscene_main
 
@@ -328,7 +328,7 @@ label easteregg_2:
     
     cat_th "ดูจากสีหน้าแล้วเหมือนจะได้เห็นความทรงจำสุดลามกด้วยล่ะ"
     cat_en "Judging by the look on your face, it seems like you've glimpsed some naughty memories as well."
-    
+
     yume_th "ไม่ใช่เฟ้ย!"
     yume_en "No way!"
 

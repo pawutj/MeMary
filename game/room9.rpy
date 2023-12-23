@@ -6,6 +6,7 @@ label room09:
     play music 不穏
 
     if room09_is_pass == False: 
+        play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
         show cat normal with dissolve
         yume_th  "เป็นโจทย์ที่แปลกจริงๆ"
         yume_en "This is a really strange puzzle."
@@ -227,8 +228,10 @@ label after_room_9:
     cat_en normal "It's time to stop lying to yourself... Yume..."
 
     scene white with dissolve
+    play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
     th "จบคำพูดของเจ้าแมว ประตูบานหนึ่งก็ถูกเปิดออก"
     en "With the cat's words, a door opened on its own."
+
     th "ทั้งๆที่ไม่มีใครแตะต้องประตู แต่มันเปิดง้างออกมาราวกับมีเจตจำนงของมันเอง"
     en "Though no one touched it, it swung open as if with its own will."
     th "สิ่งที่อยู่ข้างหลังบานประตูคือแสงสว่าง"
