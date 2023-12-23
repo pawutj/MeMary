@@ -130,6 +130,22 @@ image fb3_5 = im.Scale("cg/fb3_5.png",1920,1080)
 image fb3_6 = im.Scale("cg/fb3_6.png",1920,1080)
 image cg3 = im.Scale("cg/cg3.png",1920,1080)
 
+label splashscreen:
+    scene seal3 with Dissolve(1.0)
+    pause 2
+    scene warning with Dissolve(1.0)
+    pause 2
+    scene white with Dissolve(1.0)
+    scene main01_01 with Dissolve(1)
+    scene main01_02 with Dissolve(1)
+    scene main01_03 with Dissolve(0.5)
+    scene main01_04 with Dissolve(0.5)
+    scene main01_05 with Dissolve(0.5)
+    return
+
+
+
+
 
 style default:
     line_spacing 10
