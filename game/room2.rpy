@@ -35,6 +35,7 @@ label answer_roome02:
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "oblivion":
                 $ room02_is_pass = True
+                play sound "audio/sfx/correct-6033.mp3" volume 1
                 th "สีขาวกลืนกินทุกอย่างอีกครั้ง ภาพความทรงจำอันลางเรือนปรากฏขึ้น"
                 en "White engulfs everything once again, and a vague memory surfaces."
                 hide puzzle3

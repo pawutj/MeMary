@@ -67,6 +67,7 @@ label answer_roome04:
         "ตอบคำถาม":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "easierthanyouthink":
+                play sound "audio/sfx/correct-6033.mp3" volume 1
     ##voice "audio/voice/room4/cat_4_004.mp3"
                 cat_th  "ง่ายกว่าที่เธอคิดใช่ไหม?"
                 cat_en "Easier than you think?"

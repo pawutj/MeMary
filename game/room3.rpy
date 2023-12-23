@@ -45,6 +45,7 @@ label answer_roome03:
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "ra6":
     ##voice "audio/voice/room3/cat_3_001.mp3"
+                
                 cat_th "เชิงหนาใช้ได้นะเนี่ย"
                 cat_en "Bold moves can work."
                 show puzzle2_2 with dissolve
@@ -57,6 +58,7 @@ label answer_roome03:
                 cat_en "What should be the next move?"
                 $ input_value = renpy.input("Answer?")
                 if prepare(input_value) == "rxa7#" or prepare(input_value) == "ra7#":
+                    play sound "audio/sfx/correct-6033.mp3" volume 1
                     yume_th "Check Mate"
                     yume_en "Check Mate"
                     $ room03_is_pass = True

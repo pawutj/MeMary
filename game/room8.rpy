@@ -37,6 +37,7 @@ label answer_roome08:
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "russell":
                 $ room08_is_pass = True
+                play sound "audio/sfx/correct-6033.mp3" volume 1
                 th "ภาพอดีตถูกฉายขึ้นอีกครั้ง"
                 en "The past was projected once more."
                 th "ต่อจากนี้จะมีความจริงแบบไหนรอเราอยู่กันนะ?"

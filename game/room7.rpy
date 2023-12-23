@@ -74,6 +74,7 @@ label answer_roome07:
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "orion":
                 $ room07_is_pass = True
+                play sound "audio/sfx/correct-6033.mp3" volume 1
                 th "ท้องฟ้าสีดำที่เต็มไปด้วยดวงดาวเปลี่ยนผันกลายเป็นฉากขาว"
                 en "The black sky filled with stars transformed into a white backdrop."
                 th "ความทรงจำในอดีตกำลังหลั่งไหลเข้ามาอีกครั้งราวกับสายน้ำ"

@@ -27,6 +27,7 @@ label answer_roome05:
         "ตอบคำถาม":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "springisintheair":
+                play sound "audio/sfx/correct-6033.mp3" volume 1
                 $ room05_is_pass = True
                 th "ถูกต้อง"
                 en "Correct!"
