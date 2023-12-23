@@ -577,26 +577,42 @@ label after_room_0_1:
 
     scene hall_n_1080 with dissolve
     th "ห้องที่อยู่ต่อหน้าสายตาของฉันเป็นห้องที่กว้างขวาง มีประตูจำนวนมากขนาบอยู่ด้านข้าง"
+    en "The room before my eyes is spacious, lined with many doors on the sides."
     show cat normal with dissolve
     voice "audio/voice/room0/cat_0_036.mp3"
     cat_th normal "ยินดีต้อนรับสู่ห้องโถงของคฤหาสน์แห่งนี้ นี่จะเป็นห้องที่เชื่อมต่อกับห้องอื่นๆมากมายในคฤหาสน์"
+    cat_en normal "Welcome to the hall of this mansion. This will be the room that connects to many other rooms in the mansion."
     voice "audio/voice/room0/cat_0_037.mp3"
     cat_th lick "เธอสามารถเปิดประตูบานไหนก็ได้ เพื่อเข้าสู่ห้องต่อไป"
+    cat_en lick "You can open any door to enter the next room."
+
     hide cat with dissolve
     th "ฉันเดินไปหาประตูที่ใกล้ที่สุดด้านขวามือ"
+    en "I walk towards the nearest door on my right."
     #sfx คลิ๊ก
     yume_th "ไม่เห็นเปิดออกเลย"
+    yume_en "It doesn't seem to open."
+
     
     show cat lick with dissolve
     voice "audio/voice/room0/cat_0_038.mp3"
     cat_th lick "ไม่ได้บอกนี่ว่ามันไม่ได้ล็อก"
+    cat_en lick "I didn't say it wasn't locked."
+
     th "ซักวันนึง แมวตัวนี้ต้องถูกนำไปโกนขน ฉันสาบานตัวเองไว้เช่นนั้น"
+    en "One day, this cat will have to be shaved. I swear to myself that."
+
     voice "audio/voice/room0/cat_0_039.mp3"
     cat_th smile "ไม่ต้องมองด้วยสายตาอาฆาตขนาดนั้นก็ได้ เธอลองมองที่แผนผังอันนี้สิ"
+    cat_en small "You don't have to look at me with such spite. Try looking at this floor plan."
+
     hide cat
     #show minimap
     th "..."
+    en "..."
     voice "audio/voice/room0/cat_0_040.mp3"
     cat_th ah "ขอแค่มีแผนผังนี่ เธอก็สามารถรู้ได้แล้วว่า ห้องไหนที่เข้าได้หรือไม่ได้ \nแล้วมันยังบอกด้วยว่าห้องไหนที่เราเคยผ่านมาแล้ว"
+    eat_en ah "With this floor plan, you can know which rooms are accessible and which are not. It also shows which rooms we have already been through."
     th "ถ้างั้น ฉันจะเริ่มที่ห้องไหนดี?"
+    en "In that case, which room should I start with?"
     jump main_map

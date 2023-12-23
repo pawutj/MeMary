@@ -187,33 +187,42 @@ label easteregg_3:
     scene white with Dissolve(3)
 
     th "ใช่แล้วฉันนึกออกแล้ว ความรู้สึกนี้ เสียงของผู้คนรอบกาย"
-
+    en "Yes, I remember now. This feeling, the voices of people around."
     #เสียงเชีย
 
     th "ณ สถานที่แห่งนี้ เธอนี่แหละคือไอดอลของทุกคน!!"
+    en "Here at this place, you are everyone's idol!!"
 
     scene idol00 with Dissolve(2)
 
     th "เสียงเชียร์ของทุกคน กำลังกลายเป็นพลังให้กับเธอผู้นี้"
+    en "The cheers of everyone are turning into power for you."
+
     #[mary_e3_000]
-    mary0_th "ทุกคนนน ใครร้องได้ช่วยกันร้องด้วยนะ" 
+    mary0_th "ทุกคนนน ใครร้องได้ช่วยกันร้องด้วยนะ"
+    mary0_en "Everyone, anyone who can sing, please sing along."
 
     #เสียงเชีย
     #[mary_e3_001]
-    mary0_th " โปรดจงรับความรู้สึกที่ออกมาจากหัวใจของฉัน ขอส่งต่อมันให้กับทุกคนในเวทีแห่งนี้!!" 
+    mary0_th "โปรดจงรับความรู้สึกที่ออกมาจากหัวใจของฉัน ขอส่งต่อมันให้กับทุกคนในเวทีแห่งนี้!!" 
+    mary0_en "Please accept the feelings coming from my heart. I want to convey them to everyone on this stage!!"
 
     #[mary_e3_002]
     mary0_th "MeMary X'mas!!" 
+    mary0_en "MeMary X'mas!!"
 
     #เสียงเชีย
     scene white with Dissolve(3)
     th "......"
+    en "......"
 
     scene library_n_1080 with Dissolve(1)
 
     yume_th "นี่ฉันเป็นติ่งไอดอลอย่างงั้นเหรอ!?"
+    yume_en "Am I an idol fan like this!?"
 
     #[cat_e3_000]
     cat_th "จะไปใช่ได้ไงเล่า!" 
+    cat_en "How could that be possible!"
 
     jump answer_roome02

@@ -289,30 +289,47 @@ label easteregg_2:
     
     scene white with Dissolve(2)
     th "ขณะที่พวกเราสองคนอ่านหนังสืออยู่ที่ห้องสมุด เธอคนนั้นก็ลุกขึ้นไปหยิบหนังสือบนบันไดพร้อมถามคำถามว่า"
+    en "While the two of us were reading books in the library, she got up to grab a book from the stairs and asked,"
+
     scene library_1080 with Dissolve(3)
     mary_th "นี่เธอรู้รึเปล่าจ๊ะว่ากลุ่มดาวอะไรสามารถดูได้ที่คฤหาสน์นี้ตอนกลางวัน"
+    mary_en "Do you know which constellation can be seen from this mansion during the day?"
+
 
     yume_th "ดาวเทียม?"
+    yume_en "A satellite?"
+
 
     mary_th "ใช่ที่ไหนกันเล่า กลุ่มดาวไลบร้าต่างหากจ้ะ"
-
+    mary_en "Not at all. It's the Libra constellation, actually."
+    
     yume_th "ไลบร้า?"
+    yume_en "Libra?"
 
     mary_th "ก็ “ไลบร้า”ลี่ ที่หมายถึงห้องสมุดไง ไงล่ะจ้ะ ว่าไปนั่น"
+    mary_en "It's 'Library', meaning the library. Get it?"
+
 
     th "ตัวฉันที่กำลังจะหันหน้าขึ้นไปต่อว่าเธอที่เล่นมุกไร้สาระนี่บนบันไดก็พบกับกลุ่มดาวอีกดวงที่สามารถเห็นได้ในตอนกลางวัน"
-
+    en "Just as I was about to turn and scold her for her silly joke on the stairs, I found another constellation that can be seen during the day."
     scene piyo with Dissolve(2)
 
     yume_th "เห…ฉันนึกว่ามีแค่ดาวไลบร้าที่เห็นได้ตอนกลางวัน ไม่คิดว่าจะได้เห็นดาวลูกไก่ด้วย"
+    yume_en "Hey! Hold on! Are you peeking at my underwear!!"
+
 
     mary_th "นี่!! เดี๋ยวเถอะ!! นี่เธอแอบดูกางเกงในฉันหรอ!!"
+    mary_en "Hey! Hold on! Are you peeking at my underwear!!"
+
 
     scene garden_n_1080 with Dissolve(3) 
     
     cat_th "ดูจากสีหน้าแล้วเหมือนจะได้เห็นความทรงจำสุดลามกด้วยล่ะ"
+    cat_en "Judging by the look on your face, it seems like you've glimpsed some naughty memories as well."
     
     yume_th "ไม่ใช่เฟ้ย!"
+    yume_en "No way!"
+
 
     jump answer_roome07
 
