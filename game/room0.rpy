@@ -260,9 +260,10 @@ label room0:
     en "Finally, I open the door and step into the room."
     
     scene library_s_1080 with dissolve
-    
+    play sound "audio/sfx/dorm-door-opening-6038.mp3"
     stop music
     play music 神隠しの真相
+    play sound "audio/sfx/indoor-footsteps-6385.mp3"
     yume_th "...นี่มัน...?"
     yume_en "...What is this...?"
 
@@ -337,6 +338,7 @@ label answer_roome0:
         "ตอบคำถาม":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "memary":
+                play sound "audio/sfx/correct-6033.mp3" volume 1
                 scene white with dissolve
                 th "ทันใดที่เราเขียนคำตอบที่ถูกต้อง โลกรอบข้างก็ถูกสีขาวกลืนเข้าไป"
                 en "As soon as we wrote the correct answer, the world around us was engulfed in white."
@@ -593,7 +595,8 @@ label after_room_0_1:
     
     th "รู้ตัวอีกที เราก็เปิดประตูบานต่อไปแล้ว"
     en "Before I know it, I have opened one of those doors."
-
+    
+    play sound "audio/sfx/dorm-door-opening-6038.mp3" volume 1
     scene hall_n_1080 with dissolve
     th "ห้องที่อยู่ต่อหน้าสายตาของฉันเป็นห้องที่กว้างขวาง มีประตูจำนวนมากขนาบอยู่ด้านข้าง"
     en "The room before my eyes is spacious, lined with many doors on the sides."

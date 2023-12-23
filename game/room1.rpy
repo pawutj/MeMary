@@ -6,6 +6,7 @@ label room01:
     play music 哀愁漂うホラー的な
 
     if room01_is_pass == False: 
+        play sound "audio/sfx/indoor-footsteps-6385.mp3" volume 1
         show cat normal with dissolve
         voice "audio/voice/room1/cat_1_000.mp3"
         cat_th normal "พร้อมสำหรับโจทย์ข้อต่อไปหรือยังล่ะ?" with dissolve
@@ -35,6 +36,7 @@ label answer_roome01:
         "ตอบคำถาม":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "golderequiem" or prepare(input_value) == "goldexperiencerequiem" :
+                play sound "audio/sfx/correct-6033.mp3" volume 1
                 th "ถูกต้องแล้ว"
                 en "That's correct."
                 scene white with dissolve
