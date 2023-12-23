@@ -135,14 +135,30 @@ label splashscreen:
     pause 2
     scene warning with Dissolve(1.0)
     pause 2
+    if persistent.true_end_pass == True:
+        jump title2
+
+    jump title1
+    return
+
+label title1:
     scene white with Dissolve(1.0)
     scene main01_01 with Dissolve(1)
     scene main01_02 with Dissolve(1)
     scene main01_03 with Dissolve(0.5)
     scene main01_04 with Dissolve(0.5)
     scene main01_05 with Dissolve(0.5)
+
     return
 
+label title2:
+    scene white with Dissolve(1.0)
+    scene main02_01 with Dissolve(1)
+    scene main02_02 with Dissolve(1)
+    scene main02_03 with Dissolve(0.5)
+    scene main02_04 with Dissolve(0.5)
+    scene main02_05 with Dissolve(0.5)
+    return
 
 
 

@@ -211,3 +211,6 @@ init python:
 default persistent.page = 0
 default persistent.language = "thai"
 default persistent.nothing = 0
+
+default persistent.common_end_pass  = False
+default persistent.true_end_pass = False

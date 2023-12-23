@@ -88,8 +88,9 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background_2 = "gui/Home/Home02.png"
-define gui.main_menu_background = "gui/Home/Home02.png"
+define gui.main_menu_background_3 = "gui/Home/Home04.png"
+define gui.main_menu_background_2 = "gui/Home/Home03.png"
+define gui.main_menu_background_1 = "gui/Home/Home02.png"
 define gui.game_menu_background = "gui/game_menu.png"
 define gui.load_menu_background = "gui/load/load_bg.png"
 define gui.save_menu_background = "gui/load/save_bg.png"

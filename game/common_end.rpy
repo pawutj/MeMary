@@ -137,6 +137,7 @@ label common_end:
     th ".."
     th "."
     th "จบแบบนี้น่ะ มันถูกต้องแล้วเหรอ?"
+    $ persistent.common_end_pass = True
     scene black with Dissolve(3)
 
     return
