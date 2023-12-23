@@ -341,47 +341,58 @@ label answer_roome0:
             if prepare(input_value) == "memary":
                 scene white with dissolve
                 th "ทันใดที่เราเขียนคำตอบที่ถูกต้อง โลกรอบข้างก็ถูกสีขาวกลืนเข้าไป"
-                en ""
+                en "As soon as we wrote the correct answer, the world around us was engulfed in white."
                 th "แสงสว่าง?"
+                en "A bright light?"
                 th "มันเกิดอะไรขึ้นกันแน่?"
+                en "What's really happening?"
                 hide puzzle0
                 stop music
                 jump after_room_0
             if prepare(input_value) == "password" or prepare(input_value) == "pass" :
     ##voice "audio/voice/room0/cat_0_021.mp3"
                 cat_th "ก็ Classic เกิ้น"
+                cat_en "It's classic again."
                 jump answer_roome0
             if prepare(input_value) == "answer":
     ##voice "audio/voice/room0/cat_0_022.mp3"
                 cat_th "มาถูกทางแล้ว"
+                cat_en "You're on the right track."
                 jump answer_roome0
             if prepare(input_value) == "yourgamepath" or prepare(input_value) == "/clue/room0" :
     ##voice "audio/voice/room0/cat_0_023.mp3"
                 cat_th "ไปลองค้นหาดูสิ"
+                cat_en "Go try to search."
+
                 jump answer_roome0
             
     ##voice "audio/voice/room0/cat_0_024.mp3"
             cat_th "ผิดจ้า"
+            cat_en "Wrong."
             jump answer_roome0
         "ไม่รู้":
             if point_0 == 0 :
     ##voice "audio/voice/room0/cat_0_025.mp3"
                 cat_th "ก็ลองคิดดูสิจ้ะ"
+                cat_en "Just think about it."
                 $ point_0 = point_0 +1
                 jump answer_roome0
             if point_0 == 1 :
     ##voice "audio/voice/room0/cat_0_026.mp3"
                 cat_th "ทำไมถึงคิดว่าตอบแบบนี้จะแก้ปัญหาได้ล่ะ"
+                cat_en "Why do you think answering like this would solve the problem?"
                 $ point_0 = point_0 +1
                 jump answer_roome0
             if point_0 == 2 :
     ##voice "audio/voice/room0/cat_0_027.mp3"
                 cat_th "น่าจะต้องไปถามพ่อเธอดูล่ะจ้ะ"
+                cat_en "You should probably ask your father."
                 $ point_0 = point_0 +1
                 jump easteregg_1  
             if point_0 == 3 :
     ##voice "audio/voice/room0/cat_0_028.mp3"
                 cat_th "ยินดีด้วย คุณได้รับฉากจบลับ"
+                cat_en "Congratulations, you have received a secret ending."
                 $ point_0 = 0
                 jump answer_roome0
 
@@ -463,26 +474,36 @@ label after_room_0:
 label easteregg_1:
     
     yume_th "เดี๋ยวเถอะเจ้าแมวส้มเดี๋ยวก็จับเอาไปโกนขนซะเลย"
+    yume_en "Hold on, this orange cat will be caught and shaved soon enough."
     hide puzzle0 with dissolve
     show cat normal with dissolve
     cat_th normal "ดูเหมือนว่าสติปัญญาของเธอจะไม่คู่ควรสำหรับคฤหาสหลังนี้สินะ" with dissolve
+    cat_en normal "It seems that your intellect is not worthy of this mansion." with dissolve
 
     cat_th ah "เปิดโหมดกำจัดสิ่งแปลกปลอม" with dissolve
+    cat_en ah "Activate elimination mode." with dissolve
     
     yume_th "เอ๋"
+    yume_en "Huh?"
+
 
     th "ทันใดนั้นตาของเจ้าแมวก้มีแสงกระพริบออกมาพร้อมเสียงนับถอยหลังของนาฬิกา"
+    en "Suddenly, the cat's eyes flashed with light, accompanied by the sound of a clock counting down."
 
     yume_th "เดี๋ยวสิ…อย่าบอกนะว่า"
+    yume_en "Wait a minute… don't tell me that."
+
     hide cat_th
     scene bakuhatu1 with dissolve
     th "ตู้มมมมมมม"
+    en "Boommmmm!"
 
     scene bakuhatu2 with dissolve
     th "ทุกสิ่งทุกอย่างที่อยู่ตรงหน้าของฉันค่อยๆถูกเปลวเพลิงกลืนกินหายไปภายในชั่วพริบตา"
+    en "Everything before me was gradually engulfed and devoured by flames in the blink of an eye."
 
     th "สิ่งสุดท้ายที่อยู่ในความคิดของฉันคือ ไม่น่าไปกวนตีนไอแมวนี่เลย…"
-
+    en "The last thing on my mind was, I shouldn't have messed with that cat..."
     scene black with Dissolve(3)
     return 
 
