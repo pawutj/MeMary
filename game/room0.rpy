@@ -1,7 +1,5 @@
 label memary_scene:
 
-
-
     scene memary  with Dissolve(5.0)
     $ renpy.pause(1 , hard=True)
     scene nameless with Dissolve(3.0)
@@ -165,10 +163,10 @@ label intro:
     yume_en "...Ugh!!"
 
     th "ทันใดที่เราพยายามนึกถึงบางสิ่ง ความเจ็บปวดทรมานก็แล่นไปทั่ว"
-    en "As soon as I try to remember something, a painful torment spreads throughout my non-existent body, resisting my own will."
+    en "As soon as I try to remember something"
 
     th "ร่างกายที่ไม่มีอยู่จริงกำลังต่อต้านเจตจำนงของตัวเอง"
-    en ""
+    en "a painful torment spreads throughout my non-existent body, resisting my own will."
 
     th "...นี่มัน...อะไรกัน...?"
     en "...What is this...?"
