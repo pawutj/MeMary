@@ -137,6 +137,8 @@ label splashscreen:
     pause 2
     if persistent.true_end_pass == True:
         jump title2
+    if persistent.common_end_pass == True:
+        jump title3
 
     jump title1
     return
@@ -160,6 +162,14 @@ label title2:
     scene main02_05 with Dissolve(0.5)
     return
 
+
+label title3:
+    scene white with Dissolve(1.0)
+    scene main03_01 with Dissolve(1)
+    scene main03_02 with Dissolve(1)
+    scene main03_03 with Dissolve(0.5)
+    scene main03_04 with Dissolve(0.5)
+    return
 
 
 
