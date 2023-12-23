@@ -29,21 +29,26 @@ label answer_roome05:
             if prepare(input_value) == "springisintheair":
                 $ room05_is_pass = True
                 th "ถูกต้อง"
+                en "Correct!"
                 th "ปริศนาได้รับการตอบ ความจริงในอดีตจึงฉายขึ้นอีกครั้ง"
                 en "The puzzle was solved, and once again, the truth of the past was illuminated."
                 hide puzzle5
                 jump after_room_5
             if prepare(input_value) == "gstring":
-                th "ชื่อเหมือนอะไรหื่นๆเลยนะจ้ะ" 
+                th "ชื่อเหมือนอะไรหื่นๆเลยนะจ้ะ"
+                en "The name sounds kind of risqué, doesn't it?"
                 jump answer_roome05
             if prepare(input_value) == "spectrogram":
                 th "ดูมาถูกทางอยู่นะจ้ะ" 
+                en "It seems you're on the right track."
                 jump answer_roome05
             else :
                 th "ผิดจ้า"
+                en "Wrong."
                 jump answer_roome05
         "ใบ้หน่อยสิ":
             th "เอ.. สเปคตรัม? แกรม? ถ้ารวมกันมันจะได้อะไรนะ /nที่แน่ๆคงไม่ใช่แกรมสีรุ้งแน่ๆ"
+            en "Uh.. spectrum? Gram? What do you get if you combine them? \nDefinitely not a rainbow gram, for sure."
             jump answer_roome05
         "กลับห้องรวม":
             hide puzzle5

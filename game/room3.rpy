@@ -41,10 +41,12 @@ label answer_roome03:
     menu:
         "ตอบคำถาม":
             th "ถ้าอยากเดิน Rook ไป A2 ให้ตอบว่า Ra2 นะ \nถ้า King ให้บอก K \nถ้า Pawn คือไม่ต้องระบุอะไรนะ ระบุช่องที่จะเดินได้เลย"
+            en "If you want to move the Rook to A2, say 'Ra2'. \nFor the King, just say 'K'. \nFor a Pawn, you don't need to specify anything, just mention the square to move to."
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "ra6":
     ##voice "audio/voice/room3/cat_3_001.mp3"
                 cat_th "เชิงหนาใช้ได้นะเนี่ย"
+                cat_en "Bold moves can work."
                 show puzzle2_2 with dissolve
                 hide puzzle2_1
                 ".."
@@ -52,56 +54,69 @@ label answer_roome03:
                 hide puzzle2_2
     ##voice "audio/voice/room3/cat_3_002.mp3"
                 cat_th "เดินยังไงต่อดีล่ะ"
+                cat_en "What should be the next move?"
                 $ input_value = renpy.input("Answer?")
-                if prepare(input_value) == "rxa7#":
-                    yume "Check Mate"
+                if prepare(input_value) == "rxa7#" or prepare(input_value) == "ra7#":
+                    yume_th "Check Mate"
+                    yume_en "Check Mate"
                     $ room03_is_pass = True
                     th "สีขาวกลืนกินทุกอย่าง ภาพในอดีตปรากฏขึ้นต่อหน้า"
+                    en "White engulfs everything once again, and a vague memory surfaces."
                     hide puzzle2_3
                     jump after_room_3
                 if prepare(input_value) == "ra7":
     ##voice "audio/voice/room3/cat_3_003.mp3"
                     cat_th "ลืมบอกว่า Check Mate รึเปล่า? Rxa7#"
+                    cat_en "Did you forget to say Check Mate? Rxa7#"
                     hide puzzle2_3
                     show puzzle2_1 with dissolve
                     jump answer_roome03
     ##voice "audio/voice/room3/cat_3_004.mp3"
                 cat_th "เกือบจะชนะแล้วแท้ๆ ลองใหม่ดีไหม?"
+                cat_en "You were almost winning. Want to try again?"
                 hide puzzle2_3
                 show puzzle2_1 with dissolve
                 jump answer_roome03
             if prepare(input_value) == "ra2":
     ##voice "audio/voice/room3/cat_3_005.mp3"
+                cat_en "It's just an example."
                 cat_th "เค้าแค่ยกตัวอย่าง"
                 jump answer_roome03
 
             if prepare(input_value) == "ra7":
     ##voice "audio/voice/room3/cat_3_006.mp3"
+                cat_en "Did you forget to say it's an attack? Rxa7+"
                 cat_th "ลืมบอกว่ารุกรึเปล่า Rxa7+"
                 jump answer_roome03
             if prepare(input_value) == "rxa7":
     ##voice "audio/voice/room3/cat_3_007.mp3"
                 cat_th "ลืมบอกว่ารุกรึเปล่า Rxa7+"
+                cat_en "Did you forget to say it's an attack? Rxa7+"
                 jump answer_roome03
             if prepare(input_value) == "rxa7+":
     ##voice "audio/voice/room3/cat_3_008.mp3"
                 cat_th "หมากนี้เล่นต่อน่าจะแพ้นะ"
+                cat_en "Continuing this move should lead to a loss."
                 jump answer_roome03
             if prepare(input_value) == "b7":
     ##voice "audio/voice/room3/cat_3_009.mp3"
                 cat_th "ลืมบอกว่ารุกรึเปล่า xB7"
+                cat_en "Did you forget to say it's an attack? xB7"
                 jump answer_roome03
             if prepare(input_value) == "bx7":
     ##voice "audio/voice/room3/cat_3_010.mp3"
                 cat_th "แบบนี้เกมส์น่าจะเสมอนะ"
+                cat_en "With this, the game should end in a draw."
                 jump answer_roome03
             
     ##voice "audio/voice/room3/cat_3_011.mp3"
             cat_th "ไม่ได้คล้ายเลยเธอ"
+            cat_en "It's not similar at all."
             jump answer_roome03
         "ใบ้หน่อยสิ":
     ##voice "audio/voice/room3/cat_3_012.mp3"
             cat_th "คุ้นๆ Paul Morphy's problem บ้างไหม"
+            cat_en "Do you recognize Paul Morphy's problem?"
             jump answer_roome03
         "กลับห้องโถง":
             hide puzzle2_1

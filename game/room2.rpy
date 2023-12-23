@@ -47,20 +47,24 @@ label answer_roome02:
             if prepare(input_value) == "rune":
     ##voice "audio/voice/room2/cat_2_000.mp3"
                 cat_th "ลองเทียบอักษรดูสิ"
+                cat_en "Try comparing the letters."
                 hide puzzle3
                 jump answer_roome02
             if prepare(input_value) == "obliion":
     ##voice "audio/voice/room2/cat_2_001.mp3"
                 cat_th "คำมันแปลกๆอยู่นะ ลองๆเติมอะไรให้มันอ่านออกมั้ย"
+                cat_en "The words are strange, aren't they? Try filling in something to make them readable."
                 hide puzzle3
                 jump answer_roome02
             else :
     ##voice "audio/voice/room2/cat_2_002.mp3"
                 cat_th "ผิดจ้า"
+                cat_en "Wrong."
                 jump answer_roome02
         "ใบ้หน่อยสิ":
     ##voice "audio/voice/room2/cat_2_003.mp3"
             cat_th "ดูถ้าจะคล้ายๆกับ อักษรรูน นะ ดูเหมือนจะเทียบอักษรเป็นภาษาอังกฤษได้อยู่นะ"
+            cat_en "It looks similar to Rune letters. It seems like they can be compared to English letters."
             jump answer_roome02
         "กลับห้องรวม":
             hide puzzle3

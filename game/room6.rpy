@@ -39,21 +39,27 @@ label answer_roome06:
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "lycorisradiata":
                 th "ถูกต้อง"
+                en "Correct!"
                 $ room06_is_pass = True
                 th "ภาพดอกไม้เลือนหายไป ภาพอดีตปรากฏขึ้นอีกครั้ง"
+                en "The image of the flower fades away, and the image of the past appears once again."
                 hide puzzle6
                 jump after_room_6
             if prepare(input_value) == "spiderlily":
                 th "ตอบเป็นชื่อวิทยาศาสตร์"
+                en "Answer with the scientific name."
                 jump answer_roome06
             if prepare(input_value) == "sunflower":
                 th "อะไรที่มันแทนที่ดอกทานตะวันกันนะ?"
+                en "What could replace the sunflower?"
                 jump answer_roome06
             else :
                 th "ผิดจ้า"
+                en "Wrong."
                 jump answer_roome06
         "ใบ้หน่อยสิ":
-            th "เหมือนฉันเคยได้ยินบทกวีนี้นะ แต่เอ้ะ เหมือนมีอะไรต่างจากต้นฉบับอยู่"
+            th "เหมือนฉันเคยได้ยินบทกวีนี้ Willian Blake รึเปล่านะ แต่เอ้ะ เหมือนมีอะไรต่างจากต้นฉบับอยู่"
+            en "It's like I've heard this poem before, from William Blake perhaps, but wait, it seems to differ from the original."
             jump answer_roome06
         "กลับห้องโถง":
             hide puzzle6

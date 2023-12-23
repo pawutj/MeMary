@@ -36,6 +36,7 @@ label answer_roome01:
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "golderequiem" or prepare(input_value) == "goldexperiencerequiem" :
                 th "ถูกต้องแล้ว"
+                en "That's correct."
                 scene white with dissolve
                 $ room01_is_pass = True
 
@@ -49,26 +50,32 @@ label answer_roome01:
             if prepare(input_value) == "golde" or prepare(input_value) == "goldexperience":
     ##voice "audio/voice/room1/cat_1_001.mp3"
                 cat_th "ไปปักลูกศรมาก่อน"
+                cat_en "Go get the arrow first."
                 jump answer_roome01
             if prepare(input_value) == "requiem":
     ##voice "audio/voice/room1/cat_1_002.mp3"
                 cat_th "ชื่อเต็มสิ"
+                cat_en "Say the full name."
                 jump answer_roome01
             if prepare(input_value) == "jojo":
     ##voice "audio/voice/room1/cat_1_003.mp3"
                 cat_th "ภาคไหนหล่ะ"
+                cat_en "Which part is it?"
                 jump answer_roome01
             if prepare(input_value) == "stand":
     ##voice "audio/voice/room1/cat_1_004.mp3"
                 cat_th "ฉันชอบ Star Platinum นะ"
+                cat_en "I like Star Platinum."
                 jump answer_roome01
             if prepare(input_value) == "5" or prepare(input_value) == "goldenwind":
     ##voice "audio/voice/room1/cat_1_005.mp3"
                 cat_th "ชื่อแสตนด์สิ"
+                cat_en "The name of the Stand."
                 jump answer_roome01
 
     ##voice "audio/voice/room1/cat_1_006.mp3"
             cat_th "ผิดจ้า"
+            cat_en "Wrong."
             jump answer_roome01
         "ใบ้หน่อยสิ":
     ##voice "audio/voice/room1/cat_1_007.mp3"
