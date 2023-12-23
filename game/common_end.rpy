@@ -142,7 +142,7 @@ label common_end:
     scene road with dissolve
 
     th "ความหม่นหมองในใจทำให้เราสติเหม่อลอย"
-    
+    en "The gloom in our heart made us distracted and unfocused."
     th "ทั้งที่ยังมีลมหายใจแต่เรารู้สึกเหมือนวิญญาณแหลกสลายไปแล้ว"
     en "Even though we were still breathing, it felt as if our spirit had shattered."
     th "...ภาพตรงหน้ามืดมัวไปหมด..."

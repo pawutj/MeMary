@@ -4,59 +4,137 @@ label true_end:
     play music 憂鬱
 
     th "ความทรงจำในอดีตหวนกลับมาอีกครั้ง"
+    en "Memories from the past return once again."
+    
     th "...เราจำได้แล้ว...ว่าทำไมพวกเราทั้งสองจึงมาอยู่ที่คฤหาสน์แห่งนี้..."
+    en "...We remember now... why the two of us came to this mansion..."
+
     th "ที่นี่ไม่ใช่โลกความเป็นจริง มันคือโลกหลังความตาย"
+    en "This place is not the real world; it is the world after death."
+    
     th "....."
+    en "....."
 
     scene black with dissolve
 
     th "หลังจากเราฆ่าคน แม้เราไม่มีเจตนา แต่เราไม่สามารถหลบหนีการลงโทษได้"
+    en "After we killed someone, even though it was unintentional, we couldn't escape punishment."
+
     th "เราถูกตัดสินจำคุกข้อหาฆ่าพ่อของแมรี่"
+    en "We were convicted and imprisoned for the murder of Mary's father."
+    
     th "ก่อนที่เราสองคนจะจากกัน พวกเราสองคนได้ให้สัญญากัน"
+    en "Before the two of us parted, we made a promise to each other."
+
     th "...เมื่อเราออกจากเรือนจำและเป็นอิสระ พวกเราสองคนจะกลับมาอยู่ด้วยกันอีกครั้งหนึ่ง"
+    en "...When we are released from prison and free, we will come back and be together once again."
+    
     th "....."
+    en "....."
 
     scene sky_cloudy with dissolve
     th "เวลาผ่านไปหลายปี เราพ้นโทษและออกมาจากเรือนจำ"
+    en "Years passed, we served our time and were released from prison."
+    
     th "แต่เมื่อเรากลับมาหาแมรี่ ทุกอย่างก็สายไปแล้ว"
+    en "But when we returned to find Mary, everything was too late."
+    
     th "....."
+    en "....."
 
     scene hospital with dissolve
     th "เราพบร่างไร้สติของแมรี่บนเตียงในโรงพยาบาล"
-    th "ไม่ว่าเราจะเรียกเธอสักกี่ครั้ง แมรี่ก็ไม่ลืมตาตื่นขึ้น"
+    en "We found Mary's unconscious body on a hospital bed."
 
-    yume "ว่าไงนะคะ?"
+    th "ไม่ว่าเราจะเรียกเธอสักกี่ครั้ง แมรี่ก็ไม่ลืมตาตื่นขึ้น"
+    en "No matter how many times we called her, Mary would not open her eyes."
+
+    yume_th "ว่าไงนะคะ?"
+    yume_en "What did you say?"
 
     th "เราไม่อยากเชื่อหูของเราเมื่อได้ยินความจริงจากแพทย์ที่ดูแลแมรี่"
+    en "We couldn't believe our ears when we heard the truth from the doctor taking care of Mary."
+
     th "แมรี่ร่างกายอ่อนแอตั้งแต่เด็กๆแล้ว แต่เธอปิดความลับนี้ไว้และแสร้งทำเป็นแข็งแรงดีต่อหน้าเรา"
+    en "Mary's body had been weak since childhood, but she hid this secret and pretended to be strong in front of us."
+
     th "อวัยวะภายในของเธอล้มเหลวมากขึ้นตามเวลาที่ผ่านไป"
+    en "Her internal organs failed more as time passed."
+
     th "...จนสุดท้ายแมรี่ก็กลายเป็นเจ้าหญิงนิทรา..."
+    en "...Until finally, Mary became like a sleeping princess..."
+
     th "เธอจะมีชีวิตได้อีกไม่กี่วันเท่านั้น"
+    en "She only had a few days left to live."
+
     th "....."
+    en "....."
 
     scene black with dissolve
 
     th "ความสิ้นหวังทำให้เราหัวเราะและร้องไห้ออกมาพร้อมๆกัน"
+    en "The gloom in our heart made us distracted and unfocused."
+    
     th "...เอาอีกแล้ว..."
-    th"ทั้งเรื่องที่ถูกคนรอบข้างรังแกและตีตัวออกห่างเพราะแม่เป็นฆาตกร"
+    en "...Here we go again..."
+
+    th "ทั้งเรื่องที่ถูกคนรอบข้างรังแกและตีตัวออกห่างเพราะแม่เป็นฆาตกร"
+    en "Being bullied and ostracized by those around us because our mother was a murderer."
+    
     th "ทั้งพ่อที่นิสัยเลวร้ายลงหลังจากบ้านเราแตกสาแหรกขาด"
+    en "And our father, whose personality worsened after our home was broken."
+
+    
     th "ทั้งเรื่องที่เราฆ่าพ่อของแมรี่โดยไม่ได้ตั้งใจจนถูกจับเข้าเรือนจำ"
+    en "And the incident where we accidentally killed Mary's father and got imprisoned."
+    
     th "ทุกสิ่งไม่เป็นตามที่เราต้องการ...แต่เราก็ยังอดทนได้..."
+    en "Nothing went as we wanted... but we still endured..."
+    
     th "....."
+    en "....."
+    
     th "แต่ว่า...แมรี่..."
+    en "But... Mary..."
+    
     th "ผู้หญิงที่เรารักที่สุด...ความสุขในชีวิตเราที่ยังหลงเหลืออยู่..."
+    en "The woman we loved the most... the remaining happiness in our life..."
+
+    
     th "...พังทลาย..."
+    en "...Crumbled..."
+    
+
     th "...ชีวิตของเธอกำลังพังทลายลง..."
+    en "...Her life is falling apart..."
+    
     th "...ต่อหน้าเรา..."
+    en "...Before our eyes..."
+    
     th "...โดยที่เรา..."
+    en "...While we..."
     th "...เรา..."
+    en "...We..."
+    
     th "....."
+    en "....."
+    
     th "...เราไม่สามารถทำอะไรได้แม้แต่อย่างเดียว..."
+    en "...Can't do even a single thing..."
+    
     th "....."
+    en "....."
     th "ยูเมะ" 
+    en "Yume"
+    
     th "เธอจะมีตัวตนอยู่บนโลกนี้ทำไมกัน?"
+    en "Why do you exist in this world?"
+    
     th "ในเมื่อเธอไม่สามารถรักษาสิ่งสำคัญของตัวเองเอาไว้ได้"
+    en "When you can't even preserve the most important thing to yourself."
+    
     th "...แม้แต่อย่างเดียว..."
+    en "...Not even one thing..."
 
     ################################
     scene road with dissolve
