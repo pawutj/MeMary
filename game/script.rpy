@@ -130,6 +130,18 @@ image fb3_5 = im.Scale("cg/fb3_5.png",1920,1080)
 image fb3_6 = im.Scale("cg/fb3_6.png",1920,1080)
 image cg3 = im.Scale("cg/cg3.png",1920,1080)
 
+
+label endding_true:
+    stop music
+    $renpy.pause(1, hard=True)
+    scene white with Dissolve(2.0)
+    play movie "images/ending.webm"
+    $renpy.pause(120, hard=True)
+    jump title1
+    return
+
+
+
 label splashscreen:
     scene seal3 with Dissolve(1.0)
     pause 2
@@ -192,6 +204,7 @@ label start:
     $ room10_is_pass = False
     $ room11_is_pass = False
 
+    # jump true_end
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the

@@ -643,4 +643,7 @@ label true_end:
     scene white with Dissolve(3)
     scene meandmary with Dissolve(3)
     scene black with Dissolve(5)
+
+    jump endding_true
+
     return
