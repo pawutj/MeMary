@@ -57,7 +57,7 @@ label answer_roome05:
             jump main_map
 
 label after_room_5:
-    scene fb2_2 with dissolve
+    scene fb2 with dissolve
     stop music
     play music up_to_you
 

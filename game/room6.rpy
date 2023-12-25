@@ -68,7 +68,7 @@ label answer_roome06:
 
 label after_room_6:
 
-    scene fb2_3 with dissolve
+    scene fb2 with dissolve
     stop music
     play music lost
 

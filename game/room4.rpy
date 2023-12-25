@@ -120,7 +120,7 @@ label answer_roome04:
             jump main_map
     
 label after_room_4:
-    scene fb2_1 with dissolve
+    scene fb2 with dissolve
     stop music
     play music 星が輝く冬
 
