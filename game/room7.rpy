@@ -97,7 +97,7 @@ label answer_roome07:
             jump main_map
 
 label after_room_7:
-    scene _4 with dissolve
+    scene fb2 with dissolve
     stop music
     play music 神隠しの真相
 

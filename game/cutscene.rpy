@@ -303,7 +303,7 @@ label cutscene_1:
 
     voice "audio/voice/cutscene/cat_13_027.mp3"
     cat_th lick "หนึ่งคำก็โพย สองคำก็โพย ตอนเธอเรียนหนังสือนี่คงลอกการบ้านคนอื่นทุกวันเลยล่ะสิ ไม่ไหวๆ"
-    cat_th lick "One word is a cheat, two words are a cheat. You must have copied others' homework every day when you were studying, huh? Unbelievable."
+    cat_en lick "One word is a cheat, two words are a cheat. You must have copied others' homework every day when you were studying, huh? Unbelievable."
 
     th "เจ้าแมวส่งเสียงเยาะเย้ยเรา"
     en "The cat scoffed at us."

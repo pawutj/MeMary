@@ -291,7 +291,7 @@ label room0:
     cat_en ah "The only way you can reach the truth is by solving the puzzles in each room."
     
     voice "audio/voice/room0/cat_0_018.mp3"
-    cat_th normal "เมื่อตอบปริศนาประจำห้องถูกต้อง ประตูห้องต่อไปจะเปิดออก"
+    cat_th normal "เมื่อตอบปริศนาประจำห้องถูกต้อง ประตูต่อไปจะเปิดออก"
     cat_en normal "When you solve the puzzle of a room correctly, the door to the next room will open."
     
     voice "audio/voice/room0/cat_0_019.mp3" 

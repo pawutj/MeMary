@@ -59,7 +59,7 @@ label answer_roome06:
                 en "Wrong."
                 jump answer_roome06
         "ใบ้หน่อยสิ":
-            th "เหมือนฉันเคยได้ยินบทกวีนี้ Willian Blake รึเปล่านะ แต่เอ้ะ เหมือนมีอะไรต่างจากต้นฉบับอยู่"
+            th "เหมือนฉันเคยได้ยินบทกวีนี้ William Blake รึเปล่านะ แต่เอ้ะ เหมือนมีอะไรต่างจากต้นฉบับอยู่"
             en "It's like I've heard this poem before, from William Blake perhaps, but wait, it seems to differ from the original."
             jump answer_roome06
         "กลับห้องโถง":

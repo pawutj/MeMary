@@ -36,7 +36,7 @@ label answer_roome02:
             if prepare(input_value) == "oblivion":
                 cat_th "ลองไปหาใน Clue สิ"
                 hide puzzle3
-                jump after_room_2
+                jump answer_roome02
 
             if prepare(input_value) == "recall":
                 $ room02_is_pass = True
