@@ -541,8 +541,11 @@ label final:
     mary_th "เรื่องแค่นั้นไม่น่าเดายากจ้ะ"
     mary_en "It wasn't hard to guess."
 
-    th "คนกลายร่างเป็นแมวได้เป็นเรื่องที่น่าขำ แต่การมีอยู่ของคฤหาสน์ที่เปลี่ยนฉากในห้องได้อย่างอิสระและมีทางเดินที่ไม่มีจุดสิ้นสุดก็ดูเป็นเรื่องเหนือธรรมชาติอยู่แล้ว"
-    en "It seemed ridiculous that a person could transform into a cat, but in a mansion where rooms changed scenes at will and corridors never ended, it didn't seem so far-fetched."
+    th "คนกลายร่างเป็นแมวได้เป็นเรื่องที่น่าขำ"
+    en "It seemed ridiculous that a person could transform into a cat"
+    
+    th "แต่การมีอยู่ของคฤหาสน์ที่เปลี่ยนฉากในห้องได้อย่างอิสระและมีทางเดินที่ไม่มีจุดสิ้นสุดก็ดูเป็นเรื่องเหนือธรรมชาติอยู่แล้ว"
+    en "But in a mansion where rooms changed scenes at will and corridors never ended, it didn't seem so far-fetched."
     th "การที่แมรี่กลายร่างได้อาจจะเป็นเรื่องที่ไม่ผิดแปลกในสถานที่แบบนี้"
     en "In a place like this, Mary's transformation could be considered normal."
     th "ที่สำคัญคือ..."
