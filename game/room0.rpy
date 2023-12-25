@@ -477,7 +477,7 @@ label easteregg_1:
     yume_en "Hold on, this orange cat will be caught and shaved soon enough."
     hide puzzle0 with dissolve
     show cat normal with dissolve
-    cat_th normal "ดูเหมือนว่าสติปัญญาของเธอจะไม่คู่ควรสำหรับคฤหาสหลังนี้สินะ" with dissolve
+    cat_th normal "ดูเหมือนว่าสติปัญญาของเธอจะไม่คู่ควรสำหรับคฤหาสน์หลังนี้สินะ" with dissolve
     cat_en normal "It seems that your intellect is not worthy of this mansion." with dissolve
 
     cat_th ah "เปิดโหมดกำจัดสิ่งแปลกปลอม" with dissolve

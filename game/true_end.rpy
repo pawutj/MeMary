@@ -446,7 +446,7 @@ label true_end:
     yume_th "....."
     yume_en "....."
     voice "audio/voice/true_end/mary_12_028.mp3"
-    mary_th "ช่วงเวลาที่ฉันอยู่กับเธอ ฉันมีความสุขที่สุดเลยนะ"
+    mary_th "ช่วงเวลาที่เธออยู่กับฉัน ฉันมีความสุขที่สุดเลยนะ"
     mary_en "The times I spent with you were the happiest."
     yume_th "แมรี่"
     yume_en "Mary"
