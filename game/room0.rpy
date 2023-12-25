@@ -634,7 +634,7 @@ label after_room_0_1:
     en "..."
     voice "audio/voice/room0/cat_0_040.mp3"
     cat_th ah "ขอแค่มีแผนผังนี่ เธอก็สามารถรู้ได้แล้วว่า ห้องไหนที่เข้าได้หรือไม่ได้ \nแล้วมันยังบอกด้วยว่าห้องไหนที่เราเคยผ่านมาแล้ว"
-    eat_en ah "With this floor plan, you can know which rooms are accessible and which are not. It also shows which rooms we have already been through."
+    cat_en ah "With this floor plan, you can know which rooms are accessible and which are not. It also shows which rooms we have already been through."
     th "ถ้างั้น ฉันจะเริ่มที่ห้องไหนดี?"
     en "In that case, which room should I start with?"
     jump main_map

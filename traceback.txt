@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00gamemenu.rpy", line 173, in script
-    jump expression _game_menu_screen
-ScriptError: could not find label 'config_screen'.
+  File "game/room0.rpy", line 637, in script
+    eat_en ah "With this floor plan, you can know which rooms are accessible and which are not. It also shows which rooms we have already been through."
+Exception: Sayer 'eat_en' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00gamemenu.rpy", line 173, in script
-    jump expression _game_menu_screen
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1992, in execute
-    rv = renpy.game.script.lookup(target)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\script.py", line 1013, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'config_screen'.
+  File "game/room0.rpy", line 637, in script
+    eat_en ah "With this floor plan, you can know which rooms are accessible and which are not. It also shows which rooms we have already been through."
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'eat_en' is not defined.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 MeMary 1.0
-Sun Dec  3 22:58:14 2023
+Mon Dec 25 21:16:38 2023
