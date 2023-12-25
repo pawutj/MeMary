@@ -34,6 +34,11 @@ label answer_roome02:
         "ตอบคำถาม":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "oblivion":
+                cat_th "ลองไปหาใน Clue สิ"
+                hide puzzle3
+                jump after_room_2
+
+            if prepare(input_value) == "recall":
                 $ room02_is_pass = True
                 play sound "audio/sfx/correct-6033.mp3" volume 1
                 th "สีขาวกลืนกินทุกอย่างอีกครั้ง ภาพความทรงจำอันลางเรือนปรากฏขึ้น"
@@ -43,6 +48,7 @@ label answer_roome02:
 
             if prepare(input_value) == "idol":
                 hide puzzle3
+
                 jump easteregg_3
 
             if prepare(input_value) == "rune":
