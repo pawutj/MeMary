@@ -537,6 +537,7 @@ label true_end:
     mary_th "ลาก่อน ผู้หญิงที่ฉันรักที่สุดในโลก"
     mary_en "Goodbye, the woman I love most in this world."
     scene white with Dissolve(5)
+    $ persistent.cg_pass[5] = True
     th "โลกรอบข้างถูกแสงสีขาวกลืนกินเข้าไปทีละน้อยๆ"
     en "The world around us was slowly swallowed by white light."
     th "แสงสว่างอันอบอุ่นค่อยๆปกคลุมทัศนียภาพตรงหน้า"
@@ -581,7 +582,7 @@ label true_end:
     yume_th "ฉันมาเยี่ยมเธอนะ แมรี่"
     yume_en "Yume: I've come to visit you, Mary."
     scene cg3 with Dissolve(1)
-
+    $ persistent.cg_pass[6] = True
     th "วันนี้คือวันครบรอบวันตายของเธอ" 
     en "Today marks the anniversary of her death."
     th "เรามาเยี่ยมเธอพร้อมกับดอกไม้ที่เธอชอบที่สุด"
