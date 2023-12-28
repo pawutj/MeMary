@@ -483,11 +483,19 @@ screen extra():
     $numbers2 = [f'{i:02d}' for i in range(1,5)]
 
     for idx,i in enumerate(numbers) :
-            imagebutton:
-                focus_mask True
-                idle f"extra/image{i}_idle.png"
-                hover f"extra/image{i}_hover.png"
-                action Show(f"show_cg{i}_01")
+
+            if  persistent.cg_pass[idx] == False :
+                imagebutton:
+                    focus_mask True
+                    idle f"extra/pic{i}_idle.png"
+                    hover f"extra/pic{i}_idle.png"
+
+            else :
+                imagebutton:
+                    focus_mask True
+                    idle f"extra/image{i}_idle.png"
+                    hover f"extra/image{i}_hover.png"
+                    action Show(f"show_cg{i}_01")
            
             # imagebutton:
             #     focus_mask True
