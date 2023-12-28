@@ -292,7 +292,7 @@ label easteregg_2:
     scene white with Dissolve(2)
     th "ขณะที่พวกเราสองคนอ่านหนังสืออยู่ที่ห้องสมุด เธอคนนั้นก็ลุกขึ้นไปหยิบหนังสือบนบันไดพร้อมถามคำถามว่า"
     en "While the two of us were reading books in the library, she got up to grab a book from the stairs and asked,"
-
+    $ persistent.cg_pass[3] = True
     scene library_1080 with Dissolve(3)
     mary_th "นี่เธอรู้รึเปล่าจ๊ะว่ากลุ่มดาวอะไรสามารถดูได้ที่คฤหาสน์นี้ตอนกลางวัน"
     mary_en "Do you know which constellation can be seen from this mansion during the day?"
