@@ -486,6 +486,8 @@ screen extra():
     $numbers = [f'{i:02d}' for i in range(1, 8)]
     $numbers2 = [f'{i:02d}' for i in range(1,13)]
 
+    $numbers3 = [f'{i:02d}' for i in range(13,18)]
+
     for idx,i in enumerate(numbers) :
 
             if  persistent.cg_pass[idx] == False :
@@ -513,6 +515,20 @@ screen extra():
             imagebutton auto f"extra/music{i}_%s.png":
                 focus_mask True
                 action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
+
+    if persistent.extra_bgm_page == 2:
+        for idx,i in enumerate(numbers3) :
+            imagebutton auto f"extra/music{i}_%s.png":
+                focus_mask True
+                action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
+
+    imagebutton auto "extra/disk1_%s.png":
+        focus_mask True
+        action SetVariable("persistent.extra_bgm_page" , 1)
+    imagebutton auto "extra/disk2_%s.png":
+        focus_mask True
+        action SetVariable("persistent.extra_bgm_page" , 2)
+
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
