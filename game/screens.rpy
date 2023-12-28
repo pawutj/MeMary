@@ -452,6 +452,7 @@ init python:
     mr.add("audio/bgm/星が輝く冬.mp3")
     mr.add("audio/bgm/泣カナイデ.mp3")
     mr.add("audio/bgm/神隠しの真相.mp3")
+    mr.add("audio/bgm/reflect.mp3")
 
 
 
@@ -463,9 +464,12 @@ screen extra():
     key "mouseup_3" action Hide('extra')
     key "K_ESCAPE" action Hide('extra')
 
-    $song_list = ['crystal_battle' , 
-    'house_of_terror' ,'lost' , 'midnight'  
-    , 'Midnight_Frozen_Piano' , 'up_to_you' , 'Midnight_Frozen_Piano']
+    $song_list = ['Midnight_Frozen_Piano' , 
+    'midnight' ,'lost' , 'reflect'  
+    , 'up_to_you' , 'crystal_battle' , 'house_of_terror'
+    ,'アクアの旅路','不可解な事件簿的な','不穏','哀愁漂うホラー的な','廃墟洋館'
+    ,'憂鬱','手紙のさよなら','星が輝く冬','泣カナイデ','神隠しの真相'
+    ]
 
     imagebutton:
         focus_mask True
@@ -480,7 +484,7 @@ screen extra():
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
 
     $numbers = [f'{i:02d}' for i in range(1, 8)]
-    $numbers2 = [f'{i:02d}' for i in range(1,5)]
+    $numbers2 = [f'{i:02d}' for i in range(1,13)]
 
     for idx,i in enumerate(numbers) :
 
