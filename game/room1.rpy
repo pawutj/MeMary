@@ -35,6 +35,12 @@ label answer_roome01:
     menu:
         "ตอบคำถาม":
             $ input_value = renpy.input("Answer?")
+
+            if checkThai(input_value) :
+                th "ปริศนาเขาตอบภาษาอังกฤษกัน"
+                en "The answer is in English"
+                jump answer_roome01
+
             if prepare(input_value) == "golderequiem" or prepare(input_value) == "goldexperiencerequiem" :
                 play sound "audio/sfx/correct-6033.mp3" volume 1
                 th "ถูกต้องแล้ว"
