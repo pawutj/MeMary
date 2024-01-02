@@ -100,8 +100,8 @@ label answer_roome04:
                 jump answer_roome04
             if prepare(input_value) == "2":
     ##voice "audio/voice/room4/cat_4_009.mp3"
-                cat_th "เธอไปหาคำตอบมาจริงๆหรอเนี่ย แต่เสียใจด้วยจ้ะ"
-                cat_en "Did you really go look for the answer? But I'm sorry to say."
+                cat_th "เธอคำนวณถูกแล้ว แต่เสียใจด้วยจ้ะ"
+                cat_en "You calculated correctly? But I'm sorry to say."
                 jump answer_roome04
             else :
     ##voice "audio/voice/room4/cat_4_010.mp3"
