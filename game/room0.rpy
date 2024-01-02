@@ -630,7 +630,7 @@ label after_room_0_1:
 
     voice "audio/voice/room0/cat_0_039.mp3"
     cat_th smile "ไม่ต้องมองด้วยสายตาอาฆาตขนาดนั้นก็ได้ เธอลองมองที่แผนผังอันนี้สิ"
-    cat_en small "You don't have to look at me with such spite. Try looking at this floor plan."
+    cat_en smile "You don't have to look at me with such spite. Try looking at this floor plan."
 
     hide cat
     #show minimap

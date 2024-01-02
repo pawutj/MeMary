@@ -33,7 +33,7 @@ label room04:
 
         voice "audio/voice/room4/cat_4_002.mp3"
         cat_th smile "จะเรียกว่าท้าทายได้ต้องดูก่อนจ้ะว่าผู้ท้าชิงฉลาดพอไหม?"
-        cat_en small "To call it a challenge, we first have to see if the challenger is smart enough."
+        cat_en smile "To call it a challenge, we first have to see if the challenger is smart enough."
 
         th "ทั้งๆที่เราไม่มีร่างกาย แต่ทำไมถึงรู้สึกเหมือนมีเส้นเลือดปูดขึ้นข้างหัวกันนะ?"
         en "Even though I don't have a body, why do I feel like veins are popping on my forehead?"
