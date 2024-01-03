@@ -1,4 +1,5 @@
 label final:
+    $ persistent.cg_pass[4] = True
     scene cg2_1 with Dissolve(3)
     stop music
     play music reflect

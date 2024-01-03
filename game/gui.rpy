@@ -419,6 +419,11 @@ define gui.language = "unicode"
 ################################################################################
 
 init python:
+    import re
+    def checkThai(str) :
+        pattern = re.compile(r'[\u0E00-\u0E7F]+')
+        return  pattern.search(str)
+
 
     ## This increases the size of the quick buttons to make them easier to touch
     ## on tablets and phones.

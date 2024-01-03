@@ -400,6 +400,7 @@ label answer_roome0:
 
 label after_room_0:
     play music up_to_you
+    $ persistent.cg_pass[0] = True
     scene fb1 with Dissolve(2)
     voice "audio/voice/room0/mary_0_000.mp3"
     mary0_th "ถ้าเราจะตั้งชื่อเกมทายปริศนา เราจะตั้งชื่อว่าอะไรดี?"
@@ -472,6 +473,8 @@ label after_room_0:
     jump memary_scene
 
 label easteregg_1:
+
+    
     
     yume_th "เดี๋ยวเถอะเจ้าแมวส้มเดี๋ยวก็จับเอาไปโกนขนซะเลย"
     yume_en "Hold on, this orange cat will be caught and shaved soon enough."
@@ -494,6 +497,7 @@ label easteregg_1:
     yume_en "Wait a minute… don't tell me that."
 
     hide cat_th
+    $ persistent.cg_pass[1] = True
     scene bakuhatu1 with dissolve
     th "ตู้มมมมมมม"
     en "Boommmmm!"
@@ -626,7 +630,7 @@ label after_room_0_1:
 
     voice "audio/voice/room0/cat_0_039.mp3"
     cat_th smile "ไม่ต้องมองด้วยสายตาอาฆาตขนาดนั้นก็ได้ เธอลองมองที่แผนผังอันนี้สิ"
-    cat_en small "You don't have to look at me with such spite. Try looking at this floor plan."
+    cat_en smile "You don't have to look at me with such spite. Try looking at this floor plan."
 
     hide cat
     #show minimap

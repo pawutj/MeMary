@@ -211,6 +211,16 @@ init python:
 default persistent.page = 0
 default persistent.language = "thai"
 default persistent.nothing = 0
-
+default persistent.extra_bgm_page = 1
 default persistent.common_end_pass  = False
 default persistent.true_end_pass = False
+
+# default persistent.cg01_pass = False
+# default persistent.cg02_pass = False
+# default persistent.cg03_pass = False
+# default persistent.cg04_pass = False
+# default persistent.cg05_pass = False
+# default persistent.cg06_pass = False
+# default persistent.cg07_pass = False
+
+default persistent.cg_pass  = [False,False , False , False , False , False ,False ]

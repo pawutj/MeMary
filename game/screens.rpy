@@ -452,6 +452,7 @@ init python:
     mr.add("audio/bgm/星が輝く冬.mp3")
     mr.add("audio/bgm/泣カナイデ.mp3")
     mr.add("audio/bgm/神隠しの真相.mp3")
+    mr.add("audio/bgm/reflect.mp3")
 
 
 
@@ -463,9 +464,12 @@ screen extra():
     key "mouseup_3" action Hide('extra')
     key "K_ESCAPE" action Hide('extra')
 
-    $song_list = ['crystal_battle' , 
-    'house_of_terror' ,'lost' , 'midnight'  
-    , 'Midnight_Frozen_Piano' , 'up_to_you' , 'Midnight_Frozen_Piano']
+    $song_list = ['Midnight_Frozen_Piano' , 
+    'midnight' ,'lost' , 'reflect'  
+    , 'up_to_you' , 'crystal_battle' , 'house_of_terror'
+    ,'アクアの旅路','不可解な事件簿的な','不穏','哀愁漂うホラー的な','廃墟洋館'
+    ,'憂鬱','手紙のさよなら','星が輝く冬','泣カナイデ','神隠しの真相'
+    ]
 
     imagebutton:
         focus_mask True
@@ -480,14 +484,24 @@ screen extra():
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
 
     $numbers = [f'{i:02d}' for i in range(1, 8)]
-    $numbers2 = [f'{i:02d}' for i in range(1,5)]
+    $numbers2 = [f'{i:02d}' for i in range(1,13)]
+
+    $numbers3 = [f'{i:02d}' for i in range(13,18)]
 
     for idx,i in enumerate(numbers) :
-            imagebutton:
-                focus_mask True
-                idle f"extra/image{i}_idle.png"
-                hover f"extra/image{i}_hover.png"
-                action Show(f"show_cg{i}_01")
+
+            if  persistent.cg_pass[idx] == False :
+                imagebutton:
+                    focus_mask True
+                    idle f"extra/pic{i}_idle.png"
+                    hover f"extra/pic{i}_idle.png"
+
+            else :
+                imagebutton:
+                    focus_mask True
+                    idle f"extra/image{i}_idle.png"
+                    hover f"extra/image{i}_hover.png"
+                    action Show(f"show_cg{i}_01")
            
             # imagebutton:
             #     focus_mask True
@@ -501,6 +515,20 @@ screen extra():
             imagebutton auto f"extra/music{i}_%s.png":
                 focus_mask True
                 action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
+
+    if persistent.extra_bgm_page == 2:
+        for idx,i in enumerate(numbers3) :
+            imagebutton auto f"extra/music{i}_%s.png":
+                focus_mask True
+                action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
+
+    imagebutton auto "extra/disk1_%s.png":
+        focus_mask True
+        action SetVariable("persistent.extra_bgm_page" , 1)
+    imagebutton auto "extra/disk2_%s.png":
+        focus_mask True
+        action SetVariable("persistent.extra_bgm_page" , 2)
+
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox

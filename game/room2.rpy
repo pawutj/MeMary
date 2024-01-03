@@ -203,7 +203,7 @@ label easteregg_3:
 
     th "ณ สถานที่แห่งนี้ เธอนี่แหละคือไอดอลของทุกคน!!"
     en "Here at this place, you are everyone's idol!!"
-
+    $ persistent.cg_pass[2] = True
     scene idol00 with Dissolve(2)
 
     th "เสียงเชียร์ของทุกคน กำลังกลายเป็นพลังให้กับเธอผู้นี้"
