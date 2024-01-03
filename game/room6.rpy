@@ -35,7 +35,7 @@ label room06:
 
 label answer_roome06:
     menu:
-        "ตอบคำถาม":
+        "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "lycorisradiata":
                 play sound "audio/sfx/correct-6033.mp3" volume 1
@@ -58,13 +58,18 @@ label answer_roome06:
                 th "ผิดจ้า"
                 en "Wrong."
                 jump answer_roome06
-        "ใบ้หน่อยสิ":
+        "Hint Me":
             th "เหมือนฉันเคยได้ยินบทกวีนี้ William Blake รึเปล่านะ แต่เอ้ะ เหมือนมีอะไรต่างจากต้นฉบับอยู่"
             en "It's like I've heard this poem before, from William Blake perhaps, but wait, it seems to differ from the original."
             jump answer_roome06
-        "กลับห้องโถง":
+        "Return to Hall":
             hide puzzle6
             jump main_map
+
+        "Skip Answer":
+            $ room06_is_pass = True
+            hide puzzle6
+            jump after_room_6
 
 label after_room_6:
 

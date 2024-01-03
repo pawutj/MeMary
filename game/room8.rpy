@@ -33,10 +33,9 @@ label room08:
 label answer_roome08:
 
     menu:
-        "answer":
-            "ตอบคำถาม"
+        "Answer":
             $ input_value = renpy.input("Answer?")
-            if prepare(input_value) == "russell":
+            if prepare(input_value) == "series":
                 $ room08_is_pass = True
                 play sound "audio/sfx/correct-6033.mp3" volume 1
                 th "ภาพอดีตถูกฉายขึ้นอีกครั้ง"
@@ -49,9 +48,12 @@ label answer_roome08:
                 th "it's not answer"
                 en "Wrong!"
                 jump answer_roome08
-        "return":
+        "Return to Hall":
             hide puzzle8
             jump main_map
+        "Skip Answer":
+            hide puzzle8
+            jump after_room_8
 
 label after_room_8:
     scene fb2 with dissolve

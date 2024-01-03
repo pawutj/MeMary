@@ -25,7 +25,7 @@ label room05:
 label answer_roome05:
     show puzzle5 with dissolve
     menu:
-        "ตอบคำถาม":
+        "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "springisintheair":
                 play sound "audio/sfx/correct-6033.mp3" volume 1
@@ -48,13 +48,17 @@ label answer_roome05:
                 th "ผิดจ้า"
                 en "Wrong."
                 jump answer_roome05
-        "ใบ้หน่อยสิ":
+        "Hint Me":
             th "เอ.. สเปคตรัม? แกรม? ถ้ารวมกันมันจะได้อะไรนะ /nที่แน่ๆคงไม่ใช่แกรมสีรุ้งแน่ๆ"
             en "Uh.. spectrum? Gram? What do you get if you combine them? \nDefinitely not a rainbow gram, for sure."
             jump answer_roome05
-        "กลับห้องรวม":
+        "Return to Hall":
             hide puzzle5
             jump main_map
+        "Skip Answer":
+            $ room05_is_pass = True
+            hide puzzle5
+            jump after_room_5
 
 label after_room_5:
     scene fb2 with dissolve

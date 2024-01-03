@@ -33,7 +33,7 @@ label room01:
 
 label answer_roome01:
     menu:
-        "ตอบคำถาม":
+        "Answer":
             $ input_value = renpy.input("Answer?")
 
             if checkThai(input_value) :
@@ -85,13 +85,17 @@ label answer_roome01:
             cat_th "ผิดจ้า"
             cat_en "Wrong."
             jump answer_roome01
-        "ใบ้หน่อยสิ":
+        "Hint Me":
     ##voice "audio/voice/room1/cat_1_007.mp3"
             cat_th "โซเดียม เอเลี่ยน โพเดี้ยม อันต่อไปคืออะไรนะ คล้ายๆกับ Stanxd JXJX ซักอย่างเลย ลอง Scan QRCode ดูหน่อยดีไหมนะ"
             jump answer_roome01
-        "กลับห้องรวม":
+        "Return to Hall":
             hide puzzle1
             jump main_map
+        "Skip Answer":
+            hide puzzle1
+            $ room01_is_pass = True
+            jump after_room_1
 
 label after_room_1:
     stop music

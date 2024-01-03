@@ -865,7 +865,7 @@ label final:
 label answer_roome10:
 
     menu:
-        "answer":
+        "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "diealongside":
                 hide puzzle10
@@ -878,8 +878,11 @@ label answer_roome10:
             th "ยังไม่ใช่คำตอบที่ถูกนะ"
             en "Wrong."
             jump answer_roome10
-        "ใบ้หน่อยสิ":
-            "ขอยันข้อสุดท้ายเลยหรอ ไปทำเองไป้"
+        "Skip to Common End":
             hide puzzle10
-            jump answer_roome10
+            jump common_end
+
+        "Skip to True End":
+            hide puzzle10
+            jump true_end
 
