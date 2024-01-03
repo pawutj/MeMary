@@ -1344,11 +1344,25 @@ style history_label_text:
 screen config_main():
     key "mouseup_3" action Hide('config_main')
     key "K_ESCAPE" action Hide('config_main')
-    imagebutton:
-        focus_mask True
-        idle "config/setting_th_bg.png" 
-        hover "config/setting_th_bg.png" 
-        action SetVariable("persistent.nothing" , 0)
+
+    if (persistent.language == "thai"):
+        add "config/setting_th_bg.png"
+    else :
+        add "config/setting_bg_eng.png"
+    
+    if (persistent.language == "thai"):
+        imagebutton:
+            focus_mask True
+            idle "config/setting_th_bg.png" 
+            hover "config/setting_th_bg.png" 
+            action SetVariable("persistent.nothing" , 0)
+    else :
+        imagebutton:
+            focus_mask True
+            idle "config/setting_bg_eng.png" 
+            hover "config/setting_bg_eng.png" 
+            action SetVariable("persistent.nothing" , 0)
+
     # add "config/setting_th_bg.png"      
     imagebutton auto "config/config_back_%s.png":
         focus_mask True
@@ -1450,7 +1464,11 @@ screen config():
         action Return()
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
-    add "config/setting_th_bg.png"      
+    if (persistent.language == "thai"):
+        add "config/setting_th_bg.png"
+    else :
+        add "config/setting_bg_eng.png"
+    
     imagebutton auto "config/config_back_%s.png":
         focus_mask True
         action Return()
