@@ -1376,7 +1376,7 @@ screen config_main():
         imagebutton:
             focus_mask True
             idle "config/all_hover.png"
-        imagebutton auto "config/read_only_%s.png":
+        imagebutton auto "config/read_%s.png":
             focus_mask True
             action Preference("skip", "toggle")
     else:
@@ -1411,7 +1411,7 @@ screen config_main():
                 value Preference("music volume")
                 xsize 450
             xpos 390
-            ypos 590
+            ypos 578
 
     hbox:
         style_prefix "slider"
@@ -1421,7 +1421,7 @@ screen config_main():
                 value Preference("sound volume")
                 xsize 450
             xpos 390
-            ypos 720
+            ypos 712
     hbox:
         style_prefix "slider"
         box_wrap True
@@ -1430,7 +1430,7 @@ screen config_main():
                 value Preference("voice volume")
                 xsize 450
             xpos 390
-            ypos 860
+            ypos 849
                 
     
     hbox:
@@ -1441,7 +1441,7 @@ screen config_main():
                 value Preference("Text Speed")
                 xsize 450
             xpos 1075
-            ypos 590
+            ypos 578
                 
 
     hbox:
@@ -1453,7 +1453,7 @@ screen config_main():
                 value Preference("auto-forward time")
                 xsize 450
             xpos 1075
-            ypos 720
+            ypos 712
 
 screen config():
     key "mouseup_3" action Return()
