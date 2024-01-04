@@ -1601,8 +1601,8 @@ screen history2():
 
 
     predict False
-    add "backlog_BG.png"
-    imagebutton auto "backlog/title_%s.png":
+    add "backlog/backlog_BG.png"
+    imagebutton auto "backlog/back_%s.png":
         focus_mask True 
         action Return()
     frame:
