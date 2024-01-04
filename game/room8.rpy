@@ -24,13 +24,13 @@ label room08:
         en "Its intense gaze made me feel like I was being seen through once again."
 
         show puzzle8
-        jump answer_roome08
+        jump answer_room8
     
     else :
         "this room has nothing"
         jump main_map 
 
-label answer_roome08:
+label answer_room8:
 
     menu:
         "Answer":
@@ -47,11 +47,12 @@ label answer_roome08:
             else :
                 th "it's not answer"
                 en "Wrong!"
-                jump answer_roome08
+                jump answer_room8
         "Return to Hall":
             hide puzzle8
             jump main_map
         "Skip Answer":
+            $ room08_is_pass = True
             hide puzzle8
             jump after_room_8
 

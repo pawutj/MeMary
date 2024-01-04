@@ -22,7 +22,7 @@ label room01:
         en "Whoever came up with this must be quite peculiar."
         hide cat
         show puzzle1
-        jump answer_roome01
+        jump answer_room1
         
     else :
         th "this room has nothing"
@@ -31,7 +31,7 @@ label room01:
 
 
 
-label answer_roome01:
+label answer_room1:
     menu:
         "Answer":
             $ input_value = renpy.input("Answer?")
@@ -39,7 +39,7 @@ label answer_roome01:
             if checkThai(input_value) :
                 th "ปริศนาเขาตอบภาษาอังกฤษกัน"
                 en "The answer is in English"
-                jump answer_roome01
+                jump answer_room1
 
             if prepare(input_value) == "golderequiem" or prepare(input_value) == "goldexperiencerequiem" :
                 play sound "audio/sfx/correct-6033.mp3" volume 1
@@ -59,43 +59,51 @@ label answer_roome01:
     ##voice "audio/voice/room1/cat_1_001.mp3"
                 cat_th "ไปปักลูกศรมาก่อน"
                 cat_en "Go get the arrow first."
-                jump answer_roome01
+                jump answer_room1
             if prepare(input_value) == "requiem":
     ##voice "audio/voice/room1/cat_1_002.mp3"
                 cat_th "ชื่อเต็มสิ"
                 cat_en "Say the full name."
-                jump answer_roome01
+                jump answer_room1
             if prepare(input_value) == "jojo":
     ##voice "audio/voice/room1/cat_1_003.mp3"
                 cat_th "ภาคไหนหล่ะ"
                 cat_en "Which part is it?"
-                jump answer_roome01
+                jump answer_room1
             if prepare(input_value) == "stand":
     ##voice "audio/voice/room1/cat_1_004.mp3"
                 cat_th "ฉันชอบ Star Platinum นะ"
                 cat_en "I like Star Platinum."
-                jump answer_roome01
+                jump answer_room1
             if prepare(input_value) == "5" or prepare(input_value) == "goldenwind":
     ##voice "audio/voice/room1/cat_1_005.mp3"
                 cat_th "ชื่อแสตนด์สิ"
                 cat_en "The name of the Stand."
-                jump answer_roome01
+                jump answer_room1
 
     ##voice "audio/voice/room1/cat_1_006.mp3"
             cat_th "ผิดจ้า"
             cat_en "Wrong."
-            jump answer_roome01
+            jump answer_room1
         "Hint Me":
     ##voice "audio/voice/room1/cat_1_007.mp3"
             cat_th "โซเดียม เอเลี่ยน โพเดี้ยม อันต่อไปคืออะไรนะ คล้ายๆกับ Stanxd JXJX ซักอย่างเลย ลอง Scan QRCode ดูหน่อยดีไหมนะ"
-            jump answer_roome01
+            jump answer_room1
+
+        "Hint Me More" :
+            ""
+            menu : 
+                "Try Answer":
+                    jump answer_room1
+                "Skip Answer":
+                    hide puzzle1
+                    $ room01_is_pass = True
+                    jump after_room_1
+                
         "Return to Hall":
             hide puzzle1
             jump main_map
-        "Skip Answer":
-            hide puzzle1
-            $ room01_is_pass = True
-            jump after_room_1
+
 
 label after_room_1:
     stop music

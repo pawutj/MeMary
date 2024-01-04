@@ -329,11 +329,11 @@ label room0:
     
     th "ลองสักตั้งก็คงไม่เสียหาย"
     en "Trying won't hurt."
-    jump answer_roome0
+    jump answer_room0
 
 
 
-label answer_roome0:
+label answer_room0:
     menu:
         "Answer":
             $ input_value = renpy.input("Answer?")
@@ -353,36 +353,36 @@ label answer_roome0:
     ##voice "audio/voice/room0/cat_0_021.mp3"
                 cat_th "ก็ Classic เกิ้น"
                 cat_en "It's classic again."
-                jump answer_roome0
+                jump answer_room0
             if prepare(input_value) == "answer":
     ##voice "audio/voice/room0/cat_0_022.mp3"
                 cat_th "มาถูกทางแล้ว"
                 cat_en "You're on the right track."
-                jump answer_roome0
+                jump answer_room0
             if prepare(input_value) == "yourgamepath" or prepare(input_value) == "/clue/room0" :
     ##voice "audio/voice/room0/cat_0_023.mp3"
                 cat_th "ไปลองค้นหาดูสิ"
                 cat_en "Go try to search."
 
-                jump answer_roome0
+                jump answer_room0
             
     ##voice "audio/voice/room0/cat_0_024.mp3"
             cat_th "ผิดจ้า"
             cat_en "Wrong."
-            jump answer_roome0
+            jump answer_room0
         "I Don't Know":
             if point_0 == 0 :
     ##voice "audio/voice/room0/cat_0_025.mp3"
                 cat_th "ก็ลองคิดดูสิจ้ะ"
                 cat_en "Just think about it."
                 $ point_0 = point_0 +1
-                jump answer_roome0
+                jump answer_room0
             if point_0 == 1 :
     ##voice "audio/voice/room0/cat_0_026.mp3"
                 cat_th "ทำไมถึงคิดว่าตอบแบบนี้จะแก้ปัญหาได้ล่ะ"
                 cat_en "Why do you think answering like this would solve the problem?"
                 $ point_0 = point_0 +1
-                jump answer_roome0
+                jump answer_room0
             if point_0 == 2 :
     ##voice "audio/voice/room0/cat_0_027.mp3"
                 cat_th "น่าจะต้องไปถามพ่อเธอดูล่ะจ้ะ"
@@ -394,7 +394,11 @@ label answer_roome0:
                 cat_th "ยินดีด้วย คุณได้รับฉากจบลับ"
                 cat_en "Congratulations, you have received a secret ending."
                 $ point_0 = 0
-                jump answer_roome0
+                jump answer_room0
+        "Hint Me":
+            ""
+            jump answer_room
+        
         "Skip Answer":
             hide puzzle0
             jump after_room_0

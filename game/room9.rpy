@@ -42,13 +42,13 @@ label room09:
         en "I wonder if it was secretly smiling at me."
 
         show puzzle9
-        jump answer_roome09
+        jump answer_room9
     
     else :
         th "this room has nothing"
         jump main_map 
 
-label answer_roome09:
+label answer_room9:
 
     menu:
         "Answer":
@@ -65,13 +65,14 @@ label answer_roome09:
             else :
                 th "ผิดจ้า"
                 en "Wrong!"
-                jump answer_roome09
+                jump answer_room9
 
         "Return to Hall":
             hide puzzle9
             jump main_map
 
         "Skip Answer":
+            $ room09_is_pass = True
             hide puzzle9
             jump after_room_9
 
