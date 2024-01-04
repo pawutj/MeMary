@@ -70,7 +70,7 @@ label room07:
 label answer_roome07:
     show puzzle7
     menu:
-        "answer":
+        "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "orion":
                 $ room07_is_pass = True
@@ -89,12 +89,15 @@ label answer_roome07:
                 th "it's not answer"
                 en "Wrong!"
                 jump answer_roome07
-        "ใบ้หน่อยสิ":
+        "Hint Me":
             th "เหมือนฉันจะเห็นดาวสีน้ำเงินเข้มอยู่ในภาพนะ ดูผิดธรรมชาติมากเลย"
             jump answer_roome07
-        "กลับห้องโถง":
+        "Return to Hall":
             hide puzzle7
             jump main_map
+        "Skip Answer":
+            hide puzzle7
+            jump after_room_7
 
 label after_room_7:
     scene fb2 with dissolve

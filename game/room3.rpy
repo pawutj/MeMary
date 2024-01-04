@@ -40,7 +40,7 @@ label room03:
 
 label answer_roome03:
     menu:
-        "ตอบคำถาม":
+        "Answer":
             th "ถ้าอยากเดิน Rook ไป A2 ให้ตอบว่า Ra2 นะ \nถ้า King ให้บอก K \nถ้า Pawn คือไม่ต้องระบุอะไรนะ ระบุช่องที่จะเดินได้เลย"
             en "If you want to move the Rook to A2, say 'Ra2'. \nFor the King, just say 'K'. \nFor a Pawn, you don't need to specify anything, just mention the square to move to."
             $ input_value = renpy.input("Answer?")
@@ -116,14 +116,18 @@ label answer_roome03:
             cat_th "ไม่ได้คล้ายเลยเธอ"
             cat_en "It's not similar at all."
             jump answer_roome03
-        "ใบ้หน่อยสิ":
+        "Hint Me":
     ##voice "audio/voice/room3/cat_3_012.mp3"
             cat_th "คุ้นๆ Paul Morphy's problem บ้างไหม"
             cat_en "Do you recognize Paul Morphy's problem?"
             jump answer_roome03
-        "กลับห้องโถง":
+        "Return to Hall":
             hide puzzle2_1
             jump main_map
+        "Skip Answer":
+            $ room03_is_pass = True
+            hide puzzle2_1
+            jump after_room_3
     
 
 

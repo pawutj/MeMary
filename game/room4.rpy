@@ -64,7 +64,7 @@ label room04:
 
 label answer_roome04:
     menu:
-        "ตอบคำถาม":
+        "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "easierthanyouthink":
                 play sound "audio/sfx/correct-6033.mp3" volume 1
@@ -108,17 +108,21 @@ label answer_roome04:
                 cat_th "ผิดจ้า"
                 cat_en "Wrong."
                 jump answer_roome04
-        "ใบ้หน่อยสิ":
+        "Hint Me":
     ##voice "audio/voice/room4/cat_4_011.mp3"
             cat_th "X^3 + Y^3 = (X+Y) * (X^2 - XY + Y^2)  
             \nเห็นไหมล่ะ? Easier Than You Think"
             cat_en "X^3 + Y^3 = (X+Y) * (X^2 - XY + Y^2)  
             \nSee? Easier Than You Think"
             jump answer_roome04
-        "return":
+        "Return to Hall":
             hide puzzle4
             jump main_map
-    
+        "Skip Answer":
+            $ room04_is_pass = True
+            hide puzzle4
+            jump after_room_4
+
 label after_room_4:
     scene fb2 with dissolve
     stop music

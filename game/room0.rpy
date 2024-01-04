@@ -335,7 +335,7 @@ label room0:
 
 label answer_roome0:
     menu:
-        "ตอบคำถาม":
+        "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "memary":
                 play sound "audio/sfx/correct-6033.mp3" volume 1
@@ -370,7 +370,7 @@ label answer_roome0:
             cat_th "ผิดจ้า"
             cat_en "Wrong."
             jump answer_roome0
-        "ไม่รู้":
+        "I Don't Know":
             if point_0 == 0 :
     ##voice "audio/voice/room0/cat_0_025.mp3"
                 cat_th "ก็ลองคิดดูสิจ้ะ"
@@ -395,6 +395,11 @@ label answer_roome0:
                 cat_en "Congratulations, you have received a secret ending."
                 $ point_0 = 0
                 jump answer_roome0
+        "Skip Answer":
+            hide puzzle0
+            jump after_room_0
+            
+            
 
     
 

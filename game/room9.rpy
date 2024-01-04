@@ -51,8 +51,7 @@ label room09:
 label answer_roome09:
 
     menu:
-        "answer":
-            "try"
+        "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "cafeaulait":
                 $ room09_is_pass = True
@@ -64,11 +63,17 @@ label answer_roome09:
                 hide puzzle9
                 jump after_room_9
             else :
-                th "Wrong!"
+                th "ผิดจ้า"
+                en "Wrong!"
                 jump answer_roome09
-        "return":
+
+        "Return to Hall":
             hide puzzle9
             jump main_map
+
+        "Skip Answer":
+            hide puzzle9
+            jump after_room_9
 
 label after_room_9:
     scene fb2 with dissolve

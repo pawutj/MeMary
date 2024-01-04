@@ -135,7 +135,7 @@ label endding_true:
     stop music
     $renpy.pause(1, hard=True)
     scene white with Dissolve(2.0)
-    play movie "images/ending.webm"
+    play movie "ending.webm"
     $renpy.pause(120, hard=True)
     jump title1
     return

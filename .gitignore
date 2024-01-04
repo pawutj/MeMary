@@ -138,3 +138,5 @@ game/cache/shaders.txt
 .log.txt
 error.txt
 .traceback.txt
+
+game/*.webm
