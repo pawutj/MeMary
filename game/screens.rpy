@@ -758,13 +758,13 @@ screen save():
     
 
     
-        imagebutton auto "save_load/back_%s.png":
+        imagebutton auto "save/back_%s.png":
             focus_mask True
             action Return()
             hover_sound "audio/UIsound/cursor.ogg"
             activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         
-        imagebutton auto "save_load/title_%s.png":
+        imagebutton auto "save/title_%s.png":
             focus_mask True
             action MainMenu()
             hover_sound "audio/UIsound/cursor.ogg"
@@ -774,7 +774,7 @@ screen save():
         #     focus_mask True
 
 
-        imagebutton auto "save_load/load_button_%s.png":
+        imagebutton auto "save/load_%s.png":
             focus_mask True
             action [ShowMenu("load"),Hide("save")]
             #activate_sound "audio/system/System_4.mp3" 
@@ -834,11 +834,11 @@ screen load():
     #             action SetVariable("persistent.page" , i)
     #             activate_sound "audio/UIsound/choice_confirm_01.ogg" 
 
-    imagebutton auto "save_load/back_%s.png":
+    imagebutton auto "save/back_%s.png":
         focus_mask True
         action Return()
     
-    imagebutton auto "save_load/title_%s.png":
+    imagebutton auto "save/title_%s.png":
         focus_mask True
         action MainMenu()
 
@@ -847,7 +847,7 @@ screen load():
     #     background "save_load/load.png"
     #     focus_mask True
 
-    imagebutton auto "save_load/save_button_%s.png":
+    imagebutton auto "save/save_%s.png":
         focus_mask True
         action [ShowMenu("save"),Hide("load")]
         #activate_sound "audio/system/System_3.mp3" 
