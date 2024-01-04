@@ -88,7 +88,7 @@ label answer_room7:
             else :
                 th "it's not answer"
                 en "Wrong!"
-                jump answer_room07
+                jump answer_room7
         "Hint Me":
             th "เหมือนฉันจะเห็นดาวสีน้ำเงินเข้มอยู่ในภาพนะ ดูผิดธรรมชาติมากเลย"
             jump answer_room7

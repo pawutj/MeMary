@@ -397,7 +397,7 @@ label answer_room0:
                 jump answer_room0
         "Hint Me":
             ""
-            jump answer_room
+            jump answer_room0
         
         "Skip Answer":
             hide puzzle0

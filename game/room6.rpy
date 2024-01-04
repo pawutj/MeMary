@@ -67,10 +67,10 @@ label answer_room6:
             ""
             menu : 
                 "Try Answer":
-                    jump answer_room06
+                    jump answer_room6
                 "Skip Answer":
                     hide puzzle6
-                    $ room05_is_pass = True
+                    $ room06_is_pass = True
                     jump after_room_6
 
         "Return to Hall":

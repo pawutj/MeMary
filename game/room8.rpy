@@ -48,13 +48,19 @@ label answer_room8:
                 th "it's not answer"
                 en "Wrong!"
                 jump answer_room8
+            
+        "Hint Me More" :
+            ""
+            menu : 
+                "Try Answer":
+                    jump answer_room8
+                "Skip Answer":
+                    hide puzzle8
+                    $ room08_is_pass = True
+                    jump after_room_8
         "Return to Hall":
             hide puzzle8
             jump main_map
-        "Skip Answer":
-            $ room08_is_pass = True
-            hide puzzle8
-            jump after_room_8
 
 label after_room_8:
     scene fb2 with dissolve
