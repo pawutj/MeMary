@@ -108,7 +108,7 @@ label answer_room4:
                 cat_th "ผิดจ้า"
                 cat_en "Wrong."
                 jump answer_room4
-        "Hint Me":
+        "Hint":
     ##voice "audio/voice/room4/cat_4_011.mp3"
             cat_th "X^3 + Y^3 = (X+Y) * (X^2 - XY + Y^2)  
             \nเห็นไหมล่ะ? Easier Than You Think"
@@ -116,7 +116,7 @@ label answer_room4:
             \nSee? Easier Than You Think"
             jump answer_room4
 
-        "Hint Me More" :
+        "Hint More" :
             ""
             menu : 
                 "Try Answer":

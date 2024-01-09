@@ -85,12 +85,12 @@ label answer_room1:
             cat_th "ผิดจ้า"
             cat_en "Wrong."
             jump answer_room1
-        "Hint Me":
+        "Hint":
     ##voice "audio/voice/room1/cat_1_007.mp3"
             cat_th "โซเดียม เอเลี่ยน โพเดี้ยม อันต่อไปคืออะไรนะ คล้ายๆกับ Stanxd JXJX ซักอย่างเลย ลอง Scan QRCode ดูหน่อยดีไหมนะ"
             jump answer_room1
 
-        "Hint Me More" :
+        "Hint More" :
             ""
             menu : 
                 "Try Answer":

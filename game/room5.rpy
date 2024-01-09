@@ -48,12 +48,12 @@ label answer_room5:
                 th "ผิดจ้า"
                 en "Wrong."
                 jump answer_room5
-        "Hint Me":
+        "Hint":
             th "เอ.. สเปคตรัม? แกรม? ถ้ารวมกันมันจะได้อะไรนะ /nที่แน่ๆคงไม่ใช่แกรมสีรุ้งแน่ๆ"
             en "Uh.. spectrum? Gram? What do you get if you combine them? \nDefinitely not a rainbow gram, for sure."
             jump answer_room5
         
-        "Hint Me More" :
+        "Hint More" :
             ""
             menu : 
                 "Try Answer":

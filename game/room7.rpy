@@ -89,11 +89,11 @@ label answer_room7:
                 th "it's not answer"
                 en "Wrong!"
                 jump answer_room7
-        "Hint Me":
+        "Hint":
             th "เหมือนฉันจะเห็นดาวสีน้ำเงินเข้มอยู่ในภาพนะ ดูผิดธรรมชาติมากเลย"
             jump answer_room7
 
-        "Hint Me More" :
+        "Hint More" :
             ""
             menu : 
                 "Try Answer":

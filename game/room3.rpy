@@ -116,12 +116,12 @@ label answer_room3:
             cat_th "ไม่ได้คล้ายเลยเธอ"
             cat_en "It's not similar at all."
             jump answer_room3
-        "Hint Me":
+        "Hint":
     ##voice "audio/voice/room3/cat_3_012.mp3"
             cat_th "คุ้นๆ Paul Morphy's problem บ้างไหม"
             cat_en "Do you recognize Paul Morphy's problem?"
             jump answer_room3
-        "Hint Me More" :
+        "Hint More" :
             ""
             menu : 
                 "Try Answer":

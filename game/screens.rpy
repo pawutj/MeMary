@@ -210,17 +210,19 @@ screen choice(items):
     style_prefix "choice"
 
     vbox:
-        xalign 0.99 
+        xalign 0.97 
         yalign 0.5
         for i in items:
             textbutton i.caption style "c_choice" action i.action
 
 style c_choice:        
-        background Frame("images/screen/choice_idle.png",10,10)
-        hover_background Frame("images/screen/choice_hover.png",10,10)
-        top_padding 30
-        bottom_padding 30
-        yminimum 100 # default y size of the button image with no text
+        background Frame("images/screen/choice2_idle.png",10,10)
+        hover_background Frame("images/screen/choice2_hover.png",10,10)
+        top_padding 18
+        left_padding 30
+        bottom_padding 18
+        yminimum 70 # default y size of the button image with no text
+        ymaximum 70
         xminimum 300 # default x size of the button image with no text
 
 style choice_vbox is vbox

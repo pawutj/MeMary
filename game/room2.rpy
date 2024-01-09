@@ -68,13 +68,13 @@ label answer_room2:
                 cat_th "ผิดจ้า"
                 cat_en "Wrong."
                 jump answer_room2
-        "Hint Me":
+        "Hint":
     ##voice "audio/voice/room2/cat_2_003.mp3"
             cat_th "ดูถ้าจะคล้ายๆกับ อักษรรูน นะ ดูเหมือนจะเทียบอักษรเป็นภาษาอังกฤษได้อยู่นะ"
             cat_en "It looks similar to Rune letters. It seems like they can be compared to English letters."
             jump answer_room2
 
-        "Hint Me More" :
+        "Hint More" :
             ""
             menu : 
                 "Try Answer":
