@@ -32,13 +32,13 @@ label room03:
         hide cat
 
         show puzzle2_1
-        jump answer_roome03
+        jump answer_room3
         
     else :
         th "this room has nothing"
         jump main_map 
 
-label answer_roome03:
+label answer_room3:
     menu:
         "Answer":
             th "ถ้าอยากเดิน Rook ไป A2 ให้ตอบว่า Ra2 นะ \nถ้า King ให้บอก K \nถ้า Pawn คือไม่ต้องระบุอะไรนะ ระบุช่องที่จะเดินได้เลย"
@@ -73,62 +73,67 @@ label answer_roome03:
                     cat_en "Did you forget to say Check Mate? Rxa7#"
                     hide puzzle2_3
                     show puzzle2_1 with dissolve
-                    jump answer_roome03
+                    jump answer_room3
     ##voice "audio/voice/room3/cat_3_004.mp3"
                 cat_th "เกือบจะชนะแล้วแท้ๆ ลองใหม่ดีไหม?"
                 cat_en "You were almost winning. Want to try again?"
                 hide puzzle2_3
                 show puzzle2_1 with dissolve
-                jump answer_roome03
+                jump answer_room3
             if prepare(input_value) == "ra2":
     ##voice "audio/voice/room3/cat_3_005.mp3"
                 cat_en "It's just an example."
                 cat_th "เค้าแค่ยกตัวอย่าง"
-                jump answer_roome03
+                jump answer_room3
 
             if prepare(input_value) == "ra7":
     ##voice "audio/voice/room3/cat_3_006.mp3"
                 cat_en "Did you forget to say it's an attack? Rxa7+"
                 cat_th "ลืมบอกว่ารุกรึเปล่า Rxa7+"
-                jump answer_roome03
+                jump answer_room3
             if prepare(input_value) == "rxa7":
     ##voice "audio/voice/room3/cat_3_007.mp3"
                 cat_th "ลืมบอกว่ารุกรึเปล่า Rxa7+"
                 cat_en "Did you forget to say it's an attack? Rxa7+"
-                jump answer_roome03
+                jump answer_room3
             if prepare(input_value) == "rxa7+":
     ##voice "audio/voice/room3/cat_3_008.mp3"
                 cat_th "หมากนี้เล่นต่อน่าจะแพ้นะ"
                 cat_en "Continuing this move should lead to a loss."
-                jump answer_roome03
+                jump answer_room3
             if prepare(input_value) == "b7":
     ##voice "audio/voice/room3/cat_3_009.mp3"
                 cat_th "ลืมบอกว่ารุกรึเปล่า xB7"
                 cat_en "Did you forget to say it's an attack? xB7"
-                jump answer_roome03
+                jump answer_room3
             if prepare(input_value) == "bx7":
     ##voice "audio/voice/room3/cat_3_010.mp3"
                 cat_th "แบบนี้เกมส์น่าจะเสมอนะ"
                 cat_en "With this, the game should end in a draw."
-                jump answer_roome03
+                jump answer_room3
             
     ##voice "audio/voice/room3/cat_3_011.mp3"
             cat_th "ไม่ได้คล้ายเลยเธอ"
             cat_en "It's not similar at all."
-            jump answer_roome03
+            jump answer_room3
         "Hint Me":
     ##voice "audio/voice/room3/cat_3_012.mp3"
             cat_th "คุ้นๆ Paul Morphy's problem บ้างไหม"
             cat_en "Do you recognize Paul Morphy's problem?"
-            jump answer_roome03
+            jump answer_room3
+        "Hint Me More" :
+            ""
+            menu : 
+                "Try Answer":
+                    jump answer_room3
+                "Skip Answer":
+                    hide puzzle3
+                    $ room03_is_pass = True
+                    jump after_room_3
         "Return to Hall":
             hide puzzle2_1
             jump main_map
-        "Skip Answer":
-            $ room03_is_pass = True
-            hide puzzle2_1
-            jump after_room_3
-    
+
 
 
 label after_room_3:

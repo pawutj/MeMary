@@ -858,11 +858,11 @@ label final:
     en "This was an unavoidable confrontation between us, a moment where hidden truths would finally surface, demanding acknowledgment and acceptance."
 
     show puzzle10 with dissolve
-    jump answer_roome10
+    jump answer_room10
 
     return
 
-label answer_roome10:
+label answer_room10:
 
     menu:
         "Answer":
@@ -877,7 +877,7 @@ label answer_roome10:
             
             th "ยังไม่ใช่คำตอบที่ถูกนะ"
             en "Wrong."
-            jump answer_roome10
+            jump answer_room10
         "Skip to Common End":
             hide puzzle10
             jump common_end

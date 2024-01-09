@@ -27,13 +27,13 @@ label room06:
         hide cat
         
         show puzzle6
-        jump answer_roome06
+        jump answer_room6
         
     else :
         th "this room has nothing"
         jump main_map 
 
-label answer_roome06:
+label answer_room6:
     menu:
         "Answer":
             $ input_value = renpy.input("Answer?")
@@ -49,27 +49,35 @@ label answer_roome06:
             if prepare(input_value) == "spiderlily":
                 th "ตอบเป็นชื่อวิทยาศาสตร์"
                 en "Answer with the scientific name."
-                jump answer_roome06
+                jump answer_room6
             if prepare(input_value) == "sunflower":
                 th "อะไรที่มันแทนที่ดอกทานตะวันกันนะ?"
                 en "What could replace the sunflower?"
-                jump answer_roome06
+                jump answer_room6
             else :
                 th "ผิดจ้า"
                 en "Wrong."
-                jump answer_roome06
+                jump answer_room6
         "Hint Me":
             th "เหมือนฉันเคยได้ยินบทกวีนี้ William Blake รึเปล่านะ แต่เอ้ะ เหมือนมีอะไรต่างจากต้นฉบับอยู่"
             en "It's like I've heard this poem before, from William Blake perhaps, but wait, it seems to differ from the original."
-            jump answer_roome06
+            jump answer_room6
+
+        "Hint Me More" :
+            ""
+            menu : 
+                "Try Answer":
+                    jump answer_room6
+                "Skip Answer":
+                    hide puzzle6
+                    $ room06_is_pass = True
+                    jump after_room_6
+
         "Return to Hall":
             hide puzzle6
             jump main_map
 
-        "Skip Answer":
-            $ room06_is_pass = True
-            hide puzzle6
-            jump after_room_6
+
 
 label after_room_6:
 

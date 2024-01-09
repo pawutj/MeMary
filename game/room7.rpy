@@ -60,14 +60,14 @@ label room07:
         en "The orange cat gave me a smile."
 
         
-        jump answer_roome07
+        jump answer_room7
     
     else :
         th "this room has nothing"
         en "this room has nothing"
         jump main_map 
 
-label answer_roome07:
+label answer_room7:
     show puzzle7
     menu:
         "Answer":
@@ -88,16 +88,24 @@ label answer_roome07:
             else :
                 th "it's not answer"
                 en "Wrong!"
-                jump answer_roome07
+                jump answer_room7
         "Hint Me":
             th "เหมือนฉันจะเห็นดาวสีน้ำเงินเข้มอยู่ในภาพนะ ดูผิดธรรมชาติมากเลย"
-            jump answer_roome07
+            jump answer_room7
+
+        "Hint Me More" :
+            ""
+            menu : 
+                "Try Answer":
+                    jump answer_room7
+                "Skip Answer":
+                    hide puzzle7
+                    $ room07_is_pass = True
+                    jump after_room_7
+
         "Return to Hall":
             hide puzzle7
             jump main_map
-        "Skip Answer":
-            hide puzzle7
-            jump after_room_7
 
 label after_room_7:
     scene fb2 with dissolve
@@ -336,7 +344,7 @@ label easteregg_2:
     yume_en "No way!"
 
 
-    jump answer_roome07
+    jump answer_room7
 
 
     

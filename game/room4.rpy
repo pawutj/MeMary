@@ -56,13 +56,13 @@ label room04:
 
         hide cat
         show puzzle4
-        jump answer_roome04
+        jump answer_room4
         
     else :
         th "this room has nothing"
         jump main_map 
 
-label answer_roome04:
+label answer_room4:
     menu:
         "Answer":
             $ input_value = renpy.input("Answer?")
@@ -81,48 +81,54 @@ label answer_roome04:
     ##voice "audio/voice/room4/cat_4_005.mp3"
                 cat_th "ทำไมถึงอ่านตามกระดานอย่างนั้นล่ะ"
                 cat_en "Why are you reading the board like that?"
-                jump answer_roome04
+                jump answer_room4
             
             if prepare(input_value) == "iseasierthanyouthink":
     ##voice "audio/voice/room4/cat_4_006.mp3"
                 cat_th "แปลกๆอยู่นะ มันน่าจะเป็นคณิตศาสตร์รึเปล่า"
                 cat_en "It's strange. Could it be mathematics?"
-                jump answer_roome04
+                jump answer_room4
             if prepare(input_value) == "0":
     ##voice "audio/voice/room4/cat_4_007.mp3"
                 cat_th "ไม่ใช่ว่าเจออะไรก็ตอบ 0 ก่อนสิ"
                 cat_en "It's not like you should answer '0' for everything you encounter."
-                jump answer_roome04
+                jump answer_room4
             if prepare(input_value) == "1":
     ##voice "audio/voice/room4/cat_4_008.mp3"
                 cat_th "ฉันว่าเธอน่าจะบวกเลขผิดนะ"
                 cat_en "I think you might have added the numbers incorrectly."
-                jump answer_roome04
+                jump answer_room4
             if prepare(input_value) == "2":
     ##voice "audio/voice/room4/cat_4_009.mp3"
                 cat_th "เธอคำนวณถูกแล้ว แต่เสียใจด้วยจ้ะ"
                 cat_en "You calculated correctly? But I'm sorry to say."
-                jump answer_roome04
+                jump answer_room4
             else :
     ##voice "audio/voice/room4/cat_4_010.mp3"
                 cat_th "ผิดจ้า"
                 cat_en "Wrong."
-                jump answer_roome04
+                jump answer_room4
         "Hint Me":
     ##voice "audio/voice/room4/cat_4_011.mp3"
             cat_th "X^3 + Y^3 = (X+Y) * (X^2 - XY + Y^2)  
             \nเห็นไหมล่ะ? Easier Than You Think"
             cat_en "X^3 + Y^3 = (X+Y) * (X^2 - XY + Y^2)  
             \nSee? Easier Than You Think"
-            jump answer_roome04
+            jump answer_room4
+
+        "Hint Me More" :
+            ""
+            menu : 
+                "Try Answer":
+                    jump answer_room4
+                "Skip Answer":
+                    hide puzzle4
+                    $ room04_is_pass = True
+                    jump after_room_4
+        
         "Return to Hall":
             hide puzzle4
             jump main_map
-        "Skip Answer":
-            $ room04_is_pass = True
-            hide puzzle4
-            jump after_room_4
-
 label after_room_4:
     scene fb2 with dissolve
     stop music

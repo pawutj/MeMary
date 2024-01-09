@@ -16,13 +16,13 @@ label room05:
         cat_th ah "ลองตอบคำถามดู"
         "เจ้าแมวส้มว่าแล้วก็ส่งยิ้มบางๆให้เรา"
         hide cat
-        jump answer_roome05
+        jump answer_room5
         
     else :
         "this room has nothing"
         jump main_map 
 
-label answer_roome05:
+label answer_room5:
     show puzzle5 with dissolve
     menu:
         "Answer":
@@ -39,26 +39,33 @@ label answer_roome05:
             if prepare(input_value) == "gstring":
                 th "ชื่อเหมือนอะไรหื่นๆเลยนะจ้ะ"
                 en "The name sounds kind of risqué, doesn't it?"
-                jump answer_roome05
+                jump answer_room5
             if prepare(input_value) == "spectrogram":
                 th "ดูมาถูกทางอยู่นะจ้ะ" 
                 en "It seems you're on the right track."
-                jump answer_roome05
+                jump answer_room5
             else :
                 th "ผิดจ้า"
                 en "Wrong."
-                jump answer_roome05
+                jump answer_room5
         "Hint Me":
             th "เอ.. สเปคตรัม? แกรม? ถ้ารวมกันมันจะได้อะไรนะ /nที่แน่ๆคงไม่ใช่แกรมสีรุ้งแน่ๆ"
             en "Uh.. spectrum? Gram? What do you get if you combine them? \nDefinitely not a rainbow gram, for sure."
-            jump answer_roome05
+            jump answer_room5
+        
+        "Hint Me More" :
+            ""
+            menu : 
+                "Try Answer":
+                    jump answer_room5
+                "Skip Answer":
+                    hide puzzle5
+                    $ room05_is_pass = True
+                    jump after_room_5
+
         "Return to Hall":
             hide puzzle5
             jump main_map
-        "Skip Answer":
-            $ room05_is_pass = True
-            hide puzzle5
-            jump after_room_5
 
 label after_room_5:
     scene fb2 with dissolve

@@ -23,12 +23,12 @@ label room02:
         hide cat
 
         
-        jump answer_roome02
+        jump answer_room2
         
     else :
         th "this room has nothing"
         jump main_map 
-label answer_roome02:
+label answer_room2:
     show puzzle3 with dissolve
     menu:
         "Answer":
@@ -36,7 +36,7 @@ label answer_roome02:
             if prepare(input_value) == "oblivion":
                 cat_th "ลองไปหาใน Clue สิ"
                 hide puzzle3
-                jump answer_roome02
+                jump answer_room2
 
             if prepare(input_value) == "recall":
                 $ room02_is_pass = True
@@ -56,30 +56,36 @@ label answer_roome02:
                 cat_th "ลองเทียบอักษรดูสิ"
                 cat_en "Try comparing the letters."
                 hide puzzle3
-                jump answer_roome02
+                jump answer_room2
             if prepare(input_value) == "obliion":
     ##voice "audio/voice/room2/cat_2_001.mp3"
                 cat_th "คำมันแปลกๆอยู่นะ ลองๆเติมอะไรให้มันอ่านออกมั้ย"
                 cat_en "The words are strange, aren't they? Try filling in something to make them readable."
                 hide puzzle3
-                jump answer_roome02
+                jump answer_room2
             else :
     ##voice "audio/voice/room2/cat_2_002.mp3"
                 cat_th "ผิดจ้า"
                 cat_en "Wrong."
-                jump answer_roome02
+                jump answer_room2
         "Hint Me":
     ##voice "audio/voice/room2/cat_2_003.mp3"
             cat_th "ดูถ้าจะคล้ายๆกับ อักษรรูน นะ ดูเหมือนจะเทียบอักษรเป็นภาษาอังกฤษได้อยู่นะ"
             cat_en "It looks similar to Rune letters. It seems like they can be compared to English letters."
-            jump answer_roome02
+            jump answer_room2
+
+        "Hint Me More" :
+            ""
+            menu : 
+                "Try Answer":
+                    jump answer_room2
+                "Skip Answer":
+                    hide puzzle2
+                    $ room02_is_pass = True
+                    jump after_room_2
         "Return to Hall":
             hide puzzle3
             jump main_map
-        "Skip Answer":
-            $ room02_is_pass = True
-            hide puzzle2
-            jump after_room_2
     
 
 label after_room_2:
@@ -240,4 +246,4 @@ label easteregg_3:
     cat_th "จะไปใช่ได้ไงเล่า!" 
     cat_en "How could that be possible!"
 
-    jump answer_roome02
+    jump answer_room2
