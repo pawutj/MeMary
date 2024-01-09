@@ -386,8 +386,8 @@ screen main_menu():
     ## contents of the main menu are in the navigation screen.
     # use navigation
 
-    button :
-        add "main/main_logo.png"
+    # button :
+    #     add "main/main_logo.png"
 
     if persistent.language == "thai":
         imagebutton auto "main/thai_%s.png":
