@@ -205,13 +205,23 @@ style input:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
+
 screen choice(items):
     style_prefix "choice"
 
     vbox:
+        xalign 0.99 
+        yalign 0.5
         for i in items:
-            textbutton i.caption action i.action
+            textbutton i.caption style "c_choice" action i.action
 
+style c_choice:        
+        background Frame("images/screen/choice_idle.png",10,10)
+        hover_background Frame("images/screen/choice_hover.png",10,10)
+        top_padding 30
+        bottom_padding 30
+        yminimum 100 # default y size of the button image with no text
+        xminimum 300 # default x size of the button image with no text
 
 style choice_vbox is vbox
 style choice_button is button
