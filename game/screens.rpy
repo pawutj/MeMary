@@ -205,13 +205,23 @@ style input:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
+
 screen choice(items):
     style_prefix "choice"
 
     vbox:
+        xalign 0.99 
+        yalign 0.5
         for i in items:
-            textbutton i.caption action i.action
+            textbutton i.caption style "c_choice" action i.action
 
+style c_choice:        
+        background Frame("images/screen/choice_idle.png",10,10)
+        hover_background Frame("images/screen/choice_hover.png",10,10)
+        top_padding 30
+        bottom_padding 30
+        yminimum 100 # default y size of the button image with no text
+        xminimum 300 # default x size of the button image with no text
 
 style choice_vbox is vbox
 style choice_button is button
@@ -758,13 +768,13 @@ screen save():
     
 
     
-        imagebutton auto "save_load/back_%s.png":
+        imagebutton auto "save/back_%s.png":
             focus_mask True
             action Return()
             hover_sound "audio/UIsound/cursor.ogg"
             activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         
-        imagebutton auto "save_load/title_%s.png":
+        imagebutton auto "save/title_%s.png":
             focus_mask True
             action MainMenu()
             hover_sound "audio/UIsound/cursor.ogg"
@@ -774,7 +784,7 @@ screen save():
         #     focus_mask True
 
 
-        imagebutton auto "save_load/load_button_%s.png":
+        imagebutton auto "save/load_%s.png":
             focus_mask True
             action [ShowMenu("load"),Hide("save")]
             #activate_sound "audio/system/System_4.mp3" 
@@ -834,11 +844,11 @@ screen load():
     #             action SetVariable("persistent.page" , i)
     #             activate_sound "audio/UIsound/choice_confirm_01.ogg" 
 
-    imagebutton auto "save_load/back_%s.png":
+    imagebutton auto "save/back_%s.png":
         focus_mask True
         action Return()
     
-    imagebutton auto "save_load/title_%s.png":
+    imagebutton auto "save/title_%s.png":
         focus_mask True
         action MainMenu()
 
@@ -847,7 +857,7 @@ screen load():
     #     background "save_load/load.png"
     #     focus_mask True
 
-    imagebutton auto "save_load/save_button_%s.png":
+    imagebutton auto "save/save_%s.png":
         focus_mask True
         action [ShowMenu("save"),Hide("load")]
         #activate_sound "audio/system/System_3.mp3" 
@@ -1376,7 +1386,7 @@ screen config_main():
         imagebutton:
             focus_mask True
             idle "config/all_hover.png"
-        imagebutton auto "config/read_only_%s.png":
+        imagebutton auto "config/read_%s.png":
             focus_mask True
             action Preference("skip", "toggle")
     else:
@@ -1411,7 +1421,7 @@ screen config_main():
                 value Preference("music volume")
                 xsize 450
             xpos 390
-            ypos 590
+            ypos 578
 
     hbox:
         style_prefix "slider"
@@ -1421,7 +1431,7 @@ screen config_main():
                 value Preference("sound volume")
                 xsize 450
             xpos 390
-            ypos 720
+            ypos 712
     hbox:
         style_prefix "slider"
         box_wrap True
@@ -1430,7 +1440,7 @@ screen config_main():
                 value Preference("voice volume")
                 xsize 450
             xpos 390
-            ypos 860
+            ypos 849
                 
     
     hbox:
@@ -1441,7 +1451,7 @@ screen config_main():
                 value Preference("Text Speed")
                 xsize 450
             xpos 1075
-            ypos 590
+            ypos 578
                 
 
     hbox:
@@ -1453,7 +1463,7 @@ screen config_main():
                 value Preference("auto-forward time")
                 xsize 450
             xpos 1075
-            ypos 720
+            ypos 712
 
 screen config():
     key "mouseup_3" action Return()
@@ -1601,8 +1611,8 @@ screen history2():
 
 
     predict False
-    add "backlog_BG.png"
-    imagebutton auto "backlog/title_%s.png":
+    add "backlog/backlog_BG.png"
+    imagebutton auto "backlog/back_%s.png":
         focus_mask True 
         action Return()
     frame:
