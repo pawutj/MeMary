@@ -93,15 +93,11 @@ label answer_room7:
             th "เหมือนฉันจะเห็นดาวสีน้ำเงินเข้มอยู่ในภาพนะ ดูผิดธรรมชาติมากเลย"
             jump answer_room7
 
-        "Hint More" :
-            ""
-            menu : 
-                "Try Answer":
-                    jump answer_room7
-                "Skip Answer":
-                    hide puzzle7
-                    $ room07_is_pass = True
-                    jump after_room_7
+
+        "Skip Answer":
+            hide puzzle7
+            $ room07_is_pass = True
+            jump after_room_7
 
         "Return to Hall":
             hide puzzle7

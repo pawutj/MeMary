@@ -53,15 +53,11 @@ label answer_room5:
             en "Uh.. spectrum? Gram? What do you get if you combine them? \nDefinitely not a rainbow gram, for sure."
             jump answer_room5
         
-        "Hint More" :
-            ""
-            menu : 
-                "Try Answer":
-                    jump answer_room5
-                "Skip Answer":
-                    hide puzzle5
-                    $ room05_is_pass = True
-                    jump after_room_5
+
+        "Skip Answer":
+            hide puzzle5
+            $ room05_is_pass = True
+            jump after_room_5
 
         "Return to Hall":
             hide puzzle5

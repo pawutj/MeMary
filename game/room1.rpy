@@ -90,15 +90,11 @@ label answer_room1:
             cat_th "โซเดียม เอเลี่ยน โพเดี้ยม อันต่อไปคืออะไรนะ คล้ายๆกับ Stanxd JXJX ซักอย่างเลย ลอง Scan QRCode ดูหน่อยดีไหมนะ"
             jump answer_room1
 
-        "Hint More" :
-            ""
-            menu : 
-                "Try Answer":
-                    jump answer_room1
-                "Skip Answer":
-                    hide puzzle1
-                    $ room01_is_pass = True
-                    jump after_room_1
+
+        "Skip Answer":
+            hide puzzle1
+            $ room01_is_pass = True
+            jump after_room_1
                 
         "Return to Hall":
             hide puzzle1

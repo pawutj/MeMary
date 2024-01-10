@@ -67,15 +67,11 @@ label answer_room9:
                 en "Wrong!"
                 jump answer_room9
 
-        "Hint More" :
-            ""
-            menu : 
-                "Try Answer":
-                    jump answer_room9
-                "Skip Answer":
-                    hide puzzle9
-                    $ room09_is_pass = True
-                    jump after_room_9
+
+        "Skip Answer":
+            hide puzzle9
+            $ room09_is_pass = True
+            jump after_room_9
 
         "Return to Hall":
             hide puzzle9

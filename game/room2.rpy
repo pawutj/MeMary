@@ -74,15 +74,10 @@ label answer_room2:
             cat_en "It looks similar to Rune letters. It seems like they can be compared to English letters."
             jump answer_room2
 
-        "Hint More" :
-            ""
-            menu : 
-                "Try Answer":
-                    jump answer_room2
-                "Skip Answer":
-                    hide puzzle2
-                    $ room02_is_pass = True
-                    jump after_room_2
+        "Skip Answer":
+                hide puzzle2
+                $ room02_is_pass = True
+                jump after_room_2
         "Return to Hall":
             hide puzzle3
             jump main_map

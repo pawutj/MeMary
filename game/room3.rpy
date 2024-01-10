@@ -121,15 +121,11 @@ label answer_room3:
             cat_th "คุ้นๆ Paul Morphy's problem บ้างไหม"
             cat_en "Do you recognize Paul Morphy's problem?"
             jump answer_room3
-        "Hint More" :
-            ""
-            menu : 
-                "Try Answer":
-                    jump answer_room3
-                "Skip Answer":
-                    hide puzzle3
-                    $ room03_is_pass = True
-                    jump after_room_3
+
+        "Skip Answer":
+                hide puzzle3
+                $ room03_is_pass = True
+                jump after_room_3
         "Return to Hall":
             hide puzzle2_1
             jump main_map

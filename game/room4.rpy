@@ -116,15 +116,11 @@ label answer_room4:
             \nSee? Easier Than You Think"
             jump answer_room4
 
-        "Hint More" :
-            ""
-            menu : 
-                "Try Answer":
-                    jump answer_room4
-                "Skip Answer":
-                    hide puzzle4
-                    $ room04_is_pass = True
-                    jump after_room_4
+
+        "Skip Answer":
+            hide puzzle4
+            $ room04_is_pass = True
+            jump after_room_4
         
         "Return to Hall":
             hide puzzle4

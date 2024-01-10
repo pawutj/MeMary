@@ -63,15 +63,11 @@ label answer_room6:
             en "It's like I've heard this poem before, from William Blake perhaps, but wait, it seems to differ from the original."
             jump answer_room6
 
-        "Hint More" :
-            ""
-            menu : 
-                "Try Answer":
-                    jump answer_room6
-                "Skip Answer":
-                    hide puzzle6
-                    $ room06_is_pass = True
-                    jump after_room_6
+
+        "Skip Answer":
+            hide puzzle6
+            $ room06_is_pass = True
+            jump after_room_6
 
         "Return to Hall":
             hide puzzle6
