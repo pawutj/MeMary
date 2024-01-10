@@ -395,7 +395,7 @@ label answer_room0:
                 cat_en "Congratulations, you have received a secret ending."
                 $ point_0 = 0
                 jump answer_room0
-        "Hint Me":
+        "Hint":
             ""
             jump answer_room0
         

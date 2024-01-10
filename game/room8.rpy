@@ -49,7 +49,7 @@ label answer_room8:
                 en "Wrong!"
                 jump answer_room8
             
-        "Hint Me More" :
+        "Hint More" :
             ""
             menu : 
                 "Try Answer":

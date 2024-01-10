@@ -58,12 +58,12 @@ label answer_room6:
                 th "ผิดจ้า"
                 en "Wrong."
                 jump answer_room6
-        "Hint Me":
+        "Hint":
             th "เหมือนฉันเคยได้ยินบทกวีนี้ William Blake รึเปล่านะ แต่เอ้ะ เหมือนมีอะไรต่างจากต้นฉบับอยู่"
             en "It's like I've heard this poem before, from William Blake perhaps, but wait, it seems to differ from the original."
             jump answer_room6
 
-        "Hint Me More" :
+        "Hint More" :
             ""
             menu : 
                 "Try Answer":
