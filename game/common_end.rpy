@@ -202,7 +202,7 @@ label common_end:
     th "ไม่ว่าจะเกิดอะไรขึ้นก็ไม่สำคัญอีกแล้ว"
     en "Whatever happens now doesn't matter anymore."
 
-    scene fb3_3 with dissolve
+    scene fb3_2 with dissolve
 
     th "เราหลั่งน้ำตาออกมาอย่างหยุดไม่ได้"
     en "We shed unstoppable tears."
@@ -228,6 +228,7 @@ label common_end:
     th "เด็กสาวผมทองแสดงสีหน้าเจ็บปวดรวดร้าวออกมา"
     en "The blonde girl showed a face of intense pain."
     voice "audio/voice/common_end/mary_11_001.mp3"
+    scene fb3_3 with dissolve
     mary_th "ถ้านั่นเป็นสิ่งที่เธออยากเข้าใจ ฉันก็จะไม่หยุดเธอ"
     mary_en "If that's what you want to believe, I won't stop you."
     yume_th "....."
@@ -235,6 +236,7 @@ label common_end:
 
 
     voice "audio/voice/common_end/mary_11_002.mp3"
+    scene fb3_6 with dissolve
     mary_th "ถึงแม้ว่าฉันจะไม่ได้ต้องการให้ผลลัพธ์ออกมาแบบนี้ก็ตาม แต่ว่า..."
     mary_en "Even though I didn't want things to end up like this, but..."
     th "แมรี่หัวเราะเศร้าๆให้เรา"
@@ -244,11 +246,13 @@ label common_end:
     th "ขณะเดียวกัน โลกรอบข้างพวกเราทั้งสองก็ค่อยๆมืดลง"
     en "Meanwhile, the world around us both gradually darkened."
     voice "audio/voice/common_end/mary_11_003.mp3"
+    scene fb3_7 with dissolve
     mary_th "เธอจะไปกับฉันจริงๆเหรอ?"
     mary_en "Are you really going to go with me?"
     yume_th "....."
     yume_en "....."
     voice "audio/voice/common_end/mary_11_004.mp3"
+    scene fb3_2 with dissolve
     mary_th "ถ้าเธอเลือกที่จะจับมือฉัน เธอจะไม่มีวันได้กลับไปมีชีวิตอีกเลยนะ"
     mary_en "If you choose to take my hand, you'll never be able to return to life again."
     th "ดวงตาของแมรี่จับจ้องเข้าในดวงตาของเราตรงๆ"
@@ -259,6 +263,7 @@ label common_end:
     yume_en "If we are to exist, let us be together; if we are to die, I want to die with you."
     
     voice "audio/voice/common_end/mary_11_005.mp3"
+    scene fb3_3 with dissolve
     mary_th "ยูเมะ..."
     mary_en "Yume..."
     yume_th "ฉันรักษาสัญญาแล้วนะ"
