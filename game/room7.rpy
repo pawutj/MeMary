@@ -91,6 +91,14 @@ label answer_room7:
                 jump answer_room7
         "Hint":
             th "เหมือนฉันจะเห็นดาวสีน้ำเงินเข้มอยู่ในภาพนะ ดูผิดธรรมชาติมากเลย"
+            en "It seems like I see a dark blue star in the picture. It looks very unnatural."
+            
+            th "มีหลายวิธีที่ทำได้ แต่วิธีที่ดีที่สุด น่าจะเป็นการใช้ Error Level Analysis"
+            en "There are many ways to do it, but the best method is probably to use Error Level Analysis."
+            show hint7 with dissolve
+            th "ฉันว่า เธอน่าจะขี้เกียจทำเอง ฉันจัดการให้เธอเองละกัน"
+            en "I think you are too lazy to do it yourself. I'll take it for you."
+            hide hint7
             jump answer_room7
 
 

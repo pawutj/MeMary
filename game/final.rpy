@@ -900,6 +900,29 @@ label answer_room10:
             th "ยังไม่ใช่คำตอบที่ถูกนะ"
             en "Wrong."
             jump answer_room10
+
+        "Hint":
+            th "ข้อสุดท้ายยังจะขอเฉลยอีกหรอ"
+            en "The last one, you still want the hint?"
+            
+            th "จริงๆปริศนาข้อนี้เหมือนจะยาก แต่สังเกตไหมว่า อักษรพยางค์เดียวขึ้นต้นประโยค มันน่าจะขึ้นต้นด้วย A"
+            en "Actually, this puzzle seems hard, but did you notice that the sentences start with single syllable letters? It should start with A."
+            
+            th "จะได้ว่า ตัว Q ถอดรหัสได้เป็น A"
+            en "So, Q decodes to A."
+            
+            th "Zit ที่ขึ้นต้นประโยค และมักเป็นคำที่เจอบ่อยๆ เป็นตัวอื่นไปไม่ได้ นอกจาก The"
+            en "Zit, starting the sentence, and often encountered, can't be anything else but The."
+            th "Z -> T\nI ->h\nT ->e"
+            en "Z -> T\nI ->h\nT ->e"
+
+            th "zgrqn'l จริงๆก็ไม่รู้หรอกว่า zgrqn คืออะไร แต่ 'l นั้นเป็นอะไรไม่ได้เลยนอกจาก 's"
+            en "zgrqn'l, actually I don't know what zgrqn is, but 'l can't be anything but 's."
+
+            th "ฉันว่า ที่เหลือเธอน่าจะไปต่อเองได้แล้วนะ"
+            en "I think you can continue on your own from here."
+            jump answer_room10
+        
         "Skip to Common End":
             hide puzzle10
             jump common_end

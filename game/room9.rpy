@@ -67,6 +67,12 @@ label answer_room9:
                 en "Wrong!"
                 jump answer_room9
 
+        "Hint":
+            show hint9 with dissolve
+            th "น่าจะเป็น Trie นะ ลองสร้าง Trie ตามข้อความบนกระดานดีกว่า"
+            en "It should be a Trie. Let's try building a Trie based on the text on the board."
+            hide hint9 
+            jump answer_room9
 
         "Skip Answer":
             hide puzzle9
