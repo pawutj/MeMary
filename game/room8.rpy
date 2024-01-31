@@ -18,7 +18,7 @@ label room08:
         voice "audio/voice/room8/cat_8_001.mp3"
         cat_th smile "ไขปริศนาให้ได้ แล้วจะเข้าใจอะไรมากขึ้นเอง"
         cat_en smile "Solve the puzzle, and you'll understand more."
-        th"เจ้าแมวส้มพูดราวกับท้าทาย"
+        th "เจ้าแมวส้มพูดราวกับท้าทาย"
         en "The orange cat spoke as if issuing a challenge."
         th "ดวงตาเจนจัดของมันทำให้เรารู้สึกเหมือนโดนมองทะลุอีกครั้ง"
         en "Its intense gaze made me feel like I was being seen through once again."
@@ -48,6 +48,14 @@ label answer_room8:
                 th "it's not answer"
                 en "Wrong!"
                 jump answer_room8
+
+        "Hint":
+            th "1.2 The world divides into facts -> T\n1.21 Any one can either be the case or not be the case, and everything
+else remain the same. -> A"
+            en "1.2 The world divides into facts -> T\n1.21 Any one can either be the case or not be the case, and everything
+else remain the same. -> A"
+            jump answer_room8
+
             
 
         "Skip Answer":
