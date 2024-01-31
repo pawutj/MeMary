@@ -9,12 +9,17 @@ label room05:
         show cat normal with dissolve
         
         th "ปริศนาข้อต่อไปนี่มันอะไรกันนะ?"
+        en "What is this next puzzle about?"
     ##voice "audio/voice/room5/cat_5_000.mp3"
         cat_th normal "เธอชอบฟังเพลงหรือเปล่าล่ะ?"
+        cat_en normal "Do you like listening to music?"
         yume_th "หา?"
+        yume_en "Huh?"
     ##voice "audio/voice/room5/cat_5_001.mp3"
         cat_th ah "ลองตอบคำถามดู"
-        "เจ้าแมวส้มว่าแล้วก็ส่งยิ้มบางๆให้เรา"
+        cat_en ah "Try answering the question."
+        th "เจ้าแมวส้มว่าแล้วก็ส่งยิ้มบางๆให้เรา"
+        en "The orange cat said and then gave us a faint smile."
         hide cat
         jump answer_room5
         
