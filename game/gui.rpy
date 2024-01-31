@@ -10,6 +10,13 @@ init offset = -2
 ## width and height of the game.
 init python:
     gui.init(1920, 1080)
+    config.keymap['accessibility'] =[]
+    config.keymap['game_menu'] = ['K_MENU', 'K_PAUSE']
+    config.keymap['hide_windows'] = ['mouseup_3','K_ESCAPE']
+    config.keymap['help'] = []
+    config.keymap['self_voicing'] = []
+    config.keymap['screenshot'] =[]
+    config.keymap['progress_screen'] = []
 
 ## Enable checks for invalid or unstable properties in screens or transforms
 define config.check_conflicting_properties = True
