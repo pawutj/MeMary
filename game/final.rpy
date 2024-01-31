@@ -913,8 +913,8 @@ label answer_room10:
             
             th "Zit ที่ขึ้นต้นประโยค และมักเป็นคำที่เจอบ่อยๆ เป็นตัวอื่นไปไม่ได้ นอกจาก The"
             en "Zit, starting the sentence, and often encountered, can't be anything else but The."
-            th "Z -> T\nI ->h\nT ->e"
-            en "Z -> T\nI ->h\nT ->e"
+            th "Z -> T\nI -> H\nT -> E"
+            en "Z -> T\nI -> H\nT -> E"
 
             th "zgrqn'l จริงๆก็ไม่รู้หรอกว่า zgrqn คืออะไร แต่ 'l นั้นเป็นอะไรไม่ได้เลยนอกจาก 's"
             en "zgrqn'l, actually I don't know what zgrqn is, but 'l can't be anything but 's."
