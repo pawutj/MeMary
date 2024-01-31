@@ -49,7 +49,7 @@ label answer_room5:
                 en "Wrong."
                 jump answer_room5
         "Hint":
-            th "เอ.. สเปคตรัม? แกรม? ถ้ารวมกันมันจะได้อะไรนะ /nที่แน่ๆคงไม่ใช่แกรมสีรุ้งแน่ๆ"
+            th "เอ.. สเปคตรัม? แกรม? ถ้ารวมกันมันจะได้อะไรนะ \nที่แน่ๆคงไม่ใช่แกรมสีรุ้งแน่ๆ"
             en "Uh.. spectrum? Gram? What do you get if you combine them? \nDefinitely not a rainbow gram, for sure."
             jump answer_room5
         

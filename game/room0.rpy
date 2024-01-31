@@ -396,7 +396,11 @@ label answer_room0:
                 $ point_0 = 0
                 jump answer_room0
         "Hint":
-            ""
+            th "คอยดูนี่ให้ดีๆนะ"
+            show hint0 with dissolve
+            en "Look at this."
+            "..."
+            hide hint0
             jump answer_room0
         
         "Skip Answer":

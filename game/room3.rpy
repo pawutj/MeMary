@@ -47,10 +47,12 @@ label answer_room3:
             if prepare(input_value) == "ra6":
     ##voice "audio/voice/room3/cat_3_001.mp3"
                 
-                cat_th "เชิงหนาใช้ได้นะเนี่ย"
-                cat_en "Bold moves can work."
-                show puzzle2_2 with dissolve
+                cat_th "ถูกต้องแล้ว"
+                cat_en "Correct"
+                $ room03_is_pass = True
+                #show puzzle2_2 with dissolve
                 hide puzzle2_1
+                jump after_room_3
                 ".."
                 show puzzle2_3 with dissolve
                 hide puzzle2_2
