@@ -25,6 +25,7 @@ label room05:
 label answer_room5:
     show puzzle5 with dissolve
     menu:
+        "{size=*1.5}/clue/Lotus{/size}"
         "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "springisintheair":

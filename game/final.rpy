@@ -885,7 +885,7 @@ label final:
     return
 
 label answer_room10:
-
+    "{size=*1.5}/clue/SpiderLily{/size}"
     menu:
         "Answer":
             $ input_value = renpy.input("Answer?")
@@ -926,8 +926,8 @@ label answer_room10:
         "Skip to Common End":
             hide puzzle10
             jump common_end
-
-        "Skip to True End":
+    
+        "Skip to True End" if (persistent.common_end_pass == True):
             hide puzzle10
             jump true_end
 

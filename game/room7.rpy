@@ -70,6 +70,7 @@ label room07:
 label answer_room7:
     show puzzle7
     menu:
+        "{size=*1.5}/clue/Dandelion{/size}"
         "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "orion":

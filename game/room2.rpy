@@ -31,6 +31,7 @@ label room02:
 label answer_room2:
     show puzzle3 with dissolve
     menu:
+        "{size=*1.5}/clue/Rose{/size}"
         "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "oblivion":

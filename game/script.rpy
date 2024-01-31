@@ -141,7 +141,7 @@ label endding_true:
     $renpy.pause(1, hard=True)
     scene white with Dissolve(2.0)
     play movie "ending.webm"
-    $renpy.pause(120, hard=True)
+    $renpy.pause(90, hard=True)
     jump title1
     return
 

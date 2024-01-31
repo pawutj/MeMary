@@ -51,6 +51,7 @@ label room09:
 label answer_room9:
 
     menu:
+        "{size=*1.5}/clue/Tulip{/size}"
         "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "cafeaulait":

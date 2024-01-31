@@ -299,6 +299,8 @@ label common_end:
     en "."
     th "จบแบบนี้น่ะ มันถูกต้องแล้วเหรอ?"
     en "Is it right to end it this way?"
+    th "{size=*1.5}ครั้งหน้า อย่าลืม 'จดหมาย' นะ{/size}"
+    en "{size=*1.5}Next time, don't forget the 'letter'.{/size}"
     $ persistent.common_end_pass = True
     scene black with Dissolve(3)
 

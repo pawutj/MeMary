@@ -33,6 +33,7 @@ label room08:
 label answer_room8:
 
     menu:
+        "{size=*1.5}/clue/Poppy{/size}"
         "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "series":

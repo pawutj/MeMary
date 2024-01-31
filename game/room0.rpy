@@ -15,7 +15,7 @@ label intro:
     #Just Test
     scene rouka_s_1080
     play music 廃墟洋館
-    
+
     th "... เส้นทางที่ไม่รู้จุดหมายทอดยาวต่อหน้าเรา..."
     en "... A path with no known destination stretches out before me..."
     
@@ -335,6 +335,7 @@ label room0:
 
 label answer_room0:
     menu:
+        "{size=*1.5}/clue/Daisy{/size}"
         "Answer":
             $ input_value = renpy.input("Answer?")
             if prepare(input_value) == "memary":
