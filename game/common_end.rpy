@@ -218,7 +218,7 @@ label common_end:
 
     yume_th "ที่นี่คือโลกหลังความตายสินะ"
     yume_en "This is the afterlife, isn't it?"
-    voice "audio/voice/common_end/mary_11_000.mp3"
+    #voice "audio/voice/common_end/mary_11_000.mp3"
     mary_th "...."
     mary_en "...."
     yume_th "ไม่เป็นไรหรอก อย่างน้อยๆฉันก็ได้กลับมาเจอกับเธอ แมรี่"
