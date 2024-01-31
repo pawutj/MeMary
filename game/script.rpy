@@ -35,8 +35,8 @@ define father_en = Character("Mary's Father",color="#F0F8FF", who_outlines=[(2,"
 
 image moonlight3 = im.Scale("bg/moonlight3.png",1920,1080)
 image sky_cloudy = im.Scale("bg/sky_cloudy.png",1920,1080)
-image classroom_sunset = im.Scale("bg/classroom_evening02.jpg",1920,1080)
-image classroom_morning = im.Scale("bg/classroom_morning.png",1920,1080)
+image classroom_sunset = im.Scale("bg/classroom_sunset.png",1920,1080)
+image classroom_morning = im.Scale("bg/classroom_morning.jpg",1920,1080)
 image sky_morning = im.Scale("bg/sky_morning.png",1920,1080)
 image nightsky = im.Scale("bg/nightsky.png",1920,1080)
 

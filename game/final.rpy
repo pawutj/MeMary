@@ -95,7 +95,7 @@ label final:
     en "What I can never forget is that 'my mother was a murderer"
     th "....."
     en "....."
-    scene kitchen03 with dissolve
+    scene livingroom with dissolve
     th "แม่ทะเลาะกับญาติฝั่งพ่อที่เป็นผู้อาวุโสคนหนึ่งซึ่งเป็นที่นับหน้าถือตากันในหมู่บ้าน"
     en "My mother quarreled with a paternal relative, a respected elder in the village."
     th "ปัญหาที่ทะเลาะกันก็เป็นเรื่องมรดกเงินทองไม่ต่างจากเดิม แต่เพราะโทสะบังตาและถูกต้อนจนมุม แม่ของเราจึงระเบิดอารมณ์ใส่ญาติคนนั้น"
@@ -521,7 +521,7 @@ label final:
     th "รู้ตัวอีกทีเราก็เดินผ่านประตูบานหนึ่งและเข้ามาในห้องถัดไปแล้ว"
     en "Before I knew it, I had passed through a door and entered the next room."
     scene white with dissolve
-    scene fb3_3 with dissolve
+    scene fb3_2 with dissolve
     stop music
     play music 廃墟洋館
 
@@ -530,6 +530,7 @@ label final:
     yume_th "แมรี่"
     yume_en "Mary..."
     voice "audio/voice/final/mary_10_036.mp3"
+    scene fb3_3 with dissolve
     mary_th "ในที่สุด เธอก็มาถึงห้องสุดท้ายสินะ"
     mary_en "Finally, you've reached the last room."
     th "เด็กสาวผมทองส่งยิ้มเศร้าๆให้เรา"
@@ -539,6 +540,7 @@ label final:
     yume_th "เธอคือแมวตัวนั้น"
     yume_en "You are that cat."
     voice "audio/voice/final/mary_10_037.mp3"
+    scene fb3_6 with dissolve
     mary_th "เรื่องแค่นั้นไม่น่าเดายากจ้ะ"
     mary_en "It wasn't hard to guess."
 
@@ -554,6 +556,7 @@ label final:
     yume_th "ที่นี่คือที่ไหนกัน?"
     yume_en "Where are we?"
     voice "audio/voice/final/mary_10_038.mp3"
+    scene fb3_7 with dissolve
     mary_th "อย่าถามคำถามที่เธอแสร้งทำเป็นไม่รู้คำตอบสิ ยูเมะ"
     mary_en "Don't ask questions when you pretend not to know the answer, Yume."
     yume_th "หา?"
@@ -563,16 +566,19 @@ label final:
     th "แมรี่กำลังพูดอะไร เธอต้องอะไรจากเรากันแน่"
     en "What was Mary talking about? What did she want from me?"
     voice "audio/voice/final/mary_10_039.mp3"
+    scene fb3_2 with dissolve
     mary_th "เธอเข้ามาที่นี่โดยที่ไม่มีร่างกายและไม่มีความทรงจำ แต่นั่นน่ะ...มันเกิดจากการรับรู้ที่ผิดพลาดของเธอเอง..."
     mary_en "You came here without a body and without memories."
     yume_th "เธอพูดอะไร...?"
     yume_en "What are you saying...?"
     voice "audio/voice/final/mary_10_040.mp3"
+    scene fb3_3 with dissolve
     mary_th "จิตใจของเธอไม่สามารถยอมรับกับความเป็นจริงได้ เธอเลยทำเป็นไม่เห็นทุกสิ่งทุกอย่าง"
     mary_en  "Your mind couldn't accept reality, so you chose to ignore everything."
     yume_th "....."
     yume_en "....."
     voice "audio/voice/final/mary_10_041.mp3"
+    scene fb3_6 with dissolve
     mary_th "นึกให้ออกสิว่าทำไมฉันถึงอยู่ที่นี่ ทำไมเธอถึงตามฉันมาที่นี่"
     mary_en "Think about why I am here. Why you followed me here."
     yume_th  "...อึก"
