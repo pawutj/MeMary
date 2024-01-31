@@ -723,7 +723,7 @@ label final:
     scene black with dissolve
     th "รู้สึกตัวอีกที เราก็จบชีวิตคนคนหนึ่งไปแล้ว"
 
-    scene fb3_4 with dissolve
+    scene fb3_2 with dissolve
     stop music
     play music 廃墟洋館
 
@@ -733,11 +733,13 @@ label final:
     yume_th "...นี่มัน..."
     yume_en "...This is..."
     voice "audio/voice/final/mary_10_051.mp3"
+    scene fb3_3 with dissolve
     mary_th "เธอต้องการจะปกป้องฉัน แต่อุบัติเหตุได้เกิดขึ้น"
     mary_en "You wanted to protect me, but an accident happened."
     yume_th "....."
     yume_en "....."
     voice "audio/voice/final/mary_10_052.mp3"
+    scene fb3_6 with dissolve
     mary_th "เธอผลักพ่อของฉันจนหัวเขากระแทกกลอนประตูโลหะ สาเหตุการตายของพ่อคือเลือดออกในสมอง"
     mary_en "You pushed my father, and his head hit the metal door lock. He died of a brain hemorrhage."
     yume_th "...อึก"
@@ -753,11 +755,13 @@ label final:
     th "แมรี่ทำหน้าเศร้าขณะที่เธอส่ายหน้าปฏิเสธ"
     en "Mary looked sad as she shook her head."
     voice "audio/voice/final/mary_10_053.mp3"
+    scene fb3_7 with dissolve
     mary_th "เรื่องที่เกิดขึ้นไม่มีใครตั้งใจหรอกจ้ะ"
     mary_en "What happened wasn't intentional."
     yume_th "แมรี่..."
     yume_en "Mary..."
     voice "audio/voice/final/mary_10_054.mp3"
+    scene fb3_2 with dissolve
     mary_th "ฉันไม่โกรธแค้นเธอหรอก เพราะเธอแค่อยากปกป้องฉันใช่ไหมล่ะ"
     mary_en "I don't blame you. You just wanted to protect me."
     th "รอยยิ้มของแมรี่ทำให้เรารู้สึกผิดบาป"
@@ -769,11 +773,13 @@ label final:
     yume_th  "แล้วหลังจากนั้น...?"
     yume_en "And after that...?"
     voice "audio/voice/final/mary_10_055.mp3"
+    scene fb3_3 with dissolve
     mary_th "เธอถูกจับเข้าเรือนจำข้อหาฆ่าคนตาย"
     mary_en "You were arrested for manslaughter."
     yume_th "....."
     yume_en "....."
     voice "audio/voice/final/mary_10_056.mp3"
+    scene fb3_6 with dissolve
     mary_th "เธอยอมรับโทษแต่โดยดี พวกเราสองคนสัญญากันว่าหลังจากเธอพ้นโทษแล้ว พวกเราจะกลับมาอยู่ด้วยกันอีกครั้งหนึ่ง"
     mary_en "You accepted your sentence willingly. We promised that once you were out, we would be together again."
     th "แมรี่ตอบเราด้วยรอยยิ้มเศร้าๆ"
@@ -785,6 +791,7 @@ label final:
     yume_th  "แล้ว...เรื่องราวต่อจากนั้นล่ะ...?"
     yume_en "And... what happened next...?"
     #voice "audio/voice/final/mary_10_057.mp3"
+    scene fb3_7 with dissolve
     mary_th "....."
     mary_en "....."
     yume_th "แมรี่ ตอบฉันที"
@@ -793,11 +800,13 @@ label final:
     th "แมรี่ส่ายหน้าอีกครั้ง"
     en "Mary shook her head again."
     voice "audio/voice/final/mary_10_058.mp3"
+    scene fb3_2 with dissolve
     mary_th  "ฉันตอบคำถามคนที่ไม่รู้ความจริงได้ แต่ฉันไม่สามารถตอบคำถามคนที่ไม่ยอมรับความจริงได้จ้ะ"
     mary_en "I can answer the questions of someone unaware of the truth, but I cannot answer someone who refuses to accept it."
     yume_th  "...หา?"
     mary_en "...What?"
     voice "audio/voice/final/mary_10_059.mp3"
+    scene fb3_3 with dissolve
     mary_th "ไม่ว่าฉันจะเฉลยตรงๆสักกี่ครั้ง คนไม่ยอมรับความจริงก็จะทำเป็นลืมทุกอย่าง สุดท้ายฉันเลยต้องสร้างวิธีการพิเศษขึ้นมาเพื่อให้เธอค่อยๆกลับมาเป็นตัวเองอีกครั้ง"
     mary_en "No matter how many times I explain it, someone who denies the truth will pretend to forget everything. So, I had to create a special way to help you slowly return to yourself."
     th "วิธีการ?"
@@ -805,16 +814,19 @@ label final:
     th "อย่าบอกนะว่า โจทย์กับประตูพวกนั้น?"
     en "You mean those puzzles and doors?"
     voice "audio/voice/final/mary_10_060.mp3"
+    scene fb3_6 with dissolve
     mary_th "สำหรับเธอ การตอบปริศนาผ่านประตูอาจจะเป็นครั้งแรก แต่สำหรับฉัน ฉันได้นำทางเธอมาแล้วหลายต่อหลายครั้ง"
     mary_en "For you, solving puzzles and passing through doors might seem new, but for me, I've guided you through this many times."
     th "คำพูดของแมรี่ทำให้เราเบิกตาโพลง"
     en "Mary's words left me stunned."
     voice "audio/voice/final/mary_10_061.mp3"
+    scene fb3_7 with dissolve
     mary_th "ทุกครั้งที่เธอใกล้ถึงปลายทาง เธอจะวิ่งหนีจากความจริง และพวกเราก็จะเริ่มใหม่กันอีกครั้ง..."
     mary_en "Every time you near the end, you run from the truth, and we start over..."
     yume_th "....."
     yume_en "....."
     voice "audio/voice/final/mary_10_062.mp3"
+    scene fb3_2 with dissolve
     mary_th "ในมุมมองของเธอ เธออาจจะผ่านเส้นทางนั้นมาครั้งเดียว แต่ในความจริงแล้ว พวกเราทั้งสองได้เดินผ่านประตูพวกนั้นมาไม่รู้กี่สิบกี่ร้อยครั้ง"
     mary_en "In your perception, you might have walked this path once, but in reality, we've passed through those doors countless times."
 
@@ -822,11 +834,13 @@ label final:
     yume_th "..ไม่จริง"
     yume_en "...It can't be true."
     voice "audio/voice/final/mary_10_063.mp3"
+    scene fb3_3 with dissolve
     mary_th "มันคือความจริง ยูเมะ"
     mary_en "It is the truth, Yume."
     yume_th "....."
     yume_en "....."
     voice "audio/voice/final/mary_10_064.mp3"
+    scene fb3_6 with dissolve
     mary_th "ฉันดีใจนะที่เธอสามารถไขปริศนาทั้งหมดและมาถึงห้องสุดท้ายนี้ได้"
     mary_en "I'm glad you could solve all the puzzles and reach this final room."
 
@@ -843,11 +857,13 @@ label final:
     th "...เพื่อช่วยเหลือเรา..."
     en "...For help me..."
     voice "audio/voice/final/mary_10_065.mp3"
+    scene fb3_7 with dissolve
     mary_th "เศษเสี้ยวของความจริงชิ้นสุดท้ายเป็นสิ่งที่ต่อให้ฉันพูดให้เธอฟัง เธอก็จะวิ่งหนีจากมัน...ฉะนั้นเธอจึงมีหน้าที่รับรู้และยอมรับมันด้วยตัวของเธอเอง..."
     mary_en "The last fragment of truth is something you'll run from, even if I tell you. So, you need to recognize and accept it yourself..."
     yume_th "....."
     yume_en "....."
     voice "audio/voice/final/mary_10_066.mp3"
+    scene fb3_2 with dissolve
     mary_th "จงตอบปริศนาสุดท้ายและรับรู้ความทรงจำที่แท้จริงด้วยพลังของตัวเองซะ ยูเมะ"
     mary_en "Solve the final puzzle and come to terms with the real memories using your own strength, Yume."
     yume_th "...แมรี่..."
