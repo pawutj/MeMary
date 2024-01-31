@@ -192,7 +192,7 @@ label true_end:
     stop music
     play music reflect
 
-    scene fb3_3 with Dissolve(1)
+    scene fb3_2 with Dissolve(1)
 
     th "เราล้มลงทั้งยืนต่อหน้าแมรี่"
     en "I fell to our knees in front of Mary."
@@ -203,6 +203,7 @@ label true_end:
     th "ความจริงที่หวนคืนกลับมาทำให้เรารู้สึกทุกข์ทรมานเหลือเกิน"
     en "The truth that resurfaced brought unbearable agony."
     voice "audio/voice/true_end/mary_12_000.mp3"
+    scene fb3_3 with Dissolve(1)
     mary_th "เธอได้อ่านจดหมายที่ฉันส่งให้แล้วสินะ"
     mary_en "You've read the letter I sent you, haven't you?"
     yume_th "จดหมาย?"
@@ -216,21 +217,25 @@ label true_end:
     th "....."
     en "....."
     voice "audio/voice/true_end/mary_12_001.mp3"
+    scene fb3_6 with Dissolve(1)
     mary_th "ยูเมะ อย่าโกหกตัวเองอีกเลย"
     mary_en "Yume, stop lying to yourself."
     yume_th "แต่...แต่ว่า!?"
     yume_en "But... But what!?"
     voice "audio/voice/true_end/mary_12_002.mp3"
+    scene fb3_7 with Dissolve(1)
     mary_th "เธอน่ะไม่ได้ลืมตัวตนของตัวเองหรอก เธอแค่ทำเป็นมองไม่เห็น ทำเป็นลืมทุกอย่างเท่านั้น"
     mary_en "You haven't forgotten who you are. You're just pretending not to see, pretending to forget everything."
     yume_th "...!!"
     yume_th "...!!"
     voice "audio/voice/true_end/mary_12_003.mp3"
+    scene fb3_2 with Dissolve(1)
     mary_th "จริงอยู่ว่าที่นี่คือขอบเขตระหว่างคนเป็นกับคนตาย แต่มันไม่ได้ทำให้รูปลักษณ์ของเธอกลับสู่ความว่างเปล่าหรอก"
     mary_en "It's true that this place is the boundary between the living and the dead, but it doesn't erase your existence into nothingness."
     yume_th "หมายความว่า..."
     yume_en "That means.."
     voice "audio/voice/true_end/mary_12_004.mp3"
+    scene fb3_3 with Dissolve(1)
     mary_th "เธอคือคนที่ปฏิเสธตัวตนที่เจ็บปวดของตัวเองและฉันคือคนที่พยายามพาเธอกลับมา"
     mary_en "You are the one who denies your painful identity, and I am the one trying to bring you back."
     yume_th "...อึก"
@@ -264,16 +269,19 @@ label true_end:
     yume_th "โลกข้างนอกนั่น มันไม่มีความสุขรออยู่"
     yume_en "The outside world, it doesn't have happiness waiting."
     voice "audio/voice/true_end/mary_12_007.mp3"
+    scene fb3_16 with Dissolve(1)
     mary_th "...ยูเมะ..."
     mary_en "...Yume..."
     yume_th "เพราะฉันเป็นฉันใช่ไหม? ฉันเลยต้องเจอกับโชคร้ายทั้งหมดนั่น...มันไม่ยุติธรรมเลย..."
     yume_en "Because I am me, right? That's why I have to face all this misfortune... It's not fair..."
     #voice "audio/voice/true_end/mary_12_008.mp3"
+    scene fb3_22 with Dissolve(1)
     mary_th "....."
     mary_en "....."
     yume_th "ถ้าหากฉันไม่สามารถมีความสุขเมื่อมีชีวิตได้ ฉันก็ไม่ขอมีชีวิตอยู่"
     yume_en "If I can't be happy while alive, then I don't want to live."
     voice "audio/voice/true_end/mary_12_009.mp3"
+    scene fb3_24 with Dissolve(1)
     mary_th "...นั่นมัน..."
     mary_en "...That's..."
     yume_th "เพื่อรักษาสัญญาที่มีต่อเธอ ต่อให้ต้องเสียอะไรไป ฉันก็จะทำ"
@@ -295,11 +303,13 @@ label true_end:
     yume_th "ฉันไม่สนใจหรอกว่าจะมีคนบอกว่าฉันเป็นคนอ่อนแอหรือเป็นคนบ้า"
     yume_en "I don't care if people say I'm weak or crazy."
     voice "audio/voice/true_end/mary_12_010.mp3"
+    scene fb3_16 with Dissolve(1)
     mary_th "ยูเมะ"
     mary_en "Yume."
     yume_th "ฉันน่ะ...ก็แค่อยากอยู่กับเธอ..."
     yume_en "I... just want to be with you..."
     #voice "audio/voice/true_end/mary_12_011.mp3"
+    scene fb3_23 with Dissolve(1)
     mary_th "....."
     mary_en "....."
     yume_th "ได้โปรด อย่าทิ้งฉันไป...แมรี่..."
@@ -321,21 +331,25 @@ label true_end:
     th "เด็กสาวผมทองหลั่งน้ำตาให้เราพร้อมกับส่งยิ้มที่แสนเศร้าให้"
     en "The blonde girl shed tears for us, offering a sorrowful smile."
     voice "audio/voice/true_end/mary_12_012.mp3"
+    scene fb3_22 with Dissolve(1)
     mary_th "ฉันน่ะ...คงเป็นคนเห็นแก่ตัวมากสินะ..."
     mary_en "I must be very selfish..."
     yume_th "หา?"
     yume_en "What?"
     voice "audio/voice/true_end/mary_12_013.mp3"
+    scene fb3_21 with Dissolve(1)
     mary_th "ทั้งเข้าใกล้เธอและพยายามตีสนิทกับเธอเพราะคิดว่าเธอมีอะไรคล้ายๆกับฉัน ทั้งจงใจทายปริศนาไร้สาระทั้งๆที่รู้ว่าเธอไม่ชอบตอบคำถามฉัน"
     mary_en "Approaching you, trying to get close because I thought you were like me, intentionally solving those absurd puzzles even though I knew you disliked answering my questions."
     yume_th "...ไม่...ไม่ใช่..."
     yume_en "...No... it's not like that..."
     voice "audio/voice/true_end/mary_12_014.mp3"
+    scene fb3_23 with Dissolve(1)
     mary_th "ฉันสนิทกับเธอมากขึ้นแล้วก็เข้าใจ จริงๆแล้วฉันอยากผูกพันกับเธอตั้งแต่แรกอยู่แล้ว"
     mary_en "The more I got to know you, the more I understood. I wanted to be connected with you from the start."
     yume_th "...ทำไม?"
     yume_en "...Why?"
     voice "audio/voice/true_end/mary_12_015.mp3"
+    scene fb3_24 with Dissolve(1)
     mary_th "นั่นสินะ อาจเพราะว่าเธอเข้มแข็งกว่าฉันก็ได้"
     mary_en "Perhaps because you are stronger than me."
     yume_th "เข้มแข็ง?"
@@ -347,11 +361,13 @@ label true_end:
 
 
     voice "audio/voice/true_end/mary_12_016.mp3"
+    scene fb3_23 with Dissolve(1)
     mary_th "ทั้งๆที่เธอมีชีวิตที่โหดร้ายพอกับฉัน แต่เธอเลือกที่จะยืนหยัดกับมัน"
     mary_en "Despite having a life as cruel as mine, you chose to face it."
     yume_th "....."
     yume_en "....."
     voice "audio/voice/true_end/mary_12_017.mp3"
+    scene fb3_24 with Dissolve(1)
     mary_th "ตอนที่ฉันเห็นเธอยืนขัดโต๊ะคนเดียว โดนคนอื่นรังแกแต่ไม่เคยร้องไห้ ฉันก็คิดมาตลอดว่า ‘เธอคนนี้แหละคือคนที่ฉันอยากเป็น’"
     mary_en "When I saw you standing alone against the table, being bullied by others but never crying, I always thought, 'That's the person I want to be.'"
     th "คำพูดของแมรี่ทำให้เรารู้สึกเจ็บแปลบในอก"
@@ -359,6 +375,7 @@ label true_end:
     th "เธอมองเราเป็นคนเข้มแข็งแบบนั้นมาตลอดเลยงั้นเหรอ"
     en "Was she always seeing us as that strong?"
     voice "audio/voice/true_end/mary_12_018.mp3"
+    scene fb3_21 with Dissolve(1)
     mary_th "ฉันน่ะเกิดมาร่างกายก็อ่อนแอ พ่อก็ไม่ชอบฉัน แม่ก็ทิ้งฉันไป...เพราะอย่างนั้น ฉันถึงร้องไห้ทุกวัน...ในห้องส่วนตัวที่ไม่มีใครอยู่..."
     mary_en "I was born weak, my father didn't like me, my mother left me... that's why I cried every night... alone in my room."
     yume_th "....."
@@ -370,6 +387,7 @@ label true_end:
     th "เราก้มหน้าลงเพื่อหลบสายตาของเธอ แต่แมรี่ช้อนคางของเราขึ้น ให้เราสบตากับเธอตรงๆ"
     en "We lowered our head to avoid her gaze, but Mary lifted our chin to meet her eyes."
     voice "audio/voice/true_end/mary_12_019.mp3"
+    scene fb3_16 with Dissolve(1)
     mary_th "แต่หลังจากเจอเธอ ฉันก็ร้องไห้น้อยลง"
     mary_en "But after meeting you, I started to cry less."
     voice "audio/voice/true_end/mary_12_020.mp3"
@@ -380,6 +398,7 @@ label true_end:
     mary_en "That's why I didn't tell you about my physical weakness, afraid that I would become a burden to your strength."
 
     voice "audio/voice/true_end/mary_12_022.mp3"
+    scene fb3_15 with Dissolve(1)
     mary_th "...ฉันนี่มันเห็นแก่ตัว...ว่าไหม?"
     mary_en "...I'm so selfish, aren't I?"
     th "เสียงหัวเราะเศร้าๆดังมาจากเด็กสาวผมทอง"
@@ -395,6 +414,7 @@ label true_end:
     yume_th "ฉันก็อยากอยู่กับเธอเหมือนกัน"
     yume_en "I want to be with you too."
     voice "audio/voice/true_end/mary_12_023.mp3"
+    scene fb3_18 with Dissolve(1)
     mary_th "...ยูเมะ..."
     mary_en "...Yume..."
     yume_th "ฉันไม่ได้เข้มแข็งอะไรหรอก ฉันแค่ทำเป็นไม่รู้สึกอะไร"
@@ -412,6 +432,7 @@ label true_end:
     yume_th "แต่เมื่อฉันกลับมาพบกับเธอ ฉันก็ไม่มีโอกาสจะทำอะไรเพื่อเธอแล้ว"
     yume_en "But now that I've met you again, I won't have a chance to do anything for you."
     voice "audio/voice/true_end/mary_12_024.mp3"
+    scene fb3_25 with Dissolve(1)
     mary_th "เธอก็เลย..."
     mary_en "So you..."
     yume_th "ฉันเลยเลือกที่จะทิ้งทุกอย่างอีกครั้ง"
@@ -427,11 +448,13 @@ label true_end:
     yume_th "ขอโทษนะ"
     yume_en "I'm sorry."
     #voice "audio/voice/true_end/mary_12_025.mp3"
+    scene fb3_15 with Dissolve(1)
     mary_th "....."
     mary_en "....."
     yume_th "ขอโทษที่เป็นคนอ่อนแอ ขอโทษที่เป็นคนขี้ขลาด"
     yume_en "Sorry for being weak, for being a coward."
     #voice "audio/voice/true_end/mary_12_026.mp3"
+    scene fb3_26 with Dissolve(1)
     mary_th "....."
     mary_en "....."
     yume_th "ขอโทษที่ทำให้เธอมีความสุขไม่ได้เลย"
@@ -441,17 +464,21 @@ label true_end:
     th "สองแขนบางที่โอบร่างเราไว้สั่นเทาไปหมด"
     en "Her thin arms shaking as they held us."
     voice "audio/voice/true_end/mary_12_027.mp3"
+    scene fb3_15 with Dissolve(1)
     mary_th "นั่นมันไม่จริงสักหน่อย"
     mary_en "That's not true at all."
     yume_th "....."
     yume_en "....."
     voice "audio/voice/true_end/mary_12_028.mp3"
+    scene fb3_26 with Dissolve(1)
     mary_th "ช่วงเวลาที่เธออยู่กับฉัน ฉันมีความสุขที่สุดเลยนะ"
     mary_en "The times I spent with you were the happiest."
     yume_th "แมรี่"
     yume_en "Mary"
     voice "audio/voice/true_end/mary_12_029.mp3"
+    scene fb3_24 with Dissolve(1)
     mary_th "เพราะฉะนั้น ฉันจะไม่ยอมให้ชีวิตของเธอจบลงแค่นี้"
+
     mary_en "That's why I won't let your life end here."
 
 
@@ -460,9 +487,11 @@ label true_end:
     th "แม้น้ำตาจะยังอาบท่วมนวลแก้มขาว แต่ความปรารถนาอันแรงกล้าของเธอไม่มีวันสั่นคลอน"
     en "Even as tears flooded her pale cheeks, her strong desire never wavered."
     voice "audio/voice/true_end/mary_12_030.mp3"
+    scene fb3_15 with Dissolve(1)
     mary_th "ชีวิตมันอาจจะไม่ยุติธรรมและโหดร้าย แต่นั่นไม่ใช่ทั้งหมดหรอกนะ"
     mary_en "Life may be unfair and cruel, but that's not everything."
     voice "audio/voice/true_end/mary_12_031.mp3"
+    scene fb3_25 with Dissolve(1)
     mary_th "เพราะเธอมีชีวิตอยู่ พวกเราเลยมีโอกาสได้เจอกัน...จริงไหมล่ะ?"
     mary_en "Because you're alive, we had the chance to meet... right?"
     th "คำพูดของแมรี่หลั่งไหลเข้ามาในใจเรา เราไม่สามารถปฏิเสธเธอได้"
@@ -471,9 +500,11 @@ label true_end:
     en "We were the cowards. She was the strong one."
     th "ไม่งั้นเธอคงไม่ทุ่มเทพาเราเดินมาถึงห้องสุดท้ายเพื่อพาเรากลับมาหรอก"
     en "Otherwise, she wouldn't have brought us all the way to this final room to bring us back."
+    scene fb3_18 with Dissolve(1)
     voice "audio/voice/true_end/mary_12_032.mp3"
     mary_th "ถ้าตายไปแล้ว มันไม่มีความทุกข์ก็จริงแต่ความสุขทั้งหมดก็จะหายไปเหมือนกัน"
     mary_en "If you die, yes, there's no suffering, but all happiness is gone too."
+    scene fb3_25 with Dissolve(1)
     voice "audio/voice/true_end/mary_12_033.mp3"
     mary_th "ตราบใดที่ยังมีชีวิต เธอก็ยังมีโอกาส ตราบใดที่ยังมีโอกาส เธอก็ยังสามารถมีความสุขได้"
     mary_en "As long as you're alive, you have a chance. As long as there's a chance, you can find happiness."
@@ -483,26 +514,33 @@ label true_end:
     en "I interjected with a sobbing voice."
     th "เด็กสาวผมทองพยักหน้าให้เราพร้อมกับยื่นมือข้างหนึ่งมาสัมผัสแก้มขวาเราไว้"
     en "The blonde girl nodded at us, reaching out to touch our right cheek."
+    scene fb3_23 with Dissolve(1)
     voice "audio/voice/true_end/mary_12_034.mp3"
     mary_th "ฉันไม่ใช่ตัวแทนความสุขของเธอ"
     mary_en "I'm not the embodiment of your happiness."
+    scene fb3_19 with Dissolve(1)
     voice "audio/voice/true_end/mary_12_035.mp3"
     mary_th "โลกนี้ยังมีอีกหลายสิ่งที่ทำให้เธอมีความสุขได้"
     mary_en "There are many things in this world that can make you happy."
+    scene fb3_23 with Dissolve(1)
     voice "audio/voice/true_end/mary_12_036.mp3"
     mary_th "เพราะฉะนั้น จงมีชีวิตอยู่ต่อไปซะ ยูเมะ"
     mary_en "So live on, Yume."
+    scene fb3_26 with Dissolve(1)
     voice "audio/voice/true_end/mary_12_037.mp3"
     mary_th "จงมีชีวิตและมีความสุข"
     mary_en "So live on, Yume."
+    scene fb3_24 with Dissolve(1)
     voice "audio/voice/true_end/mary_12_038.mp3"
     mary_th "และหลังจากใช้ชีวิตเต็มที่แล้วค่อยรักษาสัญญาที่มีต่อฉันก็ยังไม่สาย"
     mary_en "And after living your life to the fullest, it's not too late to keep your promise to me."
+    scene fb3_26 with Dissolve(1)
     voice "audio/voice/true_end/mary_12_039.mp3"
     mary_th "...เข้าใจนะ"
     mary_en "...Understand?"
     yume_th "...พวกเราจะกลับมาพบกันอีกครั้ง..."
     yume_en "...We will meet again..."
+    scene fb3_23 with Dissolve(1)
     voice "audio/voice/true_end/mary_12_040.mp3"
     mary_th "ใช่แล้วจ้ะ"
     mary_en "Yes, indeed."
@@ -517,6 +555,7 @@ label true_end:
 
     yume_th "แมรี่"
     yume_en "Mary"
+    scene fb3_24 with Dissolve(1)
     voice "audio/voice/true_end/mary_12_041.mp3"
     mary_th "จ้ะ?"
     mary_en "Yes?"
@@ -530,9 +569,11 @@ label true_end:
     en "Before our faces slowly moved apart from each other."
     voice "audio/voice/true_end/mary_12_042.mp3"
     mary_th "ขอโทษและขอบคุณสำหรับทุกสิ่งทุกอย่างนะจ้ะ"
+    scene fb3_23 with Dissolve(1)
     mary_en "I'm sorry and thank you for everything."
     yume_th "...แมรี่..."
     yume_en "...Mary..."
+    scene fb3_26 with Dissolve(1)
     voice "audio/voice/true_end/mary_12_043.mp3"
     mary_th "ลาก่อน ผู้หญิงที่ฉันรักที่สุดในโลก"
     mary_en "Goodbye, the woman I love most in this world."
